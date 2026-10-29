@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+*.wav
+*.flac
+*.mp4
+*.webm
+*.gguf
+*.safetensors
+output/
+models/
+dubwork/
