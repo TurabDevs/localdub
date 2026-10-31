@@ -97,6 +97,8 @@ if os.environ.get("PITCH_REF", "1") == "1":
         ok = [M for M in longs if abs(12 * np.log2(F0[M["id"]] / F0[L["id"]])) <= 3]
         cand = [M for M in ok if M["spk"] == L["spk"]] or ok
         if cand: PREF[L["id"]] = min(cand, key=lambda M: abs(M["start"] - L["start"]))["id"]
+    for kv in filter(None, os.environ.get("PREF_OVERRIDE", "").split(",")):   # QA-driven manual reference override "L031:L020"
+        a, b = kv.split(":"); PREF[a] = b
 
 def tts(text, spk, emo, path, lid=None):
     if os.path.exists(path): return path
