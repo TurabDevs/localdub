@@ -10,7 +10,13 @@ Steps
   2. per line: Fish Audio TTS (s2.1-pro-free) with the character's reference and an emotion cue
   3. fit: pick en / en_short / rewrite that fits the slot; gentle tempo only within [0.93, 1.08]; trim silence
   4. place at the original start, sidechain-free mix over the Demucs background (music + effects kept), mux to video
-  5. qa.json: per-line slot, tts length, tempo, overflow, variant used
+  5. qa.json: per-line slot, tts length, tempo, overflow, variant used, Glimmer cast label for the line
+v2 (after the v1 listen/QA pass):
+  * ASR-garble guard: a line whose transcript is not real Hindi/Urdu (stray CJK/Hangul characters, or Arabic-script text with
+    none of the Urdu-specific letters, which is how the CTC model spells short English words, laughs and grunts) keeps the
+    original audio instead of being dubbed as filler ("Uh.", "Man.")
+  * Glimmer rewrite variant (rw_*) for QA-flagged lines is tried first
+  * a last-resort tempo of up to 1.15x only for lines that would otherwise overflow into the next line
 Auth for Fish: the sandbox identity gateway injects the key for api.fish.audio (never in code).
 """
 import json, os, re, subprocess, sys, time, concurrent.futures as cf
@@ -39,7 +45,12 @@ for k, v in sorted(R.items()):
         for x in j.get("lines", []):
             if k.startswith("rw_"): EN.setdefault(x["id"], {})["rw"] = x.get("en_fit") or x.get("en")
             else: EN.setdefault(x["id"], {}).update(x)
-CAST = {k[5:]: parse(v.get("content")) for k, v in R.items() if k.startswith("cast_")}
+CAST = {k[5:]: parse(v.get("content")) for k, v in R.items() if k.startswith("cast_")}   # keyed by line id (cast_L002)
+URDU = set("ٹڈڑںےہھیکگپچژۓۀ")
+def garbled(t):
+    if re.search(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]", t): return True          # CJK / Hangul = not speech we can dub
+    ar = [c for c in t if "\u0600" <= c <= "\u06ff"]
+    return len(ar) > 0 and not any(c in URDU for c in t)                    # Arabic letters but no Urdu letters
 
 voc, sr = sf.read(f"{S1}/vocals.flac", dtype="float32", always_2d=True); assert sr == SR
 bg, _ = sf.read(f"{S1}/background.flac", dtype="float32", always_2d=True)
@@ -65,11 +76,33 @@ for L in lines:   # per-line reference: the line's own original vocals carry the
         a = voc[int(L["start"] * SR):int(min(L["end"], L["start"] + 10.0) * SR)].mean(1)
         LREF[L["id"]] = {"audio": wav_bytes(a / (np.abs(a).max() + 1e-6) * 0.8), "text": L["hi"]}
 
+def f0(x, fs=SR):   # median pitch (Hz) of a mono clip, simple autocorrelation; None if too little voiced speech
+    st = max(1, fs // 16000); x = x[::st]; fs = fs / st; n = int(0.04 * fs); lo, hi = int(fs / 400), int(fs / 70); out = []
+    for i in range(0, len(x) - n, n // 2):
+        fr = x[i:i + n] - x[i:i + n].mean()
+        if np.sqrt(np.mean(fr ** 2)) < 0.01: continue
+        ac = np.correlate(fr, fr, "full")[n - 1:]; ac /= ac[0] + 1e-9; k = lo + int(np.argmax(ac[lo:hi]))
+        if ac[k] > 0.5: out.append(fs / k)
+    return float(np.median(out)) if len(out) >= 5 else None
+
+# v2 pitch-matched reference for short lines (< 2.5 s): v1 used the whole voice cluster's reference, but a cluster can mix
+# speakers, which gave 11 lines a voice > 4 semitones away from the original. Now: the nearest-in-time long line whose
+# original pitch is within 3 semitones (same cluster first, then any cluster); cluster reference only as a fallback.
+PREF = {}
+if os.environ.get("PITCH_REF", "1") == "1":
+    F0 = {L["id"]: f0(voc[int(L["start"] * SR):int(L["end"] * SR)].mean(1)) for L in lines}
+    longs = [L for L in lines if L["id"] in LREF and F0.get(L["id"])]
+    for L in lines:
+        if L["id"] in LREF or not F0.get(L["id"]): continue
+        ok = [M for M in longs if abs(12 * np.log2(F0[M["id"]] / F0[L["id"]])) <= 3]
+        cand = [M for M in ok if M["spk"] == L["spk"]] or ok
+        if cand: PREF[L["id"]] = min(cand, key=lambda M: abs(M["start"] - L["start"]))["id"]
+
 def tts(text, spk, emo, path, lid=None):
     if os.path.exists(path): return path
     cue = {"neutral": "", "happy": "[happy] ", "laughing": "[laughing] ", "sarcastic": "[sarcastic] ", "angry": "[angry] ",
            "shouting": "[shouting] ", "sad": "[sad] ", "worried": "[worried] ", "excited": "[excited] ", "whisper": "[whispering] "}.get(emo or "neutral", "")
-    body = {"text": cue + text, "references": [LREF.get(lid) or REF[spk]], "format": "wav", "normalize": True, "latency": "normal",
+    body = {"text": cue + text, "references": [LREF.get(lid) or LREF.get(PREF.get(lid)) or REF[spk]], "format": "wav", "normalize": True, "latency": "normal",
             "temperature": 0.7, "top_p": 0.7, "chunk_length": 200}
     for att in range(5):
         r = requests.post("https://api.fish.audio/v1/tts", data=msgpack.packb(body), timeout=180,
@@ -97,6 +130,7 @@ def latin(t):
 qa, todo, keep = [], [], []
 for L in lines:
     if latin(L["hi"]): keep.append(L); continue      # already English in the original: keep the original voice
+    if os.environ.get("GARBLE_GUARD", "1") == "1" and garbled(L["hi"]): keep.append(L); L["kept"] = "asr_garble"; continue
     e = EN.get(L["id"], {})
     variants = [(n, e.get(n)) for n in ("rw", "en", "en_short") if e.get(n)]
     todo.append((L, variants, e.get("emotion", "neutral")))
@@ -116,11 +150,14 @@ def render(item):
     best = None
     for name, text in variants:
         a = load_trim(tts(text, L["spk"], emo, f"{WD}/tts/{L['id']}_{name}.wav", L["id"])); d = len(a) / SR
-        f = min(max(d / slot, TMIN), TMAX) if d > slot or d < slot * 0.6 else 1.0
+        tmax = 1.15 if name == "rw" else TMAX     # a QA-driven Glimmer rewrite may run a little faster before falling back to v1 text
+        f = min(max(d / slot, TMIN), tmax) if d > slot or d < slot * 0.6 else 1.0
         fits = d / f <= slot + 0.05
         cand = (name, text, a, d, f, fits)
         if fits: best = cand; break
         if best is None or d < best[3]: best = cand
+    if not best[5] and best[3] / slot <= 1.15:      # last resort: slightly faster rather than spilling into the next line
+        name, text, a, d, f, fits = best; best = (name, text, a, d, d / slot, True)
     return L, emo, best
 
 dub = np.zeros(len(bg), np.float32)
@@ -132,10 +169,13 @@ with cf.ThreadPoolExecutor(6) as ex:
         g = float(np.clip(rms(ref) / rms(a), 0.5, 4.0))          # match the original line's loudness
         dub[s:e] += a[:e - s] * g
         qa.append({"id": L["id"], "spk": L["spk"], "slot": L["dur"], "tts": round(d, 2), "tempo": round(f, 3), "fits": fits,
-                   "variant": name, "en": text, "hi": L["hi"], "emotion": emo, "cast": (CAST.get(L["spk"]) or {}).get("role")})
+                   "variant": name, "en": text, "hi": L["hi"], "emotion": emo, "gain": round(g, 2),
+                   "ref": "own_line" if L["id"] in LREF else (f"pitch_matched:{PREF[L['id']]}" if L["id"] in PREF else "cluster"),
+                   "cast": {k: (CAST.get(L["id"]) or {}).get(k) for k in ("speaker", "gender", "age", "role", "face_visible")} if CAST.get(L["id"]) else None})
 for L in keep + [t[0] for t in todo if not t[1]]:     # English originals (and any untranslated line) keep original vocals
     s0, s1 = int(L["start"] * SR), int(L["end"] * SR); dub[s0:s1] += voc[s0:s1].mean(1)
-    qa.append({"id": L["id"], "spk": L["spk"], "slot": L["dur"], "variant": "original", "fits": True, "hi": L["hi"]})
+    qa.append({"id": L["id"], "spk": L["spk"], "slot": L["dur"], "variant": "original", "fits": True, "hi": L["hi"],
+               "kept": L.get("kept", "english_original")})
 missing = [t[0]["id"] for t in todo if not t[1]]
 qa.sort(key=lambda q: q["id"])
 json.dump({"lines": qa, "missing_translation": missing, "overflow": [q["id"] for q in qa if not q["fits"]]},
