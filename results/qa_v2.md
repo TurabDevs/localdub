@@ -60,3 +60,12 @@ Kernel `localdub-listenk-v1` / `localdub-listenk-v2` re-transcribe each dubbed l
 - 3 pitch outliers (L031, L037, L048): try the 2nd-best pitch-matched reference.
 - Mixed-speaker own-line references (e.g. L002 phone call both sides, L038).
 - Two 0.25 s spills into the next line (L004, L038).
+
+
+### Listen WER v1 vs v2 vs v3 (kernel localdub-listenk-v13 for v1+v3, ~8 min)
+| | v1 | v2 | v3 |
+|---|---|---|---|
+| mean WER, all dubbed lines | 0.289 (44 lines) | 0.187 (32) | **0.144** (32) |
+| lines with WER > 0.5 | 10 | 4 | **3** |
+| mean WER on the same 32 lines v2 dubs | **0.116** | 0.187 | 0.144 |
+Honest reading: most of v1's errors were the 12 filler/garble lines v2 no longer dubs. On the 32 lines both versions dub, v2/v3 are slightly LESS intelligible to the ASR than v1, driven by L030 ("Put it on." heard "vtdn"; v1 "Wear it like this." was heard right but overflowed), L034 (new pitch-matched reference gave Hindi-accented English, heard "moर poetry moर crाinग") and L004 ("beers" heard "beards"). Real gains: L038 (0.35 -> 0.05), L037 (0.5 -> 0.0 in v3), L031 (v3 0.0), L024 (0.08 -> 0.0). Next fix (v4): L034 back to the cluster reference, fresh take for L030.
