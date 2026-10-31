@@ -54,7 +54,7 @@ No hosted Meta API is used. Muse Glimmer weights are checked by sha256 against t
 
 ## Demo
 Demo video v2 (2:15): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v2.mp4
-Full 5-minute English dub (v2): https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v2.webm
+Full 5-minute English dub: v3 (latest) https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v3.webm · v2 https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v2.webm
 Demo video v1: https://github.com/TurabDevs/localdub/releases/download/demo-v1/localdub_demo.mp4
 
 ### Results: dub → listen → fix (measured, `results/`)
@@ -66,7 +66,7 @@ Demo video v1: https://github.com/TurabDevs/localdub/releases/download/demo-v1/l
 | pitch mismatch vs original > 4 semitones | 11 | **3** |
 | mean loudness gap vs original line | 1.65 dB | **0.45 dB** |
 | max tempo change | 1.08x | 1.127x |
-v2 dubs 32 lines: 14 lines were already English in the original and 12 were laughs/grunts/short English words that the ASR garbled, and these 26 keep the original audio. Muse Glimmer rewrote 20 QA-flagged lines (18 used). Details and every rewrite: `results/qa_v2.md`.
+v2 dubs 32 lines: 14 lines were already English in the original and 12 were laughs/grunts/short English words that the ASR garbled, and these 26 keep the original audio. Muse Glimmer rewrote 20 QA-flagged lines (18 used). Details and every rewrite: `results/qa_v2.md`. Iteration 2 (v3, `results/qa_v3.md`) re-voiced the 3 remaining pitch outliers with a different reference: pitch mismatches 3 → 1, mean loudness gap 0.45 → 0.35 dB.
 
 Source clip: "If People Treated Other Illnesses Like They Treat Depression" by **All India Bakchod (AIB)**, licensed [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Changes made: the dialogue was translated into English and re-voiced by LocalDub; music and effects come from the original via source separation.
 
