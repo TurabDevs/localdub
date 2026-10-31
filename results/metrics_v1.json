@@ -15,228 +15,319 @@
   "loud_lines_off_by_6db": 4,
   "pitch_mean_abs_diff_st": 3.72,
   "pitch_lines_off_by_4st": 11,
-  "filler_dubs": 8
+  "filler_dubs": 8,
+  "listen_wer_mean": 0.289,
+  "listen_lines_wer_over_0.5": 10,
+  "listen_lines": 44
  },
  "per_line": {
   "L002": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 2.4
+   "pitch_diff_st": 2.4,
+   "wer": 0.125,
+   "heard": "iam booking the movie okay no man don't book mine vormiting since morning and high fever"
   },
   "L003": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 3.3
+   "pitch_diff_st": 3.3,
+   "wer": 0.09523809523809523,
+   "heard": "tiphoid and something are you crazy typhoid isn't like that brow you just need to get out and have some fun"
   },
   "L004": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 0.0
+   "pitch_diff_st": 0.0,
+   "wer": 0.07692307692307693,
+   "heard": "just step out have a couple f beers all bacteria will die don't overthink"
   },
   "L005": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 0.0
+   "pitch_diff_st": 0.0,
+   "wer": 0.0,
+   "heard": "the more you think you have typhoid the more it grows"
   },
   "L006": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": -3.7
+   "pitch_diff_st": -3.7,
+   "wer": 0.058823529411764705,
+   "heard": "the bacteria will die on its own in two months just don't know promotion no got typhoid yesterday at sali's party you were enjoying so much you were laughing dancing joking what happened suddenly"
   },
   "L007": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": -3.2
+   "pitch_diff_st": -3.2,
+   "wer": 0.023255813953488372,
+   "heard": "this fever burning could be one thing if you're smiling and you have typhoid how can you have both are you sure you didn't get typhoid because garima broke up with you go get tender your typhoid vomiting diaria will all go away"
   },
   "L010": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 1.5
+   "pitch_diff_st": 1.5,
+   "wer": 0.0,
+   "heard": "but not"
   },
   "L011": {
    "overlap_s": 0.0,
    "loud_diff_db": 2.7,
-   "pitch_diff_st": 0.1
+   "pitch_diff_st": 0.1,
+   "wer": 0.0,
+   "heard": "sort of typhoid"
   },
   "L012": {
    "overlap_s": 0.0,
    "loud_diff_db": 3.8,
-   "pitch_diff_st": null
+   "pitch_diff_st": null,
+   "wer": 0.0,
+   "heard": "but you"
   },
   "L013": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 1.6
+   "pitch_diff_st": 1.6,
+   "wer": 0.6666666666666666,
+   "heard": "joging every moरning gives you perspective and tipoid goes away perspec्tive uf tiphoid गoगo"
   },
   "L014": {
    "overlap_s": 0.0,
    "loud_diff_db": 2.9,
-   "pitch_diff_st": 1.5
+   "pitch_diff_st": 1.5,
+   "wer": 0.16666666666666666,
+   "heard": "listen mickil's friend was saying that"
   },
   "L015": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 0.6
+   "pitch_diff_st": 0.6,
+   "wer": 0.07142857142857142,
+   "heard": "mikil has some fever thing you haven't told anyone he has a fever right"
   },
   "L017": {
    "overlap_s": 0.0,
    "loud_diff_db": -2.6,
-   "pitch_diff_st": -4.1
+   "pitch_diff_st": -4.1,
+   "wer": 1.0,
+   "heard": "ออ"
   },
   "L019": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.1,
-   "pitch_diff_st": -3.4
+   "pitch_diff_st": -3.4,
+   "wer": 0.07142857142857142,
+   "heard": "a smile counts typhoid's gone i know it mickil's friend was also saying that"
   },
   "L020": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": -0.3
+   "pitch_diff_st": -0.3,
+   "wer": 0.0,
+   "heard": "there are different kinds of doctors who can just fix fever stuff like this no problem"
   },
   "L021": {
    "overlap_s": 0.0,
    "loud_diff_db": 1.4,
-   "pitch_diff_st": 2.3
+   "pitch_diff_st": 2.3,
+   "wer": 0.0,
+   "heard": "tell the whole neighborhood"
   },
   "L022": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 0.3
+   "pitch_diff_st": 0.3,
+   "wer": 0.1,
+   "heard": "that our son has fever fever fever his temperature is up his head is burnding heart what will people think"
   },
   "L023": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 2.0
+   "pitch_diff_st": 2.0,
+   "wer": 0.034482758620689655,
+   "heard": "people will say the whole family has fever brow they say you have typhoid these doctors are running a scam they just want to get money out of you"
   },
   "L024": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": -0.9
+   "pitch_diff_st": -0.9,
+   "wer": 0.07692307692307693,
+   "heard": "syphoid whatever they just pick any name what are they educated or something"
   },
   "L025": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": -0.7
+   "pitch_diff_st": -0.7,
+   "wer": 0.0,
+   "heard": "don't fall for this you need motivation not medication determination"
   },
   "L026": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": -1.2
+   "pitch_diff_st": -1.2,
+   "wer": 0.1,
+   "heard": "you know nisias marriage broke up do you know payal"
   },
   "L030": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.1,
-   "pitch_diff_st": -1.2
+   "pitch_diff_st": -1.2,
+   "wer": 0.25,
+   "heard": "were it like this"
   },
   "L031": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 6.3
+   "pitch_diff_st": 6.3,
+   "wer": 0.5,
+   "heard": "typhoids nothing"
   },
   "L032": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 0.8
+   "pitch_diff_st": 0.8,
+   "wer": 0.0,
+   "heard": "your planets are messed up this is a protective shield i made it specially for libra"
   },
   "L033": {
    "overlap_s": 0.02,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 0.8
+   "pitch_diff_st": 0.8,
+   "wer": 0.0,
+   "heard": "go do something you like follow your passion everyone's doing it these days"
   },
   "L034": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 1.2
+   "pitch_diff_st": 1.2,
+   "wer": 0.0,
+   "heard": "more poetry more crying"
   },
   "L035": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 3.7
+   "pitch_diff_st": 3.7,
+   "wer": 0.09090909090909091,
+   "heard": "can it be fine maybe you need to change your job your house your city your state your continent or just change yourself"
   },
   "L036": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.3,
-   "pitch_diff_st": null
+   "pitch_diff_st": null,
+   "wer": 1.0,
+   "heard": ""
   },
   "L037": {
    "overlap_s": 0.03,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 0.4
+   "pitch_diff_st": 0.4,
+   "wer": 0.5,
+   "heard": "get it then where will tiphoid go he doesn't"
   },
   "L038": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.0,
-   "pitch_diff_st": 6.0
+   "pitch_diff_st": 6.0,
+   "wer": 0.35,
+   "heard": "he doesn't even know where to go where to go where to go man i think you're over thinking over analyzing over hyping ove"
   },
   "L039": {
    "overlap_s": 0.11,
    "loud_diff_db": 0.1,
-   "pitch_diff_st": 0.6
+   "pitch_diff_st": 0.6,
+   "wer": 0.1111111111111111,
+   "heard": "over hyperventilating just over it don't think too much like you're on fire and thinking you're not thinking you don't"
   },
   "L040": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 3.2
+   "pitch_diff_st": 3.2,
+   "wer": 0.0,
+   "heard": "you don't have typhoid maybe you just need a long vacation or come with us to the movie"
   },
   "L041": {
    "overlap_s": 0.0,
    "loud_diff_db": 2.9,
-   "pitch_diff_st": 9.2
+   "pitch_diff_st": 9.2,
+   "wer": 0.0,
+   "heard": "okay so you're not coming"
   },
   "L042": {
    "overlap_s": 0.0,
    "loud_diff_db": 5.0,
-   "pitch_diff_st": 6.0
+   "pitch_diff_st": 6.0,
+   "wer": 1.0,
+   "heard": "okay bाy"
   },
   "L044": {
    "overlap_s": 0.0,
    "loud_diff_db": 15.2,
-   "pitch_diff_st": 16.4
+   "pitch_diff_st": 16.4,
+   "wer": 1.0,
+   "heard": "جس"
   },
   "L045": {
    "overlap_s": 0.0,
    "loud_diff_db": 9.7,
-   "pitch_diff_st": 12.6
+   "pitch_diff_st": 12.6,
+   "wer": 1.0,
+   "heard": "แม่น"
   },
   "L046": {
    "overlap_s": 0.0,
    "loud_diff_db": 11.1,
-   "pitch_diff_st": 8.0
+   "pitch_diff_st": 8.0,
+   "wer": 1.0,
+   "heard": "嗯"
   },
   "L047": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.2,
-   "pitch_diff_st": 18.7
+   "pitch_diff_st": 18.7,
+   "wer": 1.0,
+   "heard": "يا"
   },
   "L048": {
    "overlap_s": 0.0,
    "loud_diff_db": 3.5,
-   "pitch_diff_st": 10.7
+   "pitch_diff_st": 10.7,
+   "wer": 0.0,
+   "heard": "what are you talking about"
   },
   "L049": {
    "overlap_s": 0.0,
    "loud_diff_db": 0.0,
-   "pitch_diff_st": 1.3
+   "pitch_diff_st": 1.3,
+   "wer": 0.0,
+   "heard": "don't tell anyone i know nothing why would i say guys"
   },
   "L050": {
    "overlap_s": 0.0,
    "loud_diff_db": -0.1,
-   "pitch_diff_st": 3.5
+   "pitch_diff_st": 3.5,
+   "wer": 1.0,
+   "heard": "وح"
   },
   "L051": {
    "overlap_s": 0.0,
    "loud_diff_db": 3.2,
-   "pitch_diff_st": 0.2
+   "pitch_diff_st": 0.2,
+   "wer": 0.06666666666666667,
+   "heard": "it's tiphoid it's like any other illness if we keep whispering about it like this"
   },
   "L053": {
    "overlap_s": 0.0,
    "loud_diff_db": 1.4,
-   "pitch_diff_st": 1.5
+   "pitch_diff_st": 1.5,
+   "wer": 1.0,
+   "heard": "嗯"
   },
   "L054": {
    "overlap_s": 0.0,
    "loud_diff_db": 6.3,
-   "pitch_diff_st": 11.0
+   "pitch_diff_st": 11.0,
+   "wer": 0.16666666666666666,
+   "heard": "looks like he got tiphoid too"
   }
  }
 }
