@@ -1,0 +1,242 @@
+{
+ "summary": {
+  "lines": 58,
+  "dubbed": 44,
+  "kept_original": {
+   "english_original": 14
+  },
+  "fit": 42,
+  "overflow": 2,
+  "no_tempo_change": 32,
+  "max_tempo": 1.08,
+  "overlaps_next_line": 1,
+  "overlap_total_s": 0.16,
+  "loud_mean_abs_diff_db": 1.65,
+  "loud_lines_off_by_6db": 4,
+  "pitch_mean_abs_diff_st": 3.72,
+  "pitch_lines_off_by_4st": 11,
+  "filler_dubs": 8
+ },
+ "per_line": {
+  "L002": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 2.4
+  },
+  "L003": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 3.3
+  },
+  "L004": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.0
+  },
+  "L005": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.0
+  },
+  "L006": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -3.7
+  },
+  "L007": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -3.2
+  },
+  "L010": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 1.5
+  },
+  "L011": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 2.7,
+   "pitch_diff_st": 0.1
+  },
+  "L012": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 3.8,
+   "pitch_diff_st": null
+  },
+  "L013": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 1.6
+  },
+  "L014": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 2.9,
+   "pitch_diff_st": 1.5
+  },
+  "L015": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 0.6
+  },
+  "L017": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -2.6,
+   "pitch_diff_st": -4.1
+  },
+  "L019": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.1,
+   "pitch_diff_st": -3.4
+  },
+  "L020": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -0.3
+  },
+  "L021": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 1.4,
+   "pitch_diff_st": 2.3
+  },
+  "L022": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 0.3
+  },
+  "L023": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 2.0
+  },
+  "L024": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -0.9
+  },
+  "L025": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -0.7
+  },
+  "L026": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -1.2
+  },
+  "L030": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.1,
+   "pitch_diff_st": -1.2
+  },
+  "L031": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 6.3
+  },
+  "L032": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.8
+  },
+  "L033": {
+   "overlap_s": 0.02,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 0.8
+  },
+  "L034": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 1.2
+  },
+  "L035": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 3.7
+  },
+  "L036": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.3,
+   "pitch_diff_st": null
+  },
+  "L037": {
+   "overlap_s": 0.03,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.4
+  },
+  "L038": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 6.0
+  },
+  "L039": {
+   "overlap_s": 0.11,
+   "loud_diff_db": 0.1,
+   "pitch_diff_st": 0.6
+  },
+  "L040": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 3.2
+  },
+  "L041": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 2.9,
+   "pitch_diff_st": 9.2
+  },
+  "L042": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 5.0,
+   "pitch_diff_st": 6.0
+  },
+  "L044": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 15.2,
+   "pitch_diff_st": 16.4
+  },
+  "L045": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 9.7,
+   "pitch_diff_st": 12.6
+  },
+  "L046": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 11.1,
+   "pitch_diff_st": 8.0
+  },
+  "L047": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.2,
+   "pitch_diff_st": 18.7
+  },
+  "L048": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 3.5,
+   "pitch_diff_st": 10.7
+  },
+  "L049": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 1.3
+  },
+  "L050": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.1,
+   "pitch_diff_st": 3.5
+  },
+  "L051": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 3.2,
+   "pitch_diff_st": 0.2
+  },
+  "L053": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 1.4,
+   "pitch_diff_st": 1.5
+  },
+  "L054": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 6.3,
+   "pitch_diff_st": 11.0
+  }
+ }
+}
