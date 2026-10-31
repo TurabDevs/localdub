@@ -53,7 +53,7 @@ No hosted Meta API is used. Muse Glimmer weights are checked by sha256 against t
 - `pipeline/listen_prep.py`, `cloud/kaggle/stage_listen_check.py` – Omnilingual ASR re-transcription of the dub
 
 ## Demo
-Demo video v2 (2:15): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v2.mp4
+Demo video v3 (2:36, adds the "Glimmer sees the scene" card): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v3.mp4 · v2 (2:15): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v2.mp4
 Full 5-minute English dub: v4 (latest) https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v4.webm · v3 https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v3.webm · v2 https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v2.webm
 Demo video v1: https://github.com/TurabDevs/localdub/releases/download/demo-v1/localdub_demo.mp4
 
