@@ -1,0 +1,250 @@
+{
+ "summary": {
+  "lines": 58,
+  "dubbed": 32,
+  "kept_original": {
+   "english_original": 14,
+   "asr_garble": 12
+  },
+  "fit": 32,
+  "overflow": 0,
+  "no_tempo_change": 28,
+  "max_tempo": 1.127,
+  "overlaps_next_line": 2,
+  "overlap_total_s": 0.52,
+  "loud_mean_abs_diff_db": 0.63,
+  "loud_lines_off_by_6db": 1,
+  "pitch_mean_abs_diff_st": 1.84,
+  "pitch_lines_off_by_4st": 1,
+  "filler_dubs": 0,
+  "listen_wer_mean": 0.123,
+  "listen_lines_wer_over_0.5": 2,
+  "listen_lines": 32
+ },
+ "per_line": {
+  "L002": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 2.4,
+   "wer": 0.125,
+   "heard": "iam booking the movie okay no man don't book mine vormiting since morning and high fever"
+  },
+  "L003": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 3.3,
+   "wer": 0.09523809523809523,
+   "heard": "tiphoid and something are you crazy typhoid isn't like that brow you just need to get out and have some fun"
+  },
+  "L004": {
+   "overlap_s": 0.25,
+   "loud_diff_db": 0.1,
+   "pitch_diff_st": 1.0,
+   "wer": 0.20833333333333334,
+   "heard": "just step out have a couple of beards all the bacteria will die ever seen a bartender get typhoid they live around beard don't overthinkte more"
+  },
+  "L005": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 0.0,
+   "wer": 0.0,
+   "heard": "the more you think you have typhoid the more it grows"
+  },
+  "L006": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 2.8,
+   "wer": 0.07407407407407407,
+   "heard": "bacteria die on their own in two months lost promotion no then typhoid day before yesterday at sahilsparty you were laughing dancing joking what happened suddenly"
+  },
+  "L007": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 1.4,
+   "wer": 0.06818181818181818,
+   "heard": "this fever burning could be one thing if you're smiling and you have typhoid how can you have both are you sure you didn't get typhoid because garima broke up wit you go get on tender your typhoid vomiting diaria will all go away"
+  },
+  "L013": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 1.6,
+   "wer": 0.6666666666666666,
+   "heard": "joging every moरning gives you perspective and tipoid goes away perspec्tive uf tiphoid गoगo"
+  },
+  "L014": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 2.9,
+   "pitch_diff_st": 1.5,
+   "wer": 0.16666666666666666,
+   "heard": "listen mickil's friend was saying that"
+  },
+  "L015": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 0.6,
+   "wer": 0.07142857142857142,
+   "heard": "mikil has some fever thing you haven't told anyone he has a fever right"
+  },
+  "L019": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -2.0,
+   "wer": 0.07692307692307693,
+   "heard": "a smile means no typhoid i know it nickel's friend said that too"
+  },
+  "L020": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -0.3,
+   "wer": 0.0,
+   "heard": "there are different kinds of doctors who can just fix fever stuff like this no problem"
+  },
+  "L021": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -1.0,
+   "wer": 0.0,
+   "heard": "tell the whole neighborhood"
+  },
+  "L022": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -1.3,
+   "wer": 0.06666666666666667,
+   "heard": "our son has fever fever fever temperature up head burning heart what will people think"
+  },
+  "L023": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 3.8,
+   "wer": 0.03571428571428571,
+   "heard": "people will say the whole family has fever brow they say you have typhoid these doctors are running a scam they just want cash out of you seriously"
+  },
+  "L024": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.9,
+   "wer": 0.0,
+   "heard": "typhoid whatever they just make up names come on you're educated right"
+  },
+  "L025": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -0.7,
+   "wer": 0.0,
+   "heard": "don't fall for this you need motivation not medication determination"
+  },
+  "L026": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": -1.2,
+   "wer": 0.1,
+   "heard": "you know nisias marriage broke up do you know payal"
+  },
+  "L030": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 9.7,
+   "pitch_diff_st": 0.5,
+   "wer": 0.0,
+   "heard": "put it on"
+  },
+  "L031": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 0.9,
+   "wer": 0.0,
+   "heard": "typhoid's nothing"
+  },
+  "L032": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 1.0,
+   "wer": 0.07692307692307693,
+   "heard": "your planets are missed up this shield protects you made specially for libra"
+  },
+  "L033": {
+   "overlap_s": 0.02,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 3.2,
+   "wer": 0.07692307692307693,
+   "heard": "go do something you like follow your passion everyone's doing it these dayso"
+  },
+  "L034": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.6,
+   "wer": 1.25,
+   "heard": "मोरe पoetरy मोरe क्राinग"
+  },
+  "L035": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 3.7,
+   "wer": 0.09090909090909091,
+   "heard": "can it be fine maybe you need to change your job your house your city your state your continent or just change yourself"
+  },
+  "L037": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": 3.5,
+   "wer": 0.0,
+   "heard": "then where will typhoid go"
+  },
+  "L038": {
+   "overlap_s": 0.25,
+   "loud_diff_db": 0.5,
+   "pitch_diff_st": 2.5,
+   "wer": 0.047619047619047616,
+   "heard": "it doesn't even know where to go where to go take a left up ahead i think you're overthinking overanalyzing overhipingoverhng"
+  },
+  "L039": {
+   "overlap_s": 0.0,
+   "loud_diff_db": -0.0,
+   "pitch_diff_st": 0.4,
+   "wer": 0.14285714285714285,
+   "heard": "over hyperventilating just over it don't over think you're on fire thinking you're not thinking"
+  },
+  "L040": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -0.2,
+   "wer": 0.0,
+   "heard": "you don't have typhoid you just need a long vacation come to the movies with us"
+  },
+  "L041": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.0,
+   "pitch_diff_st": -3.6,
+   "wer": 0.25,
+   "heard": "oka you're not coming"
+  },
+  "L048": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 0.9,
+   "pitch_diff_st": 6.8,
+   "wer": 0.0,
+   "heard": "what are you saying"
+  },
+  "L049": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 1.0,
+   "pitch_diff_st": 3.4,
+   "wer": 0.0,
+   "heard": "don't tell anyone i know nothing why would i say"
+  },
+  "L051": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 3.2,
+   "pitch_diff_st": 0.2,
+   "wer": 0.06666666666666667,
+   "heard": "it's tiphoid it's like any other illness if we keep whispering about it like this"
+  },
+  "L054": {
+   "overlap_s": 0.0,
+   "loud_diff_db": 1.9,
+   "pitch_diff_st": 2.7,
+   "wer": 0.16666666666666666,
+   "heard": "looks like he got tifoid too"
+  }
+ }
+}
