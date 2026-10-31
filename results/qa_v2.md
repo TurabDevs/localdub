@@ -53,7 +53,8 @@ On the same 32 lines that v2 dubs, v1 had 30/32 fitting, 5 pitch mismatches, 0.6
 | L049 | 3.64 | Don't tell anyone, I know nothing. Why would I say, guys. (4.1s) | Don't tell anyone. I know nothing. Why would I say? (4.38s, x1.127) |
 
 ## Listen check (Omnilingual ASR re-transcription of the dub)
-Kernel `localdub-listenk-v1` / `localdub-listenk-v2` re-transcribe each dubbed line with Meta Omnilingual ASR CTC 1B v2 and compare with the intended English (WER). LISTEN_RESULTS_PENDING
+Kernel `localdub-listenk-v1` / `localdub-listenk-v2` re-transcribe each dubbed line with Meta Omnilingual ASR CTC 1B v2 and compare with the intended English (WER). 
+**v2 result (kernel localdub-listenk-v2, 20 min on Kaggle CPU, `listen_v2.json`):** mean WER 0.187 over 32 dubbed lines; 28 of 32 lines at WER <= 0.5. Most residual "errors" are ASR spelling of names and the word typhoid (e.g. "tiphoid", "mickil" for Nikhil, Devanagari letters leaking into English words), not wrong speech. Lines that need another take: L030 "Put it on." (heard "vtdn", 0.72 s line, unintelligible), L013 (heard "...tipoid goes away perspective uf tiphoid go"), L034 and L031 (spelling noise; audible content is right on manual reading of the transcript). v1 comparison: kernel localdub-listenk-v13 (v1 + v3) — see STATUS/WATCHDOG Q2.
 
 ## Still open (next iterations)
 - 3 pitch outliers (L031, L037, L048): try the 2nd-best pitch-matched reference.
