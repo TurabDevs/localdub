@@ -1,0 +1,315 @@
+{
+ "name": "aib_depression_en.webm",
+ "mode": "pair",
+ "duration": 307.563,
+ "faces_fps": 8.0,
+ "events": [
+  {
+   "kind": "speech_not_dubbed",
+   "start": 24.5,
+   "end": 25.25,
+   "dur": 0.75,
+   "severity": "medium",
+   "why": "the original has speech here but the dub track is silent",
+   "line": "L002b",
+   "detail": {
+    "variant": "rw",
+    "en": "No man don't book mine, puking since morning, high fever.",
+    "tempo": 1.0,
+    "gain": 0.95
+   },
+   "thumb": "thumbs/000_speech_not_dubbed_24.9.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 30.45,
+   "end": 31.2,
+   "dur": 0.75,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L003",
+   "detail": {
+    "variant": "rw",
+    "en": "Typhoid and stuff? Are you crazy? There's no such thing, bro, just get out and have fun.",
+    "tempo": 1.0,
+    "gain": 0.77
+   },
+   "thumb": "thumbs/001_talking_face_dub_silent_30.8.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 75.8,
+   "end": 76.55,
+   "dur": 0.75,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L007",
+   "detail": {
+    "variant": "rw",
+    "en": "This fever burning could be one thing. If you're smiling and you have typhoid, how can you have both? Are you sure you didn't get typhoid because Garima broke up with you? Go get on Tinder. Your typhoid, vomiting, diarrhea will all go away.",
+    "tempo": 1.0,
+    "gain": 1.0
+   },
+   "thumb": "thumbs/002_talking_face_dub_silent_76.2.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 92.55,
+   "end": 93.2,
+   "dur": 0.65,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L013",
+   "detail": {
+    "variant": "en",
+    "en": "Jogging every morning gives you perspective and typhoid goes away. Perspective up, typhoid go go.",
+    "tempo": 1.0,
+    "gain": 0.99
+   },
+   "thumb": "thumbs/003_talking_face_dub_silent_92.9.jpg"
+  },
+  {
+   "kind": "speech_not_dubbed",
+   "start": 96.1,
+   "end": 96.95,
+   "dur": 0.85,
+   "severity": "medium",
+   "why": "the original has speech here but the dub track is silent",
+   "line": "L014",
+   "detail": {
+    "variant": "en",
+    "en": "Listen, Nikhil's friend was saying that",
+    "tempo": 1.0,
+    "gain": 0.36
+   },
+   "thumb": "thumbs/004_speech_not_dubbed_96.5.jpg"
+  },
+  {
+   "kind": "speech_not_dubbed",
+   "start": 100.6,
+   "end": 101.5,
+   "dur": 0.9,
+   "severity": "medium",
+   "why": "the original has speech here but the dub track is silent",
+   "line": "L015",
+   "detail": {
+    "variant": "en",
+    "en": "Nikhil has some fever thing. You haven't told anyone he has a fever, right?",
+    "tempo": 1.0,
+    "gain": 0.57
+   },
+   "thumb": "thumbs/005_speech_not_dubbed_101.0.jpg"
+  },
+  {
+   "kind": "vocals_dropped",
+   "start": 115.85,
+   "end": 116.5,
+   "dur": 0.65,
+   "severity": "low",
+   "why": "the original has voice sound outside any dubbing line (laugh, breath, shout, crowd) that is missing in the dub",
+   "line": null,
+   "thumb": "thumbs/006_vocals_dropped_116.2.jpg"
+  },
+  {
+   "kind": "dub_over_source_silence",
+   "start": 150.85,
+   "end": 151.2,
+   "dur": 0.35,
+   "severity": "medium",
+   "why": "the dub speaks where the original is silent (spill or early start); a mouth is moving",
+   "line": null,
+   "thumb": "thumbs/007_dub_over_source_silence_151.0.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 163.35,
+   "end": 164.75,
+   "dur": 1.4,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L026",
+   "detail": {
+    "variant": "en_short",
+    "en": "You know Nisha's marriage broke up? Do you know Payal?",
+    "tempo": 1.0,
+    "gain": 1.26
+   },
+   "thumb": "thumbs/008_talking_face_dub_silent_164.1.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 208.55,
+   "end": 209.4,
+   "dur": 0.85,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L035",
+   "detail": {
+    "variant": "en",
+    "en": "It'll be fine. Maybe you need to change your job, your house, your city, your state, your continent. Or just change yourself.",
+    "tempo": 1.0,
+    "gain": 1.31
+   },
+   "thumb": "thumbs/009_talking_face_dub_silent_209.0.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 232.4,
+   "end": 233.2,
+   "dur": 0.8,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L040",
+   "detail": {
+    "variant": "rw",
+    "en": "You don't have typhoid, you just need a long vacation. Come to the movies with us.",
+    "tempo": 1.0,
+    "gain": 2.73
+   },
+   "thumb": "thumbs/010_talking_face_dub_silent_232.8.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 254.9,
+   "end": 255.65,
+   "dur": 0.75,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L049",
+   "detail": {
+    "variant": "rw",
+    "en": "Don't tell anyone. I know nothing. Why would I say?",
+    "tempo": 1.127,
+    "gain": 0.42
+   },
+   "thumb": "thumbs/011_talking_face_dub_silent_255.3.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 256.4,
+   "end": 256.9,
+   "dur": 0.5,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L049",
+   "detail": {
+    "variant": "rw",
+    "en": "Don't tell anyone. I know nothing. Why would I say?",
+    "tempo": 1.127,
+    "gain": 0.42
+   },
+   "thumb": "thumbs/012_talking_face_dub_silent_256.6.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 265.85,
+   "end": 266.45,
+   "dur": 0.6,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L051",
+   "detail": {
+    "variant": "en",
+    "en": "It's typhoid, it's like any other illness. If we keep whispering about it like this...",
+    "tempo": 1.0,
+    "gain": 0.33
+   },
+   "thumb": "thumbs/013_talking_face_dub_silent_266.1.jpg"
+  }
+ ],
+ "summary": {
+  "speech_seconds_source": 238.5,
+  "speech_seconds_dub": 225.7,
+  "source_speech_covered_by_dub_pct": 90.9,
+  "dub_speech_inside_source_speech_pct": 96.0,
+  "face_on_screen_pct": 94.7,
+  "mouth_activity_vs_source_speech_auc": 0.623,
+  "mouth_threshold_balanced_acc": 0.61,
+  "visual_flag_confidence": "medium",
+  "mouth_vs_source_speech_lag_ms": 0,
+  "mouth_vs_source_speech_corr": 0.448,
+  "mouth_vs_dub_speech_lag_ms": 0,
+  "mouth_vs_dub_speech_corr": 0.357,
+  "bed_level_diff_db_median": 0.09,
+  "bed_ducked_seconds": 0.0,
+  "dialogue_vs_source_voice_db_median": 0.0,
+  "line_level_diff_db_mean_abs": 0.27,
+  "lines_level_diff_over_6db": 0,
+  "clipped_samples": 0,
+  "sample_peak_dbfs": -0.13,
+  "bed_sync_per_30s_lag_ms": [
+   [
+    0,
+    0,
+    0.91
+   ],
+   [
+    30,
+    0,
+    0.98
+   ],
+   [
+    60,
+    0,
+    0.9
+   ],
+   [
+    90,
+    0,
+    0.76
+   ],
+   [
+    120,
+    0,
+    0.78
+   ],
+   [
+    150,
+    0,
+    0.8
+   ],
+   [
+    180,
+    0,
+    0.86
+   ],
+   [
+    210,
+    0,
+    0.81
+   ],
+   [
+    240,
+    0,
+    0.87
+   ],
+   [
+    270,
+    0,
+    0.62
+   ]
+  ],
+  "loudness_source": {
+   "integrated_lufs": -15.9,
+   "true_peak_dbtp": 0.9,
+   "lra_lu": 16.5
+  },
+  "loudness_dub": {
+   "integrated_lufs": -16.5,
+   "true_peak_dbtp": -0.1,
+   "lra_lu": 15.9
+  },
+  "flags": {
+   "dub_over_source_silence": 1,
+   "speech_not_dubbed": 3,
+   "talking_face_dub_silent": 9,
+   "vocals_dropped": 1
+  },
+  "flags_by_severity": {
+   "high": 9,
+   "medium": 4,
+   "low": 1
+  },
+  "flagged_seconds_high": 7.0
+ }
+}
