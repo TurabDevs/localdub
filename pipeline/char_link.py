@@ -54,9 +54,14 @@ def f0_track(x, fs):
 
 # ---------- 1. units
 U = []
+WORDS = [w for sg in W.get("segments", []) for w in sg.get("words", [])]
+for s in SUB:   # tighten each unit to the Whisper words inside it (word timestamps) and keep Whisper's text next to the ASR text
+    ws = [w for w in WORDS if s["start"] - 0.2 <= (w["s"] + w["e"]) / 2 <= s["end"] + 0.2]
+    if ws:
+        s["whisper"] = "".join(w["w"] for w in ws).strip(); s["start"] = max(s["start"] - 0.2, min(w["s"] for w in ws)); s["end"] = min(s["end"] + 0.2, max(w["e"] for w in ws))
 for i, s in enumerate(SUB):
     if s["end"] - s["start"] < 0.15 or not s["text"].strip(): continue
-    U.append({"u": len(U), "sub": i, "start": round(s["start"], 2), "end": round(s["end"], 2), "text": s["text"].strip()})
+    U.append({"u": len(U), "sub": i, "start": round(s["start"], 2), "end": round(s["end"], 2), "text": s["text"].strip(), "whisper": s.get("whisper")})
 emb = {u["u"]: EMB[u["sub"]] for u in U}
 speech = np.zeros(len(times), bool)
 for u in U: speech |= (times >= u["start"]) & (times < u["end"])
@@ -91,7 +96,8 @@ def active(a, b):
     cands.sort(key=lambda c: -c["score"])
     if not cands: return None, []
     top = cands[0]; second = cands[1]["score"] if len(cands) > 1 else -9
-    ok = top["face"] is not None and top["score"] > 0.15 and (top["score"] - second > 0.25 or len(cands) == 1)
+    # one face on screen: it must be clearly more active than its own quiet baseline; several faces: clearly ahead of the rest
+    ok = top["face"] is not None and ((len(cands) == 1 and top["score"] > 0.5) or (len(cands) > 1 and top["score"] > 0.3 and top["score"] - second > 0.4))
     return (top if ok else None), cands
 
 for u in U:
@@ -110,7 +116,7 @@ C = {f: centroid(us) for f, us in byface.items() if us}
 for f, us in byface.items():
     for u in us:
         s = float(emb[u["u"]] @ C[f])
-        if s < 0.25: u.pop("char_face"); u["evidence"] = f"face {f} rejected: voice sim {s:.2f}"
+        if s < float(os.environ.get("FACE_VOICE_MIN", "0.3")): u.pop("char_face"); u["evidence"] = f"face {f} rejected: voice sim {s:.2f}"
 byface = collections.defaultdict(list)
 for u in U:
     if u.get("char_face"): byface[u["char_face"]].append(u)
@@ -168,7 +174,9 @@ for k in order:
          "speech_units": len(us), "speaking_time_s": round(sp, 1), "dub_lines": lines_in,
          "face_confirmed_units": sum(1 for u in us if u["how"] == "face"), "voice_matched_units": sum(1 for u in us if u["how"] != "face"),
          "pitch_hz": None if med is None else {"p10": round(float(np.percentile(f0, 10))), "median": round(med), "p90": round(float(np.percentile(f0, 90)))},
-         "gender_estimate": {"from_pitch": g_pitch, "from_glimmer_cast": gv.most_common(1)[0][0] if gv else None},
+         "gender_estimate": {"from_pitch": g_pitch, "from_glimmer_cast": (f"{gv.most_common(1)[0][0]} ({gv.most_common(1)[0][1]} of {sum(gv.values())} lines)" if gv else None),
+                             "estimate": (g_pitch if not gv or gv.most_common(1)[0][0] == g_pitch else
+                                          (gv.most_common(1)[0][0] if g_pitch is None else f"unsure (pitch says {g_pitch}, Glimmer says {gv.most_common(1)[0][0]})"))},
          "age_estimate_glimmer": av.most_common(1)[0][0] if av else None,
          "glimmer_description": desc.most_common(1)[0][0] if desc else None,
          "energy": {"median_level_dbfs": round(float(loud), 1)},
