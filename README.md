@@ -172,7 +172,21 @@ This is the part I care about most. The hackathon version proves the pipeline; t
 6. **A simple web app for creators.** Upload a video, review the script line by line (approve, edit, or ask Glimmer for another version), listen, export. The QA report I already generate is basically the review screen.
 7. **An open voice model.** Replace the hosted TTS so the whole thing can run on one machine with no API keys.
 
-What a GPU budget would change: on a single 24 GB GPU, Glimmer goes from about 1 token per second to something usable, and a 5-minute video would take minutes instead of hours. That would make a real creator tool possible, run more rewrite rounds per video, and let me test many languages instead of one clip. Right now the whole project runs on free tiers, and I'm a student, so compute is the main thing holding it back.
+## What a budget would unlock
+
+Everything so far was built with zero spend: free Kaggle CPU notebooks (no GPU, no internet inside the kernel), the free tier of one hosted TTS, and my own time. Here is what is waiting on money or compute, honestly:
+
+- **A GPU.** On one 24 GB GPU, Muse Glimmer goes from about 1 token per second to something interactive, and a 5-minute video takes minutes instead of hours. That alone would let me run more rewrite rounds per video and test many clips instead of one.
+- **Real lip-sync.** The character stage already knows which face is talking in every shot. GPU lip-sync models could re-animate those mouths for close-up faces; on CPU that is not realistic.
+- **Better voices.** Paid voice-cloning tiers and larger open TTS models I wanted to compare but couldn't run or pay for. And an open TTS I host myself, so no API key is needed at all.
+- **Real-time and longer videos.** Lectures and full episodes, and eventually live dubbing for streams.
+- **More languages, tested properly.** Urdu, Punjabi, Saraiki, Pashto, Sindhi: each one needs listening tests with native speakers, which takes compute and people.
+
+## Supporting this
+
+I'm a student and this is the biggest thing I've built. LocalDub started in October as a private desktop app of mine. For this hackathon I rebuilt the pipeline from scratch and made it open source, because I'd rather other people can use and improve it than keep it on my laptop. I want to keep building it after the hackathon, especially the English -> Urdu direction for students like me and the creator review app.
+
+If you work on dubbing, speech or regional-language AI and want to help, the most useful things are: GPU credits or compute time, feedback from Urdu/Punjabi/Saraiki speakers on the dubs, and creators who would let me try it on their videos. Issues and pull requests on this repo are the easiest way to reach me.
 
 ## Repository layout
 
