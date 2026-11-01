@@ -17,10 +17,16 @@ v2 (after the v1 listen/QA pass):
     original audio instead of being dubbed as filler ("Uh.", "Man.")
   * Glimmer rewrite variant (rw_*) for QA-flagged lines is tried first
   * a last-resort tempo of up to 1.15x only for lines that would otherwise overflow into the next line
+v6 (after the first AV-QA run, see avqa.py and align.py):
+  * dub pieces follow the actor's phrases and are slowed down (>= 0.85x) when the take ends well before the actor stops
+  * voice gain matched on voiced frames only; a look-ahead peak limiter replaces whole-mix scaling
+  * non-verbal vocals outside the dubbing lines (laughs, groans, shouts) are kept from the original
 Auth for Fish: the sandbox identity gateway injects the key for api.fish.audio (never in code).
 """
 import json, os, re, subprocess, sys, time, concurrent.futures as cf
 import numpy as np, soundfile as sf, requests, msgpack
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import align
+V6 = os.environ.get("V6", "1") == "1"   # AV-QA driven placement/loudness/non-verbal fixes; V6=0 reproduces v5
 
 S1, JD, RES, VIDEO, OUT = sys.argv[1:6]
 WD = os.path.join(os.path.dirname(os.path.abspath(OUT)), "dubwork"); os.makedirs(WD + "/tts", exist_ok=True)
@@ -170,10 +176,17 @@ with cf.ThreadPoolExecutor(6) as ex:
         name, text, a, d, f, fits = b; a = tempo(a, f) if f != 1.0 else a
         s = int(L["start"] * SR); e = min(len(dub), s + len(a))
         ref = voc[s:int(L["end"] * SR)].mean(1); rms = lambda x: float(np.sqrt(np.mean(x ** 2)) + 1e-7)
-        g = float(np.clip(rms(ref) / rms(a), 0.5, 4.0))          # match the original line's loudness
-        dub[s:e] += a[:e - s] * g
+        if V6:   # loudness on voiced frames only, and pieces placed/stretched to follow the actor's phrases
+            g = float(np.clip(align.active_rms(ref, SR) / align.active_rms(a, SR), 0.3, 4.0))
+            pieces, ainfo = align.plan(a, ref, SR, L["dur"] + 0.25, tempo)
+            for off, p in pieces:
+                ps = s + int(off * SR); pe = min(len(dub), ps + len(p)); dub[ps:pe] += p[:pe - ps] * g
+            placed = round(max(off + len(p) / SR for off, p in pieces), 2)
+        else:
+            g = float(np.clip(rms(ref) / rms(a), 0.5, 4.0))          # match the original line's loudness
+            dub[s:e] += a[:e - s] * g; ainfo = None; placed = round(len(a) / SR, 2)
         qa.append({"id": L["id"], "spk": L["spk"], "slot": L["dur"], "tts": round(d, 2), "tempo": round(f, 3), "fits": fits,
-                   "variant": name, "en": text, "hi": L["hi"], "emotion": emo, "gain": round(g, 2),
+                   "variant": name, "en": text, "hi": L["hi"], "emotion": emo, "gain": round(g, 2), "placed_end": placed, "align": ainfo,
                    "ref": "own_line" if L["id"] in LREF else (f"pitch_matched:{PREF[L['id']]}" if L["id"] in PREF else "cluster"),
                    "cast": {k: (CAST.get(L["id"]) or {}).get(k) for k in ("speaker", "gender", "age", "role", "face_visible")} if CAST.get(L["id"]) else None})
 for L in keep + [t[0] for t in todo if not t[1]]:     # English originals (and any untranslated line) keep original vocals
@@ -182,9 +195,20 @@ for L in keep + [t[0] for t in todo if not t[1]]:     # English originals (and a
                "kept": L.get("kept", "english_original")})
 missing = [t[0]["id"] for t in todo if not t[1]]
 qa.sort(key=lambda q: q["id"])
-json.dump({"lines": qa, "missing_translation": missing, "overflow": [q["id"] for q in qa if not q["fits"]]},
+nv = []
+if V6:   # laughs, groans and shouts outside any line: keep the original performance (language-neutral)
+    fade = np.linspace(0, 1, int(0.02 * SR), dtype=np.float32)
+    for a0, a1 in align.nonverbal_regions(voc.mean(1), SR, lines):
+        s0, s1 = int(a0 * SR), int(a1 * SR); seg = voc[s0:s1].mean(1).copy()
+        if len(seg) > 2 * len(fade): seg[:len(fade)] *= fade; seg[-len(fade):] *= fade[::-1]
+        dub[s0:s1] += seg; nv.append([round(a0, 2), round(a1, 2)])
+mix = bg + dub[:, None]
+if V6:
+    mix, lim = align.limiter(mix, SR); print("limiter active on", round(100 * lim, 2), "% of blocks; nonverbal kept", len(nv))
+else:
+    pk = np.abs(mix).max(); mix = mix / pk * 0.97 if pk > 0.97 else mix
+json.dump({"lines": qa, "nonverbal_kept": nv, "missing_translation": missing, "overflow": [q["id"] for q in qa if not q["fits"]]},
           open(os.path.join(os.path.dirname(os.path.abspath(OUT)), "qa.json"), "w"), ensure_ascii=False, indent=1)
-mix = bg + dub[:, None]; pk = np.abs(mix).max(); mix = mix / pk * 0.97 if pk > 0.97 else mix
 sf.write(f"{WD}/mix.wav", mix, SR, subtype="PCM_16"); sf.write(f"{WD}/dialogue_en.wav", dub, SR, subtype="PCM_16")
 if OUT.endswith((".webm", ".mkv")):   # no video re-encode: copy the original stream, Opus audio
     subprocess.run(f"ffmpeg -v error -y -i '{VIDEO}' -i {WD}/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a libopus -b:a 160k -shortest '{OUT}'", shell=True, check=True)
