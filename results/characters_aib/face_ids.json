@@ -1,0 +1,1137 @@
+{
+ "faces": [
+  {
+   "id": "F0",
+   "tracks": [
+    "src_faces_a:8",
+    "src_faces_a:11",
+    "src_faces_b:6",
+    "src_faces_b:9",
+    "src_faces_b:19",
+    "src_faces_c:20",
+    "src_faces_c:21",
+    "src_faces_c:24",
+    "src_faces_d:0",
+    "src_faces_d:4",
+    "src_faces_d:30",
+    "src_faces_d:36",
+    "src_faces_e:0",
+    "src_faces_e:8",
+    "src_faces_e:15",
+    "src_faces_e:18",
+    "src_faces_f:9"
+   ],
+   "screen_time_s": 93.4,
+   "thumb": "chars/faces/thumbs/F0.jpg"
+  },
+  {
+   "id": "F1",
+   "tracks": [
+    "src_faces_a:16",
+    "src_faces_b:0",
+    "src_faces_b:7",
+    "src_faces_b:18",
+    "src_faces_c:17",
+    "src_faces_d:7",
+    "src_faces_d:40",
+    "src_faces_e:5",
+    "src_faces_f:13"
+   ],
+   "screen_time_s": 51.6,
+   "thumb": "chars/faces/thumbs/F1.jpg"
+  },
+  {
+   "id": "F2",
+   "tracks": [
+    "src_faces_b:27",
+    "src_faces_b:29",
+    "src_faces_b:31",
+    "src_faces_c:10",
+    "src_faces_c:16",
+    "src_faces_d:9",
+    "src_faces_d:19",
+    "src_faces_d:24",
+    "src_faces_d:28",
+    "src_faces_d:29",
+    "src_faces_f:15"
+   ],
+   "screen_time_s": 37.6,
+   "thumb": "chars/faces/thumbs/F2.jpg"
+  },
+  {
+   "id": "F3",
+   "tracks": [
+    "src_faces_a:12",
+    "src_faces_b:4",
+    "src_faces_b:32",
+    "src_faces_c:0",
+    "src_faces_c:9",
+    "src_faces_d:3",
+    "src_faces_d:39",
+    "src_faces_e:4",
+    "src_faces_e:9"
+   ],
+   "screen_time_s": 32.1,
+   "thumb": "chars/faces/thumbs/F3.jpg"
+  },
+  {
+   "id": "F4",
+   "tracks": [
+    "src_faces_e:2",
+    "src_faces_e:22",
+    "src_faces_f:12"
+   ],
+   "screen_time_s": 28.6,
+   "thumb": "chars/faces/thumbs/F4.jpg"
+  },
+  {
+   "id": "F5",
+   "tracks": [
+    "src_faces_b:10",
+    "src_faces_c:23",
+    "src_faces_d:6",
+    "src_faces_d:31",
+    "src_faces_d:34",
+    "src_faces_e:7"
+   ],
+   "screen_time_s": 25.9,
+   "thumb": "chars/faces/thumbs/F5.jpg"
+  },
+  {
+   "id": "F6",
+   "tracks": [
+    "src_faces_e:26",
+    "src_faces_f:2"
+   ],
+   "screen_time_s": 17.1,
+   "thumb": "chars/faces/thumbs/F6.jpg"
+  },
+  {
+   "id": "F7",
+   "tracks": [
+    "src_faces_a:15",
+    "src_faces_b:2",
+    "src_faces_b:17",
+    "src_faces_d:33",
+    "src_faces_e:6",
+    "src_faces_e:13"
+   ],
+   "screen_time_s": 15.5,
+   "thumb": "chars/faces/thumbs/F7.jpg"
+  },
+  {
+   "id": "F8",
+   "tracks": [
+    "src_faces_a:13",
+    "src_faces_b:5",
+    "src_faces_b:11",
+    "src_faces_c:1",
+    "src_faces_e:12"
+   ],
+   "screen_time_s": 13.0,
+   "thumb": "chars/faces/thumbs/F8.jpg"
+  },
+  {
+   "id": "F9",
+   "tracks": [
+    "src_faces_b:26",
+    "src_faces_b:28",
+    "src_faces_b:30",
+    "src_faces_c:14"
+   ],
+   "screen_time_s": 10.2,
+   "thumb": "chars/faces/thumbs/F9.jpg"
+  },
+  {
+   "id": "F10",
+   "tracks": [
+    "src_faces_f:6",
+    "src_faces_f:7",
+    "src_faces_f:8"
+   ],
+   "screen_time_s": 3.6,
+   "thumb": "chars/faces/thumbs/F10.jpg"
+  },
+  {
+   "id": "F11",
+   "tracks": [
+    "src_faces_d:13",
+    "src_faces_d:17",
+    "src_faces_d:18"
+   ],
+   "screen_time_s": 2.6,
+   "thumb": "chars/faces/thumbs/F11.jpg"
+  },
+  {
+   "id": "F12",
+   "tracks": [
+    "src_faces_c:25",
+    "src_faces_e:1",
+    "src_faces_e:20"
+   ],
+   "screen_time_s": 2.4,
+   "thumb": "chars/faces/thumbs/F12.jpg"
+  },
+  {
+   "id": "F13",
+   "tracks": [
+    "src_faces_b:8"
+   ],
+   "screen_time_s": 2.0,
+   "thumb": "chars/faces/thumbs/F13.jpg"
+  },
+  {
+   "id": "F14",
+   "tracks": [
+    "src_faces_a:7"
+   ],
+   "screen_time_s": 1.5,
+   "thumb": "chars/faces/thumbs/F14.jpg"
+  },
+  {
+   "id": "F15",
+   "tracks": [
+    "src_faces_d:16"
+   ],
+   "screen_time_s": 1.0,
+   "thumb": "chars/faces/thumbs/F15.jpg"
+  },
+  {
+   "id": "F16",
+   "tracks": [
+    "src_faces_d:37"
+   ],
+   "screen_time_s": 0.8,
+   "thumb": "chars/faces/thumbs/F16.jpg"
+  }
+ ],
+ "track_face": {
+  "src_faces_a:8": "F0",
+  "src_faces_a:11": "F0",
+  "src_faces_b:6": "F0",
+  "src_faces_b:9": "F0",
+  "src_faces_b:19": "F0",
+  "src_faces_c:20": "F0",
+  "src_faces_c:21": "F0",
+  "src_faces_c:24": "F0",
+  "src_faces_d:0": "F0",
+  "src_faces_d:4": "F0",
+  "src_faces_d:30": "F0",
+  "src_faces_d:36": "F0",
+  "src_faces_e:0": "F0",
+  "src_faces_e:8": "F0",
+  "src_faces_e:15": "F0",
+  "src_faces_e:18": "F0",
+  "src_faces_f:9": "F0",
+  "src_faces_a:16": "F1",
+  "src_faces_b:0": "F1",
+  "src_faces_b:7": "F1",
+  "src_faces_b:18": "F1",
+  "src_faces_c:17": "F1",
+  "src_faces_d:7": "F1",
+  "src_faces_d:40": "F1",
+  "src_faces_e:5": "F1",
+  "src_faces_f:13": "F1",
+  "src_faces_b:27": "F2",
+  "src_faces_b:29": "F2",
+  "src_faces_b:31": "F2",
+  "src_faces_c:10": "F2",
+  "src_faces_c:16": "F2",
+  "src_faces_d:9": "F2",
+  "src_faces_d:19": "F2",
+  "src_faces_d:24": "F2",
+  "src_faces_d:28": "F2",
+  "src_faces_d:29": "F2",
+  "src_faces_f:15": "F2",
+  "src_faces_a:12": "F3",
+  "src_faces_b:4": "F3",
+  "src_faces_b:32": "F3",
+  "src_faces_c:0": "F3",
+  "src_faces_c:9": "F3",
+  "src_faces_d:3": "F3",
+  "src_faces_d:39": "F3",
+  "src_faces_e:4": "F3",
+  "src_faces_e:9": "F3",
+  "src_faces_e:2": "F4",
+  "src_faces_e:22": "F4",
+  "src_faces_f:12": "F4",
+  "src_faces_b:10": "F5",
+  "src_faces_c:23": "F5",
+  "src_faces_d:6": "F5",
+  "src_faces_d:31": "F5",
+  "src_faces_d:34": "F5",
+  "src_faces_e:7": "F5",
+  "src_faces_e:26": "F6",
+  "src_faces_f:2": "F6",
+  "src_faces_a:15": "F7",
+  "src_faces_b:2": "F7",
+  "src_faces_b:17": "F7",
+  "src_faces_d:33": "F7",
+  "src_faces_e:6": "F7",
+  "src_faces_e:13": "F7",
+  "src_faces_a:13": "F8",
+  "src_faces_b:5": "F8",
+  "src_faces_b:11": "F8",
+  "src_faces_c:1": "F8",
+  "src_faces_e:12": "F8",
+  "src_faces_b:26": "F9",
+  "src_faces_b:28": "F9",
+  "src_faces_b:30": "F9",
+  "src_faces_c:14": "F9",
+  "src_faces_f:6": "F10",
+  "src_faces_f:7": "F10",
+  "src_faces_f:8": "F10",
+  "src_faces_d:13": "F11",
+  "src_faces_d:17": "F11",
+  "src_faces_d:18": "F11",
+  "src_faces_c:25": "F12",
+  "src_faces_e:1": "F12",
+  "src_faces_e:20": "F12",
+  "src_faces_b:8": "F13",
+  "src_faces_a:7": "F14",
+  "src_faces_d:16": "F15",
+  "src_faces_d:37": "F16"
+ },
+ "spans": {
+  "src_faces_a:0": [
+   0.375,
+   0.5,
+   1
+  ],
+  "src_faces_a:1": [
+   0.375,
+   0.5,
+   1
+  ],
+  "src_faces_a:2": [
+   0.5,
+   3.375,
+   23
+  ],
+  "src_faces_a:3": [
+   0.5,
+   0.625,
+   1
+  ],
+  "src_faces_a:4": [
+   3.75,
+   3.875,
+   1
+  ],
+  "src_faces_a:5": [
+   6.0,
+   6.125,
+   1
+  ],
+  "src_faces_a:6": [
+   6.5,
+   6.625,
+   1
+  ],
+  "src_faces_a:7": [
+   10.125,
+   11.625,
+   12
+  ],
+  "src_faces_a:8": [
+   13.875,
+   31.25,
+   139
+  ],
+  "src_faces_a:9": [
+   15.0,
+   15.125,
+   1
+  ],
+  "src_faces_a:10": [
+   15.5,
+   15.625,
+   1
+  ],
+  "src_faces_a:11": [
+   36.75,
+   44.25,
+   60
+  ],
+  "src_faces_a:12": [
+   44.25,
+   49.0,
+   38
+  ],
+  "src_faces_a:13": [
+   45.625,
+   48.5,
+   23
+  ],
+  "src_faces_a:14": [
+   48.75,
+   49.0,
+   2
+  ],
+  "src_faces_a:15": [
+   49.0,
+   51.25,
+   18
+  ],
+  "src_faces_a:16": [
+   51.25,
+   52.0,
+   6
+  ],
+  "src_faces_b:0": [
+   52.0,
+   53.625,
+   13
+  ],
+  "src_faces_b:1": [
+   52.375,
+   52.5,
+   1
+  ],
+  "src_faces_b:2": [
+   53.625,
+   55.5,
+   15
+  ],
+  "src_faces_b:3": [
+   54.0,
+   54.125,
+   1
+  ],
+  "src_faces_b:4": [
+   55.5,
+   56.75,
+   10
+  ],
+  "src_faces_b:5": [
+   55.5,
+   56.75,
+   10
+  ],
+  "src_faces_b:6": [
+   56.75,
+   58.75,
+   16
+  ],
+  "src_faces_b:7": [
+   58.75,
+   61.125,
+   19
+  ],
+  "src_faces_b:8": [
+   59.125,
+   61.125,
+   16
+  ],
+  "src_faces_b:9": [
+   61.125,
+   64.25,
+   25
+  ],
+  "src_faces_b:10": [
+   64.25,
+   73.0,
+   70
+  ],
+  "src_faces_b:11": [
+   64.25,
+   68.25,
+   32
+  ],
+  "src_faces_b:12": [
+   71.125,
+   71.375,
+   2
+  ],
+  "src_faces_b:13": [
+   71.5,
+   71.625,
+   1
+  ],
+  "src_faces_b:14": [
+   71.625,
+   72.0,
+   3
+  ],
+  "src_faces_b:15": [
+   72.125,
+   72.625,
+   4
+  ],
+  "src_faces_b:16": [
+   72.875,
+   73.0,
+   1
+  ],
+  "src_faces_b:17": [
+   73.0,
+   77.375,
+   35
+  ],
+  "src_faces_b:18": [
+   77.375,
+   88.25,
+   87
+  ],
+  "src_faces_b:19": [
+   88.25,
+   92.625,
+   35
+  ],
+  "src_faces_b:20": [
+   90.375,
+   90.5,
+   1
+  ],
+  "src_faces_b:21": [
+   91.875,
+   92.0,
+   1
+  ],
+  "src_faces_b:22": [
+   92.125,
+   92.25,
+   1
+  ],
+  "src_faces_b:23": [
+   92.5,
+   92.625,
+   1
+  ],
+  "src_faces_b:24": [
+   92.625,
+   93.25,
+   5
+  ],
+  "src_faces_b:25": [
+   93.25,
+   93.875,
+   5
+  ],
+  "src_faces_b:26": [
+   93.875,
+   94.625,
+   6
+  ],
+  "src_faces_b:27": [
+   94.625,
+   96.125,
+   12
+  ],
+  "src_faces_b:28": [
+   96.125,
+   97.125,
+   8
+  ],
+  "src_faces_b:29": [
+   97.125,
+   98.875,
+   14
+  ],
+  "src_faces_b:30": [
+   98.875,
+   100.25,
+   11
+  ],
+  "src_faces_b:31": [
+   100.25,
+   102.875,
+   21
+  ],
+  "src_faces_b:32": [
+   102.875,
+   104.0,
+   9
+  ],
+  "src_faces_b:33": [
+   102.875,
+   103.25,
+   3
+  ],
+  "src_faces_b:34": [
+   102.875,
+   103.0,
+   1
+  ],
+  "src_faces_b:35": [
+   103.25,
+   103.375,
+   1
+  ],
+  "src_faces_b:36": [
+   103.375,
+   104.0,
+   5
+  ],
+  "src_faces_b:37": [
+   103.75,
+   103.875,
+   1
+  ],
+  "src_faces_c:0": [
+   104.0,
+   119.625,
+   125
+  ],
+  "src_faces_c:1": [
+   104.0,
+   107.375,
+   27
+  ],
+  "src_faces_c:2": [
+   104.625,
+   104.75,
+   1
+  ],
+  "src_faces_c:3": [
+   105.625,
+   105.75,
+   1
+  ],
+  "src_faces_c:4": [
+   106.125,
+   106.25,
+   1
+  ],
+  "src_faces_c:5": [
+   107.125,
+   107.25,
+   1
+  ],
+  "src_faces_c:6": [
+   114.75,
+   115.125,
+   3
+  ],
+  "src_faces_c:7": [
+   115.375,
+   115.625,
+   2
+  ],
+  "src_faces_c:8": [
+   115.75,
+   115.875,
+   1
+  ],
+  "src_faces_c:9": [
+   119.625,
+   120.5,
+   7
+  ],
+  "src_faces_c:10": [
+   120.5,
+   128.125,
+   61
+  ],
+  "src_faces_c:11": [
+   124.0,
+   124.125,
+   1
+  ],
+  "src_faces_c:12": [
+   126.625,
+   126.75,
+   1
+  ],
+  "src_faces_c:13": [
+   126.875,
+   127.125,
+   2
+  ],
+  "src_faces_c:14": [
+   128.125,
+   135.25,
+   57
+  ],
+  "src_faces_c:15": [
+   132.625,
+   132.75,
+   1
+  ],
+  "src_faces_c:16": [
+   135.25,
+   136.625,
+   11
+  ],
+  "src_faces_c:17": [
+   136.625,
+   143.25,
+   53
+  ],
+  "src_faces_c:18": [
+   141.75,
+   141.875,
+   1
+  ],
+  "src_faces_c:19": [
+   143.125,
+   143.25,
+   1
+  ],
+  "src_faces_c:20": [
+   143.25,
+   147.25,
+   32
+  ],
+  "src_faces_c:21": [
+   147.375,
+   152.25,
+   39
+  ],
+  "src_faces_c:22": [
+   150.25,
+   150.375,
+   1
+  ],
+  "src_faces_c:23": [
+   152.25,
+   155.25,
+   24
+  ],
+  "src_faces_c:24": [
+   155.25,
+   156.0,
+   6
+  ],
+  "src_faces_c:25": [
+   155.25,
+   156.0,
+   6
+  ],
+  "src_faces_d:0": [
+   156.0,
+   157.625,
+   13
+  ],
+  "src_faces_d:1": [
+   156.0,
+   156.25,
+   2
+  ],
+  "src_faces_d:2": [
+   156.625,
+   156.75,
+   1
+  ],
+  "src_faces_d:3": [
+   157.625,
+   161.125,
+   28
+  ],
+  "src_faces_d:4": [
+   161.125,
+   163.0,
+   15
+  ],
+  "src_faces_d:5": [
+   161.5,
+   161.625,
+   1
+  ],
+  "src_faces_d:6": [
+   163.0,
+   170.625,
+   61
+  ],
+  "src_faces_d:7": [
+   170.625,
+   177.0,
+   51
+  ],
+  "src_faces_d:8": [
+   171.5,
+   171.625,
+   1
+  ],
+  "src_faces_d:9": [
+   177.0,
+   187.875,
+   87
+  ],
+  "src_faces_d:10": [
+   178.625,
+   178.75,
+   1
+  ],
+  "src_faces_d:11": [
+   179.125,
+   179.25,
+   1
+  ],
+  "src_faces_d:12": [
+   180.375,
+   180.5,
+   1
+  ],
+  "src_faces_d:13": [
+   181.0,
+   181.75,
+   6
+  ],
+  "src_faces_d:14": [
+   182.125,
+   182.25,
+   1
+  ],
+  "src_faces_d:15": [
+   183.5,
+   184.0,
+   4
+  ],
+  "src_faces_d:16": [
+   184.125,
+   185.125,
+   8
+  ],
+  "src_faces_d:17": [
+   185.25,
+   186.25,
+   8
+  ],
+  "src_faces_d:18": [
+   186.375,
+   187.25,
+   7
+  ],
+  "src_faces_d:19": [
+   187.875,
+   188.875,
+   8
+  ],
+  "src_faces_d:20": [
+   188.125,
+   188.25,
+   1
+  ],
+  "src_faces_d:21": [
+   188.875,
+   189.25,
+   3
+  ],
+  "src_faces_d:22": [
+   189.25,
+   189.625,
+   3
+  ],
+  "src_faces_d:23": [
+   189.25,
+   189.375,
+   1
+  ],
+  "src_faces_d:24": [
+   189.625,
+   190.75,
+   9
+  ],
+  "src_faces_d:25": [
+   190.375,
+   190.75,
+   3
+  ],
+  "src_faces_d:26": [
+   190.375,
+   190.5,
+   1
+  ],
+  "src_faces_d:27": [
+   190.75,
+   191.25,
+   4
+  ],
+  "src_faces_d:28": [
+   191.25,
+   192.25,
+   8
+  ],
+  "src_faces_d:29": [
+   192.25,
+   193.375,
+   9
+  ],
+  "src_faces_d:30": [
+   193.375,
+   197.75,
+   35
+  ],
+  "src_faces_d:31": [
+   197.75,
+   201.375,
+   29
+  ],
+  "src_faces_d:32": [
+   199.875,
+   200.375,
+   4
+  ],
+  "src_faces_d:33": [
+   201.375,
+   202.875,
+   12
+  ],
+  "src_faces_d:34": [
+   202.875,
+   204.25,
+   11
+  ],
+  "src_faces_d:35": [
+   204.25,
+   204.875,
+   5
+  ],
+  "src_faces_d:36": [
+   204.875,
+   205.625,
+   6
+  ],
+  "src_faces_d:37": [
+   204.875,
+   205.625,
+   6
+  ],
+  "src_faces_d:38": [
+   205.25,
+   205.375,
+   1
+  ],
+  "src_faces_d:39": [
+   205.625,
+   206.5,
+   7
+  ],
+  "src_faces_d:40": [
+   206.5,
+   207.5,
+   8
+  ],
+  "src_faces_d:41": [
+   207.5,
+   208.0,
+   4
+  ],
+  "src_faces_d:42": [
+   207.75,
+   207.875,
+   1
+  ],
+  "src_faces_e:0": [
+   208.0,
+   216.25,
+   66
+  ],
+  "src_faces_e:1": [
+   209.5,
+   210.375,
+   7
+  ],
+  "src_faces_e:2": [
+   210.5,
+   216.25,
+   46
+  ],
+  "src_faces_e:3": [
+   211.75,
+   211.875,
+   1
+  ],
+  "src_faces_e:4": [
+   216.25,
+   217.625,
+   11
+  ],
+  "src_faces_e:5": [
+   217.625,
+   218.625,
+   8
+  ],
+  "src_faces_e:6": [
+   218.625,
+   219.625,
+   8
+  ],
+  "src_faces_e:7": [
+   219.625,
+   221.125,
+   12
+  ],
+  "src_faces_e:8": [
+   221.125,
+   223.75,
+   21
+  ],
+  "src_faces_e:9": [
+   223.75,
+   226.5,
+   22
+  ],
+  "src_faces_e:10": [
+   223.75,
+   224.0,
+   2
+  ],
+  "src_faces_e:11": [
+   224.25,
+   224.875,
+   5
+  ],
+  "src_faces_e:12": [
+   225.0,
+   226.5,
+   12
+  ],
+  "src_faces_e:13": [
+   226.625,
+   231.125,
+   36
+  ],
+  "src_faces_e:14": [
+   230.0,
+   230.125,
+   1
+  ],
+  "src_faces_e:15": [
+   231.125,
+   233.0,
+   15
+  ],
+  "src_faces_e:16": [
+   232.5,
+   232.625,
+   1
+  ],
+  "src_faces_e:17": [
+   232.75,
+   232.875,
+   1
+  ],
+  "src_faces_e:18": [
+   233.0,
+   258.0,
+   200
+  ],
+  "src_faces_e:19": [
+   234.25,
+   234.375,
+   1
+  ],
+  "src_faces_e:20": [
+   234.75,
+   235.5,
+   6
+  ],
+  "src_faces_e:21": [
+   235.625,
+   235.75,
+   1
+  ],
+  "src_faces_e:22": [
+   237.125,
+   257.625,
+   164
+  ],
+  "src_faces_e:23": [
+   245.625,
+   246.125,
+   4
+  ],
+  "src_faces_e:24": [
+   247.625,
+   247.75,
+   1
+  ],
+  "src_faces_e:25": [
+   249.375,
+   249.875,
+   4
+  ],
+  "src_faces_e:26": [
+   256.875,
+   258.0,
+   9
+  ],
+  "src_faces_e:27": [
+   257.625,
+   257.875,
+   2
+  ],
+  "src_faces_f:0": [
+   258.0,
+   258.5,
+   4
+  ],
+  "src_faces_f:1": [
+   258.0,
+   258.5,
+   4
+  ],
+  "src_faces_f:2": [
+   258.5,
+   274.5,
+   128
+  ],
+  "src_faces_f:3": [
+   263.125,
+   263.375,
+   2
+  ],
+  "src_faces_f:4": [
+   265.875,
+   266.125,
+   2
+  ],
+  "src_faces_f:5": [
+   266.375,
+   266.5,
+   1
+  ],
+  "src_faces_f:6": [
+   268.125,
+   269.0,
+   7
+  ],
+  "src_faces_f:7": [
+   269.125,
+   270.375,
+   10
+  ],
+  "src_faces_f:8": [
+   271.5,
+   273.0,
+   12
+  ],
+  "src_faces_f:9": [
+   274.375,
+   277.375,
+   24
+  ],
+  "src_faces_f:10": [
+   274.625,
+   274.875,
+   2
+  ],
+  "src_faces_f:11": [
+   274.625,
+   275.0,
+   3
+  ],
+  "src_faces_f:12": [
+   275.0,
+   277.375,
+   19
+  ],
+  "src_faces_f:13": [
+   278.875,
+   299.875,
+   168
+  ],
+  "src_faces_f:14": [
+   285.125,
+   285.25,
+   1
+  ],
+  "src_faces_f:15": [
+   299.875,
+   307.5,
+   61
+  ]
+ }
+}

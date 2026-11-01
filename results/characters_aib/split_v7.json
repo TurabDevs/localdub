@@ -1,0 +1,380 @@
+[
+ {
+  "id": "L003",
+  "en_v6": "Typhoid and stuff? Are you crazy? There's no such thing, bro, just get out and have fun.",
+  "hi": "ं  टाइफाइड और समथिंग ड क्या पागल होया टाइफॉड ऐसा कुछ नहीं होता भाई योू जस्ट नीड टो गेट आउट ंड हैव सम फन",
+  "turns": [
+   {
+    "id": "L003_1",
+    "char": "C8",
+    "start": 25.124,
+    "end": 26.9,
+    "hi": "tn  difid o someting do"
+   },
+   {
+    "id": "L003_2",
+    "char": "C0",
+    "start": 26.9,
+    "end": 31.388,
+    "hi": "क्या पागलोा टाईफॉड ऐसा कुछ नहीं होता भाई यू जस् नीड टो गेट आउट आंड हैव सम फन"
+   }
+  ]
+ },
+ {
+  "id": "L005",
+  "en_v6": "The more you think 'I have typhoid, I have typhoid, I have typhoid', the more this typhoid grows. It just...",
+  "hi": "तो जितना ना सोचेगा ना कि मेरे को टाईफॉइड है टाइफॉइड है टाइफॉइड है उतना ना बढ़ता है ये टाइफॉइड ना इ जसट",
+  "turns": [
+   {
+    "id": "L005_1",
+    "char": "C4",
+    "start": 45.301,
+    "end": 48.77,
+    "hi": "तो जितना ना सोचेगा ना कि मैं को टाईफॉरड है टाईफॉरड है टाईफॉरड है उतना ना ब"
+   },
+   {
+    "id": "L005_2",
+    "char": "C5",
+    "start": 48.77,
+    "end": 50.774,
+    "hi": "की टाइफॉइड ना इtस जस्ट"
+   }
+  ]
+ },
+ {
+  "id": "L006",
+  "en_v6": "Bacteria die on their own in two months. Lost promotion? No? Then typhoid? Day before yesterday at Sahil's party you were laughing, dancing, joking. What happened suddenly?",
+  "hi": "दो महीने में बैक्टीरिया अपने आप मर जाएगा जस् लास्ट मत य  प्रोमोशन नो न हो य गोट टाइफर्ड ै अभे तो परसोही तो साइल के पार्टी में इतना इंजॉय कर रहा था य वर लािंग यो वर डांसिंग य वर जोकिंग अब क्या यह सर्डेनली",
+  "turns": [
+   {
+    "id": "L006_1",
+    "char": "C1",
+    "start": 50.774,
+    "end": 53.65,
+    "hi": "ीदो महीने में बैक्टीरिया अपने आप मर जाएगा"
+   },
+   {
+    "id": "L006_2",
+    "char": "C5",
+    "start": 53.65,
+    "end": 56.16,
+    "hi": "just last mont you got a promotion no then how you got"
+   },
+   {
+    "id": "L006_3",
+    "char": "C4",
+    "start": 56.16,
+    "end": 57.24,
+    "hi": "टाईफोरड लगाअभे तो पर"
+   },
+   {
+    "id": "L006_4",
+    "char": "C0",
+    "start": 57.24,
+    "end": 58.87,
+    "hi": "سोی توो سाइل کے پار्ٹی میं اتनا انजائय کر رहا تھا"
+   },
+   {
+    "id": "L006_5",
+    "char": "C1",
+    "start": 58.87,
+    "end": 60.91,
+    "hi": "you were laughing you were dancing you were joking"
+   },
+   {
+    "id": "L006_6",
+    "char": "C0",
+    "start": 60.91,
+    "end": 62.396,
+    "hi": "िंअब क्या ये सर्डेनली"
+   }
+  ]
+ },
+ {
+  "id": "L007",
+  "en_v6": "This fever burning could be one thing. If you're smiling and you have typhoid, how can you have both? Are you sure you didn't get typhoid because Garima broke up with you? Go get on Tinder. Your typhoid, vomiting, diarrhea will all go away.",
+  "hi": "ई फिवर बुर्निंग आयस एक चीज हो सकता है  इर योu आर स्माइलिंग और यu हव टाइफॉइड लइक हो कान य हव बो आर य सुर यu दिदनट गेट टाइफॉइड बेकाज गरीमा ब्रोक प वि य यू शल गे न टेंडर तेरा टाइफॉइड वॉमिटिंग डायरिया सब चला जाएगा",
+  "turns": [
+   {
+    "id": "L007_1",
+    "char": "C0",
+    "start": 62.724,
+    "end": 64.25,
+    "hi": "ی فیور بuرننg आیز"
+   },
+   {
+    "id": "L007_2",
+    "char": "C3",
+    "start": 64.25,
+    "end": 73.08,
+    "hi": "एक चीज हो सकता है लइक आइदर यू आर स्माइलिंग और योू है tifoid like how can you have both ش टायफॉiड बeकाus गरीमा ब्रोक uप विथ यू yu so geron tender"
+   },
+   {
+    "id": "L007_3",
+    "char": "C5",
+    "start": 73.08,
+    "end": 76.508,
+    "hi": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा"
+   }
+  ]
+ },
+ {
+  "id": "L015",
+  "en_v6": "Nikhil has some fever thing. You haven't told anyone he has a fever, right?",
+  "hi": "निखिल को फीवर टाइप कुछ है तुमने किसी को बताया तो नहीं कि उसको फीवर है",
+  "turns": [
+   {
+    "id": "L015_1",
+    "char": "C2",
+    "start": 96.9,
+    "end": 98.92,
+    "hi": "निखिल को फीवर टाइप कुछ है"
+   },
+   {
+    "id": "L015_2",
+    "char": "C7",
+    "start": 98.92,
+    "end": 101.18,
+    "hi": "तुमने किसी को बताया तो नहीं कि उसको फीवर है"
+   }
+  ]
+ },
+ {
+  "id": "L019",
+  "en_v6": "A smile means no typhoid. I know it. Nikhil's friend said that too.",
+  "hi": "ए समाइलस काउंट टायफरडस गॉर ई कनेव इट वो निखिल का दोस्त यह भी बता रहा था की",
+  "turns": [
+   {
+    "id": "L019_1",
+    "char": "C4",
+    "start": 117.924,
+    "end": 120.89,
+    "hi": "a smiles count tyfords gor i knew it"
+   },
+   {
+    "id": "L019_2",
+    "char": "C2",
+    "start": 120.89,
+    "end": 123.356,
+    "hi": "निखिल का दोस्त ये भी बता रहा था की"
+   }
+  ]
+ },
+ {
+  "id": "L023",
+  "en_v6": "People'll say whole family has fever, bro. They say typhoid, these doctors run a scam just to squeeze money.",
+  "hi": "लोग कहेंगे पूरी फैमिली को फीवर है ब्रो तुझे टाइफॉइड है बोलके ना यह डॉक्टर लोग सब स्कैम चला रेहे हैं बोलो ऐसे तेरे से पैसा निकलने क करते है ये सब",
+  "turns": [
+   {
+    "id": "L023_1",
+    "char": "C7",
+    "start": 138.084,
+    "end": 140.27,
+    "hi": "लोग कहेंगे पूरी फैमिली को फीवर है ब्रो"
+   },
+   {
+    "id": "L023_2",
+    "char": "C1",
+    "start": 140.27,
+    "end": 143.91,
+    "hi": "तुझे टाइफॉइड है बोलके ना यह डॉक्टर लोग सब स्कैम चला रेहे हैं वो लो ऐसे त"
+   },
+   {
+    "id": "L023_3",
+    "char": "C0",
+    "start": 143.91,
+    "end": 145.5,
+    "hi": "से पैसा निकालने केलिए करते हैं ये सब"
+   }
+  ]
+ },
+ {
+  "id": "L025",
+  "en_v6": "Don't fall for all this. You're not taking pills, pills off people who are ill. Right now you don't need medication, you need motivation, determination like that.",
+  "hi": "डोंट फॉल फर आल दिस हे आर य टेकिंग पिलस पिल्स ऑफ  पीपल ोर इल अभे तुझे मेडिकेशन की नहीं मोटिवेशन की जरूरत है डिटर्मिनेशन हैना ऐसा",
+  "turns": [
+   {
+    "id": "L025_1",
+    "char": "C3",
+    "start": 151.204,
+    "end": 155.34,
+    "hi": "don't fall for all this hay are you taking pills pills of a people woar ill"
+   },
+   {
+    "id": "L025_2",
+    "char": "C0",
+    "start": 155.34,
+    "end": 158.908,
+    "hi": "अबे तुझे मेडिकेशन की नहीं मोटिवेशन की जरूरत है डिटर्मिनेशन है ना ऐसा"
+   }
+  ]
+ },
+ {
+  "id": "L026",
+  "en_v6": "You know Nisha's marriage broke up? Do you know Payal?",
+  "hi": "लग ज्यादा टाइफोड का तुझे पता है निहा का शादी टूट गया है डूट यू नो पायल",
+  "turns": [
+   {
+    "id": "L026_1",
+    "char": "C4",
+    "start": 160.036,
+    "end": 161.37,
+    "hi": "لگ جیادہ ٹائپوڈ کا"
+   },
+   {
+    "id": "L026_2",
+    "char": "C0",
+    "start": 161.37,
+    "end": 163.03,
+    "hi": "तुझे पता है निहा का शादी टूट गया है"
+   },
+   {
+    "id": "L026_3",
+    "char": "C3",
+    "start": 163.03,
+    "end": 164.38,
+    "hi": "dod you no pil"
+   }
+  ]
+ },
+ {
+  "id": "L035",
+  "en_v6": "It'll be fine. Maybe you need to change your job, your house, your city, your state, your continent. Or just change yourself.",
+  "hi": "उतना हो जाएगा तो फाइन मेबी य नीड टो चेंज यर जॉब मेबी य नीड टो चेंज योर हाउस चेंज ोर सिटी ेंज योर स्टेट चेंज योर कंट्री चेंज यर कॉंटिनेंट तो अपने आपको ही चेंज करतेै ना",
+  "turns": [
+   {
+    "id": "L035_1",
+    "char": "C3",
+    "start": 199.812,
+    "end": 201.47,
+    "hi": "उतना हो जाएगा तो फाइन"
+   },
+   {
+    "id": "L035_2",
+    "char": "C5",
+    "start": 201.47,
+    "end": 204.35,
+    "hi": "مب يu ني او cنج ر جاب جج hوس"
+   },
+   {
+    "id": "L035_3",
+    "char": "C0",
+    "start": 204.35,
+    "end": 205.65,
+    "hi": "چیंज و سिटی چیंज و س्टیٹ"
+   },
+   {
+    "id": "L035_4",
+    "char": "C4",
+    "start": 205.65,
+    "end": 207.43,
+    "hi": "चेंज योर कंट्री चेंज योर कॉंटिनेंट"
+   },
+   {
+    "id": "L035_5",
+    "char": "C0",
+    "start": 207.43,
+    "end": 209.148,
+    "hi": "तो अपने आपको ही चेंज कर तेै ना"
+   }
+  ]
+ },
+ {
+  "id": "L038",
+  "en_v6": "It doesn't even know where to go, where to go? Take a left up ahead. I think you're overthinking, overanalyzing, overhyping.",
+  "hi": "उसको पता ही नहीं कहा जाने का टम कहा जाने का कहा जाने का भाई साब पता नहीं आगे से लेफ्ट लो आई थिंक योू आर ओवरथिंकिंग योर ओवरएनलाइजिंग ओवरहाइप",
+  "turns": [
+   {
+    "id": "L038_1",
+    "char": "C0",
+    "start": 212.772,
+    "end": 216.63,
+    "hi": "उसको पता ही नहीं कहा जाने का टम कहा जाने का कहा जाने का भाई सा पता नहीं आगे से लेफ्ट लो"
+   },
+   {
+    "id": "L038_2",
+    "char": "C1",
+    "start": 216.63,
+    "end": 219.422,
+    "hi": "th you are overthinkingyou're overanalyzing overhip"
+   }
+  ]
+ },
+ {
+  "id": "L039",
+  "en_v6": "Over hyperventilating, just over it. Don't overthink, you're on fire thinking you're not thinking.",
+  "hi": "िंओवर हाइपर वेंटिलेटिंग जस्ट ओवरीज तू ऐना ज्यादा सोच मत  जैसे सा आग बनकर और सोच की तू नहीं सोच रहा है मेी",
+  "turns": [
+   {
+    "id": "L039_1",
+    "char": "C3",
+    "start": 219.422,
+    "end": 221.49,
+    "hi": "पिंग ओवर हाइपर वेंटिलेटिंग जस्ट"
+   },
+   {
+    "id": "L039_2",
+    "char": "C15",
+    "start": 221.49,
+    "end": 222.34,
+    "hi": "وفري"
+   },
+   {
+    "id": "L039_3",
+    "char": "C0",
+    "start": 222.34,
+    "end": 223.72,
+    "hi": "تو에ن जد सوच مت"
+   },
+   {
+    "id": "L039_4",
+    "char": "C4",
+    "start": 223.72,
+    "end": 226.972,
+    "hi": "जैसे सा आग बनकर और सोच की तू नहीं सोच रहा हैी"
+   }
+  ]
+ },
+ {
+  "id": "L040",
+  "en_v6": "You don't have typhoid, you just need a long vacation. Come to the movies with us.",
+  "hi": "दों हैव टाइ फॉ मेyबी यu जस् नीड अ लॉंग वेकेशन या फिर हम लोगों के साथ मूवी के लिए आ जा",
+  "turns": [
+   {
+    "id": "L040_1",
+    "char": "C5",
+    "start": 227.108,
+    "end": 231.24,
+    "hi": "don't have tie fori maybe you just need a long vacation"
+   },
+   {
+    "id": "L040_2",
+    "char": "C0",
+    "start": 231.24,
+    "end": 232.956,
+    "hi": "या फिर हम लोगों के साथ मूवी के लिए आ जा"
+   }
+  ]
+ },
+ {
+  "id": "L049",
+  "en_v6": "Don't tell anyone. I know nothing. Why would I say?",
+  "hi": "کو بال متاہں میں نے تر کو پتا ہے نہیں میں کیوں بولے گا گائیس",
+  "turns": [
+   {
+    "id": "L049_1",
+    "char": "C12",
+    "start": 253.892,
+    "end": 255.26,
+    "hi": "سکو بول متا میں نے تر کو بتایا"
+   },
+   {
+    "id": "L049_2",
+    "char": "C10",
+    "start": 255.26,
+    "end": 257.532,
+    "hi": "لكبل"
+   }
+  ]
+ }
+]
