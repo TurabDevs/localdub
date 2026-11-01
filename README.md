@@ -95,6 +95,38 @@ The cost of doing it this way is speed. My Kaggle account could only use CPU mac
 
 Before llama.cpp starts, the Glimmer weights are checked by sha256 against the official `meta-models/Muse-Glimmer-30B-GGUF` release, because they come from a Kaggle mirror.
 
+## Who is talking: the character stage
+
+Until Nov 1 every dubbed line got its voice from the audio chunk it was cut from. When two people talked inside one chunk, one voice spoke for both, and nothing in my listen checks could see it. So I added a stage before dubbing that works out who the characters are and who is talking when:
+
+1. **Faces across shots** (`pipeline/char_faces.py`): YuNet finds faces on the low-res frames, SFace embeddings group them into identities across cuts (17 face ids in the AIB clip).
+2. **Words and speakers** (Kaggle CPU kernel): Whisper large-v3 (open weights, faster-whisper int8) with word timestamps on the Demucs vocals, plus ECAPA speaker embeddings for every sub-segment, on top of the diarization step.
+3. **Active speaker** (`pipeline/char_link.py`): a speech unit belongs to the face whose mouth moves with it. Units nobody's mouth matches are grouped by voice and marked off-screen (phone calls, narration). Result for the clip: 101 speech units, 82 confirmed by a face, 18 characters, 10 with real screen time.
+4. **Turns** (`pipeline/make_char_split.py`): 14 dubbed lines turned out to be several people taking turns. They are split at the speaker changes into 40 turns, and Muse Glimmer writes the English for each turn with the whole script as context.
+5. **One voice per character** (`dub.py` with `CHARS` / `CHARMAP`): every line of a character is cloned from that character's own face-confirmed speech, never from someone else's chunk.
+
+Gender and age below are automatic estimates (pitch and Muse Glimmer's per-line labels), not facts about the actors, and some are clearly off: C6's thumbnail is a man while the pitch estimate says female. Full profiles, with sample lines, are in `characters/`.
+
+| | id | on screen | speaks | pitch p10 / median / p90 | gender (estimate) | age (estimate, Glimmer) | style | voice used in v7 |
+|---|---|---|---|---|---|---|---|---|
+| <img src="characters/thumbs/C0.jpg" width="64"> | C0 | 93.4 s | 56.3 s, 20 lines | 150 / 206 / 286 Hz | unsure (pitch says female, Glimmer says male) | young | loud / animated | cloned from 10.8 s of this character's own speech (2 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C1.jpg" width="64"> | C1 | 51.6 s | 44.2 s, 13 lines | 123 / 163 / 223 Hz | male | adult | loud / animated | cloned from 12.1 s of this character's own speech (3 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C2.jpg" width="64"> | C2 | 37.6 s | 27.9 s, 10 lines | 170 / 199 / 240 Hz | female | adult | loud / animated | cloned from 10.2 s of this character's own speech (2 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C3.jpg" width="64"> | C3 | 25.9 s | 26.3 s, 8 lines | 172 / 240 / 356 Hz | female | adult | loud / animated | cloned from 10.2 s of this character's own speech (3 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C4.jpg" width="64"> | C4 | 32.1 s | 21.5 s, 8 lines | 126 / 199 / 279 Hz | unsure (pitch says female, Glimmer says male) | adult | loud / animated | cloned from 11.3 s of this character's own speech (3 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C5.jpg" width="64"> | C5 | 15.5 s | 14.2 s, 5 lines | 193 / 253 / 356 Hz | unsure (pitch says female, Glimmer says male) | young | medium | cloned from 10.1 s of this character's own speech (3 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C6.jpg" width="64"> | C6 | 17.1 s | 12.0 s, 4 lines | 170 / 232 / 266 Hz | female | n/a | soft | cloned from 9.6 s of this character's own speech (4 clips where the face detector saw this face talking) |
+| <img src="characters/thumbs/C7.jpg" width="64"> | C7 | 10.2 s | 11.5 s, 4 lines | 114 / 133 / 165 Hz | male | adult | medium | cloned from 7.1 s of this character's own speech (2 clips where the face detector saw this face talking) |
+|  | C8 | off-screen voice | 6.0 s, 2 lines | 115 / 128 / 141 Hz | male | young | loud / animated | cloned from 6.0 s of this off-screen voice (2 clips grouped by voice) |
+|  | C9 | off-screen voice | 5.0 s, 2 lines | 130 / 191 / 298 Hz | female | n/a | medium | cloned from 5.0 s of this off-screen voice (2 clips grouped by voice) |
+| <img src="characters/thumbs/C10.jpg" width="64"> | C10 | 28.6 s | 3.3 s, 2 lines | 119 / 137 / 225 Hz | male | adult | soft | cloned from 3.3 s of this character's own speech (2 clips where the face detector saw this face talking) |
+
+7 more voice groups speak for less than 2 s each (C11 to C17); they are in `characters/` too.
+
+How v6 did on this check (`pipeline/char_mismatch.py`, `results/characters_aib/mismatch_v6.json`): 13 of 33 dubbed lines are voiced as the wrong character for at least part of the line, 37.9 s of 134.1 s of face-confirmed speech (28 %) is in another character's voice, and 15 lines use a voice cloned from a chunk where several people talk.
+
+v7, the first dub that uses this stage, is being built and measured now; its results will go here and in the table under "What I measured".
+
 ## Running it
 
 There is a one-command runner, `localdub.py`, that strings the steps together and keeps every step's output in a work folder so it can be resumed:
