@@ -35,6 +35,12 @@ What it found in v6 (`pipeline/char_mismatch.py`, `results/characters_aib/mismat
 
 The fix I started: split those 14 lines at the speaker changes into 40 turns, let Muse Glimmer write the English for each turn with the whole script as context, and voice every line from a single reference per character, cut only from that character's own face-confirmed speech (`dub.py` with `CHARS` / `CHARMAP`). The per-character profiles (face thumbnail, screen time, pitch range, estimated gender/age, style, sample lines) are in `results/characters_aib/`; gender and age there are estimates and are labelled that way.
 
+Late evening, first results of the character dub (v7, still in progress):
+
+- **A Glimmer job that "finished" with nothing in it.** One of the two per-turn writing jobs used its whole 2,200-token budget thinking (counting syllables word by word) and returned an empty answer, so half the split lines had no English. The kernel still reported success. I re-ran it with a bigger budget and an instruction to think briefly; a check for empty answers belongs in the stage 2 script next.
+- **One voice per character made some lines worse.** Measured turn by turn against the original (`pipeline/char_voice_check.py`, which only uses pitch and does not look at faces), 11 lines landed more than 4 semitones away from the actor, mostly shouted lines voiced from a calm clip of the same character. Fix: for those lines the reference is still that character's own speech, but the clips closest in pitch to the line. 10 of 11 got much closer (for example 6.8 -> 0.2 and 8.1 -> 0.6 semitones); one got worse (5.5 -> 9.7), so it keeps its earlier take.
+- English -> Urdu: Muse Glimmer's Urdu lines for the Tears of Steel clip came back. Because the voice reads Devanagari better than Urdu script, the runner now has a transliteration step where Glimmer writes the same Urdu words in Devanagari for the voice only; subtitles stay in Urdu script.
+
 **Also today**
 
 - Bilingual subtitles (SRT/WebVTT, source + English) and a review page for checking a dub line by line.
