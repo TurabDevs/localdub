@@ -120,7 +120,7 @@ if os.environ.get("PITCH_REF", "1") == "1":
 # v7 character stage (char_link.py): one voice per character. CHARS=<dir with characters.json>, CHARMAP=<json line id -> Cn>.
 # Every line of a character uses the same reference, cut only from that character's own face-confirmed speech, so the
 # dub follows the person whose mouth moves instead of whoever happened to be in the line's audio chunk.
-CREF, LCHAR = {}, {}
+CREF, LCHAR, CPREF = {}, {}, {}
 if os.environ.get("CHARS"):
     for p in json.load(open(os.path.join(os.environ["CHARS"], "characters.json"))):
         clips, txt = [], []
@@ -129,12 +129,35 @@ if os.environ.get("CHARS"):
         if clips:
             a = np.concatenate(clips); CREF[p["id"]] = {"audio": wav_bytes(a / (np.abs(a).max() + 1e-6) * 0.8), "text": " ".join(txt)}
     LCHAR = {k: v for k, v in json.load(open(os.environ["CHARMAP"])).items() if v in CREF}
+    # CHAR_PITCH_LINES="L013,L030": for these lines the reference is still cut only from the same character's own speech,
+    # but from the character's clips whose pitch is closest to the original line (a shouted line gets the character's
+    # shouted clips). Used as a QA-driven retake for lines whose dub pitch ended far from the original turn.
+    CPL = [x for x in os.environ.get("CHAR_PITCH_LINES", "").split(",") if x]
+    if CPL:
+        UN = json.load(open(os.path.join(os.environ["CHARS"], "units.json")))
+        LBY = {L["id"]: L for L in lines}
+        for lid in CPL:
+            c, L = LCHAR.get(lid), LBY.get(lid)
+            if not c or not L: continue
+            fl = f0(voc[int(L["start"] * SR):int(L["end"] * SR)].mean(1))
+            pool = []
+            for u in UN:
+                if u["cid"] != c or u["end"] - u["start"] < 1.5 or u.get("how") not in ("face", "voice", "voice-only"): continue
+                fu = f0(voc[int(u["start"] * SR):int(u["end"] * SR)].mean(1))
+                if fu and fl: pool.append((abs(12 * np.log2(fu / fl)), u))
+            clips, txt, tot = [], [], 0.0
+            for d, u in sorted(pool, key=lambda t: t[0]):
+                a = voc[int(u["start"] * SR):int(min(u["end"], u["start"] + 8.0) * SR)].mean(1)
+                clips += [a, np.zeros(int(0.25 * SR), np.float32)]; txt.append(u.get("whisper") or u.get("text", "")); tot += len(a) / SR
+                if tot >= 6: break
+            if clips:
+                a = np.concatenate(clips); CPREF[lid] = {"audio": wav_bytes(a / (np.abs(a).max() + 1e-6) * 0.8), "text": " ".join(txt)}
 
 def tts(text, spk, emo, path, lid=None):
     if os.path.exists(path): return path
     cue = {"neutral": "", "happy": "[happy] ", "laughing": "[laughing] ", "sarcastic": "[sarcastic] ", "angry": "[angry] ",
            "shouting": "[shouting] ", "sad": "[sad] ", "worried": "[worried] ", "excited": "[excited] ", "whisper": "[whispering] "}.get(emo or "neutral", "")
-    refx = CREF[LCHAR[lid]] if lid in LCHAR else (LREF.get(lid) or LREF.get(PREF.get(lid)) or REF[spk])
+    refx = CPREF[lid] if lid in CPREF else CREF[LCHAR[lid]] if lid in LCHAR else (LREF.get(lid) or LREF.get(PREF.get(lid)) or REF[spk])
     body = {"text": cue + text, "references": [refx], "format": "wav", "normalize": True, "latency": "normal",
             "temperature": 0.7, "top_p": 0.7, "chunk_length": 200}
     for att in range(5):
