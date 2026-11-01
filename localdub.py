@@ -28,7 +28,7 @@ Needs: ffmpeg, numpy, soundfile, requests, msgpack; Kaggle token in KAGGLE_API_T
 import argparse, glob, json, os, shutil, subprocess, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__)); K = f"{HERE}/cloud/kaggle"; P = f"{HERE}/pipeline"
-STEPS = ["prep", "stage1", "merge", "diarize", "jobs", "glimmer", "tts", "mix", "avqa", "subs", "review"]
+STEPS = ["prep", "stage1", "merge", "diarize", "jobs", "glimmer", "translit", "tts", "mix", "avqa", "subs", "review"]
 GLIMMER_MODEL = "model:dangkhoa2016/meta-models-muse-glimmer-30b-gguf/gguf/default/1"
 
 def sh(cmd, **kw):
@@ -140,8 +140,24 @@ class Run:
             s.st["datasets"].pop(ds, None); s.save(); print(f"dataset {ds} missing ({st.strip()[-80:]}), will re-create"); return False
         if "ready" not in st: return False
         return s.kernel(f"{s.name}-glimmer", f"{K}/stage2_glimmer.py", ["localdub-bin", ds, GLIMMER_MODEL], o)
+    def translit(s):   # --tts-script deva: one more Glimmer job writes the Urdu lines in Devanagari for the voice
+        if s.a.tts_script != "deva": return True
+        o = f"{s.w}/s2/tl"
+        if os.path.exists(f"{o}/results.json"): return True
+        ds = f"{s.name}-tl"
+        if ds not in s.st.setdefault("datasets", {}):
+            sh([sys.executable, f"{P}/make_tl_job.py", f"{s.w}/s2/glimmer/results.json", f"{s.w}/s2/jobs_tl.json"])
+            out = s.kapi("ds-create", ds, f"localdub {s.name} transliteration", f"{s.w}/s2/jobs_tl.json"); print(out[-200:])
+            if '"status":"Ok"' not in out.replace(" ", ""): raise SystemExit(f"dataset create failed for {ds}")
+            s.st["datasets"][ds] = time.time(); s.save(); return False
+        st = s.kapi("ds-status", ds)
+        if "403" in st or "404" in st:
+            s.st["datasets"].pop(ds, None); s.save(); print(f"dataset {ds} missing ({st.strip()[-80:]}), will re-create"); return False
+        if "ready" not in st: return False
+        return s.kernel(f"{s.name}-tl-k", f"{K}/stage2_glimmer.py", ["localdub-bin", ds, GLIMMER_MODEL], o)
     def dubargs(s):
-        return [f"{P}/dub.py", s.s1dir(), f"{s.w}/s2", f"{s.w}/s2/glimmer/results.json", os.path.abspath(s.a.video), f"{s.w}/out/dub.{s.a.ext}"]
+        tl = f",{s.w}/s2/tl/results.json" if os.path.exists(f"{s.w}/s2/tl/results.json") else ""
+        return [f"{P}/dub.py", s.s1dir(), f"{s.w}/s2", f"{s.w}/s2/glimmer/results.json" + tl, os.path.abspath(s.a.video), f"{s.w}/out/dub.{s.a.ext}"]
     def env(s):
         e = dict(os.environ, SRC_LANG=s.a.src, TTS_SCRIPT=s.a.tts_script)
         if s.a.edits: e["EDITS"] = os.path.abspath(s.a.edits)
@@ -185,7 +201,7 @@ def main():
     ap.add_argument("--src", default="hi"); ap.add_argument("--to", default="en"); ap.add_argument("--work", required=True)
     ap.add_argument("--context"); ap.add_argument("--chunk", type=float, default=600.0); ap.add_argument("--wait", type=float, default=0)
     ap.add_argument("--from-step", choices=STEPS); ap.add_argument("--until", choices=STEPS); ap.add_argument("--no-diarize", action="store_true")
-    ap.add_argument("--tts-script", default="native", choices=["native", "roman"]); ap.add_argument("--ext", default="mp4")
+    ap.add_argument("--tts-script", default="native", choices=["native", "roman", "deva"]); ap.add_argument("--ext", default="mp4")
     ap.add_argument("--models", default=f"{HERE}/models"); ap.add_argument("--name", help="short run name used for Kaggle datasets/kernels")
     ap.add_argument("--edits", help="edits.json exported from out/review.html")
     a = ap.parse_args(); r = Run(a)
