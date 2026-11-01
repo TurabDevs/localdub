@@ -1,0 +1,63 @@
+{
+ "id": "C6",
+ "face_id": "F6",
+ "kind": "on-screen",
+ "thumb": "chars/faces/thumbs/F6.jpg",
+ "screen_time_s": 17.1,
+ "speech_units": 5,
+ "speaking_time_s": 12.0,
+ "dub_lines": [
+  "L050",
+  "L051",
+  "L052",
+  "L053"
+ ],
+ "face_confirmed_units": 4,
+ "voice_matched_units": 1,
+ "pitch_hz": {
+  "p10": 170,
+  "median": 232,
+  "p90": 266
+ },
+ "gender_estimate": {
+  "from_pitch": "female",
+  "from_glimmer_cast": null,
+  "estimate": "female"
+ },
+ "age_estimate_glimmer": null,
+ "glimmer_description": null,
+ "energy": {
+  "median_level_dbfs": -30.4,
+  "style": "soft"
+ },
+ "sample_lines": [
+  "इलनेस अगर हम लोग ऐसे खुस्पुस खुस्पुस करके आपस में बात करेंगे न",
+  "forget going to the doctor, Nikhil will think twice before he talks to us about it",
+  "टाइफॉइड, इस लाइक एनी अधर"
+ ],
+ "voice_reference": [
+  {
+   "start": 262.58,
+   "end": 266.24,
+   "text": "इललनेस अगर हम लोग ऐसे खुस खुस खुस खुस करके आपस में बात करेंगे ना"
+  },
+  {
+   "start": 266.4,
+   "end": 269.85,
+   "text": "to forget going to the doctor nikil will think twice before he talks to us about it"
+  },
+  {
+   "start": 270.63,
+   "end": 272.03,
+   "text": "ل في نعملوك"
+  },
+  {
+   "start": 258.53,
+   "end": 259.58,
+   "text": "يكاتلرا"
+  }
+ ],
+ "voice_reference_s": 9.6,
+ "voice_reason": "cloned from 9.6 s of this character's own speech (4 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

@@ -1,0 +1,429 @@
+{
+ "dubbed_lines": 33,
+ "lines_with_mismatch": 13,
+ "mismatch_s": 37.9,
+ "face_confirmed_s_checked": 134.1,
+ "blended_voice_lines": 15,
+ "lines": [
+  {
+   "id": "L002a",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L002b",
+   "ref": "own_line",
+   "voice_char": "C8",
+   "voice_share": 0.93,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L003",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 0.72,
+   "blended_voice": true,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L004",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L005",
+   "ref": "own_line",
+   "voice_char": "C4",
+   "voice_share": 0.63,
+   "blended_voice": true,
+   "mismatch_s": 2.0,
+   "mismatches": [
+    {
+     "t": 48.77,
+     "speaker_on_screen": "C5",
+     "text": "की टाइफॉइड ना इtस जस्ट"
+    }
+   ]
+  },
+  {
+   "id": "L006",
+   "ref": "own_line",
+   "voice_char": "C1",
+   "voice_share": 0.48,
+   "blended_voice": true,
+   "mismatch_s": 6.71,
+   "mismatches": [
+    {
+     "t": 53.65,
+     "speaker_on_screen": "C5",
+     "text": "just last mont you got a promotion no then how you got"
+    },
+    {
+     "t": 56.16,
+     "speaker_on_screen": "C4",
+     "text": "टाईफोरड लगाअभे तो पर"
+    },
+    {
+     "t": 57.24,
+     "speaker_on_screen": "C0",
+     "text": "سोی توो سाइل کے پار्ٹی میं اتनا انजائय کر رहا تھا"
+    },
+    {
+     "t": 60.91,
+     "speaker_on_screen": "C0",
+     "text": "िंअब क्या ये सर्डेनली"
+    }
+   ]
+  },
+  {
+   "id": "L007",
+   "ref": "own_line",
+   "voice_char": "C3",
+   "voice_share": 0.85,
+   "blended_voice": false,
+   "mismatch_s": 4.95,
+   "mismatches": [
+    {
+     "t": 62.72,
+     "speaker_on_screen": "C0",
+     "text": "ی فیور بuرننg आیز"
+    },
+    {
+     "t": 73.08,
+     "speaker_on_screen": "C5",
+     "text": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा"
+    }
+   ]
+  },
+  {
+   "id": "L013",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L014",
+   "ref": "own_line",
+   "voice_char": "C2",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L015",
+   "ref": "own_line",
+   "voice_char": "C7",
+   "voice_share": 0.53,
+   "blended_voice": true,
+   "mismatch_s": 2.02,
+   "mismatches": [
+    {
+     "t": 96.9,
+     "speaker_on_screen": "C2",
+     "text": "निखिल को फीवर टाइप कुछ है"
+    }
+   ]
+  },
+  {
+   "id": "L019",
+   "ref": "own_line",
+   "voice_char": "C4",
+   "voice_share": 0.55,
+   "blended_voice": true,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L020",
+   "ref": "own_line",
+   "voice_char": "C2",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L021",
+   "ref": "pitch_matched:L022",
+   "voice_char": "C7",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L022",
+   "ref": "own_line",
+   "voice_char": "C7",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L023",
+   "ref": "own_line",
+   "voice_char": "C1",
+   "voice_share": 0.49,
+   "blended_voice": true,
+   "mismatch_s": 1.59,
+   "mismatches": [
+    {
+     "t": 143.91,
+     "speaker_on_screen": "C0",
+     "text": "से पैसा निकालने केलिए करते हैं ये सब"
+    }
+   ]
+  },
+  {
+   "id": "L024",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L025",
+   "ref": "own_line",
+   "voice_char": "C3",
+   "voice_share": 0.54,
+   "blended_voice": true,
+   "mismatch_s": 3.57,
+   "mismatches": [
+    {
+     "t": 155.34,
+     "speaker_on_screen": "C0",
+     "text": "अबे तुझे मेडिकेशन की नहीं मोटिवेशन की जरूरत है डिटर्मिनेशन ह"
+    }
+   ]
+  },
+  {
+   "id": "L026",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 0.38,
+   "blended_voice": true,
+   "mismatch_s": 2.68,
+   "mismatches": [
+    {
+     "t": 160.04,
+     "speaker_on_screen": "C4",
+     "text": "لگ جیادہ ٹائپوڈ کا"
+    },
+    {
+     "t": 163.03,
+     "speaker_on_screen": "C3",
+     "text": "dod you no pil"
+    }
+   ]
+  },
+  {
+   "id": "L030",
+   "ref": "pitch_matched:L029",
+   "voice_char": "C1",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.76,
+   "mismatches": [
+    {
+     "t": 178.21,
+     "speaker_on_screen": "C2",
+     "text": "ایسے پہن لو"
+    }
+   ]
+  },
+  {
+   "id": "L031",
+   "ref": "pitch_matched:L020",
+   "voice_char": "C2",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L032",
+   "ref": "own_line",
+   "voice_char": "C2",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L033",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L034",
+   "ref": "cluster",
+   "voice_char": "C3",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L035",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 0.32,
+   "blended_voice": true,
+   "mismatch_s": 6.32,
+   "mismatches": [
+    {
+     "t": 199.81,
+     "speaker_on_screen": "C3",
+     "text": "उतना हो जाएगा तो फाइन"
+    },
+    {
+     "t": 201.47,
+     "speaker_on_screen": "C5",
+     "text": "مب يu ني او cنج ر جاب"
+    },
+    {
+     "t": 203.55,
+     "speaker_on_screen": "C3",
+     "text": "جج hوس"
+    },
+    {
+     "t": 205.65,
+     "speaker_on_screen": "C4",
+     "text": "चेंज योर कंट्री चेंज योर कॉंटिनेंट"
+    }
+   ]
+  },
+  {
+   "id": "L037",
+   "ref": "pitch_matched:L035",
+   "voice_char": "C0",
+   "voice_share": 0.32,
+   "blended_voice": true,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L038",
+   "ref": "own_line",
+   "voice_char": "C0",
+   "voice_share": 0.58,
+   "blended_voice": true,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L039",
+   "ref": "own_line",
+   "voice_char": "C4",
+   "voice_share": 0.43,
+   "blended_voice": true,
+   "mismatch_s": 3.45,
+   "mismatches": [
+    {
+     "t": 219.42,
+     "speaker_on_screen": "C3",
+     "text": "पिंग ओवर हाइपर वेंटिलेटिंग जस्ट"
+    },
+    {
+     "t": 222.34,
+     "speaker_on_screen": "C0",
+     "text": "تو에ن जد सوच مت"
+    }
+   ]
+  },
+  {
+   "id": "L040",
+   "ref": "own_line",
+   "voice_char": "C5",
+   "voice_share": 0.71,
+   "blended_voice": true,
+   "mismatch_s": 1.72,
+   "mismatches": [
+    {
+     "t": 231.24,
+     "speaker_on_screen": "C0",
+     "text": "या फिर हम लोगों के साथ मूवी के लिए आ जा"
+    }
+   ]
+  },
+  {
+   "id": "L041",
+   "ref": "pitch_matched:L055",
+   "voice_char": "C1",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 1.11,
+   "mismatches": [
+    {
+     "t": 233.19,
+     "speaker_on_screen": "C0",
+     "text": "اچھا تو تو نہیں آ رہا ے"
+    }
+   ]
+  },
+  {
+   "id": "L048",
+   "ref": "pitch_matched:L004",
+   "voice_char": "C0",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 1.08,
+   "mismatches": [
+    {
+     "t": 251.68,
+     "speaker_on_screen": "C10",
+     "text": "کیا بات کر رहے ہے"
+    }
+   ]
+  },
+  {
+   "id": "L049",
+   "ref": "own_line",
+   "voice_char": "C10",
+   "voice_share": 0.62,
+   "blended_voice": true,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L051",
+   "ref": "own_line",
+   "voice_char": "C6",
+   "voice_share": 1.0,
+   "blended_voice": false,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  },
+  {
+   "id": "L054",
+   "ref": "pitch_matched:L049",
+   "voice_char": "C10",
+   "voice_share": 0.62,
+   "blended_voice": true,
+   "mismatch_s": 0.0,
+   "mismatches": []
+  }
+ ]
+}

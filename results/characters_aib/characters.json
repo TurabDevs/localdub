@@ -1,0 +1,943 @@
+[
+ {
+  "id": "C0",
+  "face_id": "F0",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F0.jpg",
+  "screen_time_s": 93.4,
+  "speech_units": 24,
+  "speaking_time_s": 56.3,
+  "dub_lines": [
+   "L002a",
+   "L003",
+   "L004",
+   "L006",
+   "L007",
+   "L013",
+   "L023",
+   "L024",
+   "L025",
+   "L026",
+   "L033",
+   "L035",
+   "L036",
+   "L037",
+   "L038",
+   "L039",
+   "L040",
+   "L041",
+   "L044",
+   "L046"
+  ],
+  "face_confirmed_units": 24,
+  "voice_matched_units": 0,
+  "pitch_hz": {
+   "p10": 150,
+   "median": 206,
+   "p90": 286
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": "male (11 of 15 lines)",
+   "estimate": "unsure (pitch says female, Glimmer says male)"
+  },
+  "age_estimate_glimmer": "young",
+  "glimmer_description": "man in light blue shirt on phone",
+  "energy": {
+   "median_level_dbfs": -19.7,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "just step out यार, have a couple of beers सब बैक्टीरिया, बैक्टीरिया, सब मर जाएगा Bartender को कभी हुआ है क्या टाइफॉर्ड? क्यों वो बेर के आजुबाजु रहते हैं अमच तु इतना सोच मत, तु",
+   "ऐसे टाइफोइड वैफ़़ड कुछ भी कुछ का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो",
+   "क्या पाँगल हो या टाइफॉर्ड, ऐसा कुछ नहीं होता भाई You just need to get out and have some fun"
+  ],
+  "voice_reference": [
+   {
+    "start": 37.19,
+    "end": 43.19,
+    "text": "जस्ट स्टेप आउट यार हैव आ कपल ऑफ बियर सब बैक्टीरिया बैक्टीरिया सब मर जाएगा बार टेंडर को कभी हुआ है क्या टाइफॉइड क्यों वो बियर के आजुबा जो रहते हैं त इतना सोच मत"
+   },
+   {
+    "start": 146.05,
+    "end": 150.84,
+    "text": "ऐसे टाइफर्ड वफर्ड कुछ भी कुद का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो लोग तो क्या है तो पड़ा लिखा है ना"
+   }
+  ],
+  "voice_reference_s": 10.8,
+  "voice_reason": "cloned from 10.8 s of this character's own speech (2 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C1",
+  "face_id": "F1",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F1.jpg",
+  "screen_time_s": 51.6,
+  "speech_units": 18,
+  "speaking_time_s": 44.2,
+  "dub_lines": [
+   "L006",
+   "L008",
+   "L009",
+   "L010",
+   "L011",
+   "L012",
+   "L023",
+   "L028",
+   "L029",
+   "L038",
+   "L055",
+   "L056",
+   "L057"
+  ],
+  "face_confirmed_units": 17,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 123,
+   "median": 163,
+   "p90": 223
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": "male (4 of 4 lines)",
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "Man in black t-shirt glasses red wristband",
+  "energy": {
+   "median_level_dbfs": -20.7,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "guys, thanks for watching the video If you guys want to educate yourself about the topic of depression",
+   "copywriting this video so feel free to download it and upload it on as many channels as you want So",
+   "Like things to say and things not to say to someone who is suffering from depression Please"
+  ],
+  "voice_reference": [
+   {
+    "start": 278.85,
+    "end": 282.99,
+    "text": "hey guys thanks for watching the video if you guys want to educate yourself about the topic of"
+   },
+   {
+    "start": 295.79,
+    "end": 299.89,
+    "text": "copyriting this video so feel free to download it and upload it on as many channels as you want"
+   },
+   {
+    "start": 282.99,
+    "end": 286.86,
+    "text": "solike things to say and things not to say to someone who's suffering from depression"
+   }
+  ],
+  "voice_reference_s": 12.1,
+  "voice_reason": "cloned from 12.1 s of this character's own speech (3 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C2",
+  "face_id": "F2",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F2.jpg",
+  "screen_time_s": 37.6,
+  "speech_units": 10,
+  "speaking_time_s": 27.9,
+  "dub_lines": [
+   "L014",
+   "L015",
+   "L016",
+   "L019",
+   "L020",
+   "L030",
+   "L031",
+   "L032",
+   "L057",
+   "L058"
+  ],
+  "face_confirmed_units": 6,
+  "voice_matched_units": 4,
+  "pitch_hz": {
+   "p10": 170,
+   "median": 199,
+   "p90": 240
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": "female (2 of 3 lines)",
+   "estimate": "female"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "Man with curly hair glasses brown shirt",
+  "energy": {
+   "median_level_dbfs": -20.1,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "ग्रहों में प्रॉब्लम है ये है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है",
+   "understand that depression is an illness that needs to be dealt with proper medical attention",
+   "अलग डॉक्टर्स होते हैं जो ऐसे फीवर जैसे चीजें ठीक कर देते हैं"
+  ],
+  "voice_reference": [
+   {
+    "start": 181.44,
+    "end": 186.56,
+    "text": "तुम्हारे ग्रहों में प्रॉब्लम है यह है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है"
+   },
+   {
+    "start": 301.32,
+    "end": 306.4,
+    "text": "and understand that depression is an illness that needs to be dealt with proper medical attention"
+   }
+  ],
+  "voice_reference_s": 10.2,
+  "voice_reason": "cloned from 10.2 s of this character's own speech (2 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C3",
+  "face_id": "F5",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F5.jpg",
+  "screen_time_s": 25.9,
+  "speech_units": 13,
+  "speaking_time_s": 26.3,
+  "dub_lines": [
+   "L007",
+   "L025",
+   "L026",
+   "L027",
+   "L028",
+   "L034",
+   "L035",
+   "L039"
+  ],
+  "face_confirmed_units": 13,
+  "voice_matched_units": 0,
+  "pitch_hz": {
+   "p10": 172,
+   "median": 240,
+   "p90": 356
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": "female (4 of 6 lines)",
+   "estimate": "female"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "Man on phone in light blue shirt",
+  "energy": {
+   "median_level_dbfs": -19.5,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "don't fall for all this hay are you taking pills pills of a people woar ill",
+   "she's bed ridan she can't walk man she's only thirty",
+   "चीज हो सकता है like Either you are smiling or you have"
+  ],
+  "voice_reference": [
+   {
+    "start": 151.2,
+    "end": 155.34,
+    "text": "don't fall for all this hay are you taking pills pills of a people woar ill"
+   },
+   {
+    "start": 164.68,
+    "end": 168.22,
+    "text": "she's bed ridan she can't walk man she's only thirty"
+   },
+   {
+    "start": 64.25,
+    "end": 66.78,
+    "text": "एक चीज हो सकता है लइक आइदर यू आर स्माइलिंग और योू है"
+   }
+  ],
+  "voice_reference_s": 10.2,
+  "voice_reason": "cloned from 10.2 s of this character's own speech (3 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C4",
+  "face_id": "F3",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F3.jpg",
+  "screen_time_s": 32.1,
+  "speech_units": 9,
+  "speaking_time_s": 21.5,
+  "dub_lines": [
+   "L005",
+   "L006",
+   "L016",
+   "L017",
+   "L019",
+   "L026",
+   "L035",
+   "L039"
+  ],
+  "face_confirmed_units": 9,
+  "voice_matched_units": 0,
+  "pitch_hz": {
+   "p10": 126,
+   "median": 199,
+   "p90": 279
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": "male (4 of 6 lines)",
+   "estimate": "unsure (pitch says female, Glimmer says male)"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "young man with curly hair and glasses",
+  "energy": {
+   "median_level_dbfs": -19.2,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "awhat doesn't kill you makes you stronger the hottest fire makes the hardest eel",
+   "जितना ना सोचेगा ना क्यों में एको टाइफॉइड है, टाइफॉइड है, टाइफॉइड है, उतना ना बढ़ता",
+   "जस ऐसा आग बंद कर और सोच की तू नहीं सोच रहा है Maybe you"
+  ],
+  "voice_reference": [
+   {
+    "start": 105.11,
+    "end": 109.69,
+    "text": "awhat doesn't kill you makes you stronger the hottest fire makes the hardest eel"
+   },
+   {
+    "start": 45.3,
+    "end": 48.77,
+    "text": "तो जितना ना सोचेगा ना कि मैं को टाईफॉरड है टाईफॉरड है टाईफॉरड है उतना ना ब"
+   },
+   {
+    "start": 223.72,
+    "end": 226.97,
+    "text": "जैसे सा आग बनकर और सोच की तू नहीं सोच रहा हैी"
+   }
+  ],
+  "voice_reference_s": 11.3,
+  "voice_reason": "cloned from 11.3 s of this character's own speech (3 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C5",
+  "face_id": "F7",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F7.jpg",
+  "screen_time_s": 15.5,
+  "speech_units": 5,
+  "speaking_time_s": 14.2,
+  "dub_lines": [
+   "L005",
+   "L006",
+   "L007",
+   "L035",
+   "L040"
+  ],
+  "face_confirmed_units": 5,
+  "voice_matched_units": 0,
+  "pitch_hz": {
+   "p10": 193,
+   "median": 253,
+   "p90": 356
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": "male (3 of 5 lines)",
+   "estimate": "unsure (pitch says female, Glimmer says male)"
+  },
+  "age_estimate_glimmer": "young",
+  "glimmer_description": "young man with curly hair and glasses",
+  "energy": {
+   "median_level_dbfs": -24.9,
+   "style": "medium"
+  },
+  "sample_lines": [
+   "don't have typhoid Maybe you just need a long vacation या",
+   "typhoid, vomiting, diarrhea सब चला जाएगा",
+   "Just last month you got a promotion, no? Then how you got"
+  ],
+  "voice_reference": [
+   {
+    "start": 227.11,
+    "end": 231.24,
+    "text": "don't have tie fori maybe you just need a long vacation"
+   },
+   {
+    "start": 73.08,
+    "end": 76.51,
+    "text": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा"
+   },
+   {
+    "start": 53.65,
+    "end": 56.16,
+    "text": "just last mont you got a promotion no then how you got"
+   }
+  ],
+  "voice_reference_s": 10.1,
+  "voice_reason": "cloned from 10.1 s of this character's own speech (3 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C6",
+  "face_id": "F6",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F6.jpg",
+  "screen_time_s": 17.1,
+  "speech_units": 5,
+  "speaking_time_s": 12.0,
+  "dub_lines": [
+   "L050",
+   "L051",
+   "L052",
+   "L053"
+  ],
+  "face_confirmed_units": 4,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 170,
+   "median": 232,
+   "p90": 266
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": null,
+   "estimate": "female"
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -30.4,
+   "style": "soft"
+  },
+  "sample_lines": [
+   "इलनेस अगर हम लोग ऐसे खुस्पुस खुस्पुस करके आपस में बात करेंगे न",
+   "forget going to the doctor, Nikhil will think twice before he talks to us about it",
+   "टाइफॉइड, इस लाइक एनी अधर"
+  ],
+  "voice_reference": [
+   {
+    "start": 262.58,
+    "end": 266.24,
+    "text": "इललनेस अगर हम लोग ऐसे खुस खुस खुस खुस करके आपस में बात करेंगे ना"
+   },
+   {
+    "start": 266.4,
+    "end": 269.85,
+    "text": "to forget going to the doctor nikil will think twice before he talks to us about it"
+   },
+   {
+    "start": 270.63,
+    "end": 272.03,
+    "text": "ل في نعملوك"
+   },
+   {
+    "start": 258.53,
+    "end": 259.58,
+    "text": "يكاتلرا"
+   }
+  ],
+  "voice_reference_s": 9.6,
+  "voice_reason": "cloned from 9.6 s of this character's own speech (4 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C7",
+  "face_id": "F9",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F9.jpg",
+  "screen_time_s": 10.2,
+  "speech_units": 4,
+  "speaking_time_s": 11.5,
+  "dub_lines": [
+   "L015",
+   "L021",
+   "L022",
+   "L023"
+  ],
+  "face_confirmed_units": 2,
+  "voice_matched_units": 2,
+  "pitch_hz": {
+   "p10": 114,
+   "median": 133,
+   "p90": 165
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": "male (2 of 2 lines)",
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "Man with glasses maroon shirt gesturing",
+  "energy": {
+   "median_level_dbfs": -24.0,
+   "style": "medium"
+  },
+  "sample_lines": [
+   "हमारे बेटे को फीवर है फीवर है फीवर है। टेंप्रेचर बढ़ गया है उसका माथा घरम रहता है। लोग क्या सोचेंगे",
+   "किसी को बता � Snakulommalap क्यों उसको fever है?",
+   "कहेंगे पूरी family को फीवर है। ब्रो, तुझे"
+  ],
+  "voice_reference": [
+   {
+    "start": 131.52,
+    "end": 137.37,
+    "text": "कि हमारे बेटे को फीवर है फीवर है फीवर है टेंपरेचर पढ़ गया है उसका माथाकरम रहता है लोग क्या सोचेंगे"
+   },
+   {
+    "start": 129.86,
+    "end": 131.1,
+    "text": "पूरे मुह्ले में बताना है"
+   }
+  ],
+  "voice_reference_s": 7.1,
+  "voice_reason": "cloned from 7.1 s of this character's own speech (2 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C8",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 2,
+  "speaking_time_s": 6.0,
+  "dub_lines": [
+   "L002b",
+   "L003"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 2,
+  "pitch_hz": {
+   "p10": 115,
+   "median": 128,
+   "p90": 141
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": "male (1 of 1 lines)",
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": "young",
+  "glimmer_description": "man in black beanie lying on bed",
+  "energy": {
+   "median_level_dbfs": -22.1,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "नहीं यार मेरी मत कर सुबह से उल्टी आ रही है बहुत तेज बुखार है",
+   "think I have typhoid or something dude"
+  ],
+  "voice_reference": [
+   {
+    "start": 20.63,
+    "end": 24.86,
+    "text": "नहीं यार मेरी मतकर सुबह से उल्टी आरिय बहुत तेज बुखा रहा है"
+   },
+   {
+    "start": 25.12,
+    "end": 26.9,
+    "text": "tn  difid o someting do"
+   }
+  ],
+  "voice_reference_s": 6.0,
+  "voice_reason": "cloned from 6.0 s of this off-screen voice (2 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C9",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 2,
+  "speaking_time_s": 5.0,
+  "dub_lines": [
+   "L000",
+   "L001"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 2,
+  "pitch_hz": {
+   "p10": 130,
+   "median": 191,
+   "p90": 298
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": null,
+   "estimate": "female"
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -24.2,
+   "style": "medium"
+  },
+  "sample_lines": [
+   "दे बेल आइकन ओन दे यूट्यूब आप एंड नेवर मिस अनदर अपडेट",
+   "एइबी"
+  ],
+  "voice_reference": [
+   {
+    "start": 1.22,
+    "end": 5.21,
+    "text": "press the bell icon on the youtube app and never miss another update"
+   },
+   {
+    "start": 5.54,
+    "end": 6.59,
+    "text": "from aib"
+   }
+  ],
+  "voice_reference_s": 5.0,
+  "voice_reason": "cloned from 5.0 s of this off-screen voice (2 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C10",
+  "face_id": "F4",
+  "kind": "on-screen",
+  "thumb": "chars/faces/thumbs/F4.jpg",
+  "screen_time_s": 28.6,
+  "speech_units": 2,
+  "speaking_time_s": 3.3,
+  "dub_lines": [
+   "L048",
+   "L049"
+  ],
+  "face_confirmed_units": 2,
+  "voice_matched_units": 0,
+  "pitch_hz": {
+   "p10": 119,
+   "median": 137,
+   "p90": 225
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": "male (1 of 1 lines)",
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "bearded man in light shirt looking right",
+  "energy": {
+   "median_level_dbfs": -28.6,
+   "style": "soft"
+  },
+  "sample_lines": [
+   "मैं क्यों बोलेगा क्यों बोलो गाइस,",
+   "आप बात कर रहे हैं?"
+  ],
+  "voice_reference": [
+   {
+    "start": 255.26,
+    "end": 257.53,
+    "text": "لكبل"
+   },
+   {
+    "start": 251.68,
+    "end": 252.76,
+    "text": "کیا بات کر رहے ہے"
+   }
+  ],
+  "voice_reference_s": 3.3,
+  "voice_reason": "cloned from 3.3 s of this character's own speech (2 clips where the face detector saw this face talking)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C11",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 1.5,
+  "dub_lines": [
+   "L054"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 92,
+   "median": 110,
+   "p90": 223
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": null,
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -35.3,
+   "style": "soft"
+  },
+  "sample_lines": [
+   "लगता है इसको भी typhoid हो गया है"
+  ],
+  "voice_reference": [
+   {
+    "start": 275.75,
+    "end": 277.21,
+    "text": "لگتا ہے اس کو بھی ٹائی فرڈ ہو گیا"
+   }
+  ],
+  "voice_reference_s": 1.5,
+  "voice_reason": "cloned from 1.5 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C12",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 1.4,
+  "dub_lines": [
+   "L049"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 101,
+   "median": 121,
+   "p90": 349
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": "male (1 of 1 lines)",
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "bearded man in light shirt looking right",
+  "energy": {
+   "median_level_dbfs": -37.8,
+   "style": "soft"
+  },
+  "sample_lines": [
+   "बोल मताओ मैंने तुरको बताओ नहीं,"
+  ],
+  "voice_reference": [
+   {
+    "start": 253.89,
+    "end": 255.26,
+    "text": "سکو بول متا میں نے تر کو بتایا"
+   }
+  ],
+  "voice_reference_s": 1.4,
+  "voice_reason": "cloned from 1.4 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C13",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 1.2,
+  "dub_lines": [
+   "L042"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 124,
+   "median": 146,
+   "p90": 162
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": null,
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -29.5,
+   "style": "soft"
+  },
+  "sample_lines": [
+   "Okay, bye"
+  ],
+  "voice_reference": [
+   {
+    "start": 236.23,
+    "end": 237.4,
+    "text": "وك باي"
+   }
+  ],
+  "voice_reference_s": 1.2,
+  "voice_reason": "cloned from 1.2 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C14",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 1.2,
+  "dub_lines": [
+   "L018"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 121,
+   "median": 138,
+   "p90": 262
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": null,
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -22.5,
+   "style": "medium"
+  },
+  "sample_lines": [
+   "is tha is that a swile"
+  ],
+  "voice_reference": [
+   {
+    "start": 116.52,
+    "end": 117.69,
+    "text": "is tha is that a swile"
+   }
+  ],
+  "voice_reference_s": 1.2,
+  "voice_reason": "cloned from 1.2 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C15",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 0.8,
+  "dub_lines": [
+   "L039"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 225,
+   "median": 279,
+   "p90": 334
+  },
+  "gender_estimate": {
+   "from_pitch": "female",
+   "from_glimmer_cast": "female (1 of 1 lines)",
+   "estimate": "female"
+  },
+  "age_estimate_glimmer": "adult",
+  "glimmer_description": "woman with glasses dark curly hair",
+  "energy": {
+   "median_level_dbfs": -14.4,
+   "style": "loud / animated"
+  },
+  "sample_lines": [
+   "जादा"
+  ],
+  "voice_reference": [
+   {
+    "start": 221.49,
+    "end": 222.34,
+    "text": "وفري"
+   }
+  ],
+  "voice_reference_s": 0.8,
+  "voice_reason": "cloned from 0.8 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C16",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 0.7,
+  "dub_lines": [
+   "L045"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": {
+   "p10": 110,
+   "median": 113,
+   "p90": 118
+  },
+  "gender_estimate": {
+   "from_pitch": "male",
+   "from_glimmer_cast": null,
+   "estimate": "male"
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -39.1,
+   "style": "soft"
+  },
+  "sample_lines": [
+   "निखिल को ना"
+  ],
+  "voice_reference": [
+   {
+    "start": 246.63,
+    "end": 247.36,
+    "text": "منكلكنا"
+   }
+  ],
+  "voice_reference_s": 0.7,
+  "voice_reason": "cloned from 0.7 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ },
+ {
+  "id": "C17",
+  "face_id": null,
+  "kind": "voice-only (off-screen / phone / narrator)",
+  "thumb": null,
+  "screen_time_s": 0.0,
+  "speech_units": 1,
+  "speaking_time_s": 0.4,
+  "dub_lines": [
+   "L047"
+  ],
+  "face_confirmed_units": 0,
+  "voice_matched_units": 1,
+  "pitch_hz": null,
+  "gender_estimate": {
+   "from_pitch": null,
+   "from_glimmer_cast": null,
+   "estimate": null
+  },
+  "age_estimate_glimmer": null,
+  "glimmer_description": null,
+  "energy": {
+   "median_level_dbfs": -26.7,
+   "style": "medium"
+  },
+  "sample_lines": [
+   "يا"
+  ],
+  "voice_reference": [
+   {
+    "start": 249.76,
+    "end": 250.2,
+    "text": "يا"
+   }
+  ],
+  "voice_reference_s": 0.4,
+  "voice_reason": "cloned from 0.4 s of this off-screen voice (1 clips grouped by voice)",
+  "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+ }
+]

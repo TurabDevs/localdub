@@ -1,0 +1,53 @@
+{
+ "id": "C7",
+ "face_id": "F9",
+ "kind": "on-screen",
+ "thumb": "chars/faces/thumbs/F9.jpg",
+ "screen_time_s": 10.2,
+ "speech_units": 4,
+ "speaking_time_s": 11.5,
+ "dub_lines": [
+  "L015",
+  "L021",
+  "L022",
+  "L023"
+ ],
+ "face_confirmed_units": 2,
+ "voice_matched_units": 2,
+ "pitch_hz": {
+  "p10": 114,
+  "median": 133,
+  "p90": 165
+ },
+ "gender_estimate": {
+  "from_pitch": "male",
+  "from_glimmer_cast": "male (2 of 2 lines)",
+  "estimate": "male"
+ },
+ "age_estimate_glimmer": "adult",
+ "glimmer_description": "Man with glasses maroon shirt gesturing",
+ "energy": {
+  "median_level_dbfs": -24.0,
+  "style": "medium"
+ },
+ "sample_lines": [
+  "हमारे बेटे को फीवर है फीवर है फीवर है। टेंप्रेचर बढ़ गया है उसका माथा घरम रहता है। लोग क्या सोचेंगे",
+  "किसी को बता � Snakulommalap क्यों उसको fever है?",
+  "कहेंगे पूरी family को फीवर है। ब्रो, तुझे"
+ ],
+ "voice_reference": [
+  {
+   "start": 131.52,
+   "end": 137.37,
+   "text": "कि हमारे बेटे को फीवर है फीवर है फीवर है टेंपरेचर पढ़ गया है उसका माथाकरम रहता है लोग क्या सोचेंगे"
+  },
+  {
+   "start": 129.86,
+   "end": 131.1,
+   "text": "पूरे मुह्ले में बताना है"
+  }
+ ],
+ "voice_reference_s": 7.1,
+ "voice_reason": "cloned from 7.1 s of this character's own speech (2 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

@@ -1,0 +1,1431 @@
+{
+ "L000": {
+  "start": 1.22,
+  "end": 5.212,
+  "main": "C9",
+  "share": {
+   "C9": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C9",
+    "start": 1.22,
+    "end": 5.21,
+    "text": "press the bell icon on the youtube app and never miss another update",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L001": {
+  "start": 5.54,
+  "end": 6.588,
+  "main": "C9",
+  "share": {
+   "C9": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C9",
+    "start": 5.54,
+    "end": 6.59,
+    "text": "from aib",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L002a": {
+  "start": 17.54,
+  "end": 20.22,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 17.54,
+    "end": 20.63,
+    "text": "हलो ब्रो साडे दस का मूवी बुक कर रहा हूं ठीक है",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L002b": {
+  "start": 20.3,
+  "end": 24.86,
+  "main": "C8",
+  "share": {
+   "C8": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C8",
+    "start": 20.63,
+    "end": 24.86,
+    "text": "नहीं यार मेरी मतकर सुबह से उल्टी आरिय बहुत तेज बुखा रहा है",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L003": {
+  "start": 25.124,
+  "end": 31.388,
+  "main": "C0",
+  "share": {
+   "C0": 0.72,
+   "C8": 0.28
+  },
+  "turns": [
+   {
+    "cid": "C8",
+    "start": 25.12,
+    "end": 26.9,
+    "text": "tn  difid o someting do",
+    "how": [
+     "voice-only"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 26.9,
+    "end": 31.39,
+    "text": "क्या पागलोा टाईफॉड ऐसा कुछ नहीं होता भाई यू जस् नीड टो गेट आउट आंड हैव सम फन",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L004": {
+  "start": 37.188,
+  "end": 45.301,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 37.19,
+    "end": 45.3,
+    "text": "जस्ट स्टेप आउट यार हैव आ कपल ऑफ बियर सब बैक्टीरिया बैक्टीरिया सब मर जाएगा बार टेंडर को कभी हुआ है क्या टाइफॉइड क्यों वो बियर के आजुबा जो रहते हैं त इतना सोच मत",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L005": {
+  "start": 45.301,
+  "end": 50.774,
+  "main": "C4",
+  "share": {
+   "C4": 0.63,
+   "C5": 0.37
+  },
+  "turns": [
+   {
+    "cid": "C4",
+    "start": 45.3,
+    "end": 48.77,
+    "text": "तो जितना ना सोचेगा ना कि मैं को टाईफॉरड है टाईफॉरड है टाईफॉरड है उतना ना ब",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C5",
+    "start": 48.77,
+    "end": 50.77,
+    "text": "की टाइफॉइड ना इtस जस्ट",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L006": {
+  "start": 50.774,
+  "end": 62.396,
+  "main": "C1",
+  "share": {
+   "C1": 0.42,
+   "C0": 0.27,
+   "C5": 0.22,
+   "C4": 0.09
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 50.77,
+    "end": 53.65,
+    "text": "ीदो महीने में बैक्टीरिया अपने आप मर जाएगा",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C5",
+    "start": 53.65,
+    "end": 56.16,
+    "text": "just last mont you got a promotion no then how you got",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C4",
+    "start": 56.16,
+    "end": 57.24,
+    "text": "टाईफोरड लगाअभे तो पर",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 57.24,
+    "end": 58.87,
+    "text": "سोی توो سाइل کے پار्ٹی میं اتनا انजائय کر رहا تھا",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C1",
+    "start": 58.87,
+    "end": 60.91,
+    "text": "you were laughing you were dancing you were joking",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 60.91,
+    "end": 62.4,
+    "text": "िंअब क्या ये सर्डेनली",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L007": {
+  "start": 62.724,
+  "end": 76.508,
+  "main": "C3",
+  "share": {
+   "C3": 0.64,
+   "C5": 0.25,
+   "C0": 0.11
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 62.72,
+    "end": 64.25,
+    "text": "ی فیور بuرننg आیز",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C3",
+    "start": 64.25,
+    "end": 73.08,
+    "text": "एक चीज हो सकता है लइक आइदर यू आर स्माइलिंग और योू है tifoid like how can you have both ش टायफॉiड बeकाus गरीमा ब्रोक uप विथ यू yu so geron tender",
+    "how": [
+     "face",
+     "face",
+     "face",
+     "face",
+     "face"
+    ]
+   },
+   {
+    "cid": "C5",
+    "start": 73.08,
+    "end": 76.51,
+    "text": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L008": {
+  "start": 77.412,
+  "end": 78.204,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 77.41,
+    "end": 78.2,
+    "text": "you kno last year",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L009": {
+  "start": 79.044,
+  "end": 80.604,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 79.04,
+    "end": 80.6,
+    "text": "eوen i فelt kiنd اf typ oid",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L010": {
+  "start": 81.156,
+  "end": 82.652,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 81.16,
+    "end": 82.65,
+    "text": "ب نت ود ود",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L011": {
+  "start": 83.268,
+  "end": 84.508,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 83.27,
+    "end": 84.51,
+    "text": "سورت اف tيفوid",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L012": {
+  "start": 85.22,
+  "end": 86.012,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 85.22,
+    "end": 86.01,
+    "text": "بت ي فوت",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L013": {
+  "start": 87.396,
+  "end": 92.924,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 87.4,
+    "end": 92.92,
+    "text": "सटारटेड जॉगिंग रोज सुबह जॉगिंग करने से ना पेक्टिव आते है और टाइफर जाते हैं परस्पेक्टिव कम-कम टाइफर गो गो",
+    "how": [
+     "face",
+     "face"
+    ]
+   }
+  ]
+ },
+ "L014": {
+  "start": 93.092,
+  "end": 96.636,
+  "main": "C2",
+  "share": {
+   "C2": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 93.09,
+    "end": 96.64,
+    "text": "सुनो वो निखिल का दोस्त बता रहा था की",
+    "how": [
+     "voice"
+    ]
+   }
+  ]
+ },
+ "L015": {
+  "start": 96.9,
+  "end": 101.18,
+  "main": "C7",
+  "share": {
+   "C7": 0.53,
+   "C2": 0.47
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 96.9,
+    "end": 98.92,
+    "text": "निखिल को फीवर टाइप कुछ है",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C7",
+    "start": 98.92,
+    "end": 101.18,
+    "text": "तुमने किसी को बताया तो नहीं कि उसको फीवर है",
+    "how": [
+     "voice"
+    ]
+   }
+  ]
+ },
+ "L016": {
+  "start": 101.476,
+  "end": 109.692,
+  "main": "C4",
+  "share": {
+   "C4": 0.83,
+   "C2": 0.17
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 101.48,
+    "end": 102.89,
+    "text": "नहीं नहीं मैं क्यों बताऊँगी",
+    "how": [
+     "voice"
+    ]
+   },
+   {
+    "cid": "C4",
+    "start": 102.89,
+    "end": 109.69,
+    "text": "i'm telling you brow where there's a will there's a awhat doesn't kill you makes you stronger the hottest fire makes the hardest eel",
+    "how": [
+     "face",
+     "face"
+    ]
+   }
+  ]
+ },
+ "L017": {
+  "start": 115.012,
+  "end": 115.836,
+  "main": "C4",
+  "share": {
+   "C4": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C4",
+    "start": 115.01,
+    "end": 115.84,
+    "text": "ت的ر",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L018": {
+  "start": 116.516,
+  "end": 117.692,
+  "main": "C14",
+  "share": {
+   "C14": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C14",
+    "start": 116.52,
+    "end": 117.69,
+    "text": "is tha is that a swile",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L019": {
+  "start": 117.924,
+  "end": 123.356,
+  "main": "C4",
+  "share": {
+   "C4": 0.55,
+   "C2": 0.45
+  },
+  "turns": [
+   {
+    "cid": "C4",
+    "start": 117.92,
+    "end": 120.89,
+    "text": "a smiles count tyfords gor i knew it",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C2",
+    "start": 120.89,
+    "end": 123.36,
+    "text": "निखिल का दोस्त ये भी बता रहा था की",
+    "how": [
+     "voice"
+    ]
+   }
+  ]
+ },
+ "L020": {
+  "start": 123.94,
+  "end": 128.86,
+  "main": "C2",
+  "share": {
+   "C2": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 123.94,
+    "end": 128.86,
+    "text": "ऐसे अलग डॉक्टर्स होते हैं जो ऐसे फीवर जैसी चीजें ठीक कर देते हैं तमतोगल",
+    "how": [
+     "voice"
+    ]
+   }
+  ]
+ },
+ "L021": {
+  "start": 129.86,
+  "end": 131.1,
+  "main": "C7",
+  "share": {
+   "C7": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C7",
+    "start": 129.86,
+    "end": 131.1,
+    "text": "पूरे मुह्ले में बताना है",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L022": {
+  "start": 131.524,
+  "end": 137.372,
+  "main": "C7",
+  "share": {
+   "C7": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C7",
+    "start": 131.52,
+    "end": 137.37,
+    "text": "कि हमारे बेटे को फीवर है फीवर है फीवर है टेंपरेचर पढ़ गया है उसका माथाकरम रहता है लोग क्या सोचेंगे",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L023": {
+  "start": 138.084,
+  "end": 145.5,
+  "main": "C1",
+  "share": {
+   "C1": 0.49,
+   "C7": 0.29,
+   "C0": 0.21
+  },
+  "turns": [
+   {
+    "cid": "C7",
+    "start": 138.08,
+    "end": 140.27,
+    "text": "लोग कहेंगे पूरी फैमिली को फीवर है ब्रो",
+    "how": [
+     "voice"
+    ]
+   },
+   {
+    "cid": "C1",
+    "start": 140.27,
+    "end": 143.91,
+    "text": "तुझे टाइफॉइड है बोलके ना यह डॉक्टर लोग सब स्कैम चला रेहे हैं वो लो ऐसे त",
+    "how": [
+     "face",
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 143.91,
+    "end": 145.5,
+    "text": "से पैसा निकालने केलिए करते हैं ये सब",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L024": {
+  "start": 146.052,
+  "end": 150.844,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 146.05,
+    "end": 150.84,
+    "text": "ऐसे टाइफर्ड वफर्ड कुछ भी कुद का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो लोग तो क्या है तो पड़ा लिखा है ना",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L025": {
+  "start": 151.204,
+  "end": 158.908,
+  "main": "C3",
+  "share": {
+   "C3": 0.54,
+   "C0": 0.46
+  },
+  "turns": [
+   {
+    "cid": "C3",
+    "start": 151.2,
+    "end": 155.34,
+    "text": "don't fall for all this hay are you taking pills pills of a people woar ill",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 155.34,
+    "end": 158.91,
+    "text": "अबे तुझे मेडिकेशन की नहीं मोटिवेशन की जरूरत है डिटर्मिनेशन है ना ऐसा",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L026": {
+  "start": 160.036,
+  "end": 164.38,
+  "main": "C0",
+  "share": {
+   "C0": 0.38,
+   "C3": 0.31,
+   "C4": 0.31
+  },
+  "turns": [
+   {
+    "cid": "C4",
+    "start": 160.04,
+    "end": 161.37,
+    "text": "لگ جیادہ ٹائپوڈ کا",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 161.37,
+    "end": 163.03,
+    "text": "तुझे पता है निहा का शादी टूट गया है",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C3",
+    "start": 163.03,
+    "end": 164.38,
+    "text": "dod you no pil",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L027": {
+  "start": 164.676,
+  "end": 168.22,
+  "main": "C3",
+  "share": {
+   "C3": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C3",
+    "start": 164.68,
+    "end": 168.22,
+    "text": "she's bed ridan she can't walk man she's only thirty",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L028": {
+  "start": 168.772,
+  "end": 173.756,
+  "main": "C1",
+  "share": {
+   "C1": 0.67,
+   "C3": 0.33
+  },
+  "turns": [
+   {
+    "cid": "C3",
+    "start": 168.77,
+    "end": 170.42,
+    "text": "she's been so brave throug it",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C1",
+    "start": 170.42,
+    "end": 173.76,
+    "text": "all bro just think of all the good things in your life",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L029": {
+  "start": 174.468,
+  "end": 177.116,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 174.47,
+    "end": 177.12,
+    "text": "it's so important to be thankful for what you have you know",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L030": {
+  "start": 178.212,
+  "end": 178.972,
+  "main": "C2",
+  "share": {
+   "C2": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 178.21,
+    "end": 178.97,
+    "text": "ایسے پہن لو",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L031": {
+  "start": 180.1,
+  "end": 181.244,
+  "main": "C2",
+  "share": {
+   "C2": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 180.1,
+    "end": 181.24,
+    "text": "टाइफॉइड कुछ नहीं है",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L032": {
+  "start": 181.444,
+  "end": 186.556,
+  "main": "C2",
+  "share": {
+   "C2": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 181.44,
+    "end": 186.56,
+    "text": "तुम्हारे ग्रहों में प्रॉब्लम है यह है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L033": {
+  "start": 193.508,
+  "end": 196.892,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 193.51,
+    "end": 196.89,
+    "text": "आ डोइंग समथिंग दैट यू लाइक वो पैशन पैशन फॉललो करना सब कर रहे है आजकल",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L034": {
+  "start": 197.124,
+  "end": 199.388,
+  "main": "C3",
+  "share": {
+   "C3": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C3",
+    "start": 197.12,
+    "end": 199.39,
+    "text": "शायरीवारी लेक जितना करेगा तू राईन",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L035": {
+  "start": 199.812,
+  "end": 209.148,
+  "main": "C0",
+  "share": {
+   "C0": 0.32,
+   "C3": 0.26,
+   "C5": 0.22,
+   "C4": 0.19
+  },
+  "turns": [
+   {
+    "cid": "C3",
+    "start": 199.81,
+    "end": 201.47,
+    "text": "उतना हो जाएगा तो फाइन",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C5",
+    "start": 201.47,
+    "end": 203.55,
+    "text": "مب يu ني او cنج ر جاب",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C3",
+    "start": 203.55,
+    "end": 204.35,
+    "text": "جج hوس",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 204.35,
+    "end": 205.65,
+    "text": "چیंज و سिटی چیंज و س्टیٹ",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C4",
+    "start": 205.65,
+    "end": 207.43,
+    "text": "चेंज योर कंट्री चेंज योर कॉंटिनेंट",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 207.43,
+    "end": 209.15,
+    "text": "तो अपने आपको ही चेंज कर तेै ना",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L036": {
+  "start": 209.348,
+  "end": 210.524,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 209.35,
+    "end": 210.52,
+    "text": "그تطنر가",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L037": {
+  "start": 210.756,
+  "end": 212.572,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 210.76,
+    "end": 212.57,
+    "text": "तू समझ रह है फिर टाइपोड कीदर जाएगा",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L038": {
+  "start": 212.772,
+  "end": 219.422,
+  "main": "C0",
+  "share": {
+   "C0": 0.58,
+   "C1": 0.42
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 212.77,
+    "end": 216.63,
+    "text": "उसको पता ही नहीं कहा जाने का टम कहा जाने का कहा जाने का भाई सा पता नहीं आगे से लेफ्ट लो",
+    "how": [
+     "face",
+     "face"
+    ]
+   },
+   {
+    "cid": "C1",
+    "start": 216.63,
+    "end": 219.42,
+    "text": "th you are overthinkingyou're overanalyzing overhip",
+    "how": [
+     "voice"
+    ]
+   }
+  ]
+ },
+ "L039": {
+  "start": 219.422,
+  "end": 226.972,
+  "main": "C4",
+  "share": {
+   "C4": 0.43,
+   "C3": 0.27,
+   "C0": 0.18,
+   "C15": 0.11
+  },
+  "turns": [
+   {
+    "cid": "C3",
+    "start": 219.42,
+    "end": 221.49,
+    "text": "पिंग ओवर हाइपर वेंटिलेटिंग जस्ट",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C15",
+    "start": 221.49,
+    "end": 222.34,
+    "text": "وفري",
+    "how": [
+     "voice-only"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 222.34,
+    "end": 223.72,
+    "text": "تو에ن जد सوच مت",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C4",
+    "start": 223.72,
+    "end": 226.97,
+    "text": "जैसे सा आग बनकर और सोच की तू नहीं सोच रहा हैी",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L040": {
+  "start": 227.108,
+  "end": 232.956,
+  "main": "C5",
+  "share": {
+   "C5": 0.71,
+   "C0": 0.29
+  },
+  "turns": [
+   {
+    "cid": "C5",
+    "start": 227.11,
+    "end": 231.24,
+    "text": "don't have tie fori maybe you just need a long vacation",
+    "how": [
+     "face"
+    ]
+   },
+   {
+    "cid": "C0",
+    "start": 231.24,
+    "end": 232.96,
+    "text": "या फिर हम लोगों के साथ मूवी के लिए आ जा",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L041": {
+  "start": 233.188,
+  "end": 234.3,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 233.19,
+    "end": 234.3,
+    "text": "اچھا تو تو نہیں آ رہا ے",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L042": {
+  "start": 236.228,
+  "end": 237.404,
+  "main": "C13",
+  "share": {
+   "C13": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C13",
+    "start": 236.23,
+    "end": 237.4,
+    "text": "وك باي",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L044": {
+  "start": 244.164,
+  "end": 244.796,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 244.16,
+    "end": 244.8,
+    "text": "جس",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L045": {
+  "start": 246.628,
+  "end": 247.356,
+  "main": "C16",
+  "share": {
+   "C16": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C16",
+    "start": 246.63,
+    "end": 247.36,
+    "text": "منكلكنا",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L046": {
+  "start": 248.324,
+  "end": 249.084,
+  "main": "C0",
+  "share": {
+   "C0": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C0",
+    "start": 248.32,
+    "end": 249.08,
+    "text": "f的人",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L047": {
+  "start": 249.764,
+  "end": 250.204,
+  "main": "C17",
+  "share": {
+   "C17": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C17",
+    "start": 249.76,
+    "end": 250.2,
+    "text": "يا",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L048": {
+  "start": 251.684,
+  "end": 252.764,
+  "main": "C10",
+  "share": {
+   "C10": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C10",
+    "start": 251.68,
+    "end": 252.76,
+    "text": "کیا بات کر رहے ہے",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L049": {
+  "start": 253.892,
+  "end": 257.532,
+  "main": "C10",
+  "share": {
+   "C10": 0.62,
+   "C12": 0.38
+  },
+  "turns": [
+   {
+    "cid": "C12",
+    "start": 253.89,
+    "end": 255.26,
+    "text": "سکو بول متا میں نے تر کو بتایا",
+    "how": [
+     "voice-only"
+    ]
+   },
+   {
+    "cid": "C10",
+    "start": 255.26,
+    "end": 257.53,
+    "text": "لكبل",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L050": {
+  "start": 258.532,
+  "end": 259.58,
+  "main": "C6",
+  "share": {
+   "C6": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C6",
+    "start": 258.53,
+    "end": 259.58,
+    "text": "يكاتلرا",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L051": {
+  "start": 260.132,
+  "end": 266.236,
+  "main": "C6",
+  "share": {
+   "C6": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C6",
+    "start": 260.13,
+    "end": 266.24,
+    "text": "اts tيpoid ا ل اني اh इललनेस अगर हम लोग ऐसे खुस खुस खुस खुस करके आपस में बात करेंगे ना",
+    "how": [
+     "voice",
+     "face"
+    ]
+   }
+  ]
+ },
+ "L052": {
+  "start": 266.404,
+  "end": 269.852,
+  "main": "C6",
+  "share": {
+   "C6": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C6",
+    "start": 266.4,
+    "end": 269.85,
+    "text": "to forget going to the doctor nikil will think twice before he talks to us about it",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L053": {
+  "start": 270.628,
+  "end": 272.028,
+  "main": "C6",
+  "share": {
+   "C6": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C6",
+    "start": 270.63,
+    "end": 272.03,
+    "text": "ل في نعملوك",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L054": {
+  "start": 275.748,
+  "end": 277.212,
+  "main": "C11",
+  "share": {
+   "C11": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C11",
+    "start": 275.75,
+    "end": 277.21,
+    "text": "لگتا ہے اس کو بھی ٹائی فرڈ ہو گیا",
+    "how": [
+     "voice-only"
+    ]
+   }
+  ]
+ },
+ "L055": {
+  "start": 278.852,
+  "end": 286.855,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 278.85,
+    "end": 286.86,
+    "text": "hey guys thanks for watching the video if you guys want to educate yourself about the topic of solike things to say and things not to say to someone who's suffering from depression",
+    "how": [
+     "face",
+     "face"
+    ]
+   }
+  ]
+ },
+ "L056": {
+  "start": 286.855,
+  "end": 292.641,
+  "main": "C1",
+  "share": {
+   "C1": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 286.86,
+    "end": 292.64,
+    "text": "please check out the links in the description box below also if you ythink a friend or you yourself want to seek professional help",
+    "how": [
+     "face",
+     "face"
+    ]
+   }
+  ]
+ },
+ "L057": {
+  "start": 292.641,
+  "end": 301.317,
+  "main": "C1",
+  "share": {
+   "C1": 0.84,
+   "C2": 0.16
+  },
+  "turns": [
+   {
+    "cid": "C1",
+    "start": 292.64,
+    "end": 299.89,
+    "text": "we have a list of numbers in the description box as well we are not copyriting this video so feel free to download it and upload it on as many channels as you want",
+    "how": [
+     "face",
+     "face"
+    ]
+   },
+   {
+    "cid": "C2",
+    "start": 299.89,
+    "end": 301.32,
+    "text": "so that more people watch it",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ },
+ "L058": {
+  "start": 301.317,
+  "end": 306.396,
+  "main": "C2",
+  "share": {
+   "C2": 1.0
+  },
+  "turns": [
+   {
+    "cid": "C2",
+    "start": 301.32,
+    "end": 306.4,
+    "text": "and understand that depression is an illness that needs to be dealt with proper medical attention",
+    "how": [
+     "face"
+    ]
+   }
+  ]
+ }
+}

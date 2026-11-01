@@ -1,0 +1,50 @@
+{
+ "id": "C10",
+ "face_id": "F4",
+ "kind": "on-screen",
+ "thumb": "chars/faces/thumbs/F4.jpg",
+ "screen_time_s": 28.6,
+ "speech_units": 2,
+ "speaking_time_s": 3.3,
+ "dub_lines": [
+  "L048",
+  "L049"
+ ],
+ "face_confirmed_units": 2,
+ "voice_matched_units": 0,
+ "pitch_hz": {
+  "p10": 119,
+  "median": 137,
+  "p90": 225
+ },
+ "gender_estimate": {
+  "from_pitch": "male",
+  "from_glimmer_cast": "male (1 of 1 lines)",
+  "estimate": "male"
+ },
+ "age_estimate_glimmer": "adult",
+ "glimmer_description": "bearded man in light shirt looking right",
+ "energy": {
+  "median_level_dbfs": -28.6,
+  "style": "soft"
+ },
+ "sample_lines": [
+  "मैं क्यों बोलेगा क्यों बोलो गाइस,",
+  "आप बात कर रहे हैं?"
+ ],
+ "voice_reference": [
+  {
+   "start": 255.26,
+   "end": 257.53,
+   "text": "لكبل"
+  },
+  {
+   "start": 251.68,
+   "end": 252.76,
+   "text": "کیا بات کر رहے ہے"
+  }
+ ],
+ "voice_reference_s": 3.3,
+ "voice_reason": "cloned from 3.3 s of this character's own speech (2 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

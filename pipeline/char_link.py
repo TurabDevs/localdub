@@ -55,13 +55,13 @@ def f0_track(x, fs):
 # ---------- 1. units
 U = []
 WORDS = [w for sg in W.get("segments", []) for w in sg.get("words", [])]
-for s in SUB:   # tighten each unit to the Whisper words inside it (word timestamps) and keep Whisper's text next to the ASR text
-    ws = [w for w in WORDS if s["start"] - 0.2 <= (w["s"] + w["e"]) / 2 <= s["end"] + 0.2]
-    if ws:
-        s["whisper"] = "".join(w["w"] for w in ws).strip(); s["start"] = max(s["start"] - 0.2, min(w["s"] for w in ws)); s["end"] = min(s["end"] + 0.2, max(w["e"] for w in ws))
+for s in SUB:   # attach the Whisper words whose centre falls inside the unit (word timestamps + a second transcript)
+    ws = [w for w in WORDS if s["start"] <= (w["s"] + w["e"]) / 2 < s["end"]]
+    if ws:   # boundaries stay at the diarization cuts: Whisper word ends overlapped the next speaker by up to 0.2 s in tests
+        s["whisper"] = "".join(w["w"] for w in ws).strip(); s["words"] = [[round(w["s"], 2), round(w["e"], 2), w["w"].strip()] for w in ws]
 for i, s in enumerate(SUB):
     if s["end"] - s["start"] < 0.15 or not s["text"].strip(): continue
-    U.append({"u": len(U), "sub": i, "start": round(s["start"], 2), "end": round(s["end"], 2), "text": s["text"].strip(), "whisper": s.get("whisper")})
+    U.append({"u": len(U), "sub": i, "start": round(s["start"], 2), "end": round(s["end"], 2), "text": s["text"].strip(), "whisper": s.get("whisper"), "words": s.get("words", [])})
 emb = {u["u"]: EMB[u["sub"]] for u in U}
 speech = np.zeros(len(times), bool)
 for u in U: speech |= (times >= u["start"]) & (times < u["end"])
@@ -180,7 +180,7 @@ for k in order:
          "age_estimate_glimmer": av.most_common(1)[0][0] if av else None,
          "glimmer_description": desc.most_common(1)[0][0] if desc else None,
          "energy": {"median_level_dbfs": round(float(loud), 1)},
-         "sample_lines": [u["text"] for u in sorted(us, key=lambda u: -(u["end"] - u["start"]))[:3]],
+         "sample_lines": [u.get("whisper") or u["text"] for u in sorted(us, key=lambda u: -(u["end"] - u["start"]))[:3]],
          "voice_reference": ref, "voice_reference_s": round(tot, 1),
          "voice_reason": (f"cloned from {round(tot, 1)} s of this character's own speech ({len(ref)} clips where the face detector saw this face talking)"
                           if pool and pool[0]["how"] == "face" else f"cloned from {round(tot, 1)} s of this off-screen voice ({len(ref)} clips grouped by voice)"),

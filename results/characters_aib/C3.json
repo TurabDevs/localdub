@@ -1,0 +1,62 @@
+{
+ "id": "C3",
+ "face_id": "F5",
+ "kind": "on-screen",
+ "thumb": "chars/faces/thumbs/F5.jpg",
+ "screen_time_s": 25.9,
+ "speech_units": 13,
+ "speaking_time_s": 26.3,
+ "dub_lines": [
+  "L007",
+  "L025",
+  "L026",
+  "L027",
+  "L028",
+  "L034",
+  "L035",
+  "L039"
+ ],
+ "face_confirmed_units": 13,
+ "voice_matched_units": 0,
+ "pitch_hz": {
+  "p10": 172,
+  "median": 240,
+  "p90": 356
+ },
+ "gender_estimate": {
+  "from_pitch": "female",
+  "from_glimmer_cast": "female (4 of 6 lines)",
+  "estimate": "female"
+ },
+ "age_estimate_glimmer": "adult",
+ "glimmer_description": "Man on phone in light blue shirt",
+ "energy": {
+  "median_level_dbfs": -19.5,
+  "style": "loud / animated"
+ },
+ "sample_lines": [
+  "don't fall for all this hay are you taking pills pills of a people woar ill",
+  "she's bed ridan she can't walk man she's only thirty",
+  "चीज हो सकता है like Either you are smiling or you have"
+ ],
+ "voice_reference": [
+  {
+   "start": 151.2,
+   "end": 155.34,
+   "text": "don't fall for all this hay are you taking pills pills of a people woar ill"
+  },
+  {
+   "start": 164.68,
+   "end": 168.22,
+   "text": "she's bed ridan she can't walk man she's only thirty"
+  },
+  {
+   "start": 64.25,
+   "end": 66.78,
+   "text": "एक चीज हो सकता है लइक आइदर यू आर स्माइलिंग और योू है"
+  }
+ ],
+ "voice_reference_s": 10.2,
+ "voice_reason": "cloned from 10.2 s of this character's own speech (3 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}
