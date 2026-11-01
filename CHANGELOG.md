@@ -23,6 +23,18 @@ Fixes (v6, `pipeline/align.py`): each line now follows the actor's phrasing and 
 
 Result v5 -> v6: original speech covered by the dub 84.4 % -> 90.9 %, high AV-QA flags 15 spots / 21.2 s -> 9 spots / 7.0 s, loudness -19.0 -> -16.5 LUFS, music + effects -1.9 dB -> +0.1 dB vs the original, listen WER 0.151 -> 0.131. Rebuilt the demo (v5 cut) on the v6 dub.
 
+**Evening: does the voice belong to the face that is talking?**
+
+v6 sounded right line by line, so I checked something the earlier QA never looked at: whether each dubbed line is spoken in the voice of the person whose mouth is actually moving. I built a character stage for that: face identities across shots (`pipeline/char_faces.py`, YuNet + SFace, 17 face ids), a Whisper large-v3 pass with word timestamps on the separated vocals, and `pipeline/char_link.py`, which links each speech unit to the face whose mouth moves with it (101 speech units, 82 confirmed by a face, 18 characters, 10 of them with real screen time).
+
+What it found in v6 (`pipeline/char_mismatch.py`, `results/characters_aib/mismatch_v6.json`):
+
+- **13 of 33 dubbed lines are voiced as the wrong character** for at least part of the line. Together that is 37.9 s of the 134.1 s of face-confirmed speech, about 28 %, spoken in another character's voice.
+- **15 lines use a blended voice.** The voice reference for those lines was cut from an audio chunk where two or more people talk, so the clone is a mix of them.
+- **14 dubbed lines are really several people taking turns** (one of them is 6 turns between 4 people in 11.6 seconds). The voice-activity chunking had glued the turns into one line, so one voice spoke for everybody. v5 had exactly the same problem; my pitch and listen checks could not see it.
+
+The fix I started: split those 14 lines at the speaker changes into 40 turns, let Muse Glimmer write the English for each turn with the whole script as context, and voice every line from a single reference per character, cut only from that character's own face-confirmed speech (`dub.py` with `CHARS` / `CHARMAP`). The per-character profiles (face thumbnail, screen time, pitch range, estimated gender/age, style, sample lines) are in `results/characters_aib/`; gender and age there are estimates and are labelled that way.
+
 **Also today**
 
 - Bilingual subtitles (SRT/WebVTT, source + English) and a review page for checking a dub line by line.
