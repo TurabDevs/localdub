@@ -4,8 +4,8 @@ LocalDub takes a Hindi or Urdu video and gives it back dubbed in English, with e
 
 I'm Muhammad Asim, a student developer from Pakistan. I built this solo for the Meta Global AI Developer Hackathon 2026 (Indie Developer track, "Build for Your World"), with no budget, on free Kaggle CPU machines.
 
-- Demo video (2:36): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v3.mp4
-- Full 5-minute English dub (latest): https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v4.webm
+- Demo video (2:59): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v4.mp4
+- Full 5-minute English dub (latest, v5): https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v5.webm
 - All releases: https://github.com/TurabDevs/localdub/releases
 
 ## Why I built this
@@ -90,33 +90,36 @@ The demo clip is a 5 min 08 s comedy sketch by All India Bakchod, "If People Tre
 
 The clip has 58 speech lines. 14 are already in English and keep the original audio. From v2 on, 12 more keep the original audio too: these are laughs, grunts and one-word bits that the ASR spelled in Arabic or Chinese script and that v1 had "translated" into junk like "Uh." or "Man." That leaves 32 lines that are actually dubbed.
 
-I did four rounds of dub -> listen -> fix. All numbers come from `pipeline/qa_metrics.py` and the Omnilingual ASR listen check (`results/`).
+There are five versions so far; each one after v1 came out of a round of dub -> listen -> fix. All numbers come from `pipeline/qa_metrics.py` and the Omnilingual ASR listen check (`results/`).
 
-| | v1 | v2 | v3 | v4 (current) |
-|---|---|---|---|---|
-| lines dubbed | 44 | 32 | 32 | 32 |
-| dubbed lines that fit their slot | 42 / 44 | 32 / 32 | 32 / 32 | 32 / 32 |
-| lines that overflow | 2 | 0 | 0 | 0 |
-| junk one-word dubs from ASR garble | 8 | 0 | 0 | 0 |
-| voice pitch more than 4 semitones off the original | 11 | 3 | 1 | 1 |
-| mean pitch gap vs original line | 3.72 st | 2.33 st | 1.97 st | 1.84 st |
-| mean loudness gap vs original line | 1.65 dB | 0.45 dB | 0.35 dB | 0.63 dB |
-| listen WER, all dubbed lines | 0.289 | 0.187 | 0.144 | 0.123 |
-| listen WER on the same 32 lines | 0.116 | 0.187 | 0.144 | 0.123 |
-| max tempo change | 1.08x | 1.13x | 1.13x | 1.13x |
+| | v1 | v2 | v3 | v4 | v5 (current) |
+|---|---|---|---|---|---|
+| lines dubbed | 44 | 32 | 32 | 32 | 33 |
+| dubbed lines that fit their slot | 42 / 44 | 32 / 32 | 32 / 32 | 32 / 32 | 33 / 33 |
+| lines that overflow | 2 | 0 | 0 | 0 | 0 |
+| junk one-word dubs from ASR garble | 8 | 0 | 0 | 0 | 0 |
+| voice pitch more than 4 semitones off the original | 11 | 3 | 1 | 1 | 2 |
+| mean pitch gap vs original line | 3.72 st | 2.33 st | 1.97 st | 1.84 st | 1.88 st |
+| mean loudness gap vs original line | 1.65 dB | 0.45 dB | 0.35 dB | 0.63 dB | 0.61 dB |
+| listen WER, all dubbed lines | 0.289 | 0.187 | 0.144 | 0.123 | 0.151 |
+| listen WER on the same 31 lines | 0.116* | 0.187* | 0.144* | 0.123 | 0.152 |
+| max tempo change | 1.08x | 1.13x | 1.13x | 1.13x | 1.13x |
+
+*v1-v3 figures are on the same 32 lines (v5 split one of them in two).
 
 What changed in each round:
 
 - **v2**: added a guard so garbled ASR lines keep the original audio, picked voice references by pitch for short lines (a short line can't clone a voice from itself), and sent 20 flagged lines back to Glimmer for a rewrite (18 used). For 5 of those I wrote a note on what the Hindi probably meant, for example that the ASR's "टेंडर" after "Garima broke up with you" is "Tinder". The other 15 only had the measured timing and a syllable target.
 - **v3**: re-voiced the 3 lines whose pitch was way off with a different reference.
 - **v4**: fixed "Put it on.", which the listen check heard as "vtdn" (WER 1.0 -> 0.0), and moved one line that came out with a heavy accent back to the cluster reference.
+- **v5**: went line by line through the two windows the demo video shows and fixed what was wrong in meaning, which the metrics can't see. The opening phone call had both people in one voice, so I split it at the speaker change (pitch drops from about 175 Hz to 125 Hz) and each side now has its own voice. Glimmer rewrote six lines, including the sketch's main joke ("there's no such thing as typhoid, bro"; v4 said "typhoid isn't like that") and a sarcastic question v4 had turned into the opposite ("Tell the whole neighborhood." -> "Whole neighbourhood to know?"). Two lines needed extra takes; I generated five of each and picked by the listen check and pitch. By the numbers v5 is a bit worse than v4 (WER 0.123 -> 0.152), mostly ASR spelling ("our sun", "hart", "brow"), while the lines are now correct. I chose correct over a better score; details in `results/qa_v5.md`.
 
-I want to be straight about the last two rows. The big drop in WER from v1 to v2 is mostly because v2 stopped dubbing the junk lines. On the 32 lines both versions dub, v1 was actually slightly clearer (0.116), v2 and v3 got worse, and v4 got back to almost the same level (0.123) while fixing the overflow, junk and voice problems. A lot of the remaining "errors" are the ASR spelling things its own way ("tiphoid", "mikil" for Nikhil), not wrong speech. Full per-line details, including every Glimmer rewrite, are in `results/qa_v2.md` to `results/qa_v4.md`.
+I want to be straight about the two WER rows. The big drop in WER from v1 to v2 is mostly because v2 stopped dubbing the junk lines. On the 32 lines both versions dub, v1 was actually slightly clearer (0.116), v2 and v3 got worse, and v4 got back to almost the same level (0.123) while fixing the overflow, junk and voice problems. A lot of the remaining "errors" are the ASR spelling things its own way ("tiphoid", "mikil" for Nikhil), not wrong speech. Full per-line details, including every Glimmer rewrite, are in `results/qa_v2.md` to `results/qa_v5.md`.
 
 ## What doesn't work yet
 
 - **One clip.** Everything above is measured on one 5-minute sketch. I haven't tested it on other creators, other genres, or Punjabi/Saraiki audio yet.
-- **Mixed speakers in one chunk.** The opening phone call has both people inside one speech chunk, so both get one voice. The speaker clustering also has one big mixed cluster; short lines that borrow a voice from it can get the wrong person.
+- **Mixed speakers in one chunk.** The voice-activity chunks sometimes hold two people. I fixed the opening phone call by hand-picking the split point from the pitch track; it isn't automatic yet. The speaker clustering also has one big mixed cluster, and short lines that borrow a voice from it can get the wrong person.
 - **Hinglish ASR.** Omnilingual ASR handles Hindi well, but English words inside Hindi sentences sometimes come out in the wrong script. Glimmer repairs most of it from context; some meaning still slips (see the rewrite notes).
 - **26 of 58 lines keep the original audio.** 14 are fine because they are English. 12 are short laughs and interjections I chose not to dub rather than dub badly.
 - **No lip-sync.** Lines fit their time slot, but mouths are not re-animated.
@@ -148,6 +151,8 @@ What a GPU budget would change: on a single 24 GB GPU, Glimmer goes from about 1
 - `pipeline/qa_metrics.py`: per-line metrics (fit, spill, loudness, pitch vs original, listen WER)
 - `pipeline/make_rw_jobs.py`: builds the Glimmer rewrite job for flagged lines
 - `pipeline/listen_prep.py`: cuts the dubbed lines for the listen check
+- `pipeline/split_line.py`: splits a line that holds two speakers
+- `pipeline/make_demo_rw_jobs.py`, `pipeline/split_rewrite.py`: the v5 Glimmer rewrite of the demo-window lines
 - `results/`: QA reports, metrics and listen results for every version
 
 ## Credits
