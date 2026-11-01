@@ -1,0 +1,43 @@
+{
+ "id": "C16",
+ "face_id": null,
+ "kind": "voice-only (off-screen / phone / narrator)",
+ "thumb": null,
+ "screen_time_s": 0.0,
+ "speech_units": 1,
+ "speaking_time_s": 0.7,
+ "dub_lines": [
+  "L045"
+ ],
+ "face_confirmed_units": 0,
+ "voice_matched_units": 1,
+ "pitch_hz": {
+  "p10": 110,
+  "median": 113,
+  "p90": 118
+ },
+ "gender_estimate": {
+  "from_pitch": "male",
+  "from_glimmer_cast": null,
+  "estimate": "male"
+ },
+ "age_estimate_glimmer": null,
+ "glimmer_description": null,
+ "energy": {
+  "median_level_dbfs": -39.1,
+  "style": "soft"
+ },
+ "sample_lines": [
+  "निखिल को ना"
+ ],
+ "voice_reference": [
+  {
+   "start": 246.63,
+   "end": 247.36,
+   "text": "منكلكنا"
+  }
+ ],
+ "voice_reference_s": 0.7,
+ "voice_reason": "cloned from 0.7 s of this off-screen voice (1 clips grouped by voice)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

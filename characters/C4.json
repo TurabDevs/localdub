@@ -1,0 +1,62 @@
+{
+ "id": "C4",
+ "face_id": "F3",
+ "kind": "on-screen",
+ "thumb": "thumbs/C4.jpg",
+ "screen_time_s": 32.1,
+ "speech_units": 9,
+ "speaking_time_s": 21.5,
+ "dub_lines": [
+  "L005",
+  "L006",
+  "L016",
+  "L017",
+  "L019",
+  "L026",
+  "L035",
+  "L039"
+ ],
+ "face_confirmed_units": 9,
+ "voice_matched_units": 0,
+ "pitch_hz": {
+  "p10": 126,
+  "median": 199,
+  "p90": 279
+ },
+ "gender_estimate": {
+  "from_pitch": "female",
+  "from_glimmer_cast": "male (4 of 6 lines)",
+  "estimate": "unsure (pitch says female, Glimmer says male)"
+ },
+ "age_estimate_glimmer": "adult",
+ "glimmer_description": "young man with curly hair and glasses",
+ "energy": {
+  "median_level_dbfs": -19.2,
+  "style": "loud / animated"
+ },
+ "sample_lines": [
+  "awhat doesn't kill you makes you stronger the hottest fire makes the hardest eel",
+  "जितना ना सोचेगा ना क्यों में एको टाइफॉइड है, टाइफॉइड है, टाइफॉइड है, उतना ना बढ़ता",
+  "जस ऐसा आग बंद कर और सोच की तू नहीं सोच रहा है Maybe you"
+ ],
+ "voice_reference": [
+  {
+   "start": 105.11,
+   "end": 109.69,
+   "text": "awhat doesn't kill you makes you stronger the hottest fire makes the hardest eel"
+  },
+  {
+   "start": 45.3,
+   "end": 48.77,
+   "text": "तो जितना ना सोचेगा ना कि मैं को टाईफॉरड है टाईफॉरड है टाईफॉरड है उतना ना ब"
+  },
+  {
+   "start": 223.72,
+   "end": 226.97,
+   "text": "जैसे सा आग बनकर और सोच की तू नहीं सोच रहा हैी"
+  }
+ ],
+ "voice_reference_s": 11.3,
+ "voice_reason": "cloned from 11.3 s of this character's own speech (3 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

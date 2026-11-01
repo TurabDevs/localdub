@@ -1,0 +1,59 @@
+{
+ "id": "C2",
+ "face_id": "F2",
+ "kind": "on-screen",
+ "thumb": "thumbs/C2.jpg",
+ "screen_time_s": 37.6,
+ "speech_units": 10,
+ "speaking_time_s": 27.9,
+ "dub_lines": [
+  "L014",
+  "L015",
+  "L016",
+  "L019",
+  "L020",
+  "L030",
+  "L031",
+  "L032",
+  "L057",
+  "L058"
+ ],
+ "face_confirmed_units": 6,
+ "voice_matched_units": 4,
+ "pitch_hz": {
+  "p10": 170,
+  "median": 199,
+  "p90": 240
+ },
+ "gender_estimate": {
+  "from_pitch": "female",
+  "from_glimmer_cast": "female (2 of 3 lines)",
+  "estimate": "female"
+ },
+ "age_estimate_glimmer": "adult",
+ "glimmer_description": "Man with curly hair glasses brown shirt",
+ "energy": {
+  "median_level_dbfs": -20.1,
+  "style": "loud / animated"
+ },
+ "sample_lines": [
+  "ग्रहों में प्रॉब्लम है ये है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है",
+  "understand that depression is an illness that needs to be dealt with proper medical attention",
+  "अलग डॉक्टर्स होते हैं जो ऐसे फीवर जैसे चीजें ठीक कर देते हैं"
+ ],
+ "voice_reference": [
+  {
+   "start": 181.44,
+   "end": 186.56,
+   "text": "तुम्हारे ग्रहों में प्रॉब्लम है यह है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है"
+  },
+  {
+   "start": 301.32,
+   "end": 306.4,
+   "text": "and understand that depression is an illness that needs to be dealt with proper medical attention"
+  }
+ ],
+ "voice_reference_s": 10.2,
+ "voice_reason": "cloned from 10.2 s of this character's own speech (2 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

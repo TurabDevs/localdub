@@ -1,0 +1,69 @@
+{
+ "id": "C0",
+ "face_id": "F0",
+ "kind": "on-screen",
+ "thumb": "thumbs/C0.jpg",
+ "screen_time_s": 93.4,
+ "speech_units": 24,
+ "speaking_time_s": 56.3,
+ "dub_lines": [
+  "L002a",
+  "L003",
+  "L004",
+  "L006",
+  "L007",
+  "L013",
+  "L023",
+  "L024",
+  "L025",
+  "L026",
+  "L033",
+  "L035",
+  "L036",
+  "L037",
+  "L038",
+  "L039",
+  "L040",
+  "L041",
+  "L044",
+  "L046"
+ ],
+ "face_confirmed_units": 24,
+ "voice_matched_units": 0,
+ "pitch_hz": {
+  "p10": 150,
+  "median": 206,
+  "p90": 286
+ },
+ "gender_estimate": {
+  "from_pitch": "female",
+  "from_glimmer_cast": "male (11 of 15 lines)",
+  "estimate": "unsure (pitch says female, Glimmer says male)"
+ },
+ "age_estimate_glimmer": "young",
+ "glimmer_description": "man in light blue shirt on phone",
+ "energy": {
+  "median_level_dbfs": -19.7,
+  "style": "loud / animated"
+ },
+ "sample_lines": [
+  "just step out यार, have a couple of beers सब बैक्टीरिया, बैक्टीरिया, सब मर जाएगा Bartender को कभी हुआ है क्या टाइफॉर्ड? क्यों वो बेर के आजुबाजु रहते हैं अमच तु इतना सोच मत, तु",
+  "ऐसे टाइफोइड वैफ़़ड कुछ भी कुछ का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो",
+  "क्या पाँगल हो या टाइफॉर्ड, ऐसा कुछ नहीं होता भाई You just need to get out and have some fun"
+ ],
+ "voice_reference": [
+  {
+   "start": 37.19,
+   "end": 43.19,
+   "text": "जस्ट स्टेप आउट यार हैव आ कपल ऑफ बियर सब बैक्टीरिया बैक्टीरिया सब मर जाएगा बार टेंडर को कभी हुआ है क्या टाइफॉइड क्यों वो बियर के आजुबा जो रहते हैं त इतना सोच मत"
+  },
+  {
+   "start": 146.05,
+   "end": 150.84,
+   "text": "ऐसे टाइफर्ड वफर्ड कुछ भी कुद का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो लोग तो क्या है तो पड़ा लिखा है ना"
+  }
+ ],
+ "voice_reference_s": 10.8,
+ "voice_reason": "cloned from 10.8 s of this character's own speech (2 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

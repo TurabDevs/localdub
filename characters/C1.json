@@ -1,0 +1,67 @@
+{
+ "id": "C1",
+ "face_id": "F1",
+ "kind": "on-screen",
+ "thumb": "thumbs/C1.jpg",
+ "screen_time_s": 51.6,
+ "speech_units": 18,
+ "speaking_time_s": 44.2,
+ "dub_lines": [
+  "L006",
+  "L008",
+  "L009",
+  "L010",
+  "L011",
+  "L012",
+  "L023",
+  "L028",
+  "L029",
+  "L038",
+  "L055",
+  "L056",
+  "L057"
+ ],
+ "face_confirmed_units": 17,
+ "voice_matched_units": 1,
+ "pitch_hz": {
+  "p10": 123,
+  "median": 163,
+  "p90": 223
+ },
+ "gender_estimate": {
+  "from_pitch": "male",
+  "from_glimmer_cast": "male (4 of 4 lines)",
+  "estimate": "male"
+ },
+ "age_estimate_glimmer": "adult",
+ "glimmer_description": "Man in black t-shirt glasses red wristband",
+ "energy": {
+  "median_level_dbfs": -20.7,
+  "style": "loud / animated"
+ },
+ "sample_lines": [
+  "guys, thanks for watching the video If you guys want to educate yourself about the topic of depression",
+  "copywriting this video so feel free to download it and upload it on as many channels as you want So",
+  "Like things to say and things not to say to someone who is suffering from depression Please"
+ ],
+ "voice_reference": [
+  {
+   "start": 278.85,
+   "end": 282.99,
+   "text": "hey guys thanks for watching the video if you guys want to educate yourself about the topic of"
+  },
+  {
+   "start": 295.79,
+   "end": 299.89,
+   "text": "copyriting this video so feel free to download it and upload it on as many channels as you want"
+  },
+  {
+   "start": 282.99,
+   "end": 286.86,
+   "text": "solike things to say and things not to say to someone who's suffering from depression"
+  }
+ ],
+ "voice_reference_s": 12.1,
+ "voice_reason": "cloned from 12.1 s of this character's own speech (3 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}

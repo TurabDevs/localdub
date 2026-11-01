@@ -1,0 +1,59 @@
+{
+ "id": "C5",
+ "face_id": "F7",
+ "kind": "on-screen",
+ "thumb": "thumbs/C5.jpg",
+ "screen_time_s": 15.5,
+ "speech_units": 5,
+ "speaking_time_s": 14.2,
+ "dub_lines": [
+  "L005",
+  "L006",
+  "L007",
+  "L035",
+  "L040"
+ ],
+ "face_confirmed_units": 5,
+ "voice_matched_units": 0,
+ "pitch_hz": {
+  "p10": 193,
+  "median": 253,
+  "p90": 356
+ },
+ "gender_estimate": {
+  "from_pitch": "female",
+  "from_glimmer_cast": "male (3 of 5 lines)",
+  "estimate": "unsure (pitch says female, Glimmer says male)"
+ },
+ "age_estimate_glimmer": "young",
+ "glimmer_description": "young man with curly hair and glasses",
+ "energy": {
+  "median_level_dbfs": -24.9,
+  "style": "medium"
+ },
+ "sample_lines": [
+  "don't have typhoid Maybe you just need a long vacation या",
+  "typhoid, vomiting, diarrhea सब चला जाएगा",
+  "Just last month you got a promotion, no? Then how you got"
+ ],
+ "voice_reference": [
+  {
+   "start": 227.11,
+   "end": 231.24,
+   "text": "don't have tie fori maybe you just need a long vacation"
+  },
+  {
+   "start": 73.08,
+   "end": 76.51,
+   "text": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा"
+  },
+  {
+   "start": 53.65,
+   "end": 56.16,
+   "text": "just last mont you got a promotion no then how you got"
+  }
+ ],
+ "voice_reference_s": 10.1,
+ "voice_reason": "cloned from 10.1 s of this character's own speech (3 clips where the face detector saw this face talking)",
+ "note": "gender/age are estimates (pitch + Muse Glimmer's per-line labels), not facts about the actor"
+}
