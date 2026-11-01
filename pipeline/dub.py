@@ -28,7 +28,9 @@ import numpy as np, soundfile as sf, requests, msgpack
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import align
 V6 = os.environ.get("V6", "1") == "1"
 SRC_LANG = os.environ.get("SRC_LANG", "hi")          # source language of the video (hi for the AIB demo, en for English -> Urdu)
-TTS_SCRIPT = os.environ.get("TTS_SCRIPT", "native")  # for Urdu/Hindi targets: "native" script or "roman" letters sent to the voice   # AV-QA driven placement/loudness/non-verbal fixes; V6=0 reproduces v5
+TTS_SCRIPT = os.environ.get("TTS_SCRIPT", "native")
+import hashlib
+EDITS = json.load(open(os.environ["EDITS"])) if os.environ.get("EDITS") else {}   # from make_review.py  # for Urdu/Hindi targets: "native" script or "roman" letters sent to the voice   # AV-QA driven placement/loudness/non-verbal fixes; V6=0 reproduces v5
 
 S1, JD, RES, VIDEO, OUT = sys.argv[1:6]
 WD = os.path.join(os.path.dirname(os.path.abspath(OUT)), "dubwork"); os.makedirs(WD + "/tts", exist_ok=True)
@@ -147,6 +149,11 @@ for L in lines:
     if SRC_LANG != "en" and os.environ.get("GARBLE_GUARD", "1") == "1" and garbled(L["hi"]): keep.append(L); L["kept"] = "asr_garble"; continue
     e = EN.get(L["id"], {})
     variants = [(n, e.get(n)) for n in ("rw", "en", "en_short") if e.get(n)]
+    ed = EDITS.get(L["id"], {})
+    if ed.get("text"):    # creator edit from the review page: the edited line replaces the Glimmer variants
+        variants = [("edit_" + hashlib.md5(ed["text"].encode()).hexdigest()[:8], ed["text"])]
+    if ed.get("retake"):  # new TTS takes: different cache names, the old takes stay on disk
+        variants = [(n + "_r" + str(int(ed["retake"])), t) for n, t in variants]
     todo.append((L, variants, e.get("emotion", "neutral")))
 
 PHASE = os.environ.get("PHASE", "all"); BUDGET = float(os.environ.get("BUDGET", "100")); T0 = time.time()
@@ -164,7 +171,7 @@ def render(item):
     best = None
     for name, text in variants:
         a = load_trim(tts(text, L["spk"], emo, f"{WD}/tts/{L['id']}_{name}.wav", L["id"])); d = len(a) / SR
-        tmax = 1.15 if name == "rw" else TMAX     # a QA-driven Glimmer rewrite may run a little faster before falling back to v1 text
+        tmax = 1.15 if name.startswith(("rw", "edit")) else TMAX     # a QA-driven Glimmer rewrite may run a little faster before falling back to v1 text
         f = min(max(d / slot, TMIN), tmax) if d > slot or d < slot * 0.6 else 1.0
         fits = d / f <= slot + 0.05
         cand = (name, text, a, d, f, fits)
