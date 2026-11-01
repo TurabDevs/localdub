@@ -26,7 +26,9 @@ Auth for Fish: the sandbox identity gateway injects the key for api.fish.audio (
 import json, os, re, subprocess, sys, time, concurrent.futures as cf
 import numpy as np, soundfile as sf, requests, msgpack
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import align
-V6 = os.environ.get("V6", "1") == "1"   # AV-QA driven placement/loudness/non-verbal fixes; V6=0 reproduces v5
+V6 = os.environ.get("V6", "1") == "1"
+SRC_LANG = os.environ.get("SRC_LANG", "hi")          # source language of the video (hi for the AIB demo, en for English -> Urdu)
+TTS_SCRIPT = os.environ.get("TTS_SCRIPT", "native")  # for Urdu/Hindi targets: "native" script or "roman" letters sent to the voice   # AV-QA driven placement/loudness/non-verbal fixes; V6=0 reproduces v5
 
 S1, JD, RES, VIDEO, OUT = sys.argv[1:6]
 WD = os.path.join(os.path.dirname(os.path.abspath(OUT)), "dubwork"); os.makedirs(WD + "/tts", exist_ok=True)
@@ -49,6 +51,8 @@ for k, v in sorted(R.items()):
     if k.startswith(("tr_", "rw_")):
         j = parse(v.get("content")) or {}
         for x in j.get("lines", []):
+            if "text" in x and "en" not in x:      # non-English target (--tgt ur/hi): Glimmer returns text/text_short/roman
+                x = dict(x, en=x.get("roman") if TTS_SCRIPT == "roman" else x["text"], en_short=x.get("text_short"))
             if k.startswith("rw_"): EN.setdefault(x["id"], {})["rw"] = x.get("en_fit") or x.get("en")
             else: EN.setdefault(x["id"], {}).update(x)
 CAST = {k[5:]: parse(v.get("content")) for k, v in R.items() if k.startswith("cast_")}   # keyed by line id (cast_L002)
@@ -139,8 +143,8 @@ def latin(t):
 
 qa, todo, keep = [], [], []
 for L in lines:
-    if latin(L["hi"]): keep.append(L); continue      # already English in the original: keep the original voice
-    if os.environ.get("GARBLE_GUARD", "1") == "1" and garbled(L["hi"]): keep.append(L); L["kept"] = "asr_garble"; continue
+    if SRC_LANG != "en" and latin(L["hi"]): keep.append(L); continue      # already English in the original: keep the original voice
+    if SRC_LANG != "en" and os.environ.get("GARBLE_GUARD", "1") == "1" and garbled(L["hi"]): keep.append(L); L["kept"] = "asr_garble"; continue
     e = EN.get(L["id"], {})
     variants = [(n, e.get(n)) for n in ("rw", "en", "en_short") if e.get(n)]
     todo.append((L, variants, e.get("emotion", "neutral")))
@@ -168,6 +172,12 @@ def render(item):
         if best is None or d < best[3]: best = cand
     if not best[5] and best[3] / slot <= 1.15:      # last resort: slightly faster rather than spilling into the next line
         name, text, a, d, f, fits = best; best = (name, text, a, d, d / slot, True)
+    if V6 and best[3] < 0.7 * slot:                 # AV-QA: a take this short leaves the actor talking in silence;
+        alt = []                                    # prefer a longer variant that fills the line at <= 1.16x
+        for name, text in variants:
+            a = load_trim(tts(text, L["spk"], emo, f"{WD}/tts/{L['id']}_{name}.wav", L["id"])); d = len(a) / SR
+            if 0.8 <= d / slot <= 1.16: alt.append((abs(1 - d / slot), (name, text, a, d, max(1.0, d / slot), True)))
+        if alt: best = min(alt, key=lambda x: x[0])[1]
     return L, emo, best
 
 dub = np.zeros(len(bg), np.float32)

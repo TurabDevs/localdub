@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """LocalDub: build Muse Glimmer jobs from stage-1 outputs.
 
-usage: make_jobs.py <s1_dir> <out_dir> [--video proxy.mp4]
+usage: make_jobs.py <s1_dir> <out_dir> [--src hi|ur|en] [--tgt en|ur|hi] [--context "Hindi comedy sketch"]
+  default direction is Hindi/Urdu -> English (the AIB demo); --src en --tgt ur is the English -> Urdu direction
 reads  s1/segments.json, s1/asr.json, s1/emb.npy
 writes out/speakers.json   voice clusters (ECAPA cosine, average-linkage agglomerative)
        out/lines.json      dubbing lines (segments merged into sentences per speaker, with timing budget)
@@ -12,7 +13,12 @@ The script prefix is identical across translation jobs so llama.cpp's prompt cac
 import json, os, sys
 import numpy as np
 
-S1, OUT = sys.argv[1], sys.argv[2]; os.makedirs(OUT, exist_ok=True)
+import argparse
+ap = argparse.ArgumentParser(); ap.add_argument("s1"); ap.add_argument("out"); ap.add_argument("--video")
+ap.add_argument("--src", default="hi"); ap.add_argument("--tgt", default="en"); ap.add_argument("--context", default=None)
+args = ap.parse_args(); S1, OUT = args.s1, args.out; os.makedirs(OUT, exist_ok=True)
+LANG = {"hi": "Hindi/Urdu", "ur": "Urdu", "en": "English"}
+CTX = args.context or ("Hindi comedy sketch" if args.src in ("hi", "ur") else "English short film")
 segs = json.load(open(f"{S1}/segments.json"))
 asr = json.load(open(f"{S1}/asr.json")); asr = asr.get("omniASR_CTC_1B_v2", next(iter(asr.values())))
 E = np.load(f"{S1}/emb.npy") if os.path.exists(f"{S1}/emb.npy") else None
@@ -48,8 +54,9 @@ json.dump(speakers, open(f"{OUT}/speakers.json", "w"), ensure_ascii=False, inden
 
 # ---------------------------------------------------------------- lines: one dubbing line per VAD chunk (stable ids L<seg>)
 # (chunks are already split at >=220 ms pauses and capped at 14 s, which matches how dubbing scripts are cut)
-lines = [{"id": f"L{s['i']:03d}", "spk": s["spk"], "start": s["start"], "end": s["end"], "hi": s["hi"], "segs": [s["i"]]}
-         for s in segs if s["hi"]]
+# "hi" keeps its historical name: it is the SOURCE transcript (Hindi for the AIB demo, English for --src en)
+lines = [{"id": f"L{s['i']:03d}", "spk": s["spk"], "start": s["start"], "end": s["end"], "hi": s["hi"], "segs": [s["i"]],
+          "src_lang": args.src, "tgt_lang": args.tgt} for s in segs if s["hi"].strip()]
 for L in lines:
     d = L["end"] - L["start"]; L["dur"] = round(d, 2)
     L["max_syll"] = max(2, int(round(d * 4.2)))   # natural English ~4-5 syllables/s
@@ -61,26 +68,39 @@ def latin(t):
     l = [c for c in t if c.isalpha()]; return bool(l) and sum(c.isascii() for c in l) / len(l) > 0.8
 cast = []
 for L in lines:
-    if L["dur"] < 1.5 or latin(L["hi"]): continue
+    if L["dur"] < 1.5 or (args.src != "en" and latin(L["hi"])): continue
     t = round(L["start"] + min(1.2, L["dur"] / 2), 2)
     cast.append({"id": f"cast_{L['id']}", "json": True, "reasoning": "low", "max_tokens": 700, "temperature": 0.5,
                  "messages": [{"role": "user", "content": [{"type": "frame", "t": t}, {"type": "text", "text":
-        "Frame from a Hindi comedy sketch at the moment this line is spoken: " + repr(L["hi"][:160]) + ". "
+        f"Frame from a {CTX} at the moment this line is spoken: " + repr(L["hi"][:160]) + ". "
         "Who is most likely speaking? Reply ONLY JSON: {\"speaker\": \"5-8 word visual description\", \"gender\": \"male|female|unknown\", "
         "\"age\": \"young|adult|older\", \"role\": \"one-word role e.g. Patient, Friend, Mother, Doctor, Aunt\", \"face_visible\": true|false}"}]}]})
 json.dump(cast, open(f"{OUT}/jobs_cast.json", "w"), ensure_ascii=False, indent=1)
 
 # ---------------------------------------------------------------- translation jobs (text) with shared script prefix
 script = "\n".join(f"{L['id']} ({L['dur']}s): {L['hi']}" for L in lines)   # voice ids are not needed for translation
-SYS = ("You are LocalDub's dubbing writer. You turn Hindi/Urdu comedy dialogue into natural, funny, spoken American English "
-       "for a lip-timed dub. Keep the joke and the attitude, not the literal words. Rewrite Indian cultural references only when "
-       "an English viewer would miss the joke. Never add content. Lines come from an automatic transcript that can contain errors: "
-       "use the whole script to infer what was really said.")
-PRE = ("FULL SCRIPT (line id, slot length, Hindi ASR):\n" + script +
-       "\n\nFor the requested lines produce JSON {\"lines\": [{\"id\": ..., \"en\": full natural English line, "
-       "\"en_short\": shorter version with the same meaning for tight slots, \"emotion\": one of neutral|happy|laughing|sarcastic|angry|"
-       "shouting|sad|worried|excited|whisper}]}. Lines that are already English (e.g. a YouTube outro) stay English. Each line must be speakable within its slot "
-       "length at a natural pace (about 4 syllables per second for en, 3 for en_short).")
+if args.tgt == "en":
+    SYS = ("You are LocalDub's dubbing writer. You turn Hindi/Urdu comedy dialogue into natural, funny, spoken American English "
+           "for a lip-timed dub. Keep the joke and the attitude, not the literal words. Rewrite Indian cultural references only when "
+           "an English viewer would miss the joke. Never add content. Lines come from an automatic transcript that can contain errors: "
+           "use the whole script to infer what was really said.")
+    PRE = ("FULL SCRIPT (line id, slot length, Hindi ASR):\n" + script +
+           "\n\nFor the requested lines produce JSON {\"lines\": [{\"id\": ..., \"en\": full natural English line, "
+           "\"en_short\": shorter version with the same meaning for tight slots, \"emotion\": one of neutral|happy|laughing|sarcastic|angry|"
+           "shouting|sad|worried|excited|whisper}]}. Lines that are already English (e.g. a YouTube outro) stay English. Each line must be speakable within its slot "
+           "length at a natural pace (about 4 syllables per second for en, 3 for en_short).")
+else:
+    T = {"ur": "Urdu", "hi": "Hindi"}[args.tgt]
+    script_note = ("Urdu script (Nastaliq letters) for \"text\"" if args.tgt == "ur" else "Devanagari for \"text\"")
+    SYS = (f"You are LocalDub's dubbing writer. You turn {LANG[args.src]} dialogue from a {CTX} into natural, everyday spoken {T} "
+           f"for a timed dub, the way people really talk in Pakistan and North India today: short, conversational, English loanwords "
+           f"where speakers would use them (robot, space, okay), never stiff or bookish. Keep meaning, tone and attitude; never add content. "
+           f"Names stay as they are. Lines come from an automatic transcript that can contain errors: use the whole script to infer what was said.")
+    PRE = (f"FULL SCRIPT (line id, slot length, {LANG[args.src]} ASR):\n" + script +
+           "\n\nFor the requested lines produce JSON {\"lines\": [{\"id\": ..., \"text\": full natural spoken line in " + script_note + ", "
+           "\"roman\": the same line in Roman Urdu/Hindi (Latin letters), \"text_short\": a shorter version with the same meaning (same script as text), "
+           "\"emotion\": one of neutral|happy|laughing|sarcastic|angry|shouting|sad|worried|excited|whisper}]}. "
+           "Each line must be speakable within its slot length at a natural pace (about 4.5 syllables per second for text, 3.5 for text_short).")
 B = 10
 tr = []
 for k in range(0, len(lines), B):
