@@ -60,6 +60,16 @@ for k, v in sorted(R.items()):
                 x = dict(x, en=x.get("roman") if TTS_SCRIPT == "roman" else x["text"], en_short=x.get("text_short"))
             if k.startswith("rw_"): EN.setdefault(x["id"], {})["rw"] = x.get("en_fit") or x.get("en")
             else: EN.setdefault(x["id"], {}).update(x)
+# TTS_SCRIPT=deva (Urdu target): the voice gets the same Urdu line written in Devanagari letters, from a Muse Glimmer
+# transliteration job (tl_*: {"lines": [{"id", "deva", "deva_short"}]}). Measured on Nov 1: Fish reads Urdu much more
+# clearly from Devanagari than from Urdu script or Roman Urdu (ASR round trip). Subtitles keep the Urdu script.
+if TTS_SCRIPT == "deva":
+    for k, v in sorted(R.items()):
+        if not k.startswith("tl_"): continue
+        for x in (parse(v.get("content")) or {}).get("lines", []):
+            e = EN.get(x["id"])
+            if e and x.get("deva"):
+                e["script_text"] = e.get("text"); e["en"] = x["deva"]; e["en_short"] = x.get("deva_short") or e.get("en_short")
 CAST = {k[5:]: parse(v.get("content")) for k, v in R.items() if k.startswith("cast_")}   # keyed by line id (cast_L002)
 URDU = set("ٹڈڑںےہھیکگپچژۓۀ")
 def garbled(t):
