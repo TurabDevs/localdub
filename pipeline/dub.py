@@ -21,6 +21,9 @@ v6 (after the first AV-QA run, see avqa.py and align.py):
   * dub pieces follow the actor's phrases and are slowed down (>= 0.85x) when the take ends well before the actor stops
   * voice gain matched on voiced frames only; a look-ahead peak limiter replaces whole-mix scaling
   * non-verbal vocals outside the dubbing lines (laughs, groans, shouts) are kept from the original
+v7 (character stage, see char_faces.py / char_link.py):
+  * with CHARS/CHARMAP set, every line is voiced from its character's single reference (one consistent voice per
+    character, cut from that character's own face-confirmed speech); lines holding two characters are split first
 Auth for Fish: the sandbox identity gateway injects the key for api.fish.audio (never in code).
 """
 import json, os, re, subprocess, sys, time, concurrent.futures as cf
@@ -114,11 +117,25 @@ if os.environ.get("PITCH_REF", "1") == "1":
         if b == "cluster": PREF.pop(a, None)
         else: PREF[a] = b
 
+# v7 character stage (char_link.py): one voice per character. CHARS=<dir with characters.json>, CHARMAP=<json line id -> Cn>.
+# Every line of a character uses the same reference, cut only from that character's own face-confirmed speech, so the
+# dub follows the person whose mouth moves instead of whoever happened to be in the line's audio chunk.
+CREF, LCHAR = {}, {}
+if os.environ.get("CHARS"):
+    for p in json.load(open(os.path.join(os.environ["CHARS"], "characters.json"))):
+        clips, txt = [], []
+        for r in p["voice_reference"]:
+            clips += [voc[int(r["start"] * SR):int(r["end"] * SR)].mean(1), np.zeros(int(0.25 * SR), np.float32)]; txt.append(r["text"])
+        if clips:
+            a = np.concatenate(clips); CREF[p["id"]] = {"audio": wav_bytes(a / (np.abs(a).max() + 1e-6) * 0.8), "text": " ".join(txt)}
+    LCHAR = {k: v for k, v in json.load(open(os.environ["CHARMAP"])).items() if v in CREF}
+
 def tts(text, spk, emo, path, lid=None):
     if os.path.exists(path): return path
     cue = {"neutral": "", "happy": "[happy] ", "laughing": "[laughing] ", "sarcastic": "[sarcastic] ", "angry": "[angry] ",
            "shouting": "[shouting] ", "sad": "[sad] ", "worried": "[worried] ", "excited": "[excited] ", "whisper": "[whispering] "}.get(emo or "neutral", "")
-    body = {"text": cue + text, "references": [LREF.get(lid) or LREF.get(PREF.get(lid)) or REF[spk]], "format": "wav", "normalize": True, "latency": "normal",
+    refx = CREF[LCHAR[lid]] if lid in LCHAR else (LREF.get(lid) or LREF.get(PREF.get(lid)) or REF[spk])
+    body = {"text": cue + text, "references": [refx], "format": "wav", "normalize": True, "latency": "normal",
             "temperature": 0.7, "top_p": 0.7, "chunk_length": 200}
     for att in range(5):
         r = requests.post("https://api.fish.audio/v1/tts", data=msgpack.packb(body), timeout=180,
@@ -204,7 +221,7 @@ with cf.ThreadPoolExecutor(6) as ex:
             dub[s:e] += a[:e - s] * g; ainfo = None; placed = round(len(a) / SR, 2)
         qa.append({"id": L["id"], "spk": L["spk"], "slot": L["dur"], "tts": round(d, 2), "tempo": round(f, 3), "fits": fits,
                    "variant": name, "en": text, "hi": L["hi"], "emotion": emo, "gain": round(g, 2), "placed_end": placed, "align": ainfo,
-                   "ref": "own_line" if L["id"] in LREF else (f"pitch_matched:{PREF[L['id']]}" if L["id"] in PREF else "cluster"),
+                   "ref": f"char:{LCHAR[L['id']]}" if L["id"] in LCHAR else "own_line" if L["id"] in LREF else (f"pitch_matched:{PREF[L['id']]}" if L["id"] in PREF else "cluster"),
                    "cast": {k: (CAST.get(L["id"]) or {}).get(k) for k in ("speaker", "gender", "age", "role", "face_visible")} if CAST.get(L["id"]) else None})
 for L in keep + [t[0] for t in todo if not t[1]]:     # English originals (and any untranslated line) keep original vocals
     s0, s1 = int(L["start"] * SR), int(L["end"] * SR); dub[s0:s1] += voc[s0:s1].mean(1)
