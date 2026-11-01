@@ -107,6 +107,10 @@ for j in jobs:
                         "timings": r.get("timings"), "finish": r["choices"][0].get("finish_reason"), "secs": round(time.time() - t, 1)}
     except Exception as e:
         res[j["id"]] = {"error": repr(e)[:500]}
+    if not res[j["id"]].get("content") and res[j["id"]].get("finish") == "length" and not j.get("_retried"):
+        # the reasoning used the whole budget and the answer is empty (seen Nov 1): retry once with twice the budget
+        j["_retried"] = True; j["max_tokens"] = min(2 * j.get("max_tokens", 2048), CFG["CTX"] - 3000)
+        log(j["id"], "empty answer (token budget used up while reasoning), retrying with", j["max_tokens"]); jobs.append(j); continue
     log(j["id"], res[j["id"]].get("secs"), (res[j["id"]].get("usage") or {}), str(res[j["id"]].get("content") or res[j["id"]].get("error"))[:300])
     json.dump(res, open(RP, "w"), ensure_ascii=False, indent=1)
 srv.terminate(); sh("tail -5 /tmp/server.log", check=False)
