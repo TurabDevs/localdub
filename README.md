@@ -4,8 +4,9 @@ LocalDub takes a Hindi or Urdu video and gives it back dubbed in English, with e
 
 I'm Muhammad Asim, a student developer from Pakistan. I built this solo for the Meta Global AI Developer Hackathon 2026 (Indie Developer track, "Build for Your World"), with no budget, on free Kaggle CPU machines.
 
-- Demo video (2:59): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v4.mp4
-- Full 5-minute English dub (latest, v5): https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v5.webm
+- Demo video (2:55): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v5.mp4
+- Full 5-minute English dub (latest, v6): https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v6.webm
+- Frame-by-frame AV-QA report of that dub: [`results/avqa_v6/report.html`](results/avqa_v6/report.html) (v5 for comparison: [`results/avqa_v5/report.html`](results/avqa_v5/report.html))
 - All releases: https://github.com/TurabDevs/localdub/releases
 
 ## Why I built this
@@ -66,7 +67,14 @@ The cost of doing it this way is speed. My Kaggle account could only use CPU mac
              - loudness and pitch of each dubbed line vs the original line
              - Omnilingual ASR re-transcribes the English dub -> word error rate
                                      |
-             bad lines go back to Muse Glimmer with a note -> rewrite -> re-dub
+             WATCH pass (AV-QA, frame by frame, every 50 ms):
+             - face on screen + mouth moving (YuNet + MediaPipe face mesh)
+               while the original speaks and the dub is silent?
+             - dub speaking over silence, laughs/groans dropped,
+               music + effects ducked or missing, loudness, clipping, drift
+                                     |
+             bad lines go back to Muse Glimmer with a note -> rewrite -> re-dub;
+             timing and mix problems are fixed in the placement step
 ```
 
 | Step | Model / tool | Runs where |
@@ -81,6 +89,7 @@ The cost of doing it this way is speed. My Kaggle account could only use CPU mac
 | Voice clusters | SpeechBrain ECAPA (Apache-2.0) | Kaggle |
 | English voices | Fish Audio `s2.1-pro-free` zero-shot cloning (free tier, hosted) | API call |
 | Fitting and mixing | ffmpeg, numpy | my sandbox |
+| Watching the result (AV-QA) | OpenCV YuNet face detector + MediaPipe Face Landmarker (both Apache-2.0), numpy, ffmpeg EBU R128 | my sandbox, CPU |
 
 Before llama.cpp starts, the Glimmer weights are checked by sha256 against the official `meta-models/Muse-Glimmer-30B-GGUF` release, because they come from a Kaggle mirror.
 
@@ -90,22 +99,26 @@ The demo clip is a 5 min 08 s comedy sketch by All India Bakchod, "If People Tre
 
 The clip has 58 speech lines. 14 are already in English and keep the original audio. From v2 on, 12 more keep the original audio too: these are laughs, grunts and one-word bits that the ASR spelled in Arabic or Chinese script and that v1 had "translated" into junk like "Uh." or "Man." That leaves 32 lines that are actually dubbed.
 
-There are five versions so far; each one after v1 came out of a round of dub -> listen -> fix. All numbers come from `pipeline/qa_metrics.py` and the Omnilingual ASR listen check (`results/`).
+There are six versions so far; each one after v1 came out of a round of dub -> listen -> fix (from v6 on: dub -> listen -> watch -> fix). All numbers come from `pipeline/qa_metrics.py`, the Omnilingual ASR listen check and `pipeline/avqa.py` (`results/`).
 
-| | v1 | v2 | v3 | v4 | v5 (current) |
-|---|---|---|---|---|---|
-| lines dubbed | 44 | 32 | 32 | 32 | 33 |
-| dubbed lines that fit their slot | 42 / 44 | 32 / 32 | 32 / 32 | 32 / 32 | 33 / 33 |
-| lines that overflow | 2 | 0 | 0 | 0 | 0 |
-| junk one-word dubs from ASR garble | 8 | 0 | 0 | 0 | 0 |
-| voice pitch more than 4 semitones off the original | 11 | 3 | 1 | 1 | 2 |
-| mean pitch gap vs original line | 3.72 st | 2.33 st | 1.97 st | 1.84 st | 1.88 st |
-| mean loudness gap vs original line | 1.65 dB | 0.45 dB | 0.35 dB | 0.63 dB | 0.61 dB |
-| listen WER, all dubbed lines | 0.289 | 0.187 | 0.144 | 0.123 | 0.151 |
-| listen WER on the same 31 lines | 0.116* | 0.187* | 0.144* | 0.123 | 0.152 |
-| max tempo change | 1.08x | 1.13x | 1.13x | 1.13x | 1.13x |
+| | v1 | v2 | v3 | v4 | v5 | v6 (current) |
+|---|---|---|---|---|---|---|
+| lines dubbed | 44 | 32 | 32 | 32 | 33 | 33 |
+| dubbed lines that fit their slot | 42 / 44 | 32 / 32 | 32 / 32 | 32 / 32 | 33 / 33 | 33 / 33 |
+| lines that overflow | 2 | 0 | 0 | 0 | 0 | 0 |
+| junk one-word dubs from ASR garble | 8 | 0 | 0 | 0 | 0 | 0 |
+| voice pitch more than 4 semitones off the original | 11 | 3 | 1 | 1 | 2 | 2 |
+| mean pitch gap vs original line | 3.72 st | 2.33 st | 1.97 st | 1.84 st | 1.88 st | 1.94 st |
+| mean loudness gap vs original line | 1.65 dB | 0.45 dB | 0.35 dB | 0.63 dB | 0.61 dB | 0.49 dB |
+| listen WER, all dubbed lines | 0.289 | 0.187 | 0.144 | 0.123 | 0.151 | 0.131 |
+| listen WER on the same 31 lines | 0.116* | 0.187* | 0.144* | 0.123 | 0.152 | |
+| max tempo change | 1.08x | 1.13x | 1.13x | 1.13x | 1.13x | 1.14x (and 12 lines slowed to 0.85-0.94x) |
+| AV-QA: original speech covered by the dub | | | | | 84.4 % | 90.9 % |
+| AV-QA: actor talking, dub silent (high flags) | | | | | 15 spots, 21.2 s | 9 spots, 7.0 s |
+| AV-QA: integrated loudness (original -15.9 LUFS) | | | | | -19.0 LUFS | -16.5 LUFS |
+| AV-QA: music + effects vs original (median) | | | | | -1.9 dB | +0.1 dB |
 
-*v1-v3 figures are on the same 32 lines (v5 split one of them in two).
+*v1-v3 figures are on the same 32 lines (v5 split one of them in two). AV-QA did not exist before v6, so it was run on v5 and v6 only.
 
 What changed in each round:
 
@@ -113,6 +126,8 @@ What changed in each round:
 - **v3**: re-voiced the 3 lines whose pitch was way off with a different reference.
 - **v4**: fixed "Put it on.", which the listen check heard as "vtdn" (WER 1.0 -> 0.0), and moved one line that came out with a heavy accent back to the cluster reference.
 - **v5**: went line by line through the two windows the demo video shows and fixed what was wrong in meaning, which the metrics can't see. The opening phone call had both people in one voice, so I split it at the speaker change (pitch drops from about 175 Hz to 125 Hz) and each side now has its own voice. Glimmer rewrote six lines, including the sketch's main joke ("there's no such thing as typhoid, bro"; v4 said "typhoid isn't like that") and a sarcastic question v4 had turned into the opposite ("Tell the whole neighborhood." -> "Whole neighbourhood to know?"). Two lines needed extra takes; I generated five of each and picked by the listen check and pitch. By the numbers v5 is a bit worse than v4 (WER 0.123 -> 0.152), mostly ASR spelling ("our sun", "hart", "brow"), while the lines are now correct. I chose correct over a better score; details in `results/qa_v5.md`.
+
+- **v6**: the first version checked by watching, not only listening. `pipeline/avqa.py` goes through the video every 50 ms and compares the original and the dub: is a face on screen moving its mouth while the original speaks and the dub is silent, did a laugh or a groan disappear, did the music get quieter, is anything clipping or drifting. On v5 it found three real problems I had not heard: (1) most English takes ended before the actor stopped talking, so the dub went quiet while the mouth kept moving (15 spots, 21 s in total); (2) the whole mix was turned down to fit one peak, so the music and effects sat 1.9 dB under the original and the dub was 3 LU quieter overall; (3) only speech lines were mixed, so a 4.5-second groan and the shouts in the broom scene were simply gone (the demo showed the groan as five seconds of silence over a wide-open mouth). Fixes in `pipeline/align.py`: each line follows the actor's phrasing and is slowed gently (never below 0.85x) when the take is short; a longer Glimmer variant is used when the take fills less than 70 % of the line; level is matched on voiced frames; a look-ahead limiter replaces whole-mix scaling; laughs, groans and shouts between lines are kept from the original. Result: 84.4 % -> 90.9 % of the original speech covered, high flags 21.2 s -> 7.0 s, loudness within 0.6 LU of the original, listen WER 0.151 -> 0.131 (part of that is the ASR reading re-timed takes differently). The mouth detector is only moderately reliable (AUC 0.62 against the original speech track, side faces and dark shots are hard), so every flag comes with a thumbnail. Details in `results/qa_v6.md`.
 
 I want to be straight about the two WER rows. The big drop in WER from v1 to v2 is mostly because v2 stopped dubbing the junk lines. On the 32 lines both versions dub, v1 was actually slightly clearer (0.116), v2 and v3 got worse, and v4 got back to almost the same level (0.123) while fixing the overflow, junk and voice problems. A lot of the remaining "errors" are the ASR spelling things its own way ("tiphoid", "mikil" for Nikhil), not wrong speech. Full per-line details, including every Glimmer rewrite, are in `results/qa_v2.md` to `results/qa_v5.md`.
 
@@ -122,7 +137,8 @@ I want to be straight about the two WER rows. The big drop in WER from v1 to v2 
 - **Mixed speakers in one chunk.** The voice-activity chunks sometimes hold two people. I fixed the opening phone call by hand-picking the split point from the pitch track; it isn't automatic yet. The speaker clustering also has one big mixed cluster, and short lines that borrow a voice from it can get the wrong person.
 - **Hinglish ASR.** Omnilingual ASR handles Hindi well, but English words inside Hindi sentences sometimes come out in the wrong script. Glimmer repairs most of it from context; some meaning still slips (see the rewrite notes).
 - **26 of 58 lines keep the original audio.** 14 are fine because they are English. 12 are short laughs and interjections I chose not to dub rather than dub badly.
-- **No lip-sync.** Lines fit their time slot, but mouths are not re-animated.
+- **No lip-sync.** Lines fit their time slot, but mouths are not re-animated. AV-QA tells me where a mouth moves with no dub under it; it doesn't fix the mouth shape.
+- **Slow-downs.** v6 slows 12 short takes to 0.85-0.94x so they end with the actor. It keeps sync but can sound a little drawn out; a medium-length Glimmer rewrite would be the better fix.
 - **The voices are not a Meta model.** The TTS is Fish Audio's free hosted tier. Everything that understands the video is Meta and open-weight; the voice synthesis is not. I'd like to replace it with an open TTS I can run myself.
 - **Slow.** CPU only, about 1 token per second for Glimmer. Fine for a demo, not for a creator waiting on an upload.
 
@@ -148,6 +164,10 @@ What a GPU budget would change: on a single 24 GB GPU, Glimmer goes from about 1
 - `cloud/kaggle/kapi.py`, `cloud/kaggle/kup.py`: small Kaggle API client (datasets, kernels, chunked uploads)
 - `pipeline/make_jobs.py`: voice clusters -> dubbing lines -> Glimmer cast and translation jobs
 - `pipeline/dub.py`: per-line TTS, slot fitting, mixing and the QA report
+- `pipeline/align.py`: v6 placement (follow the actor's phrasing), voiced-frame level match, limiter, non-verbal vocals
+- `pipeline/avqa_faces.py`: AV-QA visual pass: faces, face mesh, mouth motion, tracking (CPU, resumable in chunks); models via `pipeline/get_avqa_models.sh`
+- `pipeline/avqa.py`: AV-QA report (`pair` = dub vs source, `solo` = any finished video such as the demo cut): JSON, HTML with thumbnails, timeline
+- `pipeline/subs.py`: dub, source and bilingual subtitles (SRT and WebVTT), optional burn-in
 - `pipeline/qa_metrics.py`: per-line metrics (fit, spill, loudness, pitch vs original, listen WER)
 - `pipeline/make_rw_jobs.py`: builds the Glimmer rewrite job for flagged lines
 - `pipeline/listen_prep.py`: cuts the dubbed lines for the listen check
