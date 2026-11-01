@@ -132,9 +132,13 @@ class Run:
         if os.path.exists(f"{o}/results.json"): return True
         ds = f"{s.name}-jobs"
         if ds not in s.st.setdefault("datasets", {}):
-            print(s.kapi("ds-create", ds, f"localdub {s.name} glimmer jobs", f"{s.w}/s2/jobs.json", f"{s.w}/in/proxy.mp4")[-200:])
+            out = s.kapi("ds-create", ds, f"localdub {s.name} glimmer jobs", f"{s.w}/s2/jobs.json", f"{s.w}/in/proxy.mp4"); print(out[-200:])
+            if '"status":"Ok"' not in out.replace(" ", ""): raise SystemExit(f"dataset create failed for {ds}")
             s.st["datasets"][ds] = time.time(); s.save(); return False
-        if "ready" not in s.kapi("ds-status", ds): return False
+        st = s.kapi("ds-status", ds)
+        if "403" in st or "404" in st:   # create never went through: forget it and create again next run (was an endless WAITING loop)
+            s.st["datasets"].pop(ds, None); s.save(); print(f"dataset {ds} missing ({st.strip()[-80:]}), will re-create"); return False
+        if "ready" not in st: return False
         return s.kernel(f"{s.name}-glimmer", f"{K}/stage2_glimmer.py", ["localdub-bin", ds, GLIMMER_MODEL], o)
     def dubargs(s):
         return [f"{P}/dub.py", s.s1dir(), f"{s.w}/s2", f"{s.w}/s2/glimmer/results.json", os.path.abspath(s.a.video), f"{s.w}/out/dub.{s.a.ext}"]

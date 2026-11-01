@@ -2,7 +2,9 @@
 
 LocalDub takes a Hindi or Urdu video and gives it back dubbed in English, with each character speaking in a voice cloned from their own original lines and the original music and sound effects kept underneath.
 
-I'm Muhammad Asim, a student developer from Pakistan. I built this solo for the Meta Global AI Developer Hackathon 2026 (Indie Developer track, "Build for Your World"), with no budget, on free Kaggle CPU machines.
+I'm Muhammad Asim, a student developer from Pakistan. I built this for the Meta Global AI Developer Hackathon 2026 (Indie Developer track, "Build for Your World"), with no budget, on free Kaggle CPU machines.
+
+**Built by Muhammad Asim, a student developer, with AI coding assistance; the pipeline runs on Meta's open-weight models.** The code was written with the help of an AI coding assistant; the Meta models (Muse Glimmer, Omnilingual ASR, Demucs) are what the pipeline itself runs on, they did not write the code.
 
 - Demo video (2:55): https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_demo_v5.mp4
 - Full 5-minute English dub (latest, v6): https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v6.webm
@@ -95,7 +97,7 @@ Before llama.cpp starts, the Glimmer weights are checked by sha256 against the o
 
 ## Running it
 
-One command does the whole thing, step by step, and can be re-run at any point (each step keeps its outputs in the work folder and is skipped once done; Kaggle steps push a kernel and the next run picks up the results):
+There is a one-command runner, `localdub.py`, that strings the steps together and keeps every step's output in a work folder so it can be resumed:
 
 ```
 python3 localdub.py dub sketch.webm --src hi --to en --work runs/sketch            # Hindi/Urdu -> English
@@ -103,9 +105,11 @@ python3 localdub.py dub talk.mp4   --src en --to ur --work runs/talk --wait 3600
 python3 localdub.py status --work runs/talk
 ```
 
-Steps: `prep` (audio + proxy; long videos are cut at silences into chunks, `--chunk 600` by default, and each chunk gets its own stage-1 kernel) -> `stage1` -> `merge` -> `diarize` -> `jobs` -> `glimmer` -> `tts` -> `mix` -> `avqa` -> `subs` -> `review`.
+Steps: `prep` -> `stage1` -> `merge` -> `diarize` -> `jobs` -> `glimmer` -> `tts` -> `mix` -> `avqa` -> `subs` -> `review`.
 
-`out/review.html` is a review page that needs no server: the dubbed video with a one-key switch to the original, every line with its source text, the dubbed text (editable), how it was fitted, and the AV-QA flags with thumbnails. Mark lines for a new take or fix the text, export `edits.json`, then `--edits edits.json --from-step tts` re-voices only those lines and re-mixes.
+To be honest about where this stands: the AIB demo and every version in the table below were made by running these steps one at a time (the scripts under `pipeline/` and `cloud/kaggle/`), not by one `localdub.py dub` call. The runner is new (Nov 1). My first end-to-end try with it, a short English -> Urdu clip, got through prep, stage 1, diarization and job building, but the Glimmer step did not start its Kaggle kernels, so that run is not finished. Until it is, treat `localdub.py` as work in progress and the per-step scripts as the way that is actually tested.
+
+`out/review.html` is a review page that needs no server: the dubbed video with a one-key switch to the original, every line with its source text, the dubbed text (editable), how it was fitted, and the AV-QA flags with thumbnails. Mark lines for a new take or fix the text and export `edits.json` (re-voicing from that file is wired into the runner but has the same caveat as above).
 
 ## What I measured
 
