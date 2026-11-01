@@ -93,6 +93,20 @@ The cost of doing it this way is speed. My Kaggle account could only use CPU mac
 
 Before llama.cpp starts, the Glimmer weights are checked by sha256 against the official `meta-models/Muse-Glimmer-30B-GGUF` release, because they come from a Kaggle mirror.
 
+## Running it
+
+One command does the whole thing, step by step, and can be re-run at any point (each step keeps its outputs in the work folder and is skipped once done; Kaggle steps push a kernel and the next run picks up the results):
+
+```
+python3 localdub.py dub sketch.webm --src hi --to en --work runs/sketch            # Hindi/Urdu -> English
+python3 localdub.py dub talk.mp4   --src en --to ur --work runs/talk --wait 3600   # English -> Urdu
+python3 localdub.py status --work runs/talk
+```
+
+Steps: `prep` (audio + proxy; long videos are cut at silences into chunks, `--chunk 600` by default, and each chunk gets its own stage-1 kernel) -> `stage1` -> `merge` -> `diarize` -> `jobs` -> `glimmer` -> `tts` -> `mix` -> `avqa` -> `subs` -> `review`.
+
+`out/review.html` is a review page that needs no server: the dubbed video with a one-key switch to the original, every line with its source text, the dubbed text (editable), how it was fitted, and the AV-QA flags with thumbnails. Mark lines for a new take or fix the text, export `edits.json`, then `--edits edits.json --from-step tts` re-voices only those lines and re-mixes.
+
 ## What I measured
 
 The demo clip is a 5 min 08 s comedy sketch by All India Bakchod, "If People Treated Other Illnesses Like They Treat Depression". It's fast, it's Hinglish, people talk over each other, and the whole joke depends on tone, which is exactly why I picked it.
@@ -168,6 +182,9 @@ What a GPU budget would change: on a single 24 GB GPU, Glimmer goes from about 1
 - `pipeline/avqa_faces.py`: AV-QA visual pass: faces, face mesh, mouth motion, tracking (CPU, resumable in chunks); models via `pipeline/get_avqa_models.sh`
 - `pipeline/avqa.py`: AV-QA report (`pair` = dub vs source, `solo` = any finished video such as the demo cut): JSON, HTML with thumbnails, timeline
 - `pipeline/subs.py`: dub, source and bilingual subtitles (SRT and WebVTT), optional burn-in
+- `pipeline/make_review.py`: the review page (edit / re-take lines, export edits.json)
+- `localdub.py`: the one-command runner (resumable steps, chunking for long videos, Kaggle kernels)
+- `cloud/kaggle/stage1_diarize.py`: speaker changes inside VAD chunks (sliding-window ECAPA), re-transcribes the split chunks
 - `pipeline/qa_metrics.py`: per-line metrics (fit, spill, loudness, pitch vs original, listen WER)
 - `pipeline/make_rw_jobs.py`: builds the Glimmer rewrite job for flagged lines
 - `pipeline/listen_prep.py`: cuts the dubbed lines for the listen check
