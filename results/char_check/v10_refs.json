@@ -1,0 +1,10 @@
+{"RAHUL":{"spans":[[37.19,43.19],[146.05,150.84]],"from":"v9 C0 reference (verified RAHUL-only)"},
+ "SICK":{"spans":[[20.63,24.86],[25.12,26.9]],"from":"v9 C8 reference (verified)"},
+ "BROWN":{"spans":[[105.11,109.69],[45.3,48.77],[223.72,226.97]],"from":"v9 C4 reference (verified)"},
+ "MOM":{"spans":[[181.44,186.56],[301.32,306.4]],"from":"v9 C2 reference (verified)"},
+ "DAD":{"spans":[[131.52,137.37],[129.86,131.1]],"from":"v9 C7 reference (verified; 135.2-136.4 is a MOM reaction shot but DAD's voice)"},
+ "BOSS":{"spans":[[262.58,266.24],[266.4,269.85],[270.63,272.03],[258.53,259.58]],"from":"v9 C6 reference (verified)"},
+ "BEARD":{"spans":[[255.26,257.53],[251.68,252.76]],"from":"v9 C10 reference (verified)"},
+ "PURPLE":{"spans":[[227.11,231.24],[73.08,76.51]],"from":"NEW: v9 C5 minus its 53.65-56.16 clip (that clip ended with BROWN speaking)"},
+ "TEE":{"spans":[[139.84,143.3],[174.47,177.1],[51.0,53.5]],"from":"NEW: TEE's own verified speech (ECAPA 0.72-0.81 to TEE); v9 C1 used BROWN/RAHUL end-card speech"},
+ "CURLYW":{"spans":[[152.0,155.0],[164.68,168.22],[68.0,71.0]],"from":"NEW: CURLYW-only clips (ECAPA 0.81-0.88); v9 C3 included BROWN 64.25-66.78"}}

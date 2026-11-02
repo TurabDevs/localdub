@@ -1,0 +1,615 @@
+{
+ "version": "v6",
+ "character_accuracy": 0.3443,
+ "correct_s": 54.4,
+ "dubbed_speech_s": 158.0,
+ "lines": [
+  {
+   "id": "L002a",
+   "start": 17.54,
+   "end": 20.22,
+   "ref": "own_line",
+   "voice_identity": "RAHUL",
+   "voice_ref_breakdown": {
+    "SICK": 0.1,
+    "RAHUL": 2.6
+   },
+   "truth_secs": {
+    "SICK": 0.1,
+    "RAHUL": 2.6
+   },
+   "correct_s": 2.6,
+   "speech_s": 2.7,
+   "en": "Hello bro, ten-thirty movie, okay?"
+  },
+  {
+   "id": "L002b",
+   "start": 20.3,
+   "end": 24.86,
+   "ref": "own_line",
+   "voice_identity": "SICK",
+   "voice_ref_breakdown": {
+    "RAHUL": 0.2,
+    "SICK": 4.2
+   },
+   "truth_secs": {
+    "RAHUL": 0.2,
+    "SICK": 4.2
+   },
+   "correct_s": 4.2,
+   "speech_s": 4.4,
+   "en": "No man don't book mine, puking since morning, high fever."
+  },
+  {
+   "id": "L003",
+   "start": 25.124,
+   "end": 31.388,
+   "ref": "own_line",
+   "voice_identity": "MIXED(RAHUL+SICK)",
+   "voice_ref_breakdown": {
+    "SICK": 1.9,
+    "RAHUL": 4.3
+   },
+   "truth_secs": {
+    "SICK": 1.9,
+    "RAHUL": 4.3
+   },
+   "correct_s": 0,
+   "speech_s": 6.2,
+   "en": "Typhoid and stuff? Are you crazy? There's no such thing, bro, just get out and have fun."
+  },
+  {
+   "id": "L004",
+   "start": 37.188,
+   "end": 45.301,
+   "ref": "own_line",
+   "voice_identity": "RAHUL",
+   "voice_ref_breakdown": {
+    "RAHUL": 6.8,
+    "BROWN": 1.3
+   },
+   "truth_secs": {
+    "RAHUL": 6.8,
+    "BROWN": 1.3
+   },
+   "correct_s": 6.8,
+   "speech_s": 8.1,
+   "en": "Just step out, have a couple beers, all the bacteria will die. Ever seen a bartender get typhoid? They live around beer. Don't overthink."
+  },
+  {
+   "id": "L005",
+   "start": 45.301,
+   "end": 50.774,
+   "ref": "own_line",
+   "voice_identity": "MIXED(BROWN+PURPLE)",
+   "voice_ref_breakdown": {
+    "BROWN": 3.5,
+    "PURPLE": 2.0
+   },
+   "truth_secs": {
+    "BROWN": 3.5,
+    "PURPLE": 2.0
+   },
+   "correct_s": 0,
+   "speech_s": 5.5,
+   "en": "The more you think 'I have typhoid, I have typhoid, I have typhoid', the more this typhoid grows. It just..."
+  },
+  {
+   "id": "L006",
+   "start": 50.774,
+   "end": 62.396,
+   "ref": "own_line",
+   "voice_identity": "MIXED(TEE+BROWN+PURPLE+RAHUL)",
+   "voice_ref_breakdown": {
+    "PURPLE": 1.5,
+    "TEE": 4.7,
+    "BROWN": 1.6,
+    "RAHUL": 1.5
+   },
+   "truth_secs": {
+    "PURPLE": 1.5,
+    "TEE": 4.9,
+    "BROWN": 1.6,
+    "RAHUL": 2.9
+   },
+   "correct_s": 0,
+   "speech_s": 10.9,
+   "en": "Bacteria die on their own in two months. Lost promotion? No? Then typhoid? Day before yesterday at Sahil's party you were laughing, dancing, joking. What happened suddenly?"
+  },
+  {
+   "id": "L007",
+   "start": 62.724,
+   "end": 76.508,
+   "ref": "own_line",
+   "voice_identity": "MIXED(BROWN+CURLYW+RAHUL)",
+   "voice_ref_breakdown": {
+    "RAHUL": 1.3,
+    "BROWN": 4.7,
+    "CURLYW": 3.5
+   },
+   "truth_secs": {
+    "RAHUL": 1.3,
+    "BROWN": 5.0,
+    "CURLYW": 3.5,
+    "PURPLE": 3.3
+   },
+   "correct_s": 0,
+   "speech_s": 13.1,
+   "en": "This fever burning could be one thing. If you're smiling and you have typhoid, how can you have both? Are you sure you didn't get typhoid because Garima broke up with you? Go get on Tinder. Your typhoid, vomiting, diarrhea will all go away."
+  },
+  {
+   "id": "L013",
+   "start": 87.396,
+   "end": 92.924,
+   "ref": "own_line",
+   "voice_identity": "RAHUL",
+   "voice_ref_breakdown": {
+    "TEE": 0.6,
+    "RAHUL": 4.6
+   },
+   "truth_secs": {
+    "TEE": 0.6,
+    "RAHUL": 4.6
+   },
+   "correct_s": 4.6,
+   "speech_s": 5.2,
+   "en": "Jogging every morning gives you perspective and typhoid goes away. Perspective up, typhoid go go."
+  },
+  {
+   "id": "L014",
+   "start": 93.092,
+   "end": 96.636,
+   "ref": "own_line",
+   "voice_identity": "MOM",
+   "voice_ref_breakdown": {
+    "RAHUL": 0.4,
+    "MOM": 3.0
+   },
+   "truth_secs": {
+    "RAHUL": 0.4,
+    "MOM": 3.0
+   },
+   "correct_s": 3.0,
+   "speech_s": 3.4,
+   "en": "Listen, Nikhil's friend was saying that"
+  },
+  {
+   "id": "L015",
+   "start": 96.9,
+   "end": 101.18,
+   "ref": "own_line",
+   "voice_identity": "MIXED(DAD+MOM)",
+   "voice_ref_breakdown": {
+    "MOM": 1.7,
+    "DAD": 2.2
+   },
+   "truth_secs": {
+    "MOM": 1.7,
+    "DAD": 2.2
+   },
+   "correct_s": 0,
+   "speech_s": 3.9,
+   "en": "Nikhil has some fever thing. You haven't told anyone he has a fever, right?"
+  },
+  {
+   "id": "L019",
+   "start": 117.924,
+   "end": 123.356,
+   "ref": "own_line",
+   "voice_identity": "MIXED(MOM+BROWN)",
+   "voice_ref_breakdown": {
+    "BROWN": 2.3,
+    "MOM": 2.9
+   },
+   "truth_secs": {
+    "BROWN": 2.3,
+    "MOM": 2.9
+   },
+   "correct_s": 0,
+   "speech_s": 5.2,
+   "en": "A smile means no typhoid. I know it. Nikhil's friend said that too."
+  },
+  {
+   "id": "L020",
+   "start": 123.94,
+   "end": 128.86,
+   "ref": "own_line",
+   "voice_identity": "MOM",
+   "voice_ref_breakdown": {
+    "MOM": 4.4,
+    "DAD": 0.4
+   },
+   "truth_secs": {
+    "MOM": 4.4,
+    "DAD": 0.4
+   },
+   "correct_s": 4.4,
+   "speech_s": 4.8,
+   "en": "There are different kinds of doctors who can just fix fever stuff like this, no problem."
+  },
+  {
+   "id": "L021",
+   "start": 129.86,
+   "end": 131.1,
+   "ref": "pitch_matched:L022",
+   "voice_identity": "DAD",
+   "voice_ref_breakdown": {
+    "DAD": 5.9
+   },
+   "truth_secs": {
+    "DAD": 1.3
+   },
+   "correct_s": 1.3,
+   "speech_s": 1.3,
+   "en": "Whole neighbourhood to know?"
+  },
+  {
+   "id": "L022",
+   "start": 131.524,
+   "end": 137.372,
+   "ref": "own_line",
+   "voice_identity": "DAD",
+   "voice_ref_breakdown": {
+    "DAD": 5.9
+   },
+   "truth_secs": {
+    "DAD": 5.9
+   },
+   "correct_s": 5.9,
+   "speech_s": 5.9,
+   "en": "Our son has fever, fever, fever, temperature up, forehead always hot. What will people think?"
+  },
+  {
+   "id": "L023",
+   "start": 138.084,
+   "end": 145.5,
+   "ref": "own_line",
+   "voice_identity": "MIXED(TEE+RAHUL+DAD)",
+   "voice_ref_breakdown": {
+    "DAD": 1.4,
+    "TEE": 3.5,
+    "RAHUL": 2.1
+   },
+   "truth_secs": {
+    "DAD": 1.4,
+    "TEE": 3.5,
+    "RAHUL": 2.1
+   },
+   "correct_s": 0,
+   "speech_s": 7.0,
+   "en": "People'll say whole family has fever, bro. They say typhoid, these doctors run a scam just to squeeze money."
+  },
+  {
+   "id": "L024",
+   "start": 146.052,
+   "end": 150.844,
+   "ref": "own_line",
+   "voice_identity": "RAHUL",
+   "voice_ref_breakdown": {
+    "RAHUL": 4.8
+   },
+   "truth_secs": {
+    "RAHUL": 4.8
+   },
+   "correct_s": 4.8,
+   "speech_s": 4.8,
+   "en": "Typhoid, whatever, they just pick any name. What are they, educated or something?"
+  },
+  {
+   "id": "L025",
+   "start": 151.204,
+   "end": 158.908,
+   "ref": "own_line",
+   "voice_identity": "MIXED(RAHUL+CURLYW+BROWN)",
+   "voice_ref_breakdown": {
+    "RAHUL": 3.2,
+    "CURLYW": 3.0,
+    "BROWN": 1.6
+   },
+   "truth_secs": {
+    "RAHUL": 3.2,
+    "CURLYW": 3.0,
+    "BROWN": 1.6
+   },
+   "correct_s": 0,
+   "speech_s": 7.8,
+   "en": "Don't fall for all this. You're not taking pills, pills off people who are ill. Right now you don't need medication, you need motivation, determination like that."
+  },
+  {
+   "id": "L026",
+   "start": 160.036,
+   "end": 164.38,
+   "ref": "own_line",
+   "voice_identity": "MIXED(CURLYW+RAHUL+BROWN)",
+   "voice_ref_breakdown": {
+    "BROWN": 1.0,
+    "RAHUL": 1.5,
+    "CURLYW": 1.6
+   },
+   "truth_secs": {
+    "BROWN": 1.0,
+    "RAHUL": 1.5,
+    "CURLYW": 1.6
+   },
+   "correct_s": 0,
+   "speech_s": 4.1,
+   "en": "You know Nisha's marriage broke up? Do you know Payal?"
+  },
+  {
+   "id": "L030",
+   "start": 178.212,
+   "end": 178.972,
+   "ref": "pitch_matched:L029",
+   "voice_identity": "TEE",
+   "voice_ref_breakdown": {
+    "TEE": 2.5
+   },
+   "truth_secs": {
+    "MOM": 0.6
+   },
+   "correct_s": 0,
+   "speech_s": 0.6,
+   "en": "Put it on."
+  },
+  {
+   "id": "L031",
+   "start": 180.1,
+   "end": 181.244,
+   "ref": "pitch_matched:L020",
+   "voice_identity": "MOM",
+   "voice_ref_breakdown": {
+    "MOM": 4.4,
+    "DAD": 0.4
+   },
+   "truth_secs": {
+    "MOM": 1.2
+   },
+   "correct_s": 1.2,
+   "speech_s": 1.2,
+   "en": "Typhoid's nothing."
+  },
+  {
+   "id": "L032",
+   "start": 181.444,
+   "end": 186.556,
+   "ref": "own_line",
+   "voice_identity": "MOM",
+   "voice_ref_breakdown": {
+    "MOM": 4.9
+   },
+   "truth_secs": {
+    "MOM": 4.9
+   },
+   "correct_s": 4.9,
+   "speech_s": 4.9,
+   "en": "Your planets are messed up. This shield protects you, made specially for Libra."
+  },
+  {
+   "id": "L033",
+   "start": 193.508,
+   "end": 196.892,
+   "ref": "own_line",
+   "voice_identity": "RAHUL",
+   "voice_ref_breakdown": {
+    "RAHUL": 3.4
+   },
+   "truth_secs": {
+    "RAHUL": 3.4
+   },
+   "correct_s": 3.4,
+   "speech_s": 3.4,
+   "en": "Go do something you like. Follow your passion, everyone's doing it these days."
+  },
+  {
+   "id": "L034",
+   "start": 197.124,
+   "end": 199.388,
+   "ref": "cluster",
+   "voice_identity": "CURLYW",
+   "voice_ref_breakdown": {
+    "CURLYW": 5.2,
+    "RAHUL": 0.7
+   },
+   "truth_secs": {
+    "RAHUL": 0.7,
+    "CURLYW": 1.6
+   },
+   "correct_s": 1.6,
+   "speech_s": 2.3,
+   "en": "More poetry, more crying."
+  },
+  {
+   "id": "L035",
+   "start": 199.812,
+   "end": 209.148,
+   "ref": "own_line",
+   "voice_identity": "MIXED(CURLYW+RAHUL+TEE+BROWN+PURPLE)",
+   "voice_ref_breakdown": {
+    "CURLYW": 3.2,
+    "PURPLE": 0.5,
+    "RAHUL": 2.8,
+    "BROWN": 0.9,
+    "TEE": 1.0
+   },
+   "truth_secs": {
+    "CURLYW": 3.2,
+    "PURPLE": 0.5,
+    "RAHUL": 2.8,
+    "BROWN": 0.9,
+    "TEE": 1.0
+   },
+   "correct_s": 0,
+   "speech_s": 8.4,
+   "en": "It'll be fine. Maybe you need to change your job, your house, your city, your state, your continent. Or just change yourself."
+  },
+  {
+   "id": "L037",
+   "start": 210.756,
+   "end": 212.572,
+   "ref": "pitch_matched:L035",
+   "voice_identity": "MIXED(CURLYW+RAHUL+TEE+BROWN+PURPLE)",
+   "voice_ref_breakdown": {
+    "CURLYW": 3.2,
+    "PURPLE": 0.5,
+    "RAHUL": 2.8,
+    "BROWN": 0.9,
+    "TEE": 1.0
+   },
+   "truth_secs": {
+    "RAHUL": 1.9
+   },
+   "correct_s": 0,
+   "speech_s": 1.9,
+   "en": "Then where will typhoid go?"
+  },
+  {
+   "id": "L038",
+   "start": 212.772,
+   "end": 219.422,
+   "ref": "own_line",
+   "voice_identity": "MIXED(RAHUL+TEE+BROWN+MOM)",
+   "voice_ref_breakdown": {
+    "RAHUL": 3.2,
+    "BROWN": 0.9,
+    "TEE": 1.0,
+    "MOM": 0.5
+   },
+   "truth_secs": {
+    "RAHUL": 3.2,
+    "BROWN": 0.9,
+    "TEE": 1.0,
+    "MOM": 0.5
+   },
+   "correct_s": 0,
+   "speech_s": 5.6,
+   "en": "It doesn't even know where to go, where to go? Take a left up ahead. I think you're overthinking, overanalyzing, overhyping."
+  },
+  {
+   "id": "L039",
+   "start": 219.422,
+   "end": 226.972,
+   "ref": "own_line",
+   "voice_identity": "MIXED(BROWN+RAHUL+CURLYW+PURPLE+MOM)",
+   "voice_ref_breakdown": {
+    "MOM": 0.1,
+    "CURLYW": 1.5,
+    "PURPLE": 0.5,
+    "RAHUL": 1.8,
+    "BROWN": 3.2
+   },
+   "truth_secs": {
+    "MOM": 0.1,
+    "CURLYW": 1.5,
+    "PURPLE": 0.5,
+    "RAHUL": 1.8,
+    "BROWN": 3.2
+   },
+   "correct_s": 0,
+   "speech_s": 7.1,
+   "en": "Over hyperventilating, just over it. Don't overthink, you're on fire thinking you're not thinking."
+  },
+  {
+   "id": "L040",
+   "start": 227.108,
+   "end": 232.956,
+   "ref": "own_line",
+   "voice_identity": "MIXED(PURPLE+RAHUL)",
+   "voice_ref_breakdown": {
+    "PURPLE": 3.9,
+    "RAHUL": 1.8
+   },
+   "truth_secs": {
+    "PURPLE": 3.9,
+    "RAHUL": 1.8
+   },
+   "correct_s": 0,
+   "speech_s": 5.7,
+   "en": "You don't have typhoid, you just need a long vacation. Come to the movies with us."
+  },
+  {
+   "id": "L041",
+   "start": 233.188,
+   "end": 234.3,
+   "ref": "pitch_matched:L055",
+   "voice_identity": "MIXED(BROWN+RAHUL)",
+   "voice_ref_breakdown": {
+    "BROWN": 4.3,
+    "RAHUL": 3.5
+   },
+   "truth_secs": {
+    "RAHUL": 1.0
+   },
+   "correct_s": 0,
+   "speech_s": 1.0,
+   "en": "Okay, you're not coming."
+  },
+  {
+   "id": "L048",
+   "start": 251.684,
+   "end": 252.764,
+   "ref": "pitch_matched:L004",
+   "voice_identity": "RAHUL",
+   "voice_ref_breakdown": {
+    "RAHUL": 6.8,
+    "BROWN": 1.3
+   },
+   "truth_secs": {
+    "BEARD": 0.8
+   },
+   "correct_s": 0,
+   "speech_s": 0.8,
+   "en": "What are you saying?"
+  },
+  {
+   "id": "L049",
+   "start": 253.892,
+   "end": 257.532,
+   "ref": "own_line",
+   "voice_identity": "MIXED(BEARD+RAHUL)",
+   "voice_ref_breakdown": {
+    "RAHUL": 1.1,
+    "BEARD": 2.5
+   },
+   "truth_secs": {
+    "RAHUL": 1.1,
+    "BEARD": 2.5
+   },
+   "correct_s": 0,
+   "speech_s": 3.6,
+   "en": "Don't tell anyone. I know nothing. Why would I say?"
+  },
+  {
+   "id": "L051",
+   "start": 260.132,
+   "end": 266.236,
+   "ref": "own_line",
+   "voice_identity": "BOSS",
+   "voice_ref_breakdown": {
+    "BOSS": 5.7
+   },
+   "truth_secs": {
+    "BOSS": 5.7
+   },
+   "correct_s": 5.7,
+   "speech_s": 5.7,
+   "en": "It's typhoid, it's like any other illness. If we keep whispering about it like this..."
+  },
+  {
+   "id": "L054",
+   "start": 275.748,
+   "end": 277.212,
+   "ref": "pitch_matched:L049",
+   "voice_identity": "MIXED(BEARD+RAHUL)",
+   "voice_ref_breakdown": {
+    "RAHUL": 1.1,
+    "BEARD": 2.5
+   },
+   "truth_secs": {
+    "RAHUL": 1.5
+   },
+   "correct_s": 0,
+   "speech_s": 1.5,
+   "en": "Looks like he got typhoid too."
+  }
+ ]
+}

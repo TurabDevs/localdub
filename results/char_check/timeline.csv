@@ -1,0 +1,614 @@
+t0,t1,cut,vad,faces(fid:lip),voice_cluster,emb_best,emb_sim,emb_margin,truth,truth_how,words
+0.0,1.5,0,0.13,?:0.131,,TEE,0.075,0.018,,,प्रेस दे
+0.5,2.0,0,0.43,?:0.1,,RAHUL,0.06,0.022,,,प्रेस दे बेल आइकन
+1.0,2.5,0,0.55,?:0.05,,BEARD,0.067,0.011,BEARD,voice embedding (nearest verified speaker),प्रेस दे बेल आइकन ओन
+1.5,3.0,0,0.73,?:0.041,V37,RAHUL,0.152,0.024,RAHUL,voice embedding (nearest verified speaker),दे बेल आइकन ओन दे यूट्यूब
+2.0,3.5,0,0.69,?:0.058,V37,RAHUL,0.127,0.018,RAHUL,voice embedding (nearest verified speaker),आइकन ओन दे यूट्यूब आप एंड
+2.5,4.0,0,0.84,?:0.054,V37,DAD,0.115,0.033,DAD,voice embedding (nearest verified speaker),दे यूट्यूब आप एंड नेवर मिस
+3.0,4.5,0,0.85,,V40,MOM,0.126,0.025,MOM,voice embedding (nearest verified speaker),यूट्यूब आप एंड नेवर मिस अनदर
+3.5,5.0,0,0.89,,V40,MOM,0.136,0.031,MOM,voice embedding (nearest verified speaker),एंड नेवर मिस अनदर अपडेट फ्रॉम
+4.0,5.5,0,0.65,,V40,BEARD,0.195,0.016,BEARD,voice embedding (nearest verified speaker),मिस अनदर अपडेट फ्रॉम
+4.5,6.0,0,0.63,,V45,RAHUL,0.128,0.034,RAHUL,voice embedding (nearest verified speaker),अनदर अपडेट फ्रॉम एइबी
+5.0,6.5,0,0.64,,V45,RAHUL,0.075,0.025,RAHUL,voice embedding (nearest verified speaker),फ्रॉम एइबी
+5.5,7.0,0,0.61,,V45,RAHUL,0.068,0.017,RAHUL,voice embedding (nearest verified speaker),फ्रॉम एइबी
+6.0,7.5,0,0.31,,,MOM,0.157,0.012,,,एइबी
+6.5,8.0,0,0.0,,,BROWN,0.13,0.046,,,
+7.0,8.5,0,0.0,,,BROWN,0.31,0.166,,,
+7.5,9.0,0,0.0,,,BROWN,0.241,0.048,,,
+8.0,9.5,0,0.0,,,BOSS,0.122,0.002,,,
+8.5,10.0,1,0.0,,,BEARD,0.184,0.048,,,
+9.0,10.5,1,0.0,,,BEARD,0.121,0.009,,,
+9.5,11.0,1,0.0,F14:0.031,,BEARD,0.175,0.084,,,
+10.0,11.5,1,0.0,F14:0.034,,BEARD,0.112,0.033,,,
+10.5,12.0,1,0.0,F14:0.034,,BEARD,0.15,0.065,,,
+11.0,12.5,1,0.0,F14:0.043,,DAD,0.108,0.014,,,
+11.5,13.0,1,0.0,,,RAHUL,0.199,0.05,,,
+12.0,13.5,0,0.0,,,RAHUL,0.137,0.024,,,
+12.5,14.0,1,0.0,,,BEARD,0.186,0.11,,,
+13.0,14.5,1,0.0,F0:2.507,,BEARD,0.175,0.086,,,
+13.5,15.0,1,0.0,F0:2.301,,BOSS,0.133,0.017,,,
+14.0,15.5,0,0.0,F0:2.104,,BOSS,0.116,0.024,,,
+14.5,16.0,0,0.0,F0:1.684,,BOSS,0.121,0.017,,,
+15.0,16.5,0,0.0,F0:0.0,,BEARD,0.163,0.042,,,
+15.5,17.0,0,0.0,F0:0.114,,BEARD,0.155,0.018,,,
+16.0,17.5,0,0.0,F0:0.073,,BEARD,0.137,0.038,,,हलो
+16.5,18.0,1,0.31,F0:0.045,,SICK,0.306,0.121,,,हलो ब्रो
+17.0,18.5,1,0.59,F0:0.645,,SICK,0.322,0.139,RAHUL,visual (verified on-screen speaker),हलो ब्रो साड़े
+17.5,19.0,1,0.87,F0:0.789,V21,RAHUL,0.437,0.136,RAHUL,visual (verified on-screen speaker),हलो ब्रो साड़े दस का
+18.0,19.5,0,0.89,F0:0.729,V21,RAHUL,0.617,0.179,RAHUL,visual (verified on-screen speaker),ब्रो साड़े दस का मूवी बुक
+18.5,20.0,0,0.83,F0:0.651,V21,RAHUL,0.704,0.249,RAHUL,visual (verified on-screen speaker),साड़े दस का मूवी बुक कर रहा
+19.0,20.5,1,0.88,F0:0.438,V21,RAHUL,0.698,0.211,RAHUL,visual (verified on-screen speaker),का मूवी बुक कर रहा हूँ ठीक है नहीं
+19.5,21.0,1,0.88,F0:0.53,V21,RAHUL,0.528,0.157,RAHUL,visual (verified on-screen speaker),बुक कर रहा हूँ ठीक है नहीं यार
+20.0,21.5,1,1.0,F0:0.65,V21,SICK,0.504,0.033,SICK,visual (verified on-screen speaker),रहा हूँ ठीक है नहीं यार मेरी मत
+20.5,22.0,0,0.92,F0:0.0,V8,SICK,0.757,0.41,SICK,visual (verified on-screen speaker),नहीं यार मेरी मत कर सुबह
+21.0,22.5,0,0.79,F0:0.0,V8,SICK,0.812,0.486,SICK,visual (verified on-screen speaker),यार मेरी मत कर सुबह
+21.5,23.0,0,0.75,F0:0.0,V8,SICK,0.823,0.592,SICK,visual (verified on-screen speaker),मत कर सुबह से उल्टी
+22.0,23.5,0,0.81,F0:0.321,V8,SICK,0.919,0.7,SICK,visual (verified on-screen speaker),सुबह से उल्टी आ रही है बहुत
+22.5,24.0,0,0.85,F0:0.323,V8,SICK,0.908,0.689,SICK,visual (verified on-screen speaker),सुबह से उल्टी आ रही है बहुत तेज
+23.0,24.5,0,0.85,F0:0.337,V8,SICK,0.91,0.659,SICK,visual (verified on-screen speaker),उल्टी आ रही है बहुत तेज बुखार
+23.5,25.0,0,0.69,F0:0.0,V8,SICK,0.822,0.677,SICK,visual (verified on-screen speaker),बहुत तेज बुखार है I
+24.0,25.5,0,0.6,F0:0.0,V8,SICK,0.863,0.605,SICK,visual (verified on-screen speaker),तेज बुखार है I think I have
+24.5,26.0,0,0.51,F0:0.057,,SICK,0.655,0.357,SICK,visual (verified on-screen speaker),बुखार है I think I have typhoid
+25.0,26.5,0,0.64,F0:0.118,V8,SICK,0.698,0.445,SICK,visual (verified on-screen speaker),I think I have typhoid or something dude
+25.5,27.0,1,0.68,F0:0.607,V8,SICK,0.627,0.36,SICK,visual (verified on-screen speaker),have typhoid or something dude क्या
+26.0,27.5,1,0.68,F0:0.998,V8,SICK,0.528,0.314,SICK,voice embedding (nearest verified speaker),typhoid or something dude क्या पाँगल
+26.5,28.0,1,0.72,F0:1.229,V1,RAHUL,0.52,0.192,RAHUL,visual (verified on-screen speaker),"dude क्या पाँगल हो या टाइफॉर्ड,"
+27.0,28.5,0,0.87,F0:1.358,V1,RAHUL,0.629,0.192,RAHUL,visual (verified on-screen speaker),"क्या पाँगल हो या टाइफॉर्ड, ऐसा"
+27.5,29.0,0,1.0,F0:1.094,V1,RAHUL,0.701,0.24,RAHUL,visual (verified on-screen speaker),"पाँगल हो या टाइफॉर्ड, ऐसा कुछ नहीं होता"
+28.0,29.5,0,0.96,F0:0.938,V1,RAHUL,0.69,0.375,RAHUL,visual (verified on-screen speaker),"टाइफॉर्ड, ऐसा कुछ नहीं होता भाई You"
+28.5,30.0,0,0.81,F0:0.551,V1,RAHUL,0.69,0.433,RAHUL,visual (verified on-screen speaker),ऐसा कुछ नहीं होता भाई You just need
+29.0,30.5,0,0.81,F0:0.628,V1,RAHUL,0.636,0.292,RAHUL,visual (verified on-screen speaker),होता भाई You just need to get out
+29.5,31.0,0,0.85,F0:0.826,V1,RAHUL,0.69,0.305,RAHUL,visual (verified on-screen speaker),You just need to get out and have some fun
+30.0,31.5,1,0.85,F0:0.888,V1,RAHUL,0.627,0.346,RAHUL,visual (verified on-screen speaker),need to get out and have some fun
+30.5,32.0,1,0.52,F0:0.932,,RAHUL,0.496,0.24,RAHUL,voice embedding (nearest verified speaker),out and have some fun
+31.0,32.5,1,0.19,,,RAHUL,0.184,0.101,,,fun
+31.5,33.0,0,0.0,,,BOSS,0.136,0.05,,,
+32.0,33.5,0,0.0,,,BEARD,0.128,0.036,,,
+32.5,34.0,0,0.0,,,BEARD,0.145,0.038,,,
+33.0,34.5,0,0.0,,,BEARD,0.184,0.047,,,
+33.5,35.0,0,0.01,,,BEARD,0.196,0.056,,,
+34.0,35.5,0,0.01,,,BEARD,0.209,0.076,,,
+34.5,36.0,0,0.01,,,BEARD,0.205,0.141,,,
+35.0,36.5,0,0.0,,,BEARD,0.183,0.057,,,
+35.5,37.0,1,0.0,,,BEARD,0.166,0.037,,,"Dude,"
+36.0,37.5,1,0.28,F0:0.401,,RAHUL,0.463,0.289,,,"Dude, just step"
+36.5,38.0,1,0.56,F0:0.401,,RAHUL,0.654,0.399,RAHUL,visual (verified on-screen speaker),"Dude, just step out यार,"
+37.0,38.5,0,0.89,F0:1.207,V0,RAHUL,0.729,0.455,RAHUL,visual (verified on-screen speaker),"Dude, just step out यार, have"
+37.5,39.0,0,0.91,F0:1.645,V0,RAHUL,0.693,0.438,RAHUL,visual (verified on-screen speaker),"step out यार, have a couple of"
+38.0,39.5,0,0.96,F0:1.235,V0,RAHUL,0.688,0.424,RAHUL,visual (verified on-screen speaker),"यार, have a couple of beers सब"
+38.5,40.0,0,0.93,F0:0.779,V0,RAHUL,0.7,0.485,RAHUL,visual (verified on-screen speaker),"have a couple of beers सब बैक्टीरिया,"
+39.0,40.5,0,0.91,F0:0.677,V0,RAHUL,0.736,0.49,RAHUL,visual (verified on-screen speaker),"of beers सब बैक्टीरिया, बैक्टीरिया,"
+39.5,41.0,0,0.91,F0:0.806,V0,RAHUL,0.736,0.54,RAHUL,visual (verified on-screen speaker),"सब बैक्टीरिया, बैक्टीरिया, सब मर जाएगा"
+40.0,41.5,1,0.89,F0:0.994,V0,RAHUL,0.785,0.54,RAHUL,visual (verified on-screen speaker),"बैक्टीरिया, बैक्टीरिया, सब मर जाएगा Bartender"
+40.5,42.0,1,0.96,F0:0.862,V0,RAHUL,0.777,0.491,RAHUL,visual (verified on-screen speaker),"बैक्टीरिया, सब मर जाएगा Bartender को कभी"
+41.0,42.5,1,0.96,F0:0.787,V0,RAHUL,0.742,0.268,RAHUL,visual (verified on-screen speaker),जाएगा Bartender को कभी हुआ है क्या टाइफॉर्ड?
+41.5,43.0,0,0.93,F0:0.567,V0,RAHUL,0.71,0.295,RAHUL,visual (verified on-screen speaker),Bartender को कभी हुआ है क्या टाइफॉर्ड? क्यों
+42.0,43.5,0,0.93,F0:0.648,V0,RAHUL,0.754,0.331,RAHUL,visual (verified on-screen speaker),कभी हुआ है क्या टाइफॉर्ड? क्यों वो बेर के
+42.5,44.0,0,0.93,F0:0.528,V0,RAHUL,0.768,0.332,RAHUL,visual (verified on-screen speaker),टाइफॉर्ड? क्यों वो बेर के आजुबाजु रहते
+43.0,44.5,1,0.91,F0:0.656,V0,RAHUL,0.765,0.323,RAHUL,visual (verified on-screen speaker),वो बेर के आजुबाजु रहते हैं अमच तु इतना
+43.5,45.0,1,0.89,F3:0.453 F0:0.56,V11,RAHUL,0.601,0.088,BROWN,visual (verified on-screen speaker),"के आजुबाजु रहते हैं अमच तु इतना सोच मत,"
+44.0,45.5,1,0.73,F3:0.452,V11,BROWN,0.672,0.217,BROWN,visual (verified on-screen speaker),"हैं अमच तु इतना सोच मत, तु जितना"
+44.5,46.0,0,0.83,F3:0.468,V11,BROWN,0.627,0.309,BROWN,visual (verified on-screen speaker),"सोच मत, तु जितना ना सोचेगा"
+45.0,46.5,0,0.81,F8:0.0 F3:0.646,V11,BROWN,0.647,0.309,BROWN,visual (verified on-screen speaker),"मत, तु जितना ना सोचेगा ना क्यों में"
+45.5,47.0,0,0.93,F8:0.0 F3:0.741,V18,BROWN,0.663,0.168,BROWN,visual (verified on-screen speaker),जितना ना सोचेगा ना क्यों में एको टाइफॉइड
+46.0,47.5,0,0.88,F8:0.0 F3:0.774,V18,BROWN,0.645,0.157,BROWN,visual (verified on-screen speaker),"सोचेगा ना क्यों में एको टाइफॉइड है, टाइफॉइड"
+46.5,48.0,0,0.85,F8:0.0 F3:0.694,V18,BROWN,0.525,0.083,BROWN,visual (verified on-screen speaker),"में एको टाइफॉइड है, टाइफॉइड है, टाइफॉइड"
+47.0,48.5,0,0.84,F8:0.0 F3:0.592,V18,BROWN,0.501,0.138,BROWN,visual (verified on-screen speaker),"टाइफॉइड है, टाइफॉइड है, टाइफॉइड है, उतना ना"
+47.5,49.0,1,0.84,F8:0.0 F3:0.797,V18,BROWN,0.589,0.186,BROWN,visual (verified on-screen speaker),"टाइफॉइड है, टाइफॉइड है, उतना ना बढ़ता है ये"
+48.0,49.5,1,0.8,F8:0.0 F3:0.857 F7:0.761,V66,BROWN,0.358,0.068,BROWN,voice embedding (nearest verified speaker),"टाइफॉइड है, उतना ना बढ़ता है ये टाइफॉइड"
+48.5,50.0,1,0.8,F3:1.059 F7:0.543,V31,PURPLE,0.438,0.287,PURPLE,visual (verified on-screen speaker),"बढ़ता है ये टाइफॉइड ना, इस"
+49.0,50.5,0,0.79,F7:0.46,V31,PURPLE,0.507,0.348,PURPLE,visual (verified on-screen speaker),"ये टाइफॉइड ना, इस जस्ट अ"
+49.5,51.0,0,0.72,F7:0.367,V31,PURPLE,0.462,0.306,PURPLE,visual (verified on-screen speaker),"टाइफॉइड ना, इस जस्ट अ फेज दो"
+50.0,51.5,1,0.72,F7:0.44,V31,PURPLE,0.371,0.171,PURPLE,voice embedding (nearest verified speaker),इस जस्ट अ फेज दो महीने
+50.5,52.0,1,0.79,F1:0.733 F7:0.579,V72,PURPLE,0.302,0.127,TEE,visual (verified on-screen speaker),अ फेज दो महीने में
+51.0,52.5,1,0.91,F1:0.733 F1:1.044,V33,TEE,0.652,0.294,TEE,visual (verified on-screen speaker),दो महीने में बैक्टेरिया
+51.5,53.0,0,0.96,F1:1.13 F1:0.945,V33,TEE,0.679,0.226,TEE,visual (verified on-screen speaker),महीने में बैक्टेरिया अपने आप
+52.0,53.5,0,0.96,F1:1.071,V33,TEE,0.686,0.23,TEE,visual (verified on-screen speaker),में बैक्टेरिया अपने आप मर जाएगा
+52.5,54.0,1,0.97,F1:1.08,V33,TEE,0.687,0.243,TEE,visual (verified on-screen speaker),बैक्टेरिया अपने आप मर जाएगा Just last month
+53.0,54.5,1,0.97,F1:0.697 F7:0.936,V71,RAHUL,0.24,0.001,RAHUL,voice embedding (nearest verified speaker),आप मर जाएगा Just last month you got a
+53.5,55.0,1,0.96,F7:0.893,V43,PURPLE,0.231,0.02,PURPLE,visual (verified on-screen speaker),"जाएगा Just last month you got a promotion,"
+54.0,55.5,1,0.95,F7:0.583,V43,PURPLE,0.223,0.054,PURPLE,visual (verified on-screen speaker),"month you got a promotion, no? Then"
+54.5,56.0,1,0.92,F8:0.0 F3:0.915 F7:0.454,V43,CURLYW,0.166,0.044,CURLYW,voice embedding (nearest verified speaker),"a promotion, no? Then how you got"
+55.0,56.5,1,0.92,F8:0.0 F3:1.073 F7:0.341,V18,BROWN,0.439,0.109,BROWN,visual (verified on-screen speaker),no? Then how you got typhoid like
+55.5,57.0,1,0.93,F8:0.0 F3:0.923,V55,BROWN,0.547,0.154,BROWN,visual (verified on-screen speaker),Then how you got typhoid like that? अबे तु
+56.0,57.5,1,0.96,F8:0.0 F3:1.016 F0:0.375,V55,RAHUL,0.51,0.077,RAHUL,voice embedding (nearest verified speaker),got typhoid like that? अबे तु परसो ही तो साहिल
+56.5,58.0,1,0.97,F0:0.953,V1,RAHUL,0.744,0.326,RAHUL,visual (verified on-screen speaker),like that? अबे तु परसो ही तो साहिल के पार्टी में
+57.0,58.5,0,1.0,F0:0.913,V1,RAHUL,0.706,0.309,RAHUL,visual (verified on-screen speaker),तु परसो ही तो साहिल के पार्टी में इतना enjoy कर
+57.5,59.0,1,0.95,F0:0.872,V1,RAHUL,0.568,0.232,RAHUL,visual (verified on-screen speaker),साहिल के पार्टी में इतना enjoy कर रहा था You were
+58.0,59.5,1,0.91,F0:0.304 F1:0.971,V12,RAHUL,0.485,0.019,RAHUL,voice embedding (nearest verified speaker),"में इतना enjoy कर रहा था You were laughing,"
+58.5,60.0,1,0.91,F13:0.0 F1:0.916,V2,TEE,0.659,0.297,TEE,visual (verified on-screen speaker),"कर रहा था You were laughing, you were dancing,"
+59.0,60.5,0,0.96,F13:0.0 F1:0.741,V2,TEE,0.722,0.373,TEE,visual (verified on-screen speaker),"were laughing, you were dancing, you were"
+59.5,61.0,0,0.99,F13:0.0 F1:0.641,V2,TEE,0.707,0.35,TEE,visual (verified on-screen speaker),"you were dancing, you were joking अब"
+60.0,61.5,1,0.87,F13:0.0 F1:0.481,V2,TEE,0.618,0.303,TEE,voice embedding (nearest verified speaker),"dancing, you were joking अब क्या"
+60.5,62.0,1,0.87,F13:0.0 F1:0.598 F0:0.939,V15,RAHUL,0.633,0.203,RAHUL,visual (verified on-screen speaker),were joking अब क्या है सड़ली?
+61.0,62.5,1,0.73,F0:0.676,V15,RAHUL,0.675,0.33,RAHUL,visual (verified on-screen speaker),अब क्या है सड़ली? High
+61.5,63.0,0,0.67,F0:0.449,V15,RAHUL,0.688,0.359,RAHUL,visual (verified on-screen speaker),"क्या है सड़ली? High fever,"
+62.0,63.5,0,0.67,F0:0.593,V15,RAHUL,0.586,0.298,RAHUL,visual (verified on-screen speaker),"सड़ली? High fever, burning"
+62.5,64.0,0,0.81,F0:0.646,V15,RAHUL,0.642,0.428,RAHUL,visual (verified on-screen speaker),"High fever, burning eyes एक"
+63.0,64.5,1,0.95,F0:0.75,V15,RAHUL,0.604,0.288,RAHUL,voice embedding (nearest verified speaker),"fever, burning eyes एक चीज"
+63.5,65.0,1,0.87,F8:0.0 F5:0.508 F0:0.53,V15,RAHUL,0.559,0.213,BROWN,visual (verified on-screen speaker),burning eyes एक चीज हो सकता है
+64.0,65.5,1,0.81,F8:0.0 F5:0.791,V29,BROWN,0.582,0.158,BROWN,visual (verified on-screen speaker),एक चीज हो सकता है like Either you
+64.5,66.0,0,0.87,F8:0.0 F5:0.862,V29,BROWN,0.684,0.216,BROWN,visual (verified on-screen speaker),चीज हो सकता है like Either you are smiling
+65.0,66.5,0,0.89,F8:0.0 F5:0.829,V29,BROWN,0.69,0.22,BROWN,visual (verified on-screen speaker),है like Either you are smiling or you
+65.5,67.0,0,0.92,F8:0.0 F5:0.925,V29,BROWN,0.729,0.233,BROWN,visual (verified on-screen speaker),you are smiling or you have typhoid
+66.0,67.5,0,0.89,F8:0.0 F5:0.871,V19,BROWN,0.74,0.214,BROWN,visual (verified on-screen speaker),or you have typhoid Like how
+66.5,68.0,0,0.92,F8:0.0 F5:0.874,V19,BROWN,0.667,0.152,BROWN,visual (verified on-screen speaker),have typhoid Like how can you have both?
+67.0,68.5,1,0.92,F8:0.0 F5:0.636,V19,BROWN,0.547,0.154,BROWN,visual (verified on-screen speaker),typhoid Like how can you have both? Are you
+67.5,69.0,1,0.95,F8:0.0 F5:0.562,V38,CURLYW,0.337,0.126,CURLYW,visual (verified on-screen speaker),how can you have both? Are you sure you didn't
+68.0,69.5,1,0.97,F5:0.555,V38,CURLYW,0.661,0.449,CURLYW,visual (verified on-screen speaker),both? Are you sure you didn't get typhoid
+68.5,70.0,0,0.91,F5:0.402,V38,CURLYW,0.728,0.526,CURLYW,visual (verified on-screen speaker),sure you didn't get typhoid because
+69.0,70.5,0,0.85,F5:0.42,V4,CURLYW,0.778,0.544,CURLYW,visual (verified on-screen speaker),didn't get typhoid because Garima
+69.5,71.0,0,0.81,F5:0.362,V4,CURLYW,0.756,0.463,CURLYW,visual (verified on-screen speaker),typhoid because Garima broke up
+70.0,71.5,0,0.76,F5:0.354,V4,CURLYW,0.657,0.339,CURLYW,visual (verified on-screen speaker),because Garima broke up with you?
+70.5,72.0,1,0.73,F5:0.348,V64,CURLYW,0.418,0.198,CURLYW,voice embedding (nearest verified speaker),Garima broke up with you? You should
+71.0,72.5,1,0.77,F5:0.624,V46,BROWN,0.35,0.045,BROWN,voice embedding (nearest verified speaker),up with you? You should get on
+71.5,73.0,1,0.91,?:0.0 F5:0.611,V46,BROWN,0.603,0.19,BROWN,voice embedding (nearest verified speaker),You should get on Tinder तेरा
+72.0,73.5,1,0.89,?:0.0 F5:0.573 F7:0.609,V46,BROWN,0.46,0.112,BROWN,voice embedding (nearest verified speaker),"should get on Tinder तेरा typhoid,"
+72.5,74.0,1,0.89,F5:0.137 F7:0.635,V30,PURPLE,0.455,0.242,PURPLE,voice embedding (nearest verified speaker),"Tinder तेरा typhoid,"
+73.0,74.5,0,0.87,F7:0.597,V30,PURPLE,0.628,0.497,PURPLE,visual (verified on-screen speaker),"तेरा typhoid, vomiting,"
+73.5,75.0,0,0.93,F7:0.508,V30,PURPLE,0.737,0.593,PURPLE,visual (verified on-screen speaker),"typhoid, vomiting, diarrhea सब"
+74.0,75.5,0,0.92,F7:0.354,V30,PURPLE,0.732,0.566,PURPLE,visual (verified on-screen speaker),"vomiting, diarrhea सब"
+74.5,76.0,0,0.89,F7:0.412,V60,PURPLE,0.671,0.543,PURPLE,visual (verified on-screen speaker),diarrhea सब चला जाएगा
+75.0,76.5,0,0.83,F7:0.491,V60,PURPLE,0.596,0.506,PURPLE,visual (verified on-screen speaker),सब चला जाएगा
+75.5,77.0,0,0.51,F7:0.459,,PURPLE,0.451,0.351,PURPLE,visual (verified on-screen speaker),सब चला जाएगा
+76.0,77.5,1,0.27,F7:0.248,,PURPLE,0.281,0.187,,,जाएगा You know
+76.5,78.0,1,0.35,F1:0.608 F7:0.03,,TEE,0.652,0.337,,,You know last year Even
+77.0,78.5,1,0.39,F1:0.538,,TEE,0.656,0.352,,,You know last year Even I
+77.5,79.0,0,0.36,F1:0.526,,TEE,0.624,0.361,,,know last year Even I
+78.0,79.5,0,0.31,F1:0.572,,TEE,0.359,0.182,,,Even I felt
+78.5,80.0,0,0.56,F1:0.662,,TEE,0.553,0.358,TEE,visual (verified on-screen speaker),I felt kind of typhoid
+79.0,80.5,0,0.72,F1:0.745,V2,TEE,0.647,0.395,TEE,visual (verified on-screen speaker),I felt kind of typhoid But
+79.5,81.0,0,0.45,F1:0.636,,TEE,0.618,0.411,,,felt kind of typhoid But
+80.0,81.5,0,0.36,F1:0.569,,TEE,0.561,0.38,,,typhoid But not typhoid
+80.5,82.0,0,0.47,F1:0.741,,TEE,0.597,0.391,,,But not typhoid typhoid
+81.0,82.5,0,0.64,F1:0.837,V2,TEE,0.657,0.422,TEE,visual (verified on-screen speaker),But not typhoid typhoid Like sort
+81.5,83.0,0,0.44,F1:0.654,,TEE,0.578,0.343,,,typhoid typhoid Like sort
+82.0,83.5,0,0.29,F1:0.334,,TEE,0.487,0.262,,,typhoid Like sort of
+82.5,84.0,0,0.33,F1:0.447,,TEE,0.554,0.236,,,sort of typhoid
+83.0,84.5,0,0.35,F1:0.581,,TEE,0.595,0.236,,,sort of typhoid
+83.5,85.0,0,0.23,F1:0.594,,TEE,0.548,0.23,,,of typhoid But
+84.0,85.5,0,0.15,F1:0.483,,TEE,0.433,0.244,,,typhoid But I fought
+84.5,86.0,0,0.31,F1:0.6,,TEE,0.47,0.257,,,But I fought it I
+85.0,86.5,0,0.31,F1:0.605,,TEE,0.478,0.232,,,But I fought it I
+85.5,87.0,0,0.17,F1:0.405,,TEE,0.385,0.165,,,fought it I started
+86.0,87.5,0,0.15,F1:0.507,,TEE,0.163,0.051,,,I started
+86.5,88.0,0,0.44,F1:0.591,,TEE,0.627,0.365,,,I started jogging
+87.0,88.5,1,0.64,F1:0.656,V59,TEE,0.475,0.202,TEE,voice embedding (nearest verified speaker),started jogging पर रोज सुबह
+87.5,89.0,1,0.83,F1:0.57 F0:0.572,V59,RAHUL,0.532,0.267,RAHUL,visual (verified on-screen speaker),started jogging पर रोज सुबह jogging करने
+88.0,89.5,1,0.84,F0:0.563,V0,RAHUL,0.703,0.407,RAHUL,visual (verified on-screen speaker),jogging पर रोज सुबह jogging करने से ना perspective
+88.5,90.0,0,0.89,F0:0.667,V0,RAHUL,0.708,0.425,RAHUL,visual (verified on-screen speaker),सुबह jogging करने से ना perspective आते
+89.0,90.5,0,0.85,F0:0.682,V0,RAHUL,0.728,0.498,RAHUL,visual (verified on-screen speaker),करने से ना perspective आते है और typhoid
+89.5,91.0,0,0.85,F0:0.648,V0,RAHUL,0.75,0.488,RAHUL,visual (verified on-screen speaker),perspective आते है और typhoid जाते है
+90.0,91.5,0,0.8,F0:0.534,V0,RAHUL,0.74,0.492,RAHUL,visual (verified on-screen speaker),आते है और typhoid जाते है perspective come
+90.5,92.0,0,0.79,F0:0.484,V0,RAHUL,0.687,0.426,RAHUL,visual (verified on-screen speaker),typhoid जाते है perspective come come typhoid
+91.0,92.5,0,0.8,F0:0.42,V0,RAHUL,0.646,0.399,RAHUL,visual (verified on-screen speaker),है perspective come come typhoid go go
+91.5,93.0,1,0.65,F0:0.478,V0,RAHUL,0.582,0.299,RAHUL,visual (verified on-screen speaker),come come typhoid go go
+92.0,93.5,1,0.57,F0:0.539 ?:0.385,,RAHUL,0.309,0.186,RAHUL,voice embedding (nearest verified speaker),typhoid go go सनव
+92.5,94.0,1,0.41,?:0.154 ?:0.385,,RAHUL,0.208,0.157,,,सनव वो
+93.0,94.5,0,0.6,?:0.154 F9:0.058,V67,MOM,0.288,0.168,MOM,voice embedding (nearest verified speaker),सनव वो निखिल
+93.5,95.0,0,0.69,F9:0.06,V24,MOM,0.439,0.235,MOM,voice embedding (nearest verified speaker),सनव वो निखिल
+94.0,95.5,0,0.87,F2:0.384 F9:0.06,V24,MOM,0.519,0.4,MOM,visual (verified on-screen speaker),वो निखिल का दोस बता
+94.5,96.0,0,0.93,F2:0.454,V24,MOM,0.482,0.296,MOM,visual (verified on-screen speaker),निखिल का दोस बता रहा था
+95.0,96.5,0,0.95,F2:0.506,V24,MOM,0.54,0.318,MOM,visual (verified on-screen speaker),निखिल का दोस बता रहा था की
+95.5,97.0,0,0.64,F2:0.526 F9:0.005,V24,MOM,0.58,0.314,MOM,visual (verified on-screen speaker),बता रहा था की निखिल
+96.0,97.5,0,0.64,F9:0.006,V14,MOM,0.588,0.417,MOM,voice embedding (nearest verified speaker),था की निखिल को
+96.5,98.0,0,0.57,F2:0.533 F9:0.006,,MOM,0.521,0.389,MOM,visual (verified on-screen speaker),निखिल को fever type
+97.0,98.5,0,0.87,F2:0.586,V14,MOM,0.589,0.401,MOM,visual (verified on-screen speaker),निखिल को fever type कुछ है
+97.5,99.0,0,0.81,F2:0.632,V14,MOM,0.595,0.363,MOM,visual (verified on-screen speaker),को fever type कुछ है तुमने
+98.0,99.5,0,0.91,F2:0.748 F9:0.496,V63,MOM,0.398,0.006,MOM,voice embedding (nearest verified speaker),type कुछ है तुमने किसी को बता
+98.5,100.0,0,0.89,F9:0.488,V28,DAD,0.568,0.418,DAD,visual (verified on-screen speaker),है तुमने किसी को बता � Snakulommalap
+99.0,100.5,0,0.76,F9:0.392,V28,DAD,0.541,0.426,DAD,visual (verified on-screen speaker),तुमने किसी को बता � Snakulommalap क्यों उसको
+99.5,101.0,0,0.67,F2:0.03 F9:0.275,V28,DAD,0.605,0.366,DAD,visual (verified on-screen speaker),बता � Snakulommalap क्यों उसको fever है?
+100.0,101.5,0,0.36,F2:0.142,,DAD,0.526,0.381,,,"Snakulommalap क्यों उसको fever है? निखिल,"
+100.5,102.0,0,0.55,F2:0.249,,DAD,0.48,0.357,DAD,voice embedding (nearest verified speaker),"उसको fever है? निखिल, मैं"
+101.0,102.5,0,0.61,F2:0.455,V62,MOM,0.407,0.053,MOM,voice embedding (nearest verified speaker),"है? निखिल, मैं क्यों बताऊंगी"
+101.5,103.0,1,0.83,F2:0.598,V62,MOM,0.505,0.192,MOM,voice embedding (nearest verified speaker),"निखिल, मैं क्यों बताऊंगी"
+102.0,103.5,1,0.84,F2:0.62 F3:1.31,V25,BROWN,0.496,0.111,BROWN,voice embedding (nearest verified speaker),मैं क्यों बताऊंगी
+102.5,104.0,1,0.87,?:0.0 F3:0.911,V25,BROWN,0.556,0.103,BROWN,visual (verified on-screen speaker),बताऊंगी
+103.0,104.5,0,0.99,?:0.0 F8:0.0 F3:0.583 F3:0.578,V25,BROWN,0.589,0.154,BROWN,visual (verified on-screen speaker),
+103.5,105.0,0,1.0,?:0.0 F8:0.0 F3:0.558 F3:0.216,V25,BROWN,0.52,0.168,BROWN,visual (verified on-screen speaker),
+104.0,105.5,0,0.88,F8:0.0 F3:0.632,V25,BROWN,0.48,0.15,BROWN,visual (verified on-screen speaker),
+104.5,106.0,0,0.88,F8:0.0 F3:0.64,V3,BROWN,0.669,0.233,BROWN,visual (verified on-screen speaker),
+105.0,106.5,0,0.88,F8:0.0 F3:0.777,V3,BROWN,0.733,0.232,BROWN,visual (verified on-screen speaker),
+105.5,107.0,0,0.97,F8:0.0 F3:0.64,V3,BROWN,0.731,0.251,BROWN,visual (verified on-screen speaker),
+106.0,107.5,0,0.85,F8:0.0 F3:0.632,V3,BROWN,0.68,0.257,BROWN,visual (verified on-screen speaker),
+106.5,108.0,0,0.84,F8:0.0 F3:0.534,V3,BROWN,0.73,0.302,BROWN,visual (verified on-screen speaker),
+107.0,108.5,0,0.84,F3:0.679,V3,BROWN,0.749,0.31,BROWN,visual (verified on-screen speaker),
+107.5,109.0,0,0.93,F3:0.72,V3,BROWN,0.736,0.317,BROWN,visual (verified on-screen speaker),
+108.0,109.5,1,0.8,F3:0.558,V3,BROWN,0.712,0.278,BROWN,visual (verified on-screen speaker),
+108.5,110.0,1,0.83,F3:1.096,V53,BROWN,0.416,0.251,BROWN,visual (verified on-screen speaker),
+109.0,110.5,1,0.83,F3:1.103,V53,BROWN,0.216,0.061,BROWN,visual (verified on-screen speaker),
+109.5,111.0,0,0.95,F3:1.055,V35,MOM,0.257,0.04,BROWN,visual (verified on-screen speaker),
+110.0,111.5,0,0.95,F3:1.23,V35,BROWN,0.267,0.006,BROWN,visual (verified on-screen speaker),
+110.5,112.0,0,0.87,F3:1.36,V35,CURLYW,0.268,0.005,BROWN,visual (verified on-screen speaker),
+111.0,112.5,0,0.89,F3:1.48,V35,BROWN,0.306,0.076,BROWN,visual (verified on-screen speaker),
+111.5,113.0,0,0.87,F3:1.322,V26,BROWN,0.277,0.117,BROWN,visual (verified on-screen speaker),
+112.0,113.5,0,0.96,F3:1.065,V26,BROWN,0.356,0.127,BROWN,visual (verified on-screen speaker),
+112.5,114.0,0,0.96,F3:1.004,V26,BROWN,0.313,0.153,BROWN,visual (verified on-screen speaker),
+113.0,114.5,0,0.79,F3:1.02,V26,BROWN,0.38,0.226,BROWN,visual (verified on-screen speaker),
+113.5,115.0,0,0.6,F3:0.993,V26,BROWN,0.313,0.046,BROWN,visual (verified on-screen speaker),
+114.0,115.5,0,0.6,F3:0.99,V49,BROWN,0.291,0.08,BROWN,visual (verified on-screen speaker),
+114.5,116.0,0,0.8,F3:1.4,V49,BROWN,0.231,0.024,BROWN,visual (verified on-screen speaker),
+115.0,116.5,1,0.93,F3:1.474,V49,BROWN,0.259,0.011,BROWN,visual (verified on-screen speaker),
+115.5,117.0,1,0.85,F3:1.032,V34,BROWN,0.461,0.191,BROWN,voice embedding (nearest verified speaker),
+116.0,117.5,1,0.85,F3:0.661,V34,BROWN,0.383,0.042,BROWN,voice embedding (nearest verified speaker),
+116.5,118.0,0,0.64,F3:0.258,V34,BROWN,0.419,0.041,BROWN,voice embedding (nearest verified speaker),
+117.0,118.5,0,0.71,F3:0.388,V34,BROWN,0.481,0.061,BROWN,voice embedding (nearest verified speaker),
+117.5,119.0,0,0.68,F3:0.316,V27,RAHUL,0.46,0.047,BROWN,visual (verified on-screen speaker),
+118.0,119.5,0,0.95,F3:0.417,V27,RAHUL,0.539,0.071,BROWN,visual (verified on-screen speaker),
+118.5,120.0,0,0.96,F3:0.364,V27,BROWN,0.539,0.068,BROWN,visual (verified on-screen speaker),
+119.0,120.5,1,0.99,F3:0.484 F3:0.37,V27,BROWN,0.546,0.151,BROWN,visual (verified on-screen speaker),वो
+119.5,121.0,1,0.99,F2:0.439 F3:0.37,V27,RAHUL,0.363,0.016,BROWN,visual (verified on-screen speaker),वो निखिल
+120.0,121.5,1,0.99,F2:0.414 F3:0.376,V14,MOM,0.476,0.228,MOM,voice embedding (nearest verified speaker),वो निखिल का
+120.5,122.0,0,0.92,F2:0.505,V14,MOM,0.639,0.424,MOM,visual (verified on-screen speaker),वो निखिल का दोस्त ये
+121.0,122.5,0,0.85,F2:0.517,V14,MOM,0.701,0.459,MOM,visual (verified on-screen speaker),निखिल का दोस्त ये भी बता
+121.5,123.0,0,0.84,F2:0.515,V14,MOM,0.647,0.465,MOM,visual (verified on-screen speaker),दोस्त ये भी बता रहा था कि
+122.0,123.5,0,0.72,F2:0.375,V14,MOM,0.645,0.413,MOM,visual (verified on-screen speaker),ये भी बता रहा था कि ऐसे
+122.5,124.0,0,0.48,F2:0.289,,MOM,0.545,0.331,,,रहा था कि ऐसे
+123.0,124.5,0,0.49,F2:0.337,,MOM,0.49,0.265,,,कि ऐसे अलग
+123.5,125.0,0,0.67,F2:0.459,V13,MOM,0.589,0.349,MOM,visual (verified on-screen speaker),ऐसे अलग डॉक्टर्स
+124.0,125.5,0,0.99,F2:0.481,V13,MOM,0.615,0.355,MOM,visual (verified on-screen speaker),ऐसे अलग डॉक्टर्स होते हैं
+124.5,126.0,0,0.99,F2:0.447,V13,MOM,0.628,0.356,MOM,visual (verified on-screen speaker),अलग डॉक्टर्स होते हैं जो ऐसे
+125.0,126.5,0,0.97,F2:0.45,V13,MOM,0.697,0.516,MOM,visual (verified on-screen speaker),डॉक्टर्स होते हैं जो ऐसे फीवर
+125.5,127.0,0,0.97,F2:0.355,V13,MOM,0.691,0.451,MOM,visual (verified on-screen speaker),हैं जो ऐसे फीवर जैसे चीजें
+126.0,127.5,0,0.96,F2:0.371,V13,MOM,0.664,0.364,MOM,visual (verified on-screen speaker),ऐसे फीवर जैसे चीजें ठीक
+126.5,128.0,0,0.93,F2:0.244,V13,MOM,0.666,0.346,MOM,visual (verified on-screen speaker),फीवर जैसे चीजें ठीक कर देते हैं
+127.0,128.5,0,0.87,F2:0.135,V13,MOM,0.638,0.292,MOM,visual (verified on-screen speaker),चीजें ठीक कर देते हैं
+127.5,129.0,0,0.71,F2:0.122 F9:0.431,V13,MOM,0.501,0.202,MOM,voice embedding (nearest verified speaker),ठीक कर देते हैं
+128.0,129.5,0,0.43,F9:0.316,,DAD,0.248,0.018,,,हैं
+128.5,130.0,0,0.23,F9:0.203,,DAD,0.443,0.291,,,पोरी
+129.0,130.5,0,0.4,F9:0.287,,DAD,0.497,0.32,,,पोरी मुहले में
+129.5,131.0,0,0.69,F9:0.465,V28,DAD,0.738,0.508,DAD,visual (verified on-screen speaker),पोरी मुहले में बताना है कि
+130.0,131.5,0,0.63,F9:0.432,V28,DAD,0.757,0.537,DAD,visual (verified on-screen speaker),मुहले में बताना है कि
+130.5,132.0,0,0.57,F9:0.401,,DAD,0.806,0.485,DAD,visual (verified on-screen speaker),में बताना है कि हमारे बेटे
+131.0,132.5,0,0.61,F9:0.292,V6,DAD,0.782,0.401,DAD,visual (verified on-screen speaker),कि हमारे बेटे को फीवर
+131.5,133.0,0,0.95,F9:0.468,V6,DAD,0.882,0.621,DAD,visual (verified on-screen speaker),कि हमारे बेटे को फीवर है फीवर है
+132.0,133.5,0,1.0,F9:0.53,V6,DAD,0.839,0.668,DAD,visual (verified on-screen speaker),बेटे को फीवर है फीवर है फीवर है।
+132.5,134.0,0,0.81,F9:0.515,V6,DAD,0.784,0.676,DAD,visual (verified on-screen speaker),है फीवर है फीवर है। टेंप्रेचर
+133.0,134.5,0,0.81,F9:0.606,V6,DAD,0.765,0.542,DAD,visual (verified on-screen speaker),है फीवर है। टेंप्रेचर बढ़
+133.5,135.0,0,0.81,F9:0.752,V6,DAD,0.541,0.353,DAD,visual (verified on-screen speaker),है। टेंप्रेचर बढ़ गया है उसका
+134.0,135.5,0,0.97,F9:0.894,V6,DAD,0.564,0.319,DAD,voice embedding (nearest verified speaker),टेंप्रेचर बढ़ गया है उसका माथा
+134.5,136.0,0,0.97,F2:0.189 F9:0.874,V6,DAD,0.61,0.418,DAD,voice embedding (nearest verified speaker),बढ़ गया है उसका माथा घरम रहता
+135.0,136.5,0,0.97,F2:0.148,V6,DAD,0.725,0.42,DAD,voice embedding (nearest verified speaker),उसका माथा घरम रहता है। लोग
+135.5,137.0,0,1.0,F2:0.134,V6,DAD,0.61,0.292,DAD,voice embedding (nearest verified speaker),माथा घरम रहता है। लोग क्या सोचेंगे
+136.0,137.5,0,0.8,F2:0.094 F1:0.311,V6,DAD,0.506,0.244,DAD,voice embedding (nearest verified speaker),रहता है। लोग क्या सोचेंगे लोग
+136.5,138.0,0,0.47,F1:0.241,,DAD,0.516,0.309,,,लोग क्या सोचेंगे लोग
+137.0,138.5,0,0.37,F1:0.232,,DAD,0.437,0.243,,,सोचेंगे लोग कहेंगे
+137.5,139.0,0,0.52,F1:0.331,,DAD,0.456,0.406,DAD,visual (verified on-screen speaker),लोग कहेंगे पूरी family
+138.0,139.5,0,0.85,F1:0.429,V50,DAD,0.578,0.457,DAD,visual (verified on-screen speaker),लोग कहेंगे पूरी family को फीवर
+138.5,140.0,1,0.92,F1:0.478,V50,DAD,0.62,0.415,DAD,voice embedding (nearest verified speaker),"कहेंगे पूरी family को फीवर है। ब्रो,"
+139.0,140.5,1,0.88,F1:0.51,V50,DAD,0.446,0.048,DAD,voice embedding (nearest verified speaker),"family को फीवर है। ब्रो, तुझे टाइफोइड"
+139.5,141.0,1,0.84,F1:0.504,V2,TEE,0.719,0.281,TEE,visual (verified on-screen speaker),"फीवर है। ब्रो, तुझे टाइफोइड है"
+140.0,141.5,0,0.87,F1:0.702,V2,TEE,0.785,0.338,TEE,visual (verified on-screen speaker),"तुझे टाइफोइड है बोलके न,"
+140.5,142.0,0,0.89,F1:0.677,V2,TEE,0.814,0.31,TEE,visual (verified on-screen speaker),"टाइफोइड है बोलके न, ये डॉक्टर"
+141.0,142.5,0,0.92,F1:0.601,V2,TEE,0.792,0.263,TEE,visual (verified on-screen speaker),"है बोलके न, ये डॉक्टर लोग सब स्कैम"
+141.5,143.0,0,0.88,F1:0.857,V12,TEE,0.714,0.286,TEE,visual (verified on-screen speaker),ये डॉक्टर लोग सब स्कैम चला
+142.0,143.5,1,0.93,F1:1.073,V12,TEE,0.631,0.188,TEE,visual (verified on-screen speaker),डॉक्टर लोग सब स्कैम चला रहे हैं वो लोग ऐसे
+142.5,144.0,1,0.95,F1:1.19 F0:0.715,V12,RAHUL,0.54,0.018,RAHUL,voice embedding (nearest verified speaker),स्कैम चला रहे हैं वो लोग ऐसे तेरे से पैसा
+143.0,144.5,1,0.97,F0:0.643,V22,RAHUL,0.627,0.259,RAHUL,visual (verified on-screen speaker),चला रहे हैं वो लोग ऐसे तेरे से पैसा निकालने
+143.5,145.0,0,0.95,F0:0.575,V22,RAHUL,0.577,0.329,RAHUL,visual (verified on-screen speaker),ऐसे तेरे से पैसा निकालने के लिए करते हैं
+144.0,145.5,0,0.84,F0:0.589,V22,RAHUL,0.612,0.328,RAHUL,visual (verified on-screen speaker),पैसा निकालने के लिए करते हैं ये सब
+144.5,146.0,0,0.52,F0:0.725,,RAHUL,0.559,0.212,RAHUL,visual (verified on-screen speaker),निकालने के लिए करते हैं ये सब ऐसे
+145.0,146.5,0,0.47,F0:0.778,,RAHUL,0.58,0.322,,,हैं ये सब ऐसे टाइफोइड
+145.5,147.0,0,0.57,F0:0.762,,RAHUL,0.579,0.412,RAHUL,visual (verified on-screen speaker),ऐसे टाइफोइड वैफ़़ड कुछ
+146.0,147.5,0,0.88,F0:0.857,V0,RAHUL,0.673,0.399,RAHUL,visual (verified on-screen speaker),ऐसे टाइफोइड वैफ़़ड कुछ भी कुछ का
+146.5,148.0,0,0.95,F0:1.483 F0:0.53,V0,RAHUL,0.707,0.388,RAHUL,visual (verified on-screen speaker),टाइफोइड वैफ़़ड कुछ भी कुछ का नाम लाके
+147.0,148.5,0,0.92,F0:1.078,V0,RAHUL,0.668,0.369,RAHUL,visual (verified on-screen speaker),कुछ भी कुछ का नाम लाके ऐसा कुछ भी
+147.5,149.0,0,0.95,F0:1.069,V0,RAHUL,0.684,0.383,RAHUL,visual (verified on-screen speaker),का नाम लाके ऐसा कुछ भी ऐसा बोलते
+148.0,149.5,0,0.93,F0:0.788,V0,RAHUL,0.763,0.495,RAHUL,visual (verified on-screen speaker),लाके ऐसा कुछ भी ऐसा बोलते हैं वो
+148.5,150.0,0,0.88,F0:1.189,V0,RAHUL,0.725,0.446,RAHUL,visual (verified on-screen speaker),भी ऐसा बोलते हैं वो
+149.0,150.5,0,0.85,F0:1.228,V0,RAHUL,0.676,0.391,RAHUL,visual (verified on-screen speaker),बोलते हैं वो
+149.5,151.0,0,0.69,F0:1.035,V0,RAHUL,0.638,0.336,RAHUL,visual (verified on-screen speaker),वो
+150.0,151.5,0,0.57,F0:0.603,,RAHUL,0.596,0.349,RAHUL,visual (verified on-screen speaker),वो लोग
+150.5,152.0,0,0.6,F0:0.424,V57,RAHUL,0.541,0.209,RAHUL,visual (verified on-screen speaker),वो लोग
+151.0,152.5,1,0.73,F0:0.375,V57,RAHUL,0.519,0.166,RAHUL,voice embedding (nearest verified speaker),वो लोग
+151.5,153.0,1,0.93,F5:0.663 F0:0.255,V20,CURLYW,0.525,0.162,CURLYW,visual (verified on-screen speaker),लोग
+152.0,153.5,1,0.87,F5:0.711,V20,CURLYW,0.708,0.408,CURLYW,visual (verified on-screen speaker),लोग
+152.5,154.0,0,0.83,F5:0.515,V20,CURLYW,0.781,0.552,CURLYW,visual (verified on-screen speaker),लोग
+153.0,154.5,0,0.79,F5:0.465,V20,CURLYW,0.724,0.401,CURLYW,visual (verified on-screen speaker),लोग
+153.5,155.0,0,0.83,F5:0.603,V20,CURLYW,0.662,0.269,CURLYW,visual (verified on-screen speaker),लोग
+154.0,155.5,1,0.89,F5:0.59,V20,CURLYW,0.55,0.273,CURLYW,visual (verified on-screen speaker),लोग
+154.5,156.0,1,0.93,F5:0.469 F0:1.257 F12:0.0,V0,RAHUL,0.585,0.247,RAHUL,voice embedding (nearest verified speaker),लोग
+155.0,156.5,1,0.96,F0:0.494 F0:1.257 F12:0.0,V0,RAHUL,0.754,0.475,RAHUL,visual (verified on-screen speaker),लोग
+155.5,157.0,0,1.0,F0:0.858 F0:1.219 F12:0.0,V0,RAHUL,0.71,0.454,RAHUL,visual (verified on-screen speaker),लोग
+156.0,157.5,0,1.0,F0:0.714,V0,RAHUL,0.645,0.335,RAHUL,visual (verified on-screen speaker),लोग
+156.5,158.0,1,0.92,F0:0.554,V0,RAHUL,0.611,0.292,RAHUL,visual (verified on-screen speaker),लोग
+157.0,158.5,1,0.92,F3:0.457 F0:0.384,V0,RAHUL,0.629,0.098,RAHUL,voice embedding (nearest verified speaker),लोग
+157.5,159.0,1,0.79,F3:0.434,V19,BROWN,0.681,0.188,BROWN,voice embedding (nearest verified speaker),लोग
+158.0,159.5,0,0.53,F3:0.28,,BROWN,0.59,0.189,BROWN,voice embedding (nearest verified speaker),लोग
+158.5,160.0,0,0.21,F3:0.132,,BROWN,0.238,0.081,,,लोग
+159.0,160.5,0,0.29,F3:0.455,,BROWN,0.581,0.192,,,लोग
+159.5,161.0,0,0.55,F3:0.534,,BROWN,0.631,0.231,BROWN,visual (verified on-screen speaker),लोग
+160.0,161.5,1,0.68,F3:0.479,V19,BROWN,0.634,0.256,BROWN,visual (verified on-screen speaker),लोग
+160.5,162.0,1,0.73,F3:0.458 F0:1.146,V19,BROWN,0.555,0.028,BROWN,voice embedding (nearest verified speaker),लोग
+161.0,162.5,1,0.81,F0:0.988,V1,RAHUL,0.725,0.295,RAHUL,visual (verified on-screen speaker),लोग
+161.5,163.0,1,0.93,F0:0.663,V1,RAHUL,0.729,0.253,RAHUL,visual (verified on-screen speaker),लोग
+162.0,163.5,1,0.87,F5:0.31 F0:0.722,V1,RAHUL,0.686,0.238,RAHUL,voice embedding (nearest verified speaker),लोग
+162.5,164.0,1,0.81,F5:0.564 F0:0.652,V4,CURLYW,0.612,0.355,CURLYW,visual (verified on-screen speaker),लोग
+163.0,164.5,0,0.73,F5:0.491,V4,CURLYW,0.764,0.556,CURLYW,visual (verified on-screen speaker),लोग
+163.5,165.0,0,0.64,F5:0.579,V4,CURLYW,0.748,0.506,CURLYW,visual (verified on-screen speaker),लोग
+164.0,165.5,0,0.69,F5:0.489,V4,CURLYW,0.744,0.441,CURLYW,visual (verified on-screen speaker),लोग
+164.5,166.0,0,0.8,F5:0.556,V4,CURLYW,0.763,0.486,CURLYW,visual (verified on-screen speaker),लोग
+165.0,166.5,0,0.96,F5:0.596,V4,CURLYW,0.795,0.567,CURLYW,visual (verified on-screen speaker),लोग
+165.5,167.0,0,0.91,F5:0.744,V4,CURLYW,0.76,0.519,CURLYW,visual (verified on-screen speaker),लोग
+166.0,167.5,0,0.83,F5:0.634,V4,CURLYW,0.722,0.537,CURLYW,visual (verified on-screen speaker),लोग
+166.5,168.0,0,0.73,F5:0.491,V4,CURLYW,0.769,0.513,CURLYW,visual (verified on-screen speaker),लोग
+167.0,168.5,0,0.52,F5:0.361,,CURLYW,0.566,0.347,CURLYW,visual (verified on-screen speaker),लोग
+167.5,169.0,0,0.41,F5:0.45,,CURLYW,0.513,0.274,,,लोग
+168.0,169.5,0,0.51,F5:0.452,,CURLYW,0.297,0.089,CURLYW,voice embedding (nearest verified speaker),लोग
+168.5,170.0,0,0.77,F5:0.562,V4,CURLYW,0.649,0.332,CURLYW,voice embedding (nearest verified speaker),लोग ब्रेव थ्रू
+169.0,170.5,0,0.92,F5:0.37,V4,CURLYW,0.628,0.29,CURLYW,voice embedding (nearest verified speaker),लोग ब्रेव थ्रू इट ऑल
+169.5,171.0,1,0.92,F5:0.421,V4,CURLYW,0.527,0.228,CURLYW,voice embedding (nearest verified speaker),लोग ब्रेव थ्रू इट ऑल ब्रो जस
+170.0,171.5,1,0.88,F5:0.38 F1:0.6,V17,BROWN,0.542,0.033,BROWN,voice embedding (nearest verified speaker),थ्रू इट ऑल ब्रो जस थिंक ऑफ
+170.5,172.0,1,0.84,F1:0.578,V17,TEE,0.628,0.113,TEE,visual (verified on-screen speaker),ऑल ब्रो जस थिंक ऑफ ऑल द
+171.0,172.5,0,0.84,F1:0.475,V17,TEE,0.716,0.222,TEE,visual (verified on-screen speaker),जस थिंक ऑफ ऑल द गुड थिंग्स
+171.5,173.0,0,0.83,F1:0.362,V17,TEE,0.678,0.179,TEE,visual (verified on-screen speaker),ऑफ ऑल द गुड थिंग्स इन
+172.0,173.5,0,0.95,F1:0.528,V17,TEE,0.723,0.216,TEE,visual (verified on-screen speaker),द गुड थिंग्स इन यॉर लाइफ इट
+172.5,174.0,0,0.69,F1:0.602,V17,TEE,0.616,0.285,TEE,visual (verified on-screen speaker),थिंग्स इन यॉर लाइफ इट
+173.0,174.5,0,0.41,F1:0.651,,TEE,0.469,0.246,,,इन यॉर लाइफ इट
+173.5,175.0,0,0.36,F1:0.452,,TEE,0.331,0.279,,,इट सो इंपॉर्टेंट
+174.0,175.5,0,0.56,F1:0.472,,TEE,0.724,0.356,TEE,visual (verified on-screen speaker),इट सो इंपॉर्टेंट टो बी
+174.5,176.0,0,0.8,F1:0.63,V2,TEE,0.796,0.41,TEE,visual (verified on-screen speaker),इट सो इंपॉर्टेंट टो बी थैंकफुल
+175.0,176.5,0,0.81,F1:0.615,V2,TEE,0.776,0.392,TEE,visual (verified on-screen speaker),इंपॉर्टेंट टो बी थैंकफुल फॉर वाट यू
+175.5,177.0,1,0.85,F1:0.583,V2,TEE,0.738,0.404,TEE,visual (verified on-screen speaker),बी थैंकफुल फॉर वाट यू
+176.0,177.5,1,0.61,F2:0.077 F1:0.485,V2,TEE,0.641,0.398,TEE,visual (verified on-screen speaker),फॉर वाट यू
+176.5,178.0,1,0.32,F2:0.059 F1:0.47,,TEE,0.293,0.13,,,यू इसे
+177.0,178.5,0,0.13,F2:0.503,,DAD,0.172,0.041,,,इसे पहन
+177.5,179.0,0,0.33,F2:0.595,,MOM,0.19,0.029,,,इसे पहन लो
+178.0,179.5,0,0.33,F2:0.607,,MOM,0.206,0.042,,,इसे पहन लो
+178.5,180.0,0,0.2,F2:0.237,,DAD,0.163,0.053,,,पहन लो टाइफ़ाइट
+179.0,180.5,0,0.23,F2:0.69,,MOM,0.462,0.109,,,टाइफ़ाइट
+179.5,181.0,0,0.52,F2:0.808,,MOM,0.586,0.234,MOM,visual (verified on-screen speaker),टाइफ़ाइट कुछ नहीं है
+180.0,181.5,0,0.59,F11:0.0 F2:0.827,,MOM,0.636,0.332,MOM,visual (verified on-screen speaker),टाइफ़ाइट कुछ नहीं है तुम्हारे
+180.5,182.0,0,0.69,F11:0.0 F2:0.737,V10,MOM,0.661,0.439,MOM,visual (verified on-screen speaker),टाइफ़ाइट कुछ नहीं है तुम्हारे ग्रहों
+181.0,182.5,0,0.73,F11:0.0 F2:0.751,V10,MOM,0.716,0.453,MOM,visual (verified on-screen speaker),है तुम्हारे ग्रहों में प्रॉब्लम
+181.5,183.0,0,0.95,F2:0.827,V10,MOM,0.715,0.462,MOM,visual (verified on-screen speaker),तुम्हारे ग्रहों में प्रॉब्लम है ये है
+182.0,183.5,0,0.92,F2:0.676,V10,MOM,0.72,0.366,MOM,visual (verified on-screen speaker),ग्रहों में प्रॉब्लम है ये है रक्षा कवच
+182.5,184.0,0,0.79,F2:0.676 ?:0.0,V10,MOM,0.748,0.36,MOM,visual (verified on-screen speaker),प्रॉब्लम है ये है रक्षा कवच मैंने
+183.0,184.5,0,0.65,F2:0.737 ?:0.0,V10,MOM,0.736,0.361,MOM,visual (verified on-screen speaker),है रक्षा कवच मैंने तुला
+183.5,185.0,0,0.65,F2:0.743 ?:0.0 F15:0.0,V10,MOM,0.743,0.418,MOM,visual (verified on-screen speaker),कवच मैंने तुला राशी
+184.0,185.5,0,0.77,F2:0.707 F15:0.0,V10,MOM,0.661,0.45,MOM,visual (verified on-screen speaker),मैंने तुला राशी के लिए स्पेशली
+184.5,186.0,0,0.92,F2:0.662 F11:0.0 F15:0.0,V10,MOM,0.644,0.403,MOM,visual (verified on-screen speaker),तुला राशी के लिए स्पेशली बनाया
+185.0,186.5,0,0.84,F2:0.71 F11:0.0,V10,MOM,0.636,0.453,MOM,visual (verified on-screen speaker),राशी के लिए स्पेशली बनाया है
+185.5,187.0,0,0.52,F2:0.493 F11:0.0 F11:0.0,,MOM,0.585,0.355,MOM,visual (verified on-screen speaker),स्पेशली बनाया है
+186.0,187.5,0,0.23,F2:0.422 F11:0.0,,MOM,0.207,0.104,,,बनाया है
+186.5,188.0,0,0.0,F2:0.077 F11:0.0,,BOSS,0.201,0.018,,,
+187.0,188.5,0,0.0,F2:0.103 F2:0.136,,BOSS,0.183,0.094,,,
+187.5,189.0,0,0.0,F2:0.112,,BOSS,0.081,0.016,,,
+188.0,189.5,0,0.0,F2:0.096,,BEARD,0.086,0.02,,,
+188.5,190.0,0,0.0,,,DAD,0.126,0.05,,,
+189.0,190.5,0,0.0,F2:0.282,,MOM,0.078,0.001,,,बिश
+189.5,191.0,0,0.17,F2:0.264,,BEARD,0.143,0.028,,,बिश बिश
+190.0,191.5,0,0.37,F2:0.147 ?:0.194,,TEE,0.166,0.016,,,बिश बिश बिश
+190.5,192.0,0,0.64,F2:0.366 ?:0.194,V70,BOSS,0.173,0.019,BOSS,voice embedding (nearest verified speaker),बिश बिश बिश
+191.0,192.5,0,0.76,F2:0.364,V54,DAD,0.122,0.022,DAD,voice embedding (nearest verified speaker),बिश बिश
+191.5,193.0,0,0.89,F2:0.208 F2:0.359,V54,BEARD,0.102,0.011,BEARD,voice embedding (nearest verified speaker),बिश स्टार्ट
+192.0,193.5,1,0.89,F2:0.224,V69,MOM,0.152,0.009,MOM,voice embedding (nearest verified speaker),स्टार्ट
+192.5,194.0,1,0.93,F2:0.184 F0:0.875,V0,RAHUL,0.615,0.305,RAHUL,voice embedding (nearest verified speaker),स्टार्ट डूइंग सम्थिंग
+193.0,194.5,1,0.93,F0:1.235,V0,RAHUL,0.714,0.29,RAHUL,visual (verified on-screen speaker),स्टार्ट डूइंग सम्थिंग देट यू
+193.5,195.0,0,1.0,F0:1.116,V0,RAHUL,0.731,0.331,RAHUL,visual (verified on-screen speaker),स्टार्ट डूइंग सम्थिंग देट यू
+194.0,195.5,0,1.0,F0:1.019,V0,RAHUL,0.721,0.323,RAHUL,visual (verified on-screen speaker),सम्थिंग देट यू
+194.5,196.0,0,0.91,F0:0.785,V0,RAHUL,0.708,0.369,RAHUL,visual (verified on-screen speaker),यू
+195.0,196.5,0,0.88,F0:0.873,V0,RAHUL,0.735,0.452,RAHUL,visual (verified on-screen speaker),यू
+195.5,197.0,0,0.71,F0:0.648,V0,RAHUL,0.694,0.41,RAHUL,visual (verified on-screen speaker),यू
+196.0,197.5,0,0.67,F0:0.423,V0,RAHUL,0.757,0.413,RAHUL,visual (verified on-screen speaker),यू
+196.5,198.0,1,0.61,F0:0.218,V0,RAHUL,0.691,0.384,RAHUL,voice embedding (nearest verified speaker),यू
+197.0,198.5,1,0.76,F5:0.402 F0:0.256,V41,RAHUL,0.482,0.145,RAHUL,voice embedding (nearest verified speaker),यू
+197.5,199.0,1,0.88,F5:0.75,V41,CURLYW,0.522,0.286,CURLYW,visual (verified on-screen speaker),यू
+198.0,199.5,0,0.81,F5:0.79,V41,CURLYW,0.689,0.423,CURLYW,visual (verified on-screen speaker),यू
+198.5,200.0,0,0.59,F5:0.779,,CURLYW,0.673,0.35,CURLYW,visual (verified on-screen speaker),यू
+199.0,200.5,0,0.57,F5:0.502 ?:0.246,,CURLYW,0.573,0.388,CURLYW,visual (verified on-screen speaker),यू
+199.5,201.0,0,0.72,F5:0.564 ?:0.246,V44,CURLYW,0.608,0.34,CURLYW,visual (verified on-screen speaker),यू
+200.0,201.5,1,0.87,F5:0.603,V44,CURLYW,0.588,0.353,CURLYW,visual (verified on-screen speaker),यू
+200.5,202.0,1,0.88,F5:0.675 F7:0.642,V44,CURLYW,0.368,0.199,CURLYW,voice embedding (nearest verified speaker),यू
+201.0,202.5,1,0.87,F7:0.698,V56,PURPLE,0.381,0.137,PURPLE,voice embedding (nearest verified speaker),यू
+201.5,203.0,1,0.96,F7:0.624,V56,PURPLE,0.309,0.015,PURPLE,voice embedding (nearest verified speaker),यू
+202.0,203.5,1,0.96,F5:0.685 F7:0.464,V36,CURLYW,0.46,0.125,CURLYW,voice embedding (nearest verified speaker),यू
+202.5,204.0,1,0.96,F5:0.579,V36,CURLYW,0.476,0.137,CURLYW,voice embedding (nearest verified speaker),यू
+203.0,204.5,1,0.93,F5:0.632,V36,CURLYW,0.563,0.39,CURLYW,voice embedding (nearest verified speaker),यू लाइक
+203.5,205.0,1,0.89,F5:0.668 ?:0.462,V47,BROWN,0.4,0.012,BROWN,voice embedding (nearest verified speaker),यू लाइक
+204.0,205.5,1,0.87,?:0.462 F0:0.297 F16:0.0,V47,RAHUL,0.561,0.236,RAHUL,voice embedding (nearest verified speaker),यू लाइक
+204.5,206.0,1,0.87,F0:0.338 F16:0.0,V47,RAHUL,0.571,0.178,RAHUL,voice embedding (nearest verified speaker),लाइक
+205.0,206.5,1,0.91,F3:0.693 F0:0.387 F16:0.0,V12,RAHUL,0.602,0.227,RAHUL,voice embedding (nearest verified speaker),लाइक
+205.5,207.0,1,0.88,F1:0.191 F3:0.693,V12,BROWN,0.607,0.065,BROWN,voice embedding (nearest verified speaker),लाइक तो
+206.0,207.5,1,0.81,F1:0.317 F3:0.452,V12,TEE,0.638,0.179,TEE,voice embedding (nearest verified speaker),लाइक तो
+206.5,208.0,1,0.83,F1:0.317 ?:1.098,V12,TEE,0.569,0.195,TEE,voice embedding (nearest verified speaker),लाइक तो अपने आपको
+207.0,208.5,1,0.89,F1:0.419 ?:1.098 F0:0.774,V12,RAHUL,0.577,0.244,RAHUL,voice embedding (nearest verified speaker),तो अपने आपको ही चेंज कर
+207.5,209.0,0,1.0,F0:0.657 ?:1.098,V1,RAHUL,0.704,0.321,RAHUL,visual (verified on-screen speaker),तो अपने आपको ही चेंज कर दे ना फिर
+208.0,209.5,0,0.75,F0:0.674,V1,RAHUL,0.704,0.32,RAHUL,visual (verified on-screen speaker),आपको ही चेंज कर दे ना फिर तू
+208.5,210.0,0,0.64,F0:0.546 F12:0.0,V1,RAHUL,0.575,0.153,RAHUL,visual (verified on-screen speaker),कर दे ना फिर तू तू नहीं
+209.0,210.5,0,0.57,F0:0.623 F12:0.0,,RAHUL,0.718,0.314,RAHUL,visual (verified on-screen speaker),फिर तू तू नहीं रहेगा तू
+209.5,211.0,0,0.64,F0:0.754 F4:0.0 F12:0.0,V1,RAHUL,0.727,0.326,RAHUL,visual (verified on-screen speaker),तू तू नहीं रहेगा तू समझ
+210.0,211.5,0,0.69,F0:0.888 F4:0.0,V1,RAHUL,0.759,0.321,RAHUL,visual (verified on-screen speaker),नहीं रहेगा तू समझ रहे है फिर
+210.5,212.0,0,0.76,F0:0.736 F4:0.0,V1,RAHUL,0.705,0.387,RAHUL,visual (verified on-screen speaker),तू समझ रहे है फिर टाइफॉइट कितने
+211.0,212.5,0,0.92,F0:0.53 F4:0.0,V1,RAHUL,0.673,0.239,RAHUL,visual (verified on-screen speaker),समझ रहे है फिर टाइफॉइट कितने रहेगा उसको
+211.5,213.0,0,0.76,F0:0.583 F4:0.154,V1,RAHUL,0.671,0.204,RAHUL,visual (verified on-screen speaker),फिर टाइफॉइट कितने रहेगा उसको पता
+212.0,213.5,0,0.76,F0:0.659 F4:0.132,V23,RAHUL,0.532,0.19,RAHUL,visual (verified on-screen speaker),कितने रहेगा उसको पता ही नहीं कहा जाने
+212.5,214.0,0,0.79,F0:0.865 F4:0.108,V23,RAHUL,0.579,0.285,RAHUL,visual (verified on-screen speaker),उसको पता ही नहीं कहा जाने का
+213.0,214.5,0,0.99,F0:0.717 F4:0.088,V23,RAHUL,0.557,0.289,RAHUL,visual (verified on-screen speaker),पता ही नहीं कहा जाने का
+213.5,215.0,0,0.99,F0:0.689 F4:0.055,V23,RAHUL,0.432,0.261,RAHUL,visual (verified on-screen speaker),जाने का भाईसा
+214.0,215.5,0,0.99,F0:0.594 F4:0.173,V23,RAHUL,0.5,0.145,RAHUL,visual (verified on-screen speaker),भाईसा पता नहीं
+214.5,216.0,0,1.0,F0:0.45 F4:0.188,V22,RAHUL,0.524,0.091,RAHUL,visual (verified on-screen speaker),भाईसा पता नहीं आगे से लेफ्ट
+215.0,216.5,1,0.95,F0:0.559 F4:0.255,V22,RAHUL,0.569,0.18,RAHUL,voice embedding (nearest verified speaker),भाईसा पता नहीं आगे से लेफ्ट लो
+215.5,217.0,1,0.91,F3:1.157 F0:0.584 F4:0.139,V48,RAHUL,0.476,0.036,RAHUL,voice embedding (nearest verified speaker),नहीं आगे से लेफ्ट लो
+216.0,217.5,1,0.85,F3:0.949,V48,BROWN,0.472,0.088,BROWN,voice embedding (nearest verified speaker),लेफ्ट लो तू
+216.5,218.0,1,0.84,F3:0.373,V48,BROWN,0.456,0.12,BROWN,voice embedding (nearest verified speaker),तू यह ना
+217.0,218.5,1,0.88,F1:0.541 F3:0.291,V51,TEE,0.49,0.026,TEE,voice embedding (nearest verified speaker),तू यह ना
+217.5,219.0,1,0.91,F1:0.525,V51,TEE,0.608,0.173,TEE,voice embedding (nearest verified speaker),तू यह ना
+218.0,219.5,1,0.91,F1:0.248 F7:1.02,V51,TEE,0.457,0.198,TEE,voice embedding (nearest verified speaker),ना
+218.5,220.0,1,0.89,F7:0.977,V42,MOM,0.223,0.05,MOM,voice embedding (nearest verified speaker),ना
+219.0,220.5,1,0.89,F5:1.108 F7:1.018,V42,CURLYW,0.323,0.046,CURLYW,voice embedding (nearest verified speaker),ना जादा
+219.5,221.0,1,0.92,F5:0.863,V42,CURLYW,0.529,0.309,CURLYW,voice embedding (nearest verified speaker),ना जादा
+220.0,221.5,1,0.89,F5:0.746,V61,CURLYW,0.519,0.333,CURLYW,voice embedding (nearest verified speaker),ना जादा
+220.5,222.0,1,0.81,F5:0.216 F0:0.407,V61,CURLYW,0.389,0.147,CURLYW,voice embedding (nearest verified speaker),जादा
+221.0,222.5,1,0.84,F0:0.424,V68,PURPLE,0.269,0.067,PURPLE,voice embedding (nearest verified speaker),जादा
+221.5,223.0,1,0.84,F0:0.732,V16,RAHUL,0.462,0.234,RAHUL,voice embedding (nearest verified speaker),जादा
+222.0,223.5,1,0.88,F0:0.735,V16,RAHUL,0.676,0.367,RAHUL,voice embedding (nearest verified speaker),जादा सोच मत
+222.5,224.0,1,0.8,F0:0.67,V16,RAHUL,0.734,0.375,RAHUL,voice embedding (nearest verified speaker),जादा सोच मत जस ऐसा
+223.0,224.5,1,0.84,F3:1.262 F0:0.19,V16,RAHUL,0.657,0.145,RAHUL,voice embedding (nearest verified speaker),जादा सोच मत जस ऐसा आग बंद
+223.5,225.0,1,0.84,?:0.0 F3:0.988,V11,BROWN,0.642,0.252,BROWN,visual (verified on-screen speaker),मत जस ऐसा आग बंद कर और
+224.0,225.5,0,0.83,?:0.0 F8:0.0 F3:0.964,V11,BROWN,0.633,0.273,BROWN,visual (verified on-screen speaker),ऐसा आग बंद कर और सोच
+224.5,226.0,0,0.79,F8:0.0 F3:0.576,V11,BROWN,0.618,0.205,BROWN,visual (verified on-screen speaker),बंद कर और सोच की तू नहीं
+225.0,226.5,1,0.84,F8:0.0 F3:0.546,V11,BROWN,0.704,0.274,BROWN,visual (verified on-screen speaker),और सोच की तू नहीं सोच रहा है
+225.5,227.0,1,0.87,F8:0.0 F3:0.591,V11,BROWN,0.628,0.167,BROWN,visual (verified on-screen speaker),सोच की तू नहीं सोच रहा है Maybe you don't
+226.0,227.5,1,0.88,F8:0.0 F3:0.646 F7:0.764,V52,PURPLE,0.282,0.054,BROWN,visual (verified on-screen speaker),नहीं सोच रहा है Maybe you don't have
+226.5,228.0,0,0.84,F7:0.741,V52,PURPLE,0.443,0.242,PURPLE,voice embedding (nearest verified speaker),है Maybe you don't have typhoid
+227.0,228.5,0,0.79,F7:0.77,V39,PURPLE,0.493,0.292,PURPLE,visual (verified on-screen speaker),don't have typhoid Maybe
+227.5,229.0,0,0.8,F7:0.489,V39,PURPLE,0.562,0.332,PURPLE,visual (verified on-screen speaker),have typhoid Maybe you
+228.0,229.5,0,0.8,F7:0.455,V39,PURPLE,0.582,0.488,PURPLE,visual (verified on-screen speaker),typhoid Maybe you just need
+228.5,230.0,0,0.93,F7:0.429,V32,PURPLE,0.706,0.59,PURPLE,visual (verified on-screen speaker),Maybe you just need a long
+229.0,230.5,0,0.88,F7:0.355,V32,PURPLE,0.714,0.642,PURPLE,visual (verified on-screen speaker),you just need a long vacation
+229.5,231.0,0,0.93,F7:0.295,V32,PURPLE,0.641,0.591,PURPLE,visual (verified on-screen speaker),need a long vacation या
+230.0,231.5,1,0.87,F7:0.274,V32,PURPLE,0.521,0.36,PURPLE,visual (verified on-screen speaker),vacation या फिर हम
+230.5,232.0,1,0.93,F0:0.856 F7:0.119,V1,RAHUL,0.493,0.24,RAHUL,voice embedding (nearest verified speaker),vacation या फिर हम लोग के साथ movie
+231.0,232.5,1,0.93,F0:0.798,V1,RAHUL,0.665,0.351,RAHUL,visual (verified on-screen speaker),या फिर हम लोग के साथ movie के लिए आ जा
+231.5,233.0,1,0.84,F0:0.654,V1,RAHUL,0.567,0.29,RAHUL,visual (verified on-screen speaker),हम लोग के साथ movie के लिए आ जा
+232.0,233.5,1,0.69,F0:0.547 F0:0.654,V1,RAHUL,0.669,0.388,RAHUL,visual (verified on-screen speaker),movie के लिए आ जा अच्छा तो
+232.5,234.0,1,0.69,F0:0.254 F0:0.671,V16,RAHUL,0.619,0.397,RAHUL,visual (verified on-screen speaker),जा अच्छा तो तू नहीं आ
+233.0,234.5,0,0.61,F0:0.543,V16,RAHUL,0.584,0.365,RAHUL,visual (verified on-screen speaker),अच्छा तो तू नहीं आ रहा है
+233.5,235.0,0,0.43,F0:0.575,,RAHUL,0.537,0.322,,,तो तू नहीं आ रहा है
+234.0,235.5,0,0.09,F0:0.349 F12:0.0,,RAHUL,0.252,0.134,,,रहा है
+234.5,236.0,0,0.0,F0:0.013 F12:0.0,,BEARD,0.19,0.09,,,
+235.0,236.5,0,0.15,F0:0.147 F12:0.0,,BEARD,0.148,0.0,,,"Okay,"
+235.5,237.0,0,0.17,F0:0.174,,BEARD,0.196,0.062,,,"Okay, bye"
+236.0,237.5,0,0.32,F0:0.32,,RAHUL,0.268,0.044,,,"Okay, bye"
+236.5,238.0,0,0.17,F0:0.253 F4:0.0,,BEARD,0.185,0.056,,,"Okay, bye"
+237.0,238.5,0,0.15,F0:0.335 F4:0.0,,BEARD,0.224,0.011,,,bye
+237.5,239.0,0,0.0,F0:0.286 F4:0.0,,BEARD,0.158,0.041,,,
+238.0,239.5,0,0.0,F0:0.261 F4:0.0,,BEARD,0.18,0.026,,,
+238.5,240.0,0,0.0,F0:0.283 F4:0.504,,RAHUL,0.169,0.002,,,
+239.0,240.5,0,0.0,F0:0.252 F4:0.335,,BROWN,0.135,0.027,,,
+239.5,241.0,0,0.0,F0:0.054 F4:0.281,,BEARD,0.215,0.098,,,
+240.0,241.5,0,0.0,F0:0.074 F4:0.21,,BEARD,0.18,0.114,,,
+240.5,242.0,0,0.0,F4:0.248 F0:0.104,,BEARD,0.151,0.08,,,
+241.0,242.5,0,0.0,F4:0.336 F0:0.114,,BEARD,0.09,0.033,,,
+241.5,243.0,0,0.0,F4:0.31 F0:0.128,,BEARD,0.145,0.101,,,
+242.0,243.5,0,0.0,F4:0.385 F0:0.123,,BEARD,0.142,0.084,,,
+242.5,244.0,0,0.0,F4:0.423 F0:0.113,,BROWN,0.193,0.019,,,"Dude, guess"
+243.0,244.5,0,0.16,F4:0.405 F0:0.468,,RAHUL,0.282,0.111,,,"Dude, guess what"
+243.5,245.0,0,0.24,F4:0.373 F0:0.523,,RAHUL,0.492,0.162,,,"Dude, guess what"
+244.0,245.5,0,0.24,F4:0.233 F0:0.483,,RAHUL,0.515,0.173,,,guess what
+244.5,246.0,0,0.08,F4:0.239 F0:0.207,,MOM,0.092,0.029,,,what
+245.0,246.5,0,0.0,?:0.0 F4:0.098 F0:0.091,,BOSS,0.156,0.028,,,निखिल
+245.5,247.0,0,0.09,?:0.0 F4:0.078 F0:0.33,,BEARD,0.115,0.046,,,निखिल को
+246.0,247.5,0,0.21,F4:0.049 F0:0.4,,BROWN,0.216,0.033,,,निखिल को ना
+246.5,248.0,0,0.21,F4:0.04 F0:0.421,,BROWN,0.198,0.047,,,निखिल को ना
+247.0,248.5,0,0.21,F4:0.048 F0:0.306,,RAHUL,0.318,0.079,,,को ना typhoid
+247.5,249.0,0,0.21,F4:0.048 F0:0.424,,RAHUL,0.249,0.067,,,typhoid हो जाए
+248.0,249.5,0,0.21,F4:0.183 F0:0.447,,RAHUL,0.244,0.039,,,typhoid हो जाए
+248.5,250.0,0,0.24,?:0.0 F4:0.594 F0:0.284,,BEARD,0.198,0.02,,,typhoid हो जाए क्या?
+249.0,250.5,0,0.19,?:0.0 F4:0.688 F0:0.185,,CURLYW,0.057,0.011,,,क्या?
+249.5,251.0,0,0.19,F4:0.617 F0:0.072,,BEARD,0.064,0.008,,,क्या? हाँ
+250.0,251.5,0,0.21,F4:0.559 F0:0.555,,BEARD,0.083,0.017,,,हाँ या क्या
+250.5,252.0,0,0.31,F4:0.313 F0:0.581,,BEARD,0.288,0.113,,,हाँ या क्या आप बात
+251.0,252.5,0,0.56,F4:0.325 F0:0.594,,BEARD,0.362,0.077,BEARD,voice embedding (nearest verified speaker),हाँ या क्या आप बात कर रहे हैं?
+251.5,253.0,0,0.44,F4:0.298 F0:0.228,,BEARD,0.405,0.127,,,क्या आप बात कर रहे हैं?
+252.0,253.5,0,0.28,F4:0.167 F0:0.347,,BEARD,0.387,0.14,,,बात कर रहे हैं?
+252.5,254.0,0,0.05,F4:0.231 F0:0.363,,DAD,0.124,0.006,,,हैं? इसको बोल
+253.0,254.5,0,0.29,F4:0.241 F0:0.432,,RAHUL,0.337,0.209,,,इसको बोल मताओ मैंने
+253.5,255.0,0,0.41,F4:0.119 F0:0.549,,RAHUL,0.381,0.199,,,इसको बोल मताओ मैंने तुरको बताओ
+254.0,255.5,0,0.55,F4:0.293 F0:0.546,,RAHUL,0.368,0.153,RAHUL,voice embedding (nearest verified speaker),"बोल मताओ मैंने तुरको बताओ नहीं,"
+254.5,256.0,0,0.47,F4:0.342 F0:0.403,,BEARD,0.171,0.04,,,"मैंने तुरको बताओ नहीं, मैं"
+255.0,256.5,0,0.44,F4:0.492 F0:0.231,,BEARD,0.568,0.445,,,"बताओ नहीं, मैं क्यों"
+255.5,257.0,0,0.61,F4:0.456 F0:0.167,V58,BEARD,0.932,0.691,BEARD,visual (verified on-screen speaker),मैं क्यों बोलेगा क्यों
+256.0,257.5,0,0.63,F4:0.457 F0:0.133 F6:0.0,V58,BEARD,0.932,0.546,BEARD,visual (verified on-screen speaker),"मैं क्यों बोलेगा क्यों बोलो गाइस, ये"
+256.5,258.0,0,0.53,F4:0.316 F0:0.139 F6:0.284,,BEARD,0.664,0.322,BEARD,visual (verified on-screen speaker),"क्यों बोलेगा क्यों बोलो गाइस, ये"
+257.0,258.5,1,0.2,F4:0.191 ?:0.0 F0:0.108 F6:0.284 ?:0.044,,RAHUL,0.203,0.026,,,"गाइस, ये"
+257.5,259.0,1,0.27,F6:0.318 ?:0.0 F0:0.066 F6:0.284 ?:0.044,,BOSS,0.231,0.008,,,ये क्या चल
+258.0,259.5,1,0.35,F6:0.319 ?:0.0 ?:0.044,,BOSS,0.269,0.025,,,ये क्या चल रहा है?
+258.5,260.0,0,0.35,F6:0.262,,BOSS,0.262,0.015,,,ये क्या चल रहा है? इस
+259.0,260.5,0,0.2,F6:0.211,,BOSS,0.32,0.131,,,"रहा है? इस टाइफॉइड,"
+259.5,261.0,0,0.37,F6:0.199,,BOSS,0.426,0.136,,,"इस टाइफॉइड,"
+260.0,261.5,0,0.37,F6:0.186,,BOSS,0.437,0.133,,,"इस टाइफॉइड, इस"
+260.5,262.0,0,0.43,F6:0.271,,BOSS,0.386,0.139,,,"टाइफॉइड, इस लाइक एनी"
+261.0,262.5,0,0.49,F6:0.235,,BOSS,0.573,0.294,,,इस लाइक एनी अधर
+261.5,263.0,1,0.76,F6:0.251,V7,BOSS,0.664,0.354,BOSS,visual (verified on-screen speaker),इस लाइक एनी अधर इलनेस अगर
+262.0,263.5,1,0.83,F6:0.446,V7,BOSS,0.783,0.352,BOSS,visual (verified on-screen speaker),एनी अधर इलनेस अगर हम
+262.5,264.0,1,0.77,F6:0.615,V7,BOSS,0.783,0.415,BOSS,visual (verified on-screen speaker),इलनेस अगर हम लोग ऐसे खुस्पुस
+263.0,264.5,0,0.61,F6:0.633,V7,BOSS,0.75,0.376,BOSS,visual (verified on-screen speaker),अगर हम लोग ऐसे खुस्पुस खुस्पुस
+263.5,265.0,0,0.56,F6:0.573,,BOSS,0.643,0.335,BOSS,visual (verified on-screen speaker),हम लोग ऐसे खुस्पुस खुस्पुस करके आपस
+264.0,265.5,0,0.56,F6:0.617,,BOSS,0.609,0.326,BOSS,visual (verified on-screen speaker),खुस्पुस खुस्पुस करके आपस में बात
+264.5,266.0,0,0.72,F6:0.518,V7,BOSS,0.77,0.491,BOSS,visual (verified on-screen speaker),खुस्पुस करके आपस में बात करेंगे न
+265.0,266.5,0,0.6,F6:0.32,V7,BOSS,0.785,0.508,BOSS,visual (verified on-screen speaker),आपस में बात करेंगे न तो forget
+265.5,267.0,0,0.61,F6:0.291,V7,BOSS,0.784,0.463,BOSS,visual (verified on-screen speaker),बात करेंगे न तो forget going to the
+266.0,267.5,0,0.61,F6:0.342,V7,BOSS,0.791,0.401,BOSS,visual (verified on-screen speaker),"न तो forget going to the doctor, Nikhil"
+266.5,268.0,0,0.8,F6:0.496,V7,BOSS,0.834,0.591,BOSS,visual (verified on-screen speaker),"forget going to the doctor, Nikhil will think twice"
+267.0,268.5,0,0.72,F6:0.684,V7,BOSS,0.751,0.538,BOSS,visual (verified on-screen speaker),"the doctor, Nikhil will think twice before"
+267.5,269.0,0,0.61,F6:0.707 F10:0.0,V7,BOSS,0.734,0.475,BOSS,visual (verified on-screen speaker),Nikhil will think twice before he talks to
+268.0,269.5,0,0.56,F6:0.559 F10:0.0,,BOSS,0.597,0.238,BOSS,visual (verified on-screen speaker),twice before he talks to us about it
+268.5,270.0,0,0.39,F6:0.347 F10:0.0 F10:0.035,,BOSS,0.513,0.143,,,he talks to us about it
+269.0,270.5,0,0.23,F6:0.16 F10:0.029,,BEARD,0.364,0.025,,,to us about it Let's
+269.5,271.0,0,0.12,F6:0.332 F10:0.006,,BEARD,0.368,0.005,,,"it Let's be normal,"
+270.0,271.5,0,0.31,F6:0.662,,BOSS,0.381,0.082,,,"Let's be normal, okay?"
+270.5,272.0,0,0.44,F6:0.756 F10:0.0,,BOSS,0.41,0.141,,,"Let's be normal, okay?"
+271.0,272.5,0,0.35,F6:0.556 F10:0.0,,BOSS,0.36,0.143,,,"normal, okay?"
+271.5,273.0,0,0.13,F6:0.215 F10:0.0,,BOSS,0.189,0.041,,,okay?
+272.0,273.5,0,0.0,F6:0.075 F10:0.0,,BEARD,0.146,0.01,,,
+272.5,274.0,0,0.0,F6:0.106 F10:0.0,,CURLYW,0.213,0.063,,,
+273.0,274.5,0,0.0,F6:0.118,,BEARD,0.124,0.045,,,
+273.5,275.0,0,0.0,F0:0.0 F6:0.184,,BEARD,0.157,0.055,,,
+274.0,275.5,0,0.0,F0:0.237 F4:0.0 F6:0.0,,SICK,0.107,0.029,,,
+274.5,276.0,0,0.07,F4:0.079 F0:0.271,,RAHUL,0.217,0.031,,,लगता है
+275.0,276.5,0,0.25,F4:0.067 F0:0.332,,RAHUL,0.362,0.02,,,लगता है इसको भी typhoid
+275.5,277.0,0,0.49,F4:0.066 F0:0.331,,RAHUL,0.368,0.025,,,लगता है इसको भी typhoid हो गया
+276.0,277.5,1,0.47,F4:0.272 F0:0.395,,RAHUL,0.362,0.045,,,है इसको भी typhoid हो गया है
+276.5,278.0,1,0.28,F4:0.359 F0:0.357,,RAHUL,0.3,0.002,,,typhoid हो गया है
+277.0,278.5,1,0.04,,,PURPLE,0.143,0.044,,,गया है Hey
+277.5,279.0,1,0.07,,,PURPLE,0.132,0.044,,,"Hey guys,"
+278.0,279.5,1,0.39,F1:1.02,,BROWN,0.387,0.165,,,"Hey guys, thanks for watching"
+278.5,280.0,1,0.72,F1:0.825,V3,BROWN,0.615,0.315,BROWN,visual (verified on-screen speaker),"Hey guys, thanks for watching the video"
+279.0,280.5,0,0.91,F1:0.727,V3,BROWN,0.648,0.327,BROWN,visual (verified on-screen speaker),"guys, thanks for watching the video If you"
+279.5,281.0,0,0.92,F1:0.752,V3,BROWN,0.548,0.315,BROWN,visual (verified on-screen speaker),watching the video If you guys want to
+280.0,281.5,0,0.89,F1:0.781,V3,BROWN,0.663,0.311,BROWN,visual (verified on-screen speaker),video If you guys want to educate yourself
+280.5,282.0,0,0.95,F1:0.864,V3,BROWN,0.728,0.364,BROWN,visual (verified on-screen speaker),guys want to educate yourself about
+281.0,282.5,0,0.92,F1:0.607,V3,BROWN,0.734,0.336,BROWN,visual (verified on-screen speaker),to educate yourself about the topic
+281.5,283.0,0,0.89,F1:0.749,V3,BROWN,0.676,0.283,BROWN,visual (verified on-screen speaker),yourself about the topic of depression
+282.0,283.5,0,0.92,F1:0.69,V3,BROWN,0.641,0.222,BROWN,visual (verified on-screen speaker),about the topic of depression Like things
+282.5,284.0,1,0.91,F1:0.584,V5,RAHUL,0.545,0.022,RAHUL,voice embedding (nearest verified speaker),topic of depression Like things to say
+283.0,284.5,1,0.96,F1:0.41,V5,RAHUL,0.574,0.111,RAHUL,voice embedding (nearest verified speaker),depression Like things to say and things not to
+283.5,285.0,1,0.91,F1:0.447,V5,RAHUL,0.603,0.265,RAHUL,visual (verified on-screen speaker),things to say and things not to say to
+284.0,285.5,0,0.95,F1:0.493,V5,RAHUL,0.571,0.178,RAHUL,visual (verified on-screen speaker),and things not to say to someone who is
+284.5,286.0,0,0.85,F1:0.47,V5,RAHUL,0.577,0.232,RAHUL,visual (verified on-screen speaker),to say to someone who is suffering from depression
+285.0,286.5,0,0.88,F1:0.486,V5,RAHUL,0.62,0.34,RAHUL,visual (verified on-screen speaker),to someone who is suffering from depression Please
+285.5,287.0,0,0.69,F1:0.589,V5,RAHUL,0.638,0.348,RAHUL,visual (verified on-screen speaker),is suffering from depression Please check
+286.0,287.5,0,0.77,F1:0.644,V5,RAHUL,0.651,0.378,RAHUL,visual (verified on-screen speaker),depression Please check out the links
+286.5,288.0,0,0.72,F1:0.536,V5,RAHUL,0.662,0.377,RAHUL,visual (verified on-screen speaker),Please check out the links in the
+287.0,288.5,0,0.87,F1:0.357,V5,RAHUL,0.624,0.359,RAHUL,visual (verified on-screen speaker),check out the links in the description box
+287.5,289.0,0,0.84,F1:0.452,V5,RAHUL,0.542,0.221,RAHUL,visual (verified on-screen speaker),links in the description box below
+288.0,289.5,1,0.92,F1:0.607,V5,RAHUL,0.512,0.053,RAHUL,voice embedding (nearest verified speaker),the description box below Also if you
+288.5,290.0,1,0.96,F1:0.712,V5,BROWN,0.493,0.076,BROWN,voice embedding (nearest verified speaker),box below Also if you think a friend
+289.0,290.5,1,0.99,F1:0.637,V2,TEE,0.611,0.119,TEE,visual (verified on-screen speaker),below Also if you think a friend or you
+289.5,291.0,0,0.99,F1:0.657,V2,TEE,0.75,0.248,TEE,visual (verified on-screen speaker),you think a friend or you yourself want
+290.0,291.5,0,0.93,F1:0.614,V2,TEE,0.742,0.323,TEE,visual (verified on-screen speaker),friend or you yourself want to
+290.5,292.0,0,0.89,F1:0.769,V2,TEE,0.722,0.334,TEE,visual (verified on-screen speaker),you yourself want to seek professional
+291.0,292.5,0,0.88,F1:0.619,V2,TEE,0.732,0.313,TEE,visual (verified on-screen speaker),want to seek professional help We
+291.5,293.0,0,0.76,F1:0.791,V2,TEE,0.742,0.272,TEE,visual (verified on-screen speaker),to seek professional help We have
+292.0,293.5,0,0.81,F1:0.653,V2,TEE,0.758,0.304,TEE,visual (verified on-screen speaker),help We have a list of numbers
+292.5,294.0,0,0.83,F1:0.72,V2,TEE,0.705,0.296,TEE,visual (verified on-screen speaker),We have a list of numbers in
+293.0,294.5,0,0.97,F1:0.484,V2,TEE,0.755,0.377,TEE,visual (verified on-screen speaker),have a list of numbers in the description box
+293.5,295.0,0,0.97,F1:0.566,V2,TEE,0.61,0.274,TEE,visual (verified on-screen speaker),numbers in the description box as well
+294.0,295.5,1,0.93,F1:0.701,V2,TEE,0.678,0.183,TEE,voice embedding (nearest verified speaker),in the description box as well We are not
+294.5,296.0,1,0.95,F1:0.801,V2,TEE,0.633,0.01,TEE,voice embedding (nearest verified speaker),box as well We are not copywriting
+295.0,296.5,1,0.95,F1:0.812,V3,BROWN,0.74,0.324,BROWN,visual (verified on-screen speaker),well We are not copywriting this video
+295.5,297.0,0,0.96,F1:0.659,V3,BROWN,0.69,0.389,BROWN,visual (verified on-screen speaker),not copywriting this video so feel
+296.0,297.5,0,0.89,F1:0.577,V3,BROWN,0.649,0.357,BROWN,visual (verified on-screen speaker),copywriting this video so feel free to download
+296.5,298.0,0,0.89,F1:0.515,V3,BROWN,0.66,0.363,BROWN,visual (verified on-screen speaker),video so feel free to download it and
+297.0,298.5,0,0.87,F1:0.609,V3,BROWN,0.665,0.278,BROWN,visual (verified on-screen speaker),feel free to download it and upload it on
+297.5,299.0,0,0.92,F1:0.718,V3,BROWN,0.566,0.204,BROWN,visual (verified on-screen speaker),download it and upload it on as many channels
+298.0,299.5,0,0.92,F1:0.7,V3,BROWN,0.596,0.156,BROWN,visual (verified on-screen speaker),and upload it on as many channels as you
+298.5,300.0,1,0.95,F1:0.633,V3,BROWN,0.605,0.192,BROWN,voice embedding (nearest verified speaker),on as many channels as you want So that
+299.0,300.5,1,0.97,F1:0.481 F2:0.142,V3,BROWN,0.591,0.246,BROWN,voice embedding (nearest verified speaker),channels as you want So that more people
+299.5,301.0,1,0.96,F2:0.354,V65,MOM,0.462,0.215,MOM,visual (verified on-screen speaker),you want So that more people watch it
+300.0,301.5,0,0.88,F2:0.575,V9,MOM,0.634,0.465,MOM,visual (verified on-screen speaker),that more people watch it and understand
+300.5,302.0,0,0.84,F2:0.58,V9,MOM,0.706,0.497,MOM,visual (verified on-screen speaker),people watch it and understand that
+301.0,302.5,0,0.77,F2:0.556,V9,MOM,0.67,0.527,MOM,visual (verified on-screen speaker),it and understand that depression
+301.5,303.0,0,0.79,F2:0.542,V9,MOM,0.696,0.577,MOM,visual (verified on-screen speaker),understand that depression is
+302.0,303.5,0,0.77,F2:0.499,V9,MOM,0.672,0.502,MOM,visual (verified on-screen speaker),that depression is an illness
+302.5,304.0,0,0.77,F2:0.432,V9,MOM,0.685,0.491,MOM,visual (verified on-screen speaker),depression is an illness that
+303.0,304.5,0,0.67,F2:0.349,V9,MOM,0.668,0.512,MOM,visual (verified on-screen speaker),is an illness that needs
+303.5,305.0,0,0.72,F2:0.516,V9,MOM,0.691,0.515,MOM,visual (verified on-screen speaker),illness that needs to be dealt with
+304.0,305.5,0,0.72,F2:0.624,V9,MOM,0.653,0.478,MOM,visual (verified on-screen speaker),that needs to be dealt with proper medical
+304.5,306.0,0,0.87,F2:0.619,V9,MOM,0.609,0.392,MOM,visual (verified on-screen speaker),needs to be dealt with proper medical attention
+305.0,306.5,0,0.68,F2:0.424,V9,MOM,0.419,0.144,MOM,visual (verified on-screen speaker),with proper medical attention
+305.5,307.0,0,0.43,F2:0.367,,BOSS,0.275,0.004,,,medical attention
+306.0,307.5,0,0.15,F2:0.257,,BEARD,0.156,0.047,,,

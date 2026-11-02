@@ -1,0 +1,39 @@
+{
+ "about": "Hand corrections from the frame-by-frame contact-sheet review (build/work/chars/win/sheets/sNNN.jpg, 2 fps, face boxes + lip score + VAD + v9 line). Times in seconds of demo/aib_depression_hi.webm. 'person' ids are defined in persons.json (manual ids; the automatic face ids F0..F16 were found impure).",
+ "face_id_impurities": [
+  {"face":"F0","merged":["RAHUL (office, light-blue shirt)","SICK (beanie, in bed 13.75-26.25 s)","PURPLE (221.25-221.75 s)"],"effect":"C0 'units' could pull the sick friend's audio; v9 C0 base reference itself was RAHUL-only (37.19-43.19, 146.05-150.84)"},
+  {"face":"F1","merged":["TEE (black Puma t-shirt)","DAD (136.75-139.25 s)","BROWN, RAHUL, TEE in the end-card (278.75-299.25 s)"],"effect":"C1 'TEE' voice reference was cut from 278.85-286.86 and 295.79-299.89 = BROWN + RAHUL speech, so TEE's dubbed lines L006_1 and L023_2 spoke in someone else's voice"},
+  {"face":"F5","merged":["CURLYW (woman, glasses, curly hair)","BROWN (64-68 s, 71-73 s)"],"effect":"C3 'CURLYW' reference included 64.25-66.78 (BROWN, a man): L034, L035_1, L039_1 were cloned from a man+woman blend"},
+  {"face":"F7","merged":["PURPLE (woman, purple top)","SICK's back of head (55.25 s)"],"effect":"minor"}
+ ],
+ "window_overrides": [
+  {"from":44.2,"to":45.35,"person":"BROWN","why":"cut to BROWN at 44.0; Whisper 'tu itna soch mat' 44.26; ECAPA 44.26-45.3 BROWN 0.58. v9 had it inside RAHUL's L004"},
+  {"from":50.9,"to":53.6,"person":"TEE","why":"TEE on screen, lips moving (F1 lip 0.7-0.97), 'do mahine mein bacteria...' 50.98-53.26"},
+  {"from":55.4,"to":57.0,"person":"BROWN","why":"BROWN on screen, lip 0.9-1.0, 'Then how you got typhoid like that?' 55.42-56.76 (English, BROWN)"},
+  {"from":87.4,"to":88.0,"person":"TEE","why":"tail of TEE's line (ECAPA 87.4-88.0 TEE 0.54); RAHUL's L013 words start 88.04"},
+  {"from":135.2,"to":136.4,"person":"DAD","why":"MOM reaction shot with still lips; voice continues DAD (ECAPA DAD 0.61-0.73)"},
+  {"from":139.82,"to":143.3,"person":"TEE","why":"Whisper 'Bro, tujhe typhoid hai...' starts 139.84 right after DAD's 'puri family ko fever hai' (ends 139.7); ECAPA 139.84-141.0 TEE 0.75"},
+  {"from":157.45,"to":158.95,"person":"BROWN","why":"cut to BROWN 157.75, ECAPA 157.5-158.9 BROWN 0.69 ('determination hai na')"},
+  {"from":197.1,"to":197.75,"person":"RAHUL","why":"still RAHUL's shot; ECAPA 197.12-197.8 RAHUL 0.53"},
+  {"from":205.6,"to":206.55,"person":"BROWN","why":"BROWN shot 205.75 lip 0.69; 'change your country'"},
+  {"from":206.55,"to":207.45,"person":"TEE","why":"TEE shot 206.25-206.75; ECAPA 206.6-207.43 TEE 0.60; 'change your continent'"},
+  {"from":251.3,"to":252.6,"person":"BEARD","why":"whispered 'kya aap baat kar rahe ho'; ECAPA BEARD 0.38, RAHUL < 0.26; both faces visible, lips ambiguous"},
+  {"from":253.6,"to":255.05,"person":"RAHUL","why":"whispered 'isko bol mat...'; ECAPA RAHUL 0.38 (next 0.19); RAHUL lip 0.43-0.55 vs BEARD 0.12-0.29. v9 gave it a separate voice-only character C12"},
+  {"from":255.05,"to":257.5,"person":"BEARD","why":"BEARD gesturing, ECAPA BEARD 0.89"},
+  {"from":275.5,"to":277.25,"person":"RAHUL","why":"'lagta hai isko bhi typhoid ho gaya': RAHUL lip 0.33-0.40 vs BEARD 0.07; ECAPA RAHUL 0.36 vs BROWN 0.33 (weak, judgement call). v9 gave it a voice-only character C11"}
+ ],
+ "line_changes_v10": [
+  {"line":"L004","change":"end 45.30 -> 44.20; English 'Don't overthink.' moved to BROWN's L005_1","why":"last words 'tu itna soch mat' are BROWN after the cut"},
+  {"line":"L005_1","change":"start 45.30 -> 44.26; text 'Don't overthink it. The more you think you have typhoid'","why":"same speaker, one continuous turn"},
+  {"line":"L006_1","change":"voice -> TEE fixed reference","why":"v9 C1 reference was BROWN/RAHUL end-card speech"},
+  {"line":"L005_2,L007_3","change":"voice -> PURPLE fixed reference without the 55.42-56.16 BROWN words","why":"v9 C5 reference clip 53.65-56.16 ended with BROWN's 'Then how you got typhoid'"},
+  {"line":"L013","change":"start 87.40 -> 88.00","why":"RAHUL starts at 88.04; 87.4-88.0 is TEE"},
+  {"line":"L023_1/L023_2","change":"boundary 140.27 -> 139.82; L023_2 voice -> TEE fixed reference","why":"TEE's 'Bro' starts 139.84; v9 C1 voice was not TEE"},
+  {"line":"L025_2","change":"split at 157.45: L025_2 RAHUL 'You need motivation, not medication.' + L025_3 BROWN 'Determination, right?'","why":"speaker change inside the line (cut + ECAPA)"},
+  {"line":"L034","change":"start 197.12 -> 197.75; voice -> CURLYW fixed reference","why":"first 0.6 s is RAHUL; C3 reference mixed a man (BROWN)"},
+  {"line":"L035_1,L039_1","change":"voice -> CURLYW fixed reference","why":"C3 reference mixed BROWN"},
+  {"line":"L035_4","change":"split at 206.55: L035_4 BROWN 'Change your country,' + L035_6 TEE 'change your continent.'","why":"montage cut BROWN -> TEE inside the line"},
+  {"line":"L049_1","change":"voice -> RAHUL fixed reference","why":"see window override 253.6-255.05"},
+  {"line":"L054","change":"voice -> RAHUL fixed reference","why":"see window override 275.5-277.25"}
+ ]
+}

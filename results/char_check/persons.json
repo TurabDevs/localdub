@@ -1,0 +1,10 @@
+{"RAHUL":{"desc":"man in light-blue shirt, office, on the phone (caller 'Rahul')","segs":[[17.6,20.4],[27.0,31.0],[37.2,43.9],[57.2,58.4],[61.0,63.7],[88.0,92.5],[143.3,151.5],[155.3,157.3],[161.3,162.5],[193.3,197.0],[207.8,215.7],[231.3,235.0],[283.8,288.6]]},
+ "SICK":{"desc":"man in black beanie, in bed (the friend with 'typhoid')","segs":[[20.7,26.6]]},
+ "BROWN":{"desc":"man in brown shirt, glasses, curly hair","segs":[[44.0,48.5],[55.5,56.7],[64.0,68.0],[102.8,115.8],[118.0,120.3],[160.0,161.0],[223.8,227.0],[278.8,283.2],[295.3,299.2]]},
+ "PURPLE":{"desc":"woman in purple top, straight hair","segs":[[48.8,50.7],[53.8,55.2],[73.3,76.4],[227.3,231.0]]},
+ "TEE":{"desc":"man in black Puma t-shirt, glasses","segs":[[51.0,53.5],[58.8,60.7],[77.0,87.3],[139.8,143.0],[170.8,176.8],[289.3,294.7]]},
+ "CURLYW":{"desc":"woman with glasses and curly hair","segs":[[68.0,71.0],[152.0,155.0],[162.8,168.2],[197.8,201.0]]},
+ "MOM":{"desc":"mother, black top (home scenes, amulet)","segs":[[94.7,96.6],[97.0,98.6],[120.8,128.0],[177.0,187.0],[299.8,306.5]]},
+ "DAD":{"desc":"father, maroon shirt, glasses, mug","segs":[[98.8,100.3],[128.3,134.7],[136.8,139.2]]},
+ "BOSS":{"desc":"office senior, blue shirt, talks to the team","segs":[[258.3,272.0]]},
+ "BEARD":{"desc":"bearded coworker, beige shirt","segs":[[255.3,257.5]]}}
