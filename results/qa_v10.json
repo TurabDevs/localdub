@@ -1,0 +1,1568 @@
+{
+ "lines": [
+  {
+   "id": "L000",
+   "spk": "S8",
+   "slot": 3.99,
+   "variant": "original",
+   "fits": true,
+   "hi": "press the bell icon on the youtube app and never miss another update",
+   "kept": "english_original"
+  },
+  {
+   "id": "L001",
+   "spk": "S8",
+   "slot": 1.05,
+   "variant": "original",
+   "fits": true,
+   "hi": "from aib",
+   "kept": "english_original"
+  },
+  {
+   "id": "L002a",
+   "spk": "S5",
+   "slot": 2.68,
+   "tts": 3.17,
+   "tempo": 1.082,
+   "fits": true,
+   "variant": "rw",
+   "en": "Hello bro, ten-thirty movie, okay?",
+   "hi": "हलो ब्रो साडे दस का मूवी बुक कर रहा हूं ठीक है",
+   "emotion": "excited",
+   "gain": 0.82,
+   "placed_end": 2.91,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.011
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L002b",
+   "spk": "S5",
+   "slot": 4.56,
+   "tts": 4.49,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "No man don't book mine, puking since morning, high fever.",
+   "hi": "नहीं यार मेरी मतकर सुबह से उल्टी ार यह बहुत तेज बुखा रहाहै",
+   "emotion": "worried",
+   "gain": 1.1,
+   "placed_end": 4.47,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:SICK",
+   "cast": null
+  },
+  {
+   "id": "L003_1",
+   "spk": "S0",
+   "slot": 1.78,
+   "variant": "original",
+   "fits": true,
+   "hi": "tn  difid o someting do",
+   "kept": "english_original"
+  },
+  {
+   "id": "L003_2",
+   "spk": "S0",
+   "slot": 4.49,
+   "tts": 3.63,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Are you crazy? Typhoid isn't real, bro, just get out and have fun.",
+   "hi": "क्या पागलोा टाईफॉड ऐसा कुछ नहीं होता भाई यू जस् नीड टो गेट आउट आंड हैव सम फन",
+   "emotion": "neutral",
+   "gain": 1.26,
+   "placed_end": 4.37,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.86
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L004",
+   "spk": "S0",
+   "slot": 7.012,
+   "tts": 6.42,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "edit_e8500df0",
+   "en": "Step out, have a few beers, bacteria die. Ever seen a bartender with typhoid? Beer!",
+   "hi": "जस्ट स्टेप आउट यार हैव आ कपल ऑफ बियर सब बैक्टीरिया बैक्टीरिया सब मर जाएगा बार टेंडर को कभी हुआ है क्या टाइफॉइड क्यों वो बियर के आजुबा जो रहते हैं त इतना सोच मत",
+   "emotion": "laughing",
+   "gain": 1.61,
+   "placed_end": 6.98,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.914
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": {
+    "speaker": "young South Asian man in light blue shirt on phone",
+    "gender": "male",
+    "age": "young",
+    "role": "Friend",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L005_1",
+   "spk": "S0",
+   "slot": 4.51,
+   "tts": 3.48,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "edit_3a1ca59a",
+   "en": "Don't overthink it. The more you think you have typhoid",
+   "hi": "तो जितना ना सोचेगा ना कि मैं को टाईफॉरड है टाईफॉरड है टाईफॉरड है उतना ना ब",
+   "emotion": "neutral",
+   "gain": 0.54,
+   "placed_end": 4.47,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.777
+    ]
+   },
+   "ref": "char:BROWN",
+   "cast": null
+  },
+  {
+   "id": "L005_2",
+   "spk": "S0",
+   "slot": 2.0,
+   "tts": 1.32,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "It just grows",
+   "hi": "की टाइफॉइड ना इtस जस्ट",
+   "emotion": "neutral",
+   "gain": 0.59,
+   "placed_end": 1.92,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.713
+    ]
+   },
+   "ref": "char:PURPLE",
+   "cast": null
+  },
+  {
+   "id": "L006_1",
+   "spk": "S0",
+   "slot": 2.88,
+   "tts": 1.43,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "Bacteria die in two months.",
+   "hi": "ीदो महीने में बैक्टीरिया अपने आप मर जाएगा",
+   "emotion": "neutral",
+   "gain": 0.98,
+   "placed_end": 2.18,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:TEE",
+   "cast": null
+  },
+  {
+   "id": "L006_2",
+   "spk": "S0",
+   "slot": 2.51,
+   "variant": "original",
+   "fits": true,
+   "hi": "just last mont you got a promotion no then how you got",
+   "kept": "english_original"
+  },
+  {
+   "id": "L006_3",
+   "spk": "S0",
+   "slot": 1.08,
+   "tts": 0.89,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Then typhoid?",
+   "hi": "टाईफोरड लगाअभे तो पर",
+   "emotion": "neutral",
+   "gain": 0.6,
+   "placed_end": 1.06,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.809
+    ]
+   },
+   "ref": "char:BROWN",
+   "cast": null
+  },
+  {
+   "id": "L006_4",
+   "spk": "S0",
+   "slot": 1.63,
+   "tts": 1.26,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Sahil's party you enjoyed.",
+   "hi": "سोی توो سाइل کے پار्ٹی میं اتनا انजائय کر رहا تھا",
+   "emotion": "neutral",
+   "gain": 0.79,
+   "placed_end": 1.58,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.775
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L006_5",
+   "spk": "S0",
+   "slot": 2.04,
+   "variant": "original",
+   "fits": true,
+   "hi": "you were laughing you were dancing you were joking",
+   "kept": "english_original"
+  },
+  {
+   "id": "L006_6",
+   "spk": "S0",
+   "slot": 1.49,
+   "tts": 1.43,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "What happened suddenly?",
+   "hi": "िंअब क्या ये सर्डेनली",
+   "emotion": "neutral",
+   "gain": 0.98,
+   "placed_end": 1.42,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L007_1",
+   "spk": "S0",
+   "slot": 1.53,
+   "tts": 0.83,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw",
+   "en": "Fever burning is",
+   "hi": "ی فیور بuرننg आیز",
+   "emotion": "neutral",
+   "gain": 0.97,
+   "placed_end": 1.27,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L007_2",
+   "spk": "S0",
+   "slot": 8.83,
+   "variant": "original",
+   "fits": true,
+   "hi": "एक चीज हो सकता है लइक आइदर यू आर स्माइलिंग और योू है tifoid like how can you have both ش टायफॉiड बeकाus गरीमा ब्रोक uप विथ यू yu so geron tender",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L007_3",
+   "spk": "S0",
+   "slot": 3.43,
+   "tts": 2.74,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "Your typhoid vomiting diarrhea will go",
+   "hi": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा",
+   "emotion": "neutral",
+   "gain": 0.52,
+   "placed_end": 3.29,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.831
+    ]
+   },
+   "ref": "char:PURPLE",
+   "cast": null
+  },
+  {
+   "id": "L008",
+   "spk": "S4",
+   "slot": 0.79,
+   "variant": "original",
+   "fits": true,
+   "hi": "you kno last year",
+   "kept": "english_original"
+  },
+  {
+   "id": "L009",
+   "spk": "S4",
+   "slot": 1.56,
+   "variant": "original",
+   "fits": true,
+   "hi": "eوen i فelt kiنd اf typ oid",
+   "kept": "english_original"
+  },
+  {
+   "id": "L010",
+   "spk": "S4",
+   "slot": 1.5,
+   "variant": "original",
+   "fits": true,
+   "hi": "ب نت ود ود",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L011",
+   "spk": "S4",
+   "slot": 1.24,
+   "variant": "original",
+   "fits": true,
+   "hi": "سورت اف tيفوid",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L012",
+   "spk": "S4",
+   "slot": 0.79,
+   "variant": "original",
+   "fits": true,
+   "hi": "بت ي فوت",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L013",
+   "spk": "S0",
+   "slot": 4.924,
+   "tts": 4.66,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "en",
+   "en": "Jogging every morning gives you perspective and typhoid goes away. Perspective up, typhoid go go.",
+   "hi": "साटजॉगिंग रोज सुबह जॉगिंग करने से ना परस्पेक्टिव आते हैं और टाइफर्ड जाते है परस्पेक्टिव कम-कम टाइफर्ड गो गो",
+   "emotion": "sarcastic",
+   "gain": 2.14,
+   "placed_end": 4.64,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": {
+    "speaker": "man in light blue shirt on phone",
+    "gender": "male",
+    "age": "young",
+    "role": "Employee",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L014",
+   "spk": "S2",
+   "slot": 3.54,
+   "tts": 1.85,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "en",
+   "en": "Listen, Nikhil's friend was saying that",
+   "hi": "सुनो वो निखिल का दोस्त बता रहा था की",
+   "emotion": "neutral",
+   "gain": 1.66,
+   "placed_end": 2.82,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": {
+    "speaker": "blurred figure in foreground right side",
+    "gender": "unknown",
+    "age": "adult",
+    "role": "Friend",
+    "face_visible": false
+   }
+  },
+  {
+   "id": "L015_1",
+   "spk": "S3",
+   "slot": 2.02,
+   "tts": 1.66,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Nikhil has some fever thing.",
+   "hi": "निखिल को फीवर टाइप कुछ है",
+   "emotion": "neutral",
+   "gain": 2.02,
+   "placed_end": 1.93,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.87
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": null
+  },
+  {
+   "id": "L015_2",
+   "spk": "S3",
+   "slot": 2.26,
+   "tts": 1.65,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "You haven't told anyone, right?",
+   "hi": "तुमने किसी को बताया तो नहीं कि उसको फीवर है",
+   "emotion": "neutral",
+   "gain": 0.3,
+   "placed_end": 2.1,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.792
+    ]
+   },
+   "ref": "char:DAD",
+   "cast": null
+  },
+  {
+   "id": "L015_3",
+   "spk": "S3",
+   "slot": 1.5,
+   "tts": 1.02,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "edit_e6effa9a",
+   "en": "Why would I tell?",
+   "hi": "निखिल, मैं क्यों बताऊंगी",
+   "emotion": "neutral",
+   "gain": 0.99,
+   "placed_end": 1.49,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.876
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": null
+  },
+  {
+   "id": "L016",
+   "spk": "S0",
+   "slot": 6.892,
+   "variant": "original",
+   "fits": true,
+   "hi": "nani ma ke yo bataungi i'm telling you brow where there's a will there's a way what doesn't kill you makes you stronger the hottest fire makes the hardest eel",
+   "kept": "english_original"
+  },
+  {
+   "id": "L017",
+   "spk": "S1",
+   "slot": 0.82,
+   "variant": "original",
+   "fits": true,
+   "hi": "ت的ر",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L018",
+   "spk": "S0",
+   "slot": 1.18,
+   "variant": "original",
+   "fits": true,
+   "hi": "is tha is that a swile",
+   "kept": "english_original"
+  },
+  {
+   "id": "L019_1",
+   "spk": "S2",
+   "slot": 2.97,
+   "variant": "original",
+   "fits": true,
+   "hi": "a smiles count tyfords gor i knew it",
+   "kept": "english_original"
+  },
+  {
+   "id": "L019_2",
+   "spk": "S2",
+   "slot": 2.47,
+   "tts": 1.35,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw",
+   "en": "Nikhil's friend said that too",
+   "hi": "निखिल का दोस्त ये भी बता रहा था की",
+   "emotion": "neutral",
+   "gain": 1.67,
+   "placed_end": 2.02,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": null
+  },
+  {
+   "id": "L020",
+   "spk": "S2",
+   "slot": 4.92,
+   "tts": 4.82,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "en",
+   "en": "There are different kinds of doctors who can just fix fever stuff like this, no problem.",
+   "hi": "ऐसे अलग डॉक्टर्स होते हैं जो ऐसे फीवर जैसी चीजें ठीक कर देते हैं तमतोगल",
+   "emotion": "sarcastic",
+   "gain": 1.72,
+   "placed_end": 4.83,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": {
+    "speaker": "Woman in black top holding remote",
+    "gender": "female",
+    "age": "adult",
+    "role": "Wife",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L021",
+   "spk": "S3",
+   "slot": 1.24,
+   "tts": 1.22,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Whole neighbourhood to know?",
+   "hi": "पूरे मुह्ले में बताना है",
+   "emotion": "sarcastic",
+   "gain": 0.42,
+   "placed_end": 1.24,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:DAD",
+   "cast": null
+  },
+  {
+   "id": "L022",
+   "spk": "S3",
+   "slot": 5.85,
+   "tts": 5.27,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Our son has fever, fever, fever, temperature up, forehead always hot. What will people think?",
+   "hi": "कि हमारे बेटे को फीवर है फीवर है फीवर है टेंपरेचर पढ़ गया है उसका माथाकरम रहता है लोग क्या सोचेंगे",
+   "emotion": "worried",
+   "gain": 1.27,
+   "placed_end": 5.73,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.921
+    ]
+   },
+   "ref": "char:DAD",
+   "cast": {
+    "speaker": "Man with glasses maroon shirt gesturing",
+    "gender": "male",
+    "age": "adult",
+    "role": "Father",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L023_1",
+   "spk": "S0",
+   "slot": 1.736,
+   "tts": 1.61,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Whole family has fever, bro.",
+   "hi": "लोग कहेंगे पूरी फैमिली को फीवर है ब्रो",
+   "emotion": "neutral",
+   "gain": 0.58,
+   "placed_end": 1.72,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.956
+    ]
+   },
+   "ref": "char:DAD",
+   "cast": null
+  },
+  {
+   "id": "L023_2",
+   "spk": "S0",
+   "slot": 4.07,
+   "tts": 2.74,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "They say typhoid, these doctors run a scam.",
+   "hi": "तुझे टाइफॉइड है बोलके ना यह डॉक्टर लोग सब स्कैम चला रेहे हैं वो लो ऐसे त",
+   "emotion": "neutral",
+   "gain": 1.65,
+   "placed_end": 3.9,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:TEE",
+   "cast": null
+  },
+  {
+   "id": "L023_3",
+   "spk": "S0",
+   "slot": 1.59,
+   "tts": 1.51,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Just to squeeze money.",
+   "hi": "से पैसा निकालने केलिए करते हैं ये सब",
+   "emotion": "neutral",
+   "gain": 1.59,
+   "placed_end": 1.49,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L024",
+   "spk": "S0",
+   "slot": 4.79,
+   "tts": 3.58,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Typhoid, whatever, they just make up names. Come on, you're educated, right?",
+   "hi": "ऐसे टाइफर्ड वफर्ड कुछ भी कुद का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो लोग तो क्या है तो पड़ा लिखा है ना",
+   "emotion": "sarcastic",
+   "gain": 1.27,
+   "placed_end": 4.63,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.771
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": {
+    "speaker": "man in beige shirt on left side",
+    "gender": "male",
+    "age": "adult",
+    "role": "Colleague",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L025_1",
+   "spk": "S0",
+   "slot": 4.14,
+   "variant": "original",
+   "fits": true,
+   "hi": "don't fall for all this hay are you taking pills pills of a people woar ill",
+   "kept": "english_original"
+  },
+  {
+   "id": "L025_2",
+   "spk": "S0",
+   "slot": 2.11,
+   "tts": 2.09,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "edit_353573f8",
+   "en": "You need motivation, not medication.",
+   "hi": "अबे तुझे मेडिकेशन की नहीं मोटिवेशन की जरूरत है",
+   "emotion": "neutral",
+   "gain": 2.29,
+   "placed_end": 2.08,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.989
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L025_3",
+   "spk": "S0",
+   "slot": 1.458,
+   "tts": 1.42,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "edit_84aade16",
+   "en": "Determination, right?",
+   "hi": "डिटर्मिनेशन है ना ऐसा",
+   "emotion": "neutral",
+   "gain": 1.23,
+   "placed_end": 1.4,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:BROWN",
+   "cast": null
+  },
+  {
+   "id": "L026_1",
+   "spk": "S0",
+   "slot": 1.33,
+   "tts": 0.84,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw",
+   "en": "More typhoid?",
+   "hi": "لگ جیادہ ٹائپوڈ کا",
+   "emotion": "neutral",
+   "gain": 0.44,
+   "placed_end": 1.05,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.876
+    ]
+   },
+   "ref": "char:BROWN",
+   "cast": null
+  },
+  {
+   "id": "L026_2",
+   "spk": "S0",
+   "slot": 1.66,
+   "tts": 1.21,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Nisha's marriage broke up?",
+   "hi": "तुझे पता है निहा का शादी टूट गया है",
+   "emotion": "neutral",
+   "gain": 2.75,
+   "placed_end": 1.51,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.784
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L026_3",
+   "spk": "S0",
+   "slot": 1.35,
+   "variant": "original",
+   "fits": true,
+   "hi": "dod you no pil",
+   "kept": "english_original"
+  },
+  {
+   "id": "L027",
+   "spk": "S7",
+   "slot": 3.54,
+   "variant": "original",
+   "fits": true,
+   "hi": "she's bed ridan she can't walk man she's only thirty",
+   "kept": "english_original"
+  },
+  {
+   "id": "L028",
+   "spk": "S0",
+   "slot": 4.98,
+   "variant": "original",
+   "fits": true,
+   "hi": "she's been so brave through it all bro just think of all the good things in your life",
+   "kept": "english_original"
+  },
+  {
+   "id": "L029",
+   "spk": "S4",
+   "slot": 2.65,
+   "variant": "original",
+   "fits": true,
+   "hi": "it's so important to be thankful for what you have you know",
+   "kept": "english_original"
+  },
+  {
+   "id": "L030",
+   "spk": "S8",
+   "slot": 0.76,
+   "tts": 0.74,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Put it on.",
+   "hi": "ایسے پہن لو",
+   "emotion": "neutral",
+   "gain": 0.3,
+   "placed_end": 0.78,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": null
+  },
+  {
+   "id": "L031",
+   "spk": "S2",
+   "slot": 1.14,
+   "tts": 1.13,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "en",
+   "en": "Typhoid's nothing.",
+   "hi": "टाइफॉइड कुछ नहीं है",
+   "emotion": "sarcastic",
+   "gain": 1.35,
+   "placed_end": 1.16,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": null
+  },
+  {
+   "id": "L032",
+   "spk": "S2",
+   "slot": 5.11,
+   "tts": 4.33,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Your planets are messed up. This shield protects you, made specially for Libra.",
+   "hi": "तुम्हारे ग्रहों में प्रॉब्लम है यह है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है",
+   "emotion": "sarcastic",
+   "gain": 2.18,
+   "placed_end": 4.89,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.886
+    ]
+   },
+   "ref": "char:MOM",
+   "cast": {
+    "speaker": "woman in black top speaking",
+    "gender": "female",
+    "age": "adult",
+    "role": "Seller",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L033",
+   "spk": "S0",
+   "slot": 3.38,
+   "tts": 3.87,
+   "tempo": 1.067,
+   "fits": true,
+   "variant": "rw",
+   "en": "Go do something you like. Follow your passion, everyone's doing it these days.",
+   "hi": "आ डोइंग समथिंग दैट यू लाइक वो पैशन पैशन फॉललो करना सब कर रहे है आजकल",
+   "emotion": "sarcastic",
+   "gain": 1.53,
+   "placed_end": 3.62,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.012
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": {
+    "speaker": "Man in light blue shirt gesturing",
+    "gender": "male",
+    "age": "young",
+    "role": "Co-worker",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L034",
+   "spk": "S7",
+   "slot": 1.638,
+   "tts": 1.54,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "More poetry, more crying.",
+   "hi": "शायरीवारी लेक जितना करेगा तू राईन",
+   "emotion": "sarcastic",
+   "gain": 1.62,
+   "placed_end": 1.56,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:CURLYW",
+   "cast": {
+    "speaker": "woman with curly hair glasses black top",
+    "gender": "female",
+    "age": "adult",
+    "role": "Friend",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L035_1",
+   "spk": "S0",
+   "slot": 1.66,
+   "tts": 1.19,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "It'll be fine",
+   "hi": "उतना हो जाएगा तो फाइन",
+   "emotion": "neutral",
+   "gain": 1.41,
+   "placed_end": 1.53,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.791
+    ]
+   },
+   "ref": "char:CURLYW",
+   "cast": null
+  },
+  {
+   "id": "L035_2",
+   "spk": "S0",
+   "slot": 2.88,
+   "variant": "original",
+   "fits": true,
+   "hi": "مب يu ني او cنج ر جاب جج hوس",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L035_3",
+   "spk": "S0",
+   "slot": 1.3,
+   "tts": 1.5,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Change city change state",
+   "hi": "چیंज و سिटی چیंज و س्टیٹ",
+   "emotion": "neutral",
+   "gain": 1.44,
+   "placed_end": 1.5,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L035_4",
+   "spk": "S0",
+   "slot": 0.9,
+   "tts": 1.08,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "edit_f160a295",
+   "en": "Change your country,",
+   "hi": "चेंज योर कंट्री",
+   "emotion": "neutral",
+   "gain": 0.84,
+   "placed_end": 1.08,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:BROWN",
+   "cast": null
+  },
+  {
+   "id": "L035_5",
+   "spk": "S0",
+   "slot": 1.72,
+   "tts": 1.09,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw",
+   "en": "Just change yourself",
+   "hi": "तो अपने आपको ही चेंज कर तेै ना",
+   "emotion": "neutral",
+   "gain": 2.51,
+   "placed_end": 1.56,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.755
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L035_6",
+   "spk": "S0",
+   "slot": 0.88,
+   "tts": 1.35,
+   "tempo": 1.15,
+   "fits": true,
+   "variant": "edit_3b07d4d2",
+   "en": "change your continent.",
+   "hi": "चेंज योर कॉंटिनेंट",
+   "emotion": "neutral",
+   "gain": 0.44,
+   "placed_end": 1.08,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.078
+    ]
+   },
+   "ref": "char:TEE",
+   "cast": null
+  },
+  {
+   "id": "L036",
+   "spk": "S0",
+   "slot": 1.18,
+   "variant": "original",
+   "fits": true,
+   "hi": "그تطنر가",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L037",
+   "spk": "S0",
+   "slot": 1.82,
+   "tts": 2.42,
+   "tempo": 1.15,
+   "fits": true,
+   "variant": "rw",
+   "en": "Get it? Then where's typhoid going?",
+   "hi": "तू समझ रह है फिर टाइपोड कीदर जाएगा",
+   "emotion": "sarcastic",
+   "gain": 1.28,
+   "placed_end": 2.03,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.059
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": {
+    "speaker": "man in light blue shirt on phone",
+    "gender": "male",
+    "age": "young",
+    "role": "Trader",
+    "face_visible": true
+   }
+  },
+  {
+   "id": "L038_1",
+   "spk": "S0",
+   "slot": 3.86,
+   "tts": 2.46,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw",
+   "en": "It doesn't know where to go, take a left up ahead.",
+   "hi": "उसको पता ही नहीं कहा जाने का टम कहा जाने का कहा जाने का भाई सा पता नहीं आगे से लेफ्ट लो",
+   "emotion": "neutral",
+   "gain": 1.28,
+   "placed_end": 3.77,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L038_2",
+   "spk": "S0",
+   "slot": 2.79,
+   "variant": "original",
+   "fits": true,
+   "hi": "th you are overthinkingyou're overanalyzing overhip",
+   "kept": "english_original"
+  },
+  {
+   "id": "L039_1",
+   "spk": "S0",
+   "slot": 2.07,
+   "tts": 1.87,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "Over hyperventilating just",
+   "hi": "पिंग ओवर हाइपर वेंटिलेटिंग जस्ट",
+   "emotion": "neutral",
+   "gain": 1.07,
+   "placed_end": 2.05,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.918
+    ]
+   },
+   "ref": "char:CURLYW",
+   "cast": null
+  },
+  {
+   "id": "L039_2",
+   "spk": "S0",
+   "slot": 0.85,
+   "variant": "original",
+   "fits": true,
+   "hi": "وفري",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L039_3",
+   "spk": "S0",
+   "slot": 1.38,
+   "variant": "original",
+   "fits": true,
+   "hi": "تو에ن जد सوच مت",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L039_4",
+   "spk": "S0",
+   "slot": 3.25,
+   "tts": 2.04,
+   "tempo": 0.93,
+   "fits": true,
+   "variant": "rw",
+   "en": "You're on fire thinking you're not thinking",
+   "hi": "जैसे सा आग बनकर और सोच की तू नहीं सोच रहा हैी",
+   "emotion": "neutral",
+   "gain": 0.94,
+   "placed_end": 3.08,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.7
+    ]
+   },
+   "ref": "char:BROWN",
+   "cast": null
+  },
+  {
+   "id": "L040_1",
+   "spk": "S6",
+   "slot": 4.13,
+   "variant": "original",
+   "fits": true,
+   "hi": "don't have tie fori maybe you just need a long vacation",
+   "kept": "english_original"
+  },
+  {
+   "id": "L040_2",
+   "spk": "S6",
+   "slot": 1.72,
+   "tts": 1.24,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Come to movies with us.",
+   "hi": "या फिर हम लोगों के साथ मूवी के लिए आ जा",
+   "emotion": "neutral",
+   "gain": 2.1,
+   "placed_end": 1.5,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.817
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L041",
+   "spk": "S0",
+   "slot": 1.11,
+   "tts": 1.32,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "Okay, you're not coming.",
+   "hi": "اچھا تو تو نہیں آ رہا ے",
+   "emotion": "sarcastic",
+   "gain": 0.52,
+   "placed_end": 1.31,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.028
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L042",
+   "spk": "S0",
+   "slot": 1.18,
+   "variant": "original",
+   "fits": true,
+   "hi": "وك باي",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L044",
+   "spk": "S0",
+   "slot": 0.63,
+   "variant": "original",
+   "fits": true,
+   "hi": "جس",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L045",
+   "spk": "S0",
+   "slot": 0.73,
+   "variant": "original",
+   "fits": true,
+   "hi": "منكلكنا",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L046",
+   "spk": "S0",
+   "slot": 0.76,
+   "variant": "original",
+   "fits": true,
+   "hi": "f的人",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L047",
+   "spk": "S1",
+   "slot": 0.44,
+   "variant": "original",
+   "fits": true,
+   "hi": "يا",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L048",
+   "spk": "S1",
+   "slot": 1.08,
+   "tts": 1.04,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw",
+   "en": "What are you saying?",
+   "hi": "کیا بات کر رहے ہے",
+   "emotion": "angry",
+   "gain": 0.3,
+   "placed_end": 1.08,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.0
+    ]
+   },
+   "ref": "char:BEARD",
+   "cast": null
+  },
+  {
+   "id": "L049_1",
+   "spk": "S0",
+   "slot": 1.37,
+   "tts": 1.52,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "rw_r10",
+   "en": "Don't tell anyone",
+   "hi": "سکو بول متا میں نے تر کو بتایا",
+   "emotion": "neutral",
+   "gain": 0.3,
+   "placed_end": 1.58,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.006
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L049_2",
+   "spk": "S0",
+   "slot": 2.27,
+   "variant": "original",
+   "fits": true,
+   "hi": "لكبل",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L050",
+   "spk": "S1",
+   "slot": 1.05,
+   "variant": "original",
+   "fits": true,
+   "hi": "يكاتلرا",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L051",
+   "spk": "S1",
+   "slot": 6.1,
+   "tts": 4.23,
+   "tempo": 1.0,
+   "fits": true,
+   "variant": "en",
+   "en": "It's typhoid, it's like any other illness. If we keep whispering about it like this...",
+   "hi": "इटस टाइफॉइड इटस लाइक एनी अदर इललनेस अगर हम लोग ऐसे खुस खुस खुस खुस करके आपस में बात करेंगे ना",
+   "emotion": "sarcastic",
+   "gain": 0.3,
+   "placed_end": 5.93,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     0.716
+    ]
+   },
+   "ref": "char:BOSS",
+   "cast": {
+    "speaker": "person with dark hair seen from behind",
+    "gender": "male",
+    "age": "adult",
+    "role": "Doctor",
+    "face_visible": false
+   }
+  },
+  {
+   "id": "L052",
+   "spk": "S1",
+   "slot": 3.45,
+   "variant": "original",
+   "fits": true,
+   "hi": "to forget going to the doctor nikil will think twice before he talks to us about it",
+   "kept": "english_original"
+  },
+  {
+   "id": "L053",
+   "spk": "S1",
+   "slot": 1.4,
+   "variant": "original",
+   "fits": true,
+   "hi": "ل في نعملوك",
+   "kept": "asr_garble"
+  },
+  {
+   "id": "L054",
+   "spk": "S0",
+   "slot": 1.46,
+   "tts": 1.72,
+   "tempo": 1.009,
+   "fits": true,
+   "variant": "en_r10",
+   "en": "Looks like he got typhoid too.",
+   "hi": "لگتا ہے اس کو بھی ٹائی فرڈ ہو گیا",
+   "emotion": "neutral",
+   "gain": 0.3,
+   "placed_end": 1.66,
+   "align": {
+    "pieces": 1,
+    "islands": 1,
+    "tempi": [
+     1.028
+    ]
+   },
+   "ref": "char:RAHUL",
+   "cast": null
+  },
+  {
+   "id": "L055",
+   "spk": "S0",
+   "slot": 8.0,
+   "variant": "original",
+   "fits": true,
+   "hi": "hey guys thanks for watching the video if you guys want to educate yourself about the topic of depression like things to say and things not to say to someone who's suffering from depression",
+   "kept": "english_original"
+  },
+  {
+   "id": "L056",
+   "spk": "S0",
+   "slot": 5.79,
+   "variant": "original",
+   "fits": true,
+   "hi": "please check out the links in the description box below also if you think a friend or you yourself want to seek professional help",
+   "kept": "english_original"
+  },
+  {
+   "id": "L057",
+   "spk": "S0",
+   "slot": 8.68,
+   "variant": "original",
+   "fits": true,
+   "hi": "we have a list of numbers in the description box as well we are not copyriting this video so feel free to download it and upload it on as many channels as you want so that more people watch it",
+   "kept": "english_original"
+  },
+  {
+   "id": "L058",
+   "spk": "S2",
+   "slot": 5.08,
+   "variant": "original",
+   "fits": true,
+   "hi": "and understand that depression is an illness that needs to be dealt with proper medical attention",
+   "kept": "english_original"
+  }
+ ],
+ "nonverbal_kept": [
+  [
+   87.3,
+   87.9
+  ],
+  [
+   109.98,
+   114.2
+  ],
+  [
+   190.76,
+   193.36
+  ],
+  [
+   197.2,
+   197.64
+  ]
+ ],
+ "missing_translation": [],
+ "overflow": []
+}

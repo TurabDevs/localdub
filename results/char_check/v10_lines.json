@@ -1,0 +1,1101 @@
+[
+ {
+  "id": "L000",
+  "spk": "S8",
+  "start": 1.22,
+  "end": 5.212,
+  "hi": "press the bell icon on the youtube app and never miss another update",
+  "segs": [
+   0
+  ],
+  "dur": 3.99,
+  "max_syll": 17
+ },
+ {
+  "id": "L001",
+  "spk": "S8",
+  "start": 5.54,
+  "end": 6.588,
+  "hi": "from aib",
+  "segs": [
+   1
+  ],
+  "dur": 1.05,
+  "max_syll": 4
+ },
+ {
+  "id": "L002a",
+  "spk": "S5",
+  "start": 17.54,
+  "end": 20.22,
+  "hi": "हलो ब्रो साडे दस का मूवी बुक कर रहा हूं ठीक है",
+  "segs": [
+   2
+  ],
+  "dur": 2.68,
+  "max_syll": 31
+ },
+ {
+  "id": "L002b",
+  "spk": "S5",
+  "start": 20.3,
+  "end": 24.86,
+  "hi": "नहीं यार मेरी मतकर सुबह से उल्टी ार यह बहुत तेज बुखा रहाहै",
+  "segs": [
+   2
+  ],
+  "dur": 4.56,
+  "max_syll": 31
+ },
+ {
+  "id": "L003_1",
+  "spk": "S0",
+  "start": 25.124,
+  "end": 26.9,
+  "hi": "tn  difid o someting do",
+  "segs": [
+   3
+  ],
+  "dur": 1.78,
+  "max_syll": 26,
+  "parent": "L003"
+ },
+ {
+  "id": "L003_2",
+  "spk": "S0",
+  "start": 26.9,
+  "end": 31.388,
+  "hi": "क्या पागलोा टाईफॉड ऐसा कुछ नहीं होता भाई यू जस् नीड टो गेट आउट आंड हैव सम फन",
+  "segs": [
+   3
+  ],
+  "dur": 4.49,
+  "max_syll": 26,
+  "parent": "L003"
+ },
+ {
+  "id": "L004",
+  "spk": "S0",
+  "start": 37.188,
+  "end": 44.2,
+  "hi": "जस्ट स्टेप आउट यार हैव आ कपल ऑफ बियर सब बैक्टीरिया बैक्टीरिया सब मर जाएगा बार टेंडर को कभी हुआ है क्या टाइफॉइड क्यों वो बियर के आजुबा जो रहते हैं त इतना सोच मत",
+  "segs": [
+   4
+  ],
+  "dur": 7.012,
+  "max_syll": 34
+ },
+ {
+  "id": "L005_1",
+  "spk": "S0",
+  "start": 44.26,
+  "end": 48.77,
+  "hi": "तो जितना ना सोचेगा ना कि मैं को टाईफॉरड है टाईफॉरड है टाईफॉरड है उतना ना ब",
+  "segs": [
+   5
+  ],
+  "dur": 4.51,
+  "max_syll": 23,
+  "parent": "L005"
+ },
+ {
+  "id": "L005_2",
+  "spk": "S0",
+  "start": 48.77,
+  "end": 50.774,
+  "hi": "की टाइफॉइड ना इtस जस्ट",
+  "segs": [
+   5
+  ],
+  "dur": 2.0,
+  "max_syll": 23,
+  "parent": "L005"
+ },
+ {
+  "id": "L006_1",
+  "spk": "S0",
+  "start": 50.774,
+  "end": 53.65,
+  "hi": "ीदो महीने में बैक्टीरिया अपने आप मर जाएगा",
+  "segs": [
+   6
+  ],
+  "dur": 2.88,
+  "max_syll": 49,
+  "parent": "L006"
+ },
+ {
+  "id": "L006_2",
+  "spk": "S0",
+  "start": 53.65,
+  "end": 56.16,
+  "hi": "just last mont you got a promotion no then how you got",
+  "segs": [
+   6
+  ],
+  "dur": 2.51,
+  "max_syll": 49,
+  "parent": "L006"
+ },
+ {
+  "id": "L006_3",
+  "spk": "S0",
+  "start": 56.16,
+  "end": 57.24,
+  "hi": "टाईफोरड लगाअभे तो पर",
+  "segs": [
+   6
+  ],
+  "dur": 1.08,
+  "max_syll": 49,
+  "parent": "L006"
+ },
+ {
+  "id": "L006_4",
+  "spk": "S0",
+  "start": 57.24,
+  "end": 58.87,
+  "hi": "سोی توो سाइل کے پار्ٹی میं اتनا انजائय کر رहا تھا",
+  "segs": [
+   6
+  ],
+  "dur": 1.63,
+  "max_syll": 49,
+  "parent": "L006"
+ },
+ {
+  "id": "L006_5",
+  "spk": "S0",
+  "start": 58.87,
+  "end": 60.91,
+  "hi": "you were laughing you were dancing you were joking",
+  "segs": [
+   6
+  ],
+  "dur": 2.04,
+  "max_syll": 49,
+  "parent": "L006"
+ },
+ {
+  "id": "L006_6",
+  "spk": "S0",
+  "start": 60.91,
+  "end": 62.396,
+  "hi": "िंअब क्या ये सर्डेनली",
+  "segs": [
+   6
+  ],
+  "dur": 1.49,
+  "max_syll": 49,
+  "parent": "L006"
+ },
+ {
+  "id": "L007_1",
+  "spk": "S0",
+  "start": 62.724,
+  "end": 64.25,
+  "hi": "ی فیور بuرننg आیز",
+  "segs": [
+   7
+  ],
+  "dur": 1.53,
+  "max_syll": 58,
+  "parent": "L007"
+ },
+ {
+  "id": "L007_2",
+  "spk": "S0",
+  "start": 64.25,
+  "end": 73.08,
+  "hi": "एक चीज हो सकता है लइक आइदर यू आर स्माइलिंग और योू है tifoid like how can you have both ش टायफॉiड बeकाus गरीमा ब्रोक uप विथ यू yu so geron tender",
+  "segs": [
+   7
+  ],
+  "dur": 8.83,
+  "max_syll": 58,
+  "parent": "L007"
+ },
+ {
+  "id": "L007_3",
+  "spk": "S0",
+  "start": 73.08,
+  "end": 76.508,
+  "hi": "तेरा टाइफॉइड वॉर्मिटिंग डायरिया सब चला जाएगा",
+  "segs": [
+   7
+  ],
+  "dur": 3.43,
+  "max_syll": 58,
+  "parent": "L007"
+ },
+ {
+  "id": "L008",
+  "spk": "S4",
+  "start": 77.412,
+  "end": 78.204,
+  "hi": "you kno last year",
+  "segs": [
+   8
+  ],
+  "dur": 0.79,
+  "max_syll": 3
+ },
+ {
+  "id": "L009",
+  "spk": "S4",
+  "start": 79.044,
+  "end": 80.604,
+  "hi": "eوen i فelt kiنd اf typ oid",
+  "segs": [
+   9
+  ],
+  "dur": 1.56,
+  "max_syll": 7
+ },
+ {
+  "id": "L010",
+  "spk": "S4",
+  "start": 81.156,
+  "end": 82.652,
+  "hi": "ب نت ود ود",
+  "segs": [
+   10
+  ],
+  "dur": 1.5,
+  "max_syll": 6
+ },
+ {
+  "id": "L011",
+  "spk": "S4",
+  "start": 83.268,
+  "end": 84.508,
+  "hi": "سورت اف tيفوid",
+  "segs": [
+   11
+  ],
+  "dur": 1.24,
+  "max_syll": 5
+ },
+ {
+  "id": "L012",
+  "spk": "S4",
+  "start": 85.22,
+  "end": 86.012,
+  "hi": "بت ي فوت",
+  "segs": [
+   12
+  ],
+  "dur": 0.79,
+  "max_syll": 3
+ },
+ {
+  "id": "L013",
+  "spk": "S0",
+  "start": 88.0,
+  "end": 92.924,
+  "hi": "साटजॉगिंग रोज सुबह जॉगिंग करने से ना परस्पेक्टिव आते हैं और टाइफर्ड जाते है परस्पेक्टिव कम-कम टाइफर्ड गो गो",
+  "segs": [
+   13
+  ],
+  "dur": 4.924,
+  "max_syll": 23
+ },
+ {
+  "id": "L014",
+  "spk": "S2",
+  "start": 93.092,
+  "end": 96.636,
+  "hi": "सुनो वो निखिल का दोस्त बता रहा था की",
+  "segs": [
+   14
+  ],
+  "dur": 3.54,
+  "max_syll": 15
+ },
+ {
+  "id": "L015_1",
+  "spk": "S3",
+  "start": 96.9,
+  "end": 98.92,
+  "hi": "निखिल को फीवर टाइप कुछ है",
+  "segs": [
+   15
+  ],
+  "dur": 2.02,
+  "max_syll": 18,
+  "parent": "L015"
+ },
+ {
+  "id": "L015_2",
+  "spk": "S3",
+  "start": 98.92,
+  "end": 101.18,
+  "hi": "तुमने किसी को बताया तो नहीं कि उसको फीवर है",
+  "segs": [
+   15
+  ],
+  "dur": 2.26,
+  "max_syll": 18,
+  "parent": "L015"
+ },
+ {
+  "id": "L015_3",
+  "spk": "S3",
+  "start": 101.25,
+  "end": 102.75,
+  "hi": "निखिल, मैं क्यों बताऊंगी",
+  "segs": [
+   15
+  ],
+  "dur": 1.5,
+  "max_syll": 18,
+  "parent": "L015"
+ },
+ {
+  "id": "L016",
+  "spk": "S0",
+  "start": 102.8,
+  "end": 109.692,
+  "hi": "nani ma ke yo bataungi i'm telling you brow where there's a will there's a way what doesn't kill you makes you stronger the hottest fire makes the hardest eel",
+  "segs": [
+   16
+  ],
+  "dur": 6.892,
+  "max_syll": 35
+ },
+ {
+  "id": "L017",
+  "spk": "S1",
+  "start": 115.012,
+  "end": 115.836,
+  "hi": "ت的ر",
+  "segs": [
+   17
+  ],
+  "dur": 0.82,
+  "max_syll": 3
+ },
+ {
+  "id": "L018",
+  "spk": "S0",
+  "start": 116.516,
+  "end": 117.692,
+  "hi": "is tha is that a swile",
+  "segs": [
+   18
+  ],
+  "dur": 1.18,
+  "max_syll": 5
+ },
+ {
+  "id": "L019_1",
+  "spk": "S2",
+  "start": 117.924,
+  "end": 120.89,
+  "hi": "a smiles count tyfords gor i knew it",
+  "segs": [
+   19
+  ],
+  "dur": 2.97,
+  "max_syll": 23,
+  "parent": "L019"
+ },
+ {
+  "id": "L019_2",
+  "spk": "S2",
+  "start": 120.89,
+  "end": 123.356,
+  "hi": "निखिल का दोस्त ये भी बता रहा था की",
+  "segs": [
+   19
+  ],
+  "dur": 2.47,
+  "max_syll": 23,
+  "parent": "L019"
+ },
+ {
+  "id": "L020",
+  "spk": "S2",
+  "start": 123.94,
+  "end": 128.86,
+  "hi": "ऐसे अलग डॉक्टर्स होते हैं जो ऐसे फीवर जैसी चीजें ठीक कर देते हैं तमतोगल",
+  "segs": [
+   20
+  ],
+  "dur": 4.92,
+  "max_syll": 21
+ },
+ {
+  "id": "L021",
+  "spk": "S3",
+  "start": 129.86,
+  "end": 131.1,
+  "hi": "पूरे मुह्ले में बताना है",
+  "segs": [
+   21
+  ],
+  "dur": 1.24,
+  "max_syll": 5
+ },
+ {
+  "id": "L022",
+  "spk": "S3",
+  "start": 131.524,
+  "end": 137.372,
+  "hi": "कि हमारे बेटे को फीवर है फीवर है फीवर है टेंपरेचर पढ़ गया है उसका माथाकरम रहता है लोग क्या सोचेंगे",
+  "segs": [
+   22
+  ],
+  "dur": 5.85,
+  "max_syll": 25
+ },
+ {
+  "id": "L023_1",
+  "spk": "S0",
+  "start": 138.084,
+  "end": 139.82,
+  "hi": "लोग कहेंगे पूरी फैमिली को फीवर है ब्रो",
+  "segs": [
+   23
+  ],
+  "dur": 1.736,
+  "max_syll": 31,
+  "parent": "L023"
+ },
+ {
+  "id": "L023_2",
+  "spk": "S0",
+  "start": 139.84,
+  "end": 143.91,
+  "hi": "तुझे टाइफॉइड है बोलके ना यह डॉक्टर लोग सब स्कैम चला रेहे हैं वो लो ऐसे त",
+  "segs": [
+   23
+  ],
+  "dur": 4.07,
+  "max_syll": 31,
+  "parent": "L023"
+ },
+ {
+  "id": "L023_3",
+  "spk": "S0",
+  "start": 143.91,
+  "end": 145.5,
+  "hi": "से पैसा निकालने केलिए करते हैं ये सब",
+  "segs": [
+   23
+  ],
+  "dur": 1.59,
+  "max_syll": 31,
+  "parent": "L023"
+ },
+ {
+  "id": "L024",
+  "spk": "S0",
+  "start": 146.052,
+  "end": 150.844,
+  "hi": "ऐसे टाइफर्ड वफर्ड कुछ भी कुद का नाम लाके ऐसा कुछ भी ऐसा बोलते हैं वो लोग तो क्या है तो पड़ा लिखा है ना",
+  "segs": [
+   24
+  ],
+  "dur": 4.79,
+  "max_syll": 20
+ },
+ {
+  "id": "L025_1",
+  "spk": "S0",
+  "start": 151.204,
+  "end": 155.34,
+  "hi": "don't fall for all this hay are you taking pills pills of a people woar ill",
+  "segs": [
+   25
+  ],
+  "dur": 4.14,
+  "max_syll": 32,
+  "parent": "L025"
+ },
+ {
+  "id": "L025_2",
+  "spk": "S0",
+  "start": 155.34,
+  "end": 157.45,
+  "hi": "अबे तुझे मेडिकेशन की नहीं मोटिवेशन की जरूरत है",
+  "segs": [
+   25
+  ],
+  "dur": 2.11,
+  "max_syll": 32,
+  "parent": "L025"
+ },
+ {
+  "id": "L025_3",
+  "spk": "S0",
+  "start": 157.45,
+  "end": 158.908,
+  "hi": "डिटर्मिनेशन है ना ऐसा",
+  "segs": [
+   25
+  ],
+  "dur": 1.458,
+  "max_syll": 32,
+  "parent": "L025"
+ },
+ {
+  "id": "L026_1",
+  "spk": "S0",
+  "start": 160.036,
+  "end": 161.37,
+  "hi": "لگ جیادہ ٹائپوڈ کا",
+  "segs": [
+   26
+  ],
+  "dur": 1.33,
+  "max_syll": 18,
+  "parent": "L026"
+ },
+ {
+  "id": "L026_2",
+  "spk": "S0",
+  "start": 161.37,
+  "end": 163.03,
+  "hi": "तुझे पता है निहा का शादी टूट गया है",
+  "segs": [
+   26
+  ],
+  "dur": 1.66,
+  "max_syll": 18,
+  "parent": "L026"
+ },
+ {
+  "id": "L026_3",
+  "spk": "S0",
+  "start": 163.03,
+  "end": 164.38,
+  "hi": "dod you no pil",
+  "segs": [
+   26
+  ],
+  "dur": 1.35,
+  "max_syll": 18,
+  "parent": "L026"
+ },
+ {
+  "id": "L027",
+  "spk": "S7",
+  "start": 164.676,
+  "end": 168.22,
+  "hi": "she's bed ridan she can't walk man she's only thirty",
+  "segs": [
+   27
+  ],
+  "dur": 3.54,
+  "max_syll": 15
+ },
+ {
+  "id": "L028",
+  "spk": "S0",
+  "start": 168.772,
+  "end": 173.756,
+  "hi": "she's been so brave through it all bro just think of all the good things in your life",
+  "segs": [
+   28
+  ],
+  "dur": 4.98,
+  "max_syll": 21
+ },
+ {
+  "id": "L029",
+  "spk": "S4",
+  "start": 174.468,
+  "end": 177.116,
+  "hi": "it's so important to be thankful for what you have you know",
+  "segs": [
+   29
+  ],
+  "dur": 2.65,
+  "max_syll": 11
+ },
+ {
+  "id": "L030",
+  "spk": "S8",
+  "start": 178.212,
+  "end": 178.972,
+  "hi": "ایسے پہن لو",
+  "segs": [
+   30
+  ],
+  "dur": 0.76,
+  "max_syll": 3
+ },
+ {
+  "id": "L031",
+  "spk": "S2",
+  "start": 180.1,
+  "end": 181.244,
+  "hi": "टाइफॉइड कुछ नहीं है",
+  "segs": [
+   31
+  ],
+  "dur": 1.14,
+  "max_syll": 5
+ },
+ {
+  "id": "L032",
+  "spk": "S2",
+  "start": 181.444,
+  "end": 186.556,
+  "hi": "तुम्हारे ग्रहों में प्रॉब्लम है यह है रक्षा कवच मैंने तुला राशी के लिए स्पेशली बनाया है",
+  "segs": [
+   32
+  ],
+  "dur": 5.11,
+  "max_syll": 21
+ },
+ {
+  "id": "L033",
+  "spk": "S0",
+  "start": 193.508,
+  "end": 196.892,
+  "hi": "आ डोइंग समथिंग दैट यू लाइक वो पैशन पैशन फॉललो करना सब कर रहे है आजकल",
+  "segs": [
+   33
+  ],
+  "dur": 3.38,
+  "max_syll": 14
+ },
+ {
+  "id": "L034",
+  "spk": "S7",
+  "start": 197.75,
+  "end": 199.388,
+  "hi": "शायरीवारी लेक जितना करेगा तू राईन",
+  "segs": [
+   34
+  ],
+  "dur": 1.638,
+  "max_syll": 10
+ },
+ {
+  "id": "L035_1",
+  "spk": "S0",
+  "start": 199.812,
+  "end": 201.47,
+  "hi": "उतना हो जाएगा तो फाइन",
+  "segs": [
+   35
+  ],
+  "dur": 1.66,
+  "max_syll": 39,
+  "parent": "L035"
+ },
+ {
+  "id": "L035_2",
+  "spk": "S0",
+  "start": 201.47,
+  "end": 204.35,
+  "hi": "مب يu ني او cنج ر جاب جج hوس",
+  "segs": [
+   35
+  ],
+  "dur": 2.88,
+  "max_syll": 39,
+  "parent": "L035"
+ },
+ {
+  "id": "L035_3",
+  "spk": "S0",
+  "start": 204.35,
+  "end": 205.65,
+  "hi": "چیंज و سिटی چیंज و س्टیٹ",
+  "segs": [
+   35
+  ],
+  "dur": 1.3,
+  "max_syll": 39,
+  "parent": "L035"
+ },
+ {
+  "id": "L035_4",
+  "spk": "S0",
+  "start": 205.65,
+  "end": 206.55,
+  "hi": "चेंज योर कंट्री",
+  "segs": [
+   35
+  ],
+  "dur": 0.9,
+  "max_syll": 39,
+  "parent": "L035"
+ },
+ {
+  "id": "L035_6",
+  "spk": "S0",
+  "start": 206.55,
+  "end": 207.43,
+  "hi": "चेंज योर कॉंटिनेंट",
+  "segs": [
+   35
+  ],
+  "dur": 0.88,
+  "max_syll": 39,
+  "parent": "L035"
+ },
+ {
+  "id": "L035_5",
+  "spk": "S0",
+  "start": 207.43,
+  "end": 209.148,
+  "hi": "तो अपने आपको ही चेंज कर तेै ना",
+  "segs": [
+   35
+  ],
+  "dur": 1.72,
+  "max_syll": 39,
+  "parent": "L035"
+ },
+ {
+  "id": "L036",
+  "spk": "S0",
+  "start": 209.348,
+  "end": 210.524,
+  "hi": "그تطنر가",
+  "segs": [
+   36
+  ],
+  "dur": 1.18,
+  "max_syll": 5
+ },
+ {
+  "id": "L037",
+  "spk": "S0",
+  "start": 210.756,
+  "end": 212.572,
+  "hi": "तू समझ रह है फिर टाइपोड कीदर जाएगा",
+  "segs": [
+   37
+  ],
+  "dur": 1.82,
+  "max_syll": 8
+ },
+ {
+  "id": "L038_1",
+  "spk": "S0",
+  "start": 212.772,
+  "end": 216.63,
+  "hi": "उसको पता ही नहीं कहा जाने का टम कहा जाने का कहा जाने का भाई सा पता नहीं आगे से लेफ्ट लो",
+  "segs": [
+   38
+  ],
+  "dur": 3.86,
+  "max_syll": 28,
+  "parent": "L038"
+ },
+ {
+  "id": "L038_2",
+  "spk": "S0",
+  "start": 216.63,
+  "end": 219.422,
+  "hi": "th you are overthinkingyou're overanalyzing overhip",
+  "segs": [
+   38
+  ],
+  "dur": 2.79,
+  "max_syll": 28,
+  "parent": "L038"
+ },
+ {
+  "id": "L039_1",
+  "spk": "S0",
+  "start": 219.422,
+  "end": 221.49,
+  "hi": "पिंग ओवर हाइपर वेंटिलेटिंग जस्ट",
+  "segs": [
+   39
+  ],
+  "dur": 2.07,
+  "max_syll": 32,
+  "parent": "L039"
+ },
+ {
+  "id": "L039_2",
+  "spk": "S0",
+  "start": 221.49,
+  "end": 222.34,
+  "hi": "وفري",
+  "segs": [
+   39
+  ],
+  "dur": 0.85,
+  "max_syll": 32,
+  "parent": "L039"
+ },
+ {
+  "id": "L039_3",
+  "spk": "S0",
+  "start": 222.34,
+  "end": 223.72,
+  "hi": "تو에ن जد सوच مت",
+  "segs": [
+   39
+  ],
+  "dur": 1.38,
+  "max_syll": 32,
+  "parent": "L039"
+ },
+ {
+  "id": "L039_4",
+  "spk": "S0",
+  "start": 223.72,
+  "end": 226.972,
+  "hi": "जैसे सा आग बनकर और सोच की तू नहीं सोच रहा हैी",
+  "segs": [
+   39
+  ],
+  "dur": 3.25,
+  "max_syll": 32,
+  "parent": "L039"
+ },
+ {
+  "id": "L040_1",
+  "spk": "S6",
+  "start": 227.108,
+  "end": 231.24,
+  "hi": "don't have tie fori maybe you just need a long vacation",
+  "segs": [
+   40
+  ],
+  "dur": 4.13,
+  "max_syll": 25,
+  "parent": "L040"
+ },
+ {
+  "id": "L040_2",
+  "spk": "S6",
+  "start": 231.24,
+  "end": 232.956,
+  "hi": "या फिर हम लोगों के साथ मूवी के लिए आ जा",
+  "segs": [
+   40
+  ],
+  "dur": 1.72,
+  "max_syll": 25,
+  "parent": "L040"
+ },
+ {
+  "id": "L041",
+  "spk": "S0",
+  "start": 233.188,
+  "end": 234.3,
+  "hi": "اچھا تو تو نہیں آ رہا ے",
+  "segs": [
+   41
+  ],
+  "dur": 1.11,
+  "max_syll": 5
+ },
+ {
+  "id": "L042",
+  "spk": "S0",
+  "start": 236.228,
+  "end": 237.404,
+  "hi": "وك باي",
+  "segs": [
+   42
+  ],
+  "dur": 1.18,
+  "max_syll": 5
+ },
+ {
+  "id": "L044",
+  "spk": "S0",
+  "start": 244.164,
+  "end": 244.796,
+  "hi": "جس",
+  "segs": [
+   44
+  ],
+  "dur": 0.63,
+  "max_syll": 3
+ },
+ {
+  "id": "L045",
+  "spk": "S0",
+  "start": 246.628,
+  "end": 247.356,
+  "hi": "منكلكنا",
+  "segs": [
+   45
+  ],
+  "dur": 0.73,
+  "max_syll": 3
+ },
+ {
+  "id": "L046",
+  "spk": "S0",
+  "start": 248.324,
+  "end": 249.084,
+  "hi": "f的人",
+  "segs": [
+   46
+  ],
+  "dur": 0.76,
+  "max_syll": 3
+ },
+ {
+  "id": "L047",
+  "spk": "S1",
+  "start": 249.764,
+  "end": 250.204,
+  "hi": "يا",
+  "segs": [
+   47
+  ],
+  "dur": 0.44,
+  "max_syll": 2
+ },
+ {
+  "id": "L048",
+  "spk": "S1",
+  "start": 251.684,
+  "end": 252.764,
+  "hi": "کیا بات کر رहے ہے",
+  "segs": [
+   48
+  ],
+  "dur": 1.08,
+  "max_syll": 5
+ },
+ {
+  "id": "L049_1",
+  "spk": "S0",
+  "start": 253.892,
+  "end": 255.26,
+  "hi": "سکو بول متا میں نے تر کو بتایا",
+  "segs": [
+   49
+  ],
+  "dur": 1.37,
+  "max_syll": 15,
+  "parent": "L049"
+ },
+ {
+  "id": "L049_2",
+  "spk": "S0",
+  "start": 255.26,
+  "end": 257.532,
+  "hi": "لكبل",
+  "segs": [
+   49
+  ],
+  "dur": 2.27,
+  "max_syll": 15,
+  "parent": "L049"
+ },
+ {
+  "id": "L050",
+  "spk": "S1",
+  "start": 258.532,
+  "end": 259.58,
+  "hi": "يكاتلرا",
+  "segs": [
+   50
+  ],
+  "dur": 1.05,
+  "max_syll": 4
+ },
+ {
+  "id": "L051",
+  "spk": "S1",
+  "start": 260.132,
+  "end": 266.236,
+  "hi": "इटस टाइफॉइड इटस लाइक एनी अदर इललनेस अगर हम लोग ऐसे खुस खुस खुस खुस करके आपस में बात करेंगे ना",
+  "segs": [
+   51
+  ],
+  "dur": 6.1,
+  "max_syll": 26
+ },
+ {
+  "id": "L052",
+  "spk": "S1",
+  "start": 266.404,
+  "end": 269.852,
+  "hi": "to forget going to the doctor nikil will think twice before he talks to us about it",
+  "segs": [
+   52
+  ],
+  "dur": 3.45,
+  "max_syll": 14
+ },
+ {
+  "id": "L053",
+  "spk": "S1",
+  "start": 270.628,
+  "end": 272.028,
+  "hi": "ل في نعملوك",
+  "segs": [
+   53
+  ],
+  "dur": 1.4,
+  "max_syll": 6
+ },
+ {
+  "id": "L054",
+  "spk": "S0",
+  "start": 275.748,
+  "end": 277.212,
+  "hi": "لگتا ہے اس کو بھی ٹائی فرڈ ہو گیا",
+  "segs": [
+   54
+  ],
+  "dur": 1.46,
+  "max_syll": 6
+ },
+ {
+  "id": "L055",
+  "spk": "S0",
+  "start": 278.852,
+  "end": 286.855,
+  "hi": "hey guys thanks for watching the video if you guys want to educate yourself about the topic of depression like things to say and things not to say to someone who's suffering from depression",
+  "segs": [
+   55
+  ],
+  "dur": 8.0,
+  "max_syll": 34
+ },
+ {
+  "id": "L056",
+  "spk": "S0",
+  "start": 286.855,
+  "end": 292.641,
+  "hi": "please check out the links in the description box below also if you think a friend or you yourself want to seek professional help",
+  "segs": [
+   56
+  ],
+  "dur": 5.79,
+  "max_syll": 24
+ },
+ {
+  "id": "L057",
+  "spk": "S0",
+  "start": 292.641,
+  "end": 301.317,
+  "hi": "we have a list of numbers in the description box as well we are not copyriting this video so feel free to download it and upload it on as many channels as you want so that more people watch it",
+  "segs": [
+   57
+  ],
+  "dur": 8.68,
+  "max_syll": 36
+ },
+ {
+  "id": "L058",
+  "spk": "S2",
+  "start": 301.317,
+  "end": 306.396,
+  "hi": "and understand that depression is an illness that needs to be dealt with proper medical attention",
+  "segs": [
+   58
+  ],
+  "dur": 5.08,
+  "max_syll": 21
+ }
+]
