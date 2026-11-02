@@ -1,6 +1,6 @@
 import json,sys
 from PIL import Image,ImageDraw,ImageFont
-rows=json.load(open('windows.json')); L=json.load(open('v9_lines.json'))
+rows=json.load(open('windows.json')); L=json.load(open(sys.argv[2] if len(sys.argv)>2 else 'v9_lines.json')); TAG=sys.argv[3] if len(sys.argv)>3 else 'v9'; OUTD=sys.argv[4] if len(sys.argv)>4 else 'sheets'
 try: F=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',15); Fs=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',13)
 except Exception: F=Fs=ImageFont.load_default()
 W,H,CAP=384,216,52
@@ -29,6 +29,6 @@ for s0 in range(0,310,10):
         l=line_at(tc)
         d.text((x+4,y+H+2),f"{tc:.2f}s VAD{r['vad']:.2f}{' CUT' if r['cut'] else ''} {r.get('vc','')}",fill='white',font=F)
         d.text((x+4,y+H+19),' '.join(f"{f['fid']}:{f['lip']:.2f}" for f in r['faces'][:4]),fill='yellow',font=Fs)
-        d.text((x+4,y+H+35),(f"v9 {l['id']} {l['cm']}/{l['face']} {'TTS' if l['variant']!='original' else 'orig'}" if l else 'v9 -'),fill='cyan',font=Fs)
-    img.save(f'sheets/s{s0:03d}.jpg',quality=80)
+        d.text((x+4,y+H+35),(f"{TAG} {l['id']} {l['cm']}/{l['face']} {'TTS' if l['variant']!='original' else 'orig'}" if l else 'v9 -'),fill='cyan',font=Fs)
+    img.save(f'{OUTD}/s{s0:03d}.jpg',quality=80)
 print('ok')
