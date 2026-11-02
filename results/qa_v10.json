@@ -674,7 +674,7 @@
   {
    "id": "L023_2",
    "spk": "S0",
-   "slot": 4.07,
+   "slot": 3.46,
    "tts": 2.74,
    "tempo": 1.0,
    "fits": true,
@@ -682,13 +682,13 @@
    "en": "They say typhoid, these doctors run a scam.",
    "hi": "तुझे टाइफॉइड है बोलके ना यह डॉक्टर लोग सब स्कैम चला रेहे हैं वो लो ऐसे त",
    "emotion": "neutral",
-   "gain": 1.65,
-   "placed_end": 3.9,
+   "gain": 1.71,
+   "placed_end": 3.44,
    "align": {
     "pieces": 1,
     "islands": 1,
     "tempi": [
-     0.7
+     0.795
     ]
    },
    "ref": "char:TEE",
@@ -697,7 +697,7 @@
   {
    "id": "L023_3",
    "spk": "S0",
-   "slot": 1.59,
+   "slot": 2.18,
    "tts": 1.51,
    "tempo": 1.0,
    "fits": true,
@@ -705,13 +705,13 @@
    "en": "Just to squeeze money.",
    "hi": "से पैसा निकालने केलिए करते हैं ये सब",
    "emotion": "neutral",
-   "gain": 1.59,
-   "placed_end": 1.49,
+   "gain": 1.69,
+   "placed_end": 2.05,
    "align": {
     "pieces": 1,
     "islands": 1,
     "tempi": [
-     1.0
+     0.729
     ]
    },
    "ref": "char:RAHUL",

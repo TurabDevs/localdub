@@ -5,6 +5,12 @@
  "dubbed_speech_s": 158.0,
  "lines": [
   {
+   "ref_spans": [
+    [
+     17.54,
+     20.22
+    ]
+   ],
    "id": "L002a",
    "start": 17.54,
    "end": 20.22,
@@ -23,6 +29,12 @@
    "en": "Hello bro, ten-thirty movie, okay?"
   },
   {
+   "ref_spans": [
+    [
+     20.3,
+     24.86
+    ]
+   ],
    "id": "L002b",
    "start": 20.3,
    "end": 24.86,
@@ -41,6 +53,12 @@
    "en": "No man don't book mine, puking since morning, high fever."
   },
   {
+   "ref_spans": [
+    [
+     25.124,
+     31.388
+    ]
+   ],
    "id": "L003",
    "start": 25.124,
    "end": 31.388,
@@ -59,6 +77,12 @@
    "en": "Typhoid and stuff? Are you crazy? There's no such thing, bro, just get out and have fun."
   },
   {
+   "ref_spans": [
+    [
+     37.188,
+     45.301
+    ]
+   ],
    "id": "L004",
    "start": 37.188,
    "end": 45.301,
@@ -77,6 +101,12 @@
    "en": "Just step out, have a couple beers, all the bacteria will die. Ever seen a bartender get typhoid? They live around beer. Don't overthink."
   },
   {
+   "ref_spans": [
+    [
+     45.301,
+     50.774
+    ]
+   ],
    "id": "L005",
    "start": 45.301,
    "end": 50.774,
@@ -95,6 +125,12 @@
    "en": "The more you think 'I have typhoid, I have typhoid, I have typhoid', the more this typhoid grows. It just..."
   },
   {
+   "ref_spans": [
+    [
+     50.774,
+     60.774
+    ]
+   ],
    "id": "L006",
    "start": 50.774,
    "end": 62.396,
@@ -117,6 +153,12 @@
    "en": "Bacteria die on their own in two months. Lost promotion? No? Then typhoid? Day before yesterday at Sahil's party you were laughing, dancing, joking. What happened suddenly?"
   },
   {
+   "ref_spans": [
+    [
+     62.724,
+     72.72399999999999
+    ]
+   ],
    "id": "L007",
    "start": 62.724,
    "end": 76.508,
@@ -138,6 +180,12 @@
    "en": "This fever burning could be one thing. If you're smiling and you have typhoid, how can you have both? Are you sure you didn't get typhoid because Garima broke up with you? Go get on Tinder. Your typhoid, vomiting, diarrhea will all go away."
   },
   {
+   "ref_spans": [
+    [
+     87.396,
+     92.924
+    ]
+   ],
    "id": "L013",
    "start": 87.396,
    "end": 92.924,
@@ -156,6 +204,12 @@
    "en": "Jogging every morning gives you perspective and typhoid goes away. Perspective up, typhoid go go."
   },
   {
+   "ref_spans": [
+    [
+     93.092,
+     96.636
+    ]
+   ],
    "id": "L014",
    "start": 93.092,
    "end": 96.636,
@@ -174,6 +228,12 @@
    "en": "Listen, Nikhil's friend was saying that"
   },
   {
+   "ref_spans": [
+    [
+     96.9,
+     101.18
+    ]
+   ],
    "id": "L015",
    "start": 96.9,
    "end": 101.18,
@@ -192,6 +252,12 @@
    "en": "Nikhil has some fever thing. You haven't told anyone he has a fever, right?"
   },
   {
+   "ref_spans": [
+    [
+     117.924,
+     123.356
+    ]
+   ],
    "id": "L019",
    "start": 117.924,
    "end": 123.356,
@@ -210,6 +276,12 @@
    "en": "A smile means no typhoid. I know it. Nikhil's friend said that too."
   },
   {
+   "ref_spans": [
+    [
+     123.94,
+     128.86
+    ]
+   ],
    "id": "L020",
    "start": 123.94,
    "end": 128.86,
@@ -228,6 +300,12 @@
    "en": "There are different kinds of doctors who can just fix fever stuff like this, no problem."
   },
   {
+   "ref_spans": [
+    [
+     131.524,
+     137.372
+    ]
+   ],
    "id": "L021",
    "start": 129.86,
    "end": 131.1,
@@ -244,6 +322,12 @@
    "en": "Whole neighbourhood to know?"
   },
   {
+   "ref_spans": [
+    [
+     131.524,
+     137.372
+    ]
+   ],
    "id": "L022",
    "start": 131.524,
    "end": 137.372,
@@ -260,6 +344,12 @@
    "en": "Our son has fever, fever, fever, temperature up, forehead always hot. What will people think?"
   },
   {
+   "ref_spans": [
+    [
+     138.084,
+     145.5
+    ]
+   ],
    "id": "L023",
    "start": 138.084,
    "end": 145.5,
@@ -280,6 +370,12 @@
    "en": "People'll say whole family has fever, bro. They say typhoid, these doctors run a scam just to squeeze money."
   },
   {
+   "ref_spans": [
+    [
+     146.052,
+     150.844
+    ]
+   ],
    "id": "L024",
    "start": 146.052,
    "end": 150.844,
@@ -296,6 +392,12 @@
    "en": "Typhoid, whatever, they just pick any name. What are they, educated or something?"
   },
   {
+   "ref_spans": [
+    [
+     151.204,
+     158.908
+    ]
+   ],
    "id": "L025",
    "start": 151.204,
    "end": 158.908,
@@ -316,6 +418,12 @@
    "en": "Don't fall for all this. You're not taking pills, pills off people who are ill. Right now you don't need medication, you need motivation, determination like that."
   },
   {
+   "ref_spans": [
+    [
+     160.036,
+     164.38
+    ]
+   ],
    "id": "L026",
    "start": 160.036,
    "end": 164.38,
@@ -336,6 +444,12 @@
    "en": "You know Nisha's marriage broke up? Do you know Payal?"
   },
   {
+   "ref_spans": [
+    [
+     174.468,
+     177.116
+    ]
+   ],
    "id": "L030",
    "start": 178.212,
    "end": 178.972,
@@ -352,6 +466,12 @@
    "en": "Put it on."
   },
   {
+   "ref_spans": [
+    [
+     123.94,
+     128.86
+    ]
+   ],
    "id": "L031",
    "start": 180.1,
    "end": 181.244,
@@ -369,6 +489,12 @@
    "en": "Typhoid's nothing."
   },
   {
+   "ref_spans": [
+    [
+     181.444,
+     186.556
+    ]
+   ],
    "id": "L032",
    "start": 181.444,
    "end": 186.556,
@@ -385,6 +511,12 @@
    "en": "Your planets are messed up. This shield protects you, made specially for Libra."
   },
   {
+   "ref_spans": [
+    [
+     193.508,
+     196.892
+    ]
+   ],
    "id": "L033",
    "start": 193.508,
    "end": 196.892,
@@ -401,6 +533,16 @@
    "en": "Go do something you like. Follow your passion, everyone's doing it these days."
   },
   {
+   "ref_spans": [
+    [
+     164.676,
+     168.22
+    ],
+    [
+     197.124,
+     199.388
+    ]
+   ],
    "id": "L034",
    "start": 197.124,
    "end": 199.388,
@@ -419,6 +561,12 @@
    "en": "More poetry, more crying."
   },
   {
+   "ref_spans": [
+    [
+     199.812,
+     209.148
+    ]
+   ],
    "id": "L035",
    "start": 199.812,
    "end": 209.148,
@@ -443,6 +591,12 @@
    "en": "It'll be fine. Maybe you need to change your job, your house, your city, your state, your continent. Or just change yourself."
   },
   {
+   "ref_spans": [
+    [
+     199.812,
+     209.148
+    ]
+   ],
    "id": "L037",
    "start": 210.756,
    "end": 212.572,
@@ -463,6 +617,12 @@
    "en": "Then where will typhoid go?"
   },
   {
+   "ref_spans": [
+    [
+     212.772,
+     219.422
+    ]
+   ],
    "id": "L038",
    "start": 212.772,
    "end": 219.422,
@@ -485,6 +645,12 @@
    "en": "It doesn't even know where to go, where to go? Take a left up ahead. I think you're overthinking, overanalyzing, overhyping."
   },
   {
+   "ref_spans": [
+    [
+     219.422,
+     226.972
+    ]
+   ],
    "id": "L039",
    "start": 219.422,
    "end": 226.972,
@@ -509,6 +675,12 @@
    "en": "Over hyperventilating, just over it. Don't overthink, you're on fire thinking you're not thinking."
   },
   {
+   "ref_spans": [
+    [
+     227.108,
+     232.956
+    ]
+   ],
    "id": "L040",
    "start": 227.108,
    "end": 232.956,
@@ -527,6 +699,12 @@
    "en": "You don't have typhoid, you just need a long vacation. Come to the movies with us."
   },
   {
+   "ref_spans": [
+    [
+     278.852,
+     286.855
+    ]
+   ],
    "id": "L041",
    "start": 233.188,
    "end": 234.3,
@@ -544,6 +722,12 @@
    "en": "Okay, you're not coming."
   },
   {
+   "ref_spans": [
+    [
+     37.188,
+     45.301
+    ]
+   ],
    "id": "L048",
    "start": 251.684,
    "end": 252.764,
@@ -561,6 +745,12 @@
    "en": "What are you saying?"
   },
   {
+   "ref_spans": [
+    [
+     253.892,
+     257.532
+    ]
+   ],
    "id": "L049",
    "start": 253.892,
    "end": 257.532,
@@ -579,6 +769,12 @@
    "en": "Don't tell anyone. I know nothing. Why would I say?"
   },
   {
+   "ref_spans": [
+    [
+     260.132,
+     266.236
+    ]
+   ],
    "id": "L051",
    "start": 260.132,
    "end": 266.236,
@@ -595,6 +791,12 @@
    "en": "It's typhoid, it's like any other illness. If we keep whispering about it like this..."
   },
   {
+   "ref_spans": [
+    [
+     253.892,
+     257.532
+    ]
+   ],
    "id": "L054",
    "start": 275.748,
    "end": 277.212,

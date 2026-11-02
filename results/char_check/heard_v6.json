@@ -1,0 +1,269 @@
+{
+ "heard_voice_match_pct_of_speech_s": 0.5899,
+ "lines": [
+  {
+   "id": "L002a",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.459,
+   "sim_to_truth": 0.459,
+   "match": true
+  },
+  {
+   "id": "L002b",
+   "truth": "SICK",
+   "heard_nearest": "SICK",
+   "sim": 0.669,
+   "sim_to_truth": 0.669,
+   "match": true
+  },
+  {
+   "id": "L003",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.453,
+   "sim_to_truth": 0.453,
+   "match": true
+  },
+  {
+   "id": "L004",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.794,
+   "sim_to_truth": 0.794,
+   "match": true
+  },
+  {
+   "id": "L005",
+   "truth": "BROWN",
+   "heard_nearest": "PURPLE",
+   "sim": 0.222,
+   "sim_to_truth": 0.084,
+   "match": false
+  },
+  {
+   "id": "L006",
+   "truth": "TEE",
+   "heard_nearest": "RAHUL",
+   "sim": 0.53,
+   "sim_to_truth": 0.312,
+   "match": false
+  },
+  {
+   "id": "L007",
+   "truth": "BROWN",
+   "heard_nearest": "RAHUL",
+   "sim": 0.574,
+   "sim_to_truth": 0.453,
+   "match": false
+  },
+  {
+   "id": "L013",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.677,
+   "sim_to_truth": 0.677,
+   "match": true
+  },
+  {
+   "id": "L014",
+   "truth": "MOM",
+   "heard_nearest": "MOM",
+   "sim": 0.479,
+   "sim_to_truth": 0.479,
+   "match": true
+  },
+  {
+   "id": "L015",
+   "truth": "DAD",
+   "heard_nearest": "MOM",
+   "sim": 0.332,
+   "sim_to_truth": 0.289,
+   "match": false
+  },
+  {
+   "id": "L019",
+   "truth": "MOM",
+   "heard_nearest": "MOM",
+   "sim": 0.416,
+   "sim_to_truth": 0.416,
+   "match": true
+  },
+  {
+   "id": "L020",
+   "truth": "MOM",
+   "heard_nearest": "MOM",
+   "sim": 0.454,
+   "sim_to_truth": 0.454,
+   "match": true
+  },
+  {
+   "id": "L021",
+   "truth": "DAD",
+   "heard_nearest": "DAD",
+   "sim": 0.397,
+   "sim_to_truth": 0.397,
+   "match": true
+  },
+  {
+   "id": "L022",
+   "truth": "DAD",
+   "heard_nearest": "DAD",
+   "sim": 0.699,
+   "sim_to_truth": 0.699,
+   "match": true
+  },
+  {
+   "id": "L023",
+   "truth": "TEE",
+   "heard_nearest": "RAHUL",
+   "sim": 0.481,
+   "sim_to_truth": 0.327,
+   "match": false
+  },
+  {
+   "id": "L024",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.657,
+   "sim_to_truth": 0.657,
+   "match": true
+  },
+  {
+   "id": "L025",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.637,
+   "sim_to_truth": 0.637,
+   "match": true
+  },
+  {
+   "id": "L026",
+   "truth": "CURLYW",
+   "heard_nearest": "RAHUL",
+   "sim": 0.485,
+   "sim_to_truth": 0.159,
+   "match": false
+  },
+  {
+   "id": "L030",
+   "truth": "MOM",
+   "heard_nearest": "TEE",
+   "sim": 0.245,
+   "sim_to_truth": 0.074,
+   "match": false
+  },
+  {
+   "id": "L031",
+   "truth": "MOM",
+   "heard_nearest": "MOM",
+   "sim": 0.339,
+   "sim_to_truth": 0.339,
+   "match": true
+  },
+  {
+   "id": "L032",
+   "truth": "MOM",
+   "heard_nearest": "MOM",
+   "sim": 0.586,
+   "sim_to_truth": 0.586,
+   "match": true
+  },
+  {
+   "id": "L033",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.537,
+   "sim_to_truth": 0.537,
+   "match": true
+  },
+  {
+   "id": "L034",
+   "truth": "CURLYW",
+   "heard_nearest": "CURLYW",
+   "sim": 0.566,
+   "sim_to_truth": 0.566,
+   "match": true
+  },
+  {
+   "id": "L035",
+   "truth": "CURLYW",
+   "heard_nearest": "RAHUL",
+   "sim": 0.565,
+   "sim_to_truth": 0.159,
+   "match": false
+  },
+  {
+   "id": "L037",
+   "truth": "RAHUL",
+   "heard_nearest": "CURLYW",
+   "sim": 0.356,
+   "sim_to_truth": 0.257,
+   "match": false
+  },
+  {
+   "id": "L038",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.378,
+   "sim_to_truth": 0.378,
+   "match": true
+  },
+  {
+   "id": "L039",
+   "truth": "BROWN",
+   "heard_nearest": "CURLYW",
+   "sim": 0.493,
+   "sim_to_truth": 0.108,
+   "match": false
+  },
+  {
+   "id": "L040",
+   "truth": "PURPLE",
+   "heard_nearest": "PURPLE",
+   "sim": 0.598,
+   "sim_to_truth": 0.598,
+   "match": true
+  },
+  {
+   "id": "L041",
+   "truth": "RAHUL",
+   "heard_nearest": "RAHUL",
+   "sim": 0.379,
+   "sim_to_truth": 0.379,
+   "match": true
+  },
+  {
+   "id": "L048",
+   "truth": "BEARD",
+   "heard_nearest": "RAHUL",
+   "sim": 0.574,
+   "sim_to_truth": 0.085,
+   "match": false
+  },
+  {
+   "id": "L049",
+   "truth": "BEARD",
+   "heard_nearest": "BEARD",
+   "sim": 0.225,
+   "sim_to_truth": 0.225,
+   "match": true
+  },
+  {
+   "id": "L051",
+   "truth": "BOSS",
+   "heard_nearest": "BOSS",
+   "sim": 0.669,
+   "sim_to_truth": 0.669,
+   "match": true
+  },
+  {
+   "id": "L054",
+   "truth": "RAHUL",
+   "heard_nearest": "BEARD",
+   "sim": 0.198,
+   "sim_to_truth": 0.148,
+   "match": false
+  }
+ ]
+}

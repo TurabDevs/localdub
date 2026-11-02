@@ -1,0 +1,240 @@
+{
+ "name": "aib_depression_en.webm",
+ "mode": "pair",
+ "duration": 307.563,
+ "faces_fps": 8.0,
+ "events": [
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 18.2,
+   "end": 18.75,
+   "dur": 0.55,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L002a",
+   "detail": {
+    "variant": "rw",
+    "en": "Hello bro, ten-thirty movie, okay?",
+    "tempo": 1.082,
+    "gain": 0.82
+   },
+   "thumb": "thumbs/000_talking_face_dub_silent_18.5.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 52.85,
+   "end": 53.65,
+   "dur": 0.8,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L006_1",
+   "detail": {
+    "variant": "rw_r10",
+    "en": "Bacteria die in two months.",
+    "tempo": 0.93,
+    "gain": 0.98
+   },
+   "thumb": "thumbs/001_talking_face_dub_silent_53.2.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 92.65,
+   "end": 93.15,
+   "dur": 0.5,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L013",
+   "detail": {
+    "variant": "en",
+    "en": "Jogging every morning gives you perspective and typhoid goes away. Perspective up, typhoid go go.",
+    "tempo": 1.0,
+    "gain": 2.14
+   },
+   "thumb": "thumbs/002_talking_face_dub_silent_92.9.jpg"
+  },
+  {
+   "kind": "speech_not_dubbed",
+   "start": 96.1,
+   "end": 96.95,
+   "dur": 0.85,
+   "severity": "medium",
+   "why": "the original has speech here but the dub track is silent",
+   "line": "L014",
+   "detail": {
+    "variant": "en",
+    "en": "Listen, Nikhil's friend was saying that",
+    "tempo": 0.93,
+    "gain": 1.66
+   },
+   "thumb": "thumbs/003_speech_not_dubbed_96.5.jpg"
+  },
+  {
+   "kind": "speech_not_dubbed",
+   "start": 100.8,
+   "end": 101.5,
+   "dur": 0.7,
+   "severity": "medium",
+   "why": "the original has speech here but the dub track is silent",
+   "line": "L015_2",
+   "detail": {
+    "variant": "rw",
+    "en": "You haven't told anyone, right?",
+    "tempo": 1.0,
+    "gain": 0.3
+   },
+   "thumb": "thumbs/004_speech_not_dubbed_101.2.jpg"
+  },
+  {
+   "kind": "vocals_dropped",
+   "start": 115.85,
+   "end": 116.5,
+   "dur": 0.65,
+   "severity": "low",
+   "why": "the original has voice sound outside any dubbing line (laugh, breath, shout, crowd) that is missing in the dub",
+   "line": null,
+   "thumb": "thumbs/005_vocals_dropped_116.2.jpg"
+  },
+  {
+   "kind": "clipping",
+   "start": 152.5,
+   "end": 152.55,
+   "dur": 0.05,
+   "severity": "high",
+   "why": "samples at full scale (audible distortion)",
+   "line": "L025_1",
+   "detail": {
+    "variant": "original",
+    "kept": "english_original"
+   },
+   "thumb": "thumbs/006_clipping_152.5.jpg"
+  },
+  {
+   "kind": "talking_face_dub_silent",
+   "start": 232.75,
+   "end": 233.25,
+   "dur": 0.5,
+   "severity": "high",
+   "why": "a face on screen is moving its mouth while the original has speech, but the dub is silent",
+   "line": "L040_2",
+   "detail": {
+    "variant": "rw",
+    "en": "Come to movies with us.",
+    "tempo": 1.0,
+    "gain": 2.1
+   },
+   "thumb": "thumbs/007_talking_face_dub_silent_233.0.jpg"
+  },
+  {
+   "kind": "level_jump",
+   "start": 253.892,
+   "end": 255.26,
+   "dur": 1.37,
+   "severity": "medium",
+   "why": "dub voice is +7.2 dB vs the original voice on this line",
+   "line": "L049_1",
+   "detail": {
+    "variant": "rw_r10",
+    "en": "Don't tell anyone",
+    "tempo": 1.0,
+    "gain": 0.3
+   },
+   "thumb": "thumbs/008_level_jump_254.6.jpg"
+  }
+ ],
+ "summary": {
+  "speech_seconds_source": 238.5,
+  "speech_seconds_dub": 230.7,
+  "source_speech_covered_by_dub_pct": 93.3,
+  "dub_speech_inside_source_speech_pct": 96.5,
+  "face_on_screen_pct": 94.7,
+  "mouth_activity_vs_source_speech_auc": 0.623,
+  "mouth_threshold_balanced_acc": 0.61,
+  "visual_flag_confidence": "medium",
+  "mouth_vs_source_speech_lag_ms": 0,
+  "mouth_vs_source_speech_corr": 0.448,
+  "mouth_vs_dub_speech_lag_ms": 0,
+  "mouth_vs_dub_speech_corr": 0.403,
+  "bed_level_diff_db_median": 0.11,
+  "bed_ducked_seconds": 0.0,
+  "dialogue_vs_source_voice_db_median": 0.0,
+  "line_level_diff_db_mean_abs": 0.49,
+  "lines_level_diff_over_6db": 1,
+  "clipped_samples": 1,
+  "sample_peak_dbfs": 0.0,
+  "bed_sync_per_30s_lag_ms": [
+   [
+    0,
+    0,
+    0.92
+   ],
+   [
+    30,
+    0,
+    0.96
+   ],
+   [
+    60,
+    0,
+    0.87
+   ],
+   [
+    90,
+    0,
+    0.76
+   ],
+   [
+    120,
+    0,
+    0.81
+   ],
+   [
+    150,
+    0,
+    0.86
+   ],
+   [
+    180,
+    0,
+    0.85
+   ],
+   [
+    210,
+    0,
+    0.81
+   ],
+   [
+    240,
+    0,
+    0.85
+   ],
+   [
+    270,
+    0,
+    0.62
+   ]
+  ],
+  "loudness_source": {
+   "integrated_lufs": -15.9,
+   "true_peak_dbtp": 0.9,
+   "lra_lu": 16.5
+  },
+  "loudness_dub": {
+   "integrated_lufs": -16.3,
+   "true_peak_dbtp": 0.0,
+   "lra_lu": 16.5
+  },
+  "flags": {
+   "clipping": 1,
+   "level_jump": 1,
+   "speech_not_dubbed": 2,
+   "talking_face_dub_silent": 4,
+   "vocals_dropped": 1
+  },
+  "flags_by_severity": {
+   "high": 5,
+   "medium": 3,
+   "low": 1
+  },
+  "flagged_seconds_high": 2.4
+ }
+}

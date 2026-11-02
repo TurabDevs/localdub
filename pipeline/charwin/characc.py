@@ -72,7 +72,7 @@ for x in qa['lines']:
         if p: secs[p]=secs.get(p,0)+0.1
     good=secs.get(vid,0) if not vid.startswith(('MIXED','UNKNOWN')) else 0
     s=sum(secs.values()); ok+=good; tot+=s
-    res.append({'id':x['id'],'start':L['start'],'end':L['end'],'ref':x.get('ref'),'voice_identity':vid,'voice_ref_breakdown':vb,'truth_secs':{k:round(v,2) for k,v in secs.items()},'correct_s':round(good,2),'speech_s':round(s,2),'en':x.get('en')})
+    res.append({'ref_spans':[list(map(float,z)) for z in sp],'id':x['id'],'start':L['start'],'end':L['end'],'ref':x.get('ref'),'voice_identity':vid,'voice_ref_breakdown':vb,'truth_secs':{k:round(v,2) for k,v in secs.items()},'correct_s':round(good,2),'speech_s':round(s,2),'en':x.get('en')})
 out={'version':ver,'character_accuracy':round(ok/tot,4) if tot else None,'correct_s':round(ok,2),'dubbed_speech_s':round(tot,2),'lines':res}
 json.dump(out,open(f'characc_{ver}.json','w'),ensure_ascii=False,indent=1)
 print(ver,'character accuracy',out['character_accuracy'],ok,tot)
