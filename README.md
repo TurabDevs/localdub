@@ -127,6 +127,39 @@ How v6 did on this check (`pipeline/char_mismatch.py`, `results/characters_aib/m
 
 v7 is the first dub that uses this stage. Measured against the original voices (pitch gap per turn, in semitones): mean gap 2.17 (v6) to 1.01 (v7); turns off by more than 4 semitones 16 to 2; lines with several speakers 3.63 to 1.35; per-character pitch spread 3.21 to 2.35. The voice now follows the speaker. The cost: the audio/video check flags more spots where a mouth moves and the dub is silent (9 to 14 flags, 7.0 s to 9.4 s total). Most are under 1.3 s, and the mouth detector is only medium-confidence (AUC 0.62), so I treat them as leads. v8 retimes those lines. v8 (relaxed stretch limits on the same voices) did that: high-severity flags 14 to 9, flagged time 9.4 s to 5.5 s, source speech covered by the dub 88.9% to 91.4%, mouth/dub correlation 0.38 to 0.40. Still open: 8 talking-face-with-silent-dub spots and 4 speech-not-dubbed spots.
 
+### Frame-by-frame speaker check (Nov 2, v10)
+
+v9 still had characters speaking in someone else's voice, and the automatic stage above could not tell me where. So I checked it at a much finer grain (`pipeline/charwin/`, data in `results/char_check/`):
+
+1. **Windows**: the whole clip cut into 1.5 s windows every 0.5 s (613 windows). For each one: shot cuts, every visible face with its id and a lip-motion score, speech activity on the Demucs vocals, an ECAPA speaker embedding and the Whisper large-v3 words (`results/char_check/timeline.csv`).
+2. **Contact sheets**: one image per 10 s with a frame per window, face boxes, face id, lip score, speech activity and the character + voice the dub used there. Every dubbed line was checked against these sheets, and where the automation disagreed with the picture the mapping was corrected by hand, with the reason written down (`results/char_check/manual_fixes.json`).
+3. **People, not face clusters**: the 10 people in the sketch are defined from the sheets, with the time ranges where each is on screen and talking (`results/char_check/persons.json`). As a cross-check, the voice embeddings of those ranges agree with the picture labels on 98.3 % of windows (228 of 232, leave-one-out).
+4. **Off-screen and reaction shots**: decided by voice-embedding similarity to those verified samples (for example the mother's reaction shot at 135-136 s is the father still talking).
+5. **v10**: lines re-split at every speaker change using the word timings, one fixed Fish voice per person cloned only from that person's own verified speech, and only the lines that changed were re-dubbed (19 new takes). Everything else from v9 is kept as it was.
+
+What was actually wrong in v9:
+
+- **The face clusters were impure.** One face id held three different people: the guy in the black t-shirt, the father in one shot, and the whole end card (the guy in the brown shirt, the guy on the phone, the t-shirt guy). So the "t-shirt guy" voice was cloned from the end card, which is mostly the brown-shirt guy. His two dubbed lines (52 s "Bacteria die in two months", 140 s "These doctors run a scam") were in the wrong man's voice.
+- Another face id merged the curly-haired woman with the brown-shirt guy (64-73 s), so her voice was cloned from a clip that included him. Her three dubbed lines (197 s, 200 s, 219 s) came out as a man/woman blend.
+- **Speaker changes inside one line**: 44.3 s (the guy on the phone hands over to the brown-shirt guy, "don't overthink it"), 157.5 s ("determination" is the brown-shirt guy, not the guy on the phone), 206.6 s (the montage cuts from the brown-shirt guy to the t-shirt guy in the middle of "change your country, change your continent"), 139.8 s (the t-shirt guy starts while the father's line was still running).
+- The woman in purple had a voice reference that ended with the brown-shirt guy saying "Then how you got typhoid like that?" (55.4 s).
+
+The metric: **character accuracy** = share of dubbed speech seconds where the dub voice (the person whose speech the voice was cloned from) is the person actually speaking at that moment, checked every 0.1 s against the verified speaker timeline. A voice cloned from a mix of people (no person at 75 % or more of the reference) counts as wrong.
+
+| | v6 | v9 | v10 |
+|---|---|---|---|
+| character accuracy | 34.4 % (54.4 of 158.0 s) | 83.6 % (102.9 of 123.1 s) | **96.3 %** (118.9 of 123.5 s) |
+| heard-voice check: dubbed take's ECAPA embedding is closest to the right person | 59.0 % | 95.6 % | 98.9 % |
+| dubbed lines | 33 | 46 | 49 |
+| AV-QA high flags (flagged time) | 9 (7.0 s) | 7 (3.6 s) | 5 (2.4 s) |
+| original speech covered by the dub | 90.9 % | 92.8 % | 93.3 % |
+| loudness (original -15.9 LUFS) | -16.5 LUFS | -16.4 LUFS | -16.3 LUFS |
+| lines that overflow their slot | 0 | 0 | 0 |
+
+The remaining 3.7 % in v10 are slivers of at most 0.4 s at line edges, where the end of one person's line touches the start of the next. The heard-voice row compares an English take with Hindi speech, so treat it as a rough second opinion, not proof. v6 is low partly because it dubbed long multi-speaker lines in one voice, which this metric punishes hard. The v10 video: [`localdub_dub_v10.mp4`](https://github.com/TurabDevs/localdub/releases/download/demo-v2/localdub_dub_v10.mp4) (720p) and [`aib_depression_en_v10.webm`](https://github.com/TurabDevs/localdub/releases/download/demo-v2/aib_depression_en_v10.webm).
+
+Also fixed in v10: the mother's "Nikhil, why would I tell?" at 101.3 s sat inside an English line that keeps the original audio, so it was never translated; it is its own dubbed line now.
+
 ## Running it
 
 There is a one-command runner, `localdub.py`, that strings the steps together and keeps every step's output in a work folder so it can be resumed:
@@ -151,7 +184,7 @@ The clip has 58 speech lines. 14 are already in English and keep the original au
 
 There are six versions so far; each one after v1 came out of a round of dub -> listen -> fix (from v6 on: dub -> listen -> watch -> fix). All numbers come from `pipeline/qa_metrics.py`, the Omnilingual ASR listen check and `pipeline/avqa.py` (`results/`).
 
-| | v1 | v2 | v3 | v4 | v5 | v6 (current) |
+| | v1 | v2 | v3 | v4 | v5 | v6 |
 |---|---|---|---|---|---|---|
 | lines dubbed | 44 | 32 | 32 | 32 | 33 | 33 |
 | dubbed lines that fit their slot | 42 / 44 | 32 / 32 | 32 / 32 | 32 / 32 | 33 / 33 | 33 / 33 |

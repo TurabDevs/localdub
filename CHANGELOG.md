@@ -2,6 +2,21 @@
 
 My dev log for LocalDub during the hackathon. Each entry only lists what I actually found and fixed that day (Pakistan time). Numbers come from the QA scripts in `pipeline/` and the files in `results/`.
 
+## 2026-11-02
+
+**Morning: the voices still did not match the faces**
+
+v9 used one voice per character, but watching it, the voice still did not always belong to the person on screen. I ran a frame-by-frame check at a much finer grain: 613 windows of 1.5 s (0.5 s apart), each with shot cuts, face ids, a lip-motion score, speech activity, a speaker embedding and the Whisper words, plus a contact sheet for every 10 seconds of the clip with face boxes and the voice the dub used. Every dubbed line was checked on those sheets. What it found:
+
+- **My face clustering had merged different people.** One face id covered the guy in the black t-shirt, the father in one shot and everyone in the end card. The t-shirt guy's voice had been cloned from the end card, which is mostly the brown-shirt guy, so his two dubbed lines (52 s and 140 s) were in another man's voice.
+- **The curly-haired woman's voice was cloned partly from a man.** Her face id also held the brown-shirt guy for a few seconds (64-73 s), and one of her reference clips was him. Her three dubbed lines came out as a blend.
+- **Four lines still had a speaker change inside them** (44.3 s, 139.8 s, 157.5 s, 206.6 s), and the woman in purple's reference ended with the brown-shirt guy's words (55.4 s).
+- **One line was never translated**: the mother's "Nikhil, why would I tell?" (101.3 s) was inside a line that keeps the original English audio.
+
+Fixes (v10): the 10 people are now defined from the sheets with their verified speaking time (their voice embeddings agree with the picture labels on 98.3 % of windows); off-screen voices and reaction shots are decided by voice similarity to those samples; lines are split at speaker changes on word timings; each person has one fixed Fish voice cloned only from their own verified speech; only the 19 changed lines were re-dubbed. Hand corrections and the reason for each are in `results/char_check/manual_fixes.json`.
+
+New metric, character accuracy (share of dubbed speech seconds where the dub voice is the person actually speaking): v6 34.4 %, v9 83.6 %, v10 96.3 %. AV-QA high flags 7 (3.6 s) in v9 -> 5 (2.4 s) in v10, no line overflows.
+
 ## 2026-11-01
 
 **Morning: fixing what the demo clips get wrong**
